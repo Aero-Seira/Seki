@@ -7,12 +7,12 @@
      * UNITE: Duplicate items of the unified module
      * Valid Values: NONE, COMPAT, UNITE
      */
-    "datapack_mode": "COMPAT",
+    "datapack_mode": "UNITE",
     // Enable soup base material
     "soup_datapack_enabled": true,
     "kitchen": {
         // Enable fuzzy recipes (FlexPotRecipe and FlexStockpotRecipe)
-        "fuzzy_recipes_enabled": true,
+        "fuzzy_recipes_enabled": false,
         // Whether Nourishment effect is blocked when player has Satiated Shield
         "block_enabled": true,
         // Millstone related settings

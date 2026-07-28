@@ -1,77 +1,82 @@
-# Toudai · 灯台
+# Seki
 
-> **Toudai（灯台）** 是 ProjectNautic 系列 Minecraft 项目的 **Basepack 基底整合包**。
-> 如灯塔之于航船：它自身不装载游戏内容，而是为所有衍生包提供统一、稳定、可复用的技术与体验基座。
+> 从灶台出发，去往更远的地方。
 
-## 定位
+![Minecraft 1.21.1](https://img.shields.io/badge/Minecraft-1.21.1-62B47A?style=flat-square)
+![NeoForge 21.1.235](https://img.shields.io/badge/NeoForge-21.1.235-EF3A3A?style=flat-square)
+![Java 21](https://img.shields.io/badge/Java-21-007396?style=flat-square)
+![状态：开发中可试玩](https://img.shields.io/badge/status-playable%20development-D97706?style=flat-square)
 
-Toudai 是一个"类原版"基础包——**不新增任何模组物品、方块、实体等注册表内容**，但预置完整的性能优化矩阵、魔改框架、QoL 工具与视听体验层。所有衍生整合包（ProjectNautic 各章节内容包、服务端包等）都基于 Toudai 构建，通过 KubeJS + 阶段解锁框架在此基座上投放内容，而非重复搭建底层。
+![Seki 的下界光影景观](docs/assets/readme/seki-nether.webp)
 
-## 运行基线
+> [!IMPORTANT]
+> Seki 当前处于**开发中可试玩**阶段。公开发布包尚未开放，本仓库本身也不是可直接启动的完整游戏实例。
 
-| 项目 | 版本 |
+## Seki 是什么
+
+Seki 是由 ProjectNautic 制作的 Minecraft 1.21.1 NeoForge 生活冒险整合包。它围绕料理、探索与战利品重新组织生存节奏：离开住处寻找食材与资源，回到厨房完成真正的加工和烹饪，再带着收获走向更远的地方。
+
+这里没有强制规定单一玩法。你可以独自整理菜谱、建设厨房和酒馆，也可以与朋友共享聚落、分头探索；多人世界中的自然战利品会为每位玩家独立生成，不必争抢同一个宝箱。
+
+## 核心游玩循环
+
+1. **探索寻材**：在主世界及主题扩展内容中寻找食材、酿造原料与战利品。
+2. **料理准备**：使用炒锅、汤锅、石磨和酒桶完成烹饪与酿造，而不是把所有食物压缩成工作台合成。
+3. **继续远征**：带回新的材料和收藏，扩建厨房与住处，然后为下一次出发做好准备。
+
+## 主要特色
+
+- **有过程的料理系统**：森罗物语：厨房提供炒锅、汤锅与石磨等料理设备。炒菜需要实际处理，盖饭在烹饪完成后使用熟米饭盛取；KubeJS 负责统一存在冲突的获取路径。
+- **熟悉而丰富的菜肴**：国味扩展带来中式炒菜与盖饭，酒馆扩展则加入酒桶酿造和一系列餐饮主题装饰。料理不只用于填满饥饿值，也构成聚落生活的一部分。
+- **适合共同探索的战利品**：Lootr 让同一个自然战利品容器为每位玩家提供独立奖励，兼顾单人与多人世界的探索价值。
+- **看得见的奖励反馈**：物品稀有度、开箱转盘与地面战利品光束共同强化发现珍贵物品时的反馈，同时保留可继续调校的空间。
+- **统一的视听体验**：默认启用 Complementary Unbound + Euphoria Patches 光影，并搭配环境声景、粒子、界面动画和社区中文资源。
+- **完整的便利与性能底座**：JEI、Jade、Xaero 地图等工具负责信息查询；渲染、逻辑、区块、内存、网络与实体剔除等优化共同支撑当前规模。
+
+![Seki 的个人战利品与稀有度演出](docs/assets/readme/seki-loot.webp)
+
+## 当前版本与运行要求
+
+| 项目 | 当前基线 |
 | --- | --- |
-| Minecraft | 1.21.1 |
-| 模组加载器 | NeoForge 21.1.235（FML 4.0.42） |
-| Java | 21 |
-| 当前模组规模 | 105 个（Base Pack 基线已于 2026-07-21 归档接受） |
-| 客户端内存建议 | 4–6 GB |
-| 服务端内存预算 | 6–8 GB |
+| 整合包版本 | `2026.07.28` |
+| Minecraft | `1.21.1` |
+| 模组加载器 | `NeoForge 21.1.235` |
+| Java | 64 位 Java 21 |
+| 当前模组数量 | 124 |
+| 客户端内存建议 | 6–8 GB |
+| 游玩方式 | 单人 / 多人 |
+| 开发状态 | 开发中可试玩 |
 
-## 设计支柱
+默认光影对显卡性能有额外要求。低配设备遇到帧率问题时，建议先关闭光影并降低阴影距离；内存也不应在没有需要时无限增加。
 
-1. **长线运营优先** —— 面向服务器长期运营，重视版本迭代兼容性、存档连续性与玩家进度迁移成本。
-2. **类原版起步，阶段式解锁** —— 基底包只允许机制优化与 QoL 模组存在，不向玩家暴露新的可获得内容；后续大版本以"解锁新内容章节"形式投放，而非重置世界。
-3. **魔改即基础设施** —— KubeJS 7.0 是核心魔改框架，配方、事件、自定义物品、阶段控制全部脚本化，且须具备版本间可迁移性。
-4. **客户端 / 服务端范围分明** —— 本仓库是客户端实例；仅服务端模组不应出现在客户端，服务端中绝对不能出现仅客户端模组。所有魔改脚本须兼容服务端热重载。
+## 获取与安装
 
-## 基座已覆盖的能力层
+**[GitHub Releases（即将开放）](https://github.com/Aero-Seira/Seki/releases)**
 
-- **性能矩阵**：渲染（Sodium + Iris、Acedium mesh shader）、实体剔除（EntityCulling、Flerovium）、逻辑（Lithium）、红石（Alternate Current）、配方匹配（FastSuite）、区块（C2ME）、世界生成噪声（Noisium）、光照（ScalableLux）、内存（Ferrite Core + ModernFix）、网络栈（Krypton FNP + PacketFixer）、输入管线（Ixeris）、日志异步化（Async Logger）等。
-- **魔改框架**：KubeJS 7.0 + Rhino + LootJS + KubeJS Additions / Data Component，脚本系统面向未来所有内容魔改。
-- **信息展示与 QoL**：JEI / Jade / Xaero 地图系、汉化双轨（I18nUpdateMod + 社区汉化包）、拼音搜索、聊天与社交增强、HUD / 血条体系等。
-- **视听体验**：Iris 光影管线（官方默认 Complementary Unbound + EuphoriaPatches）、环境粒子与声景、GUI 动画、越肩视角等。
-- **诊断工具**：spark、Chunky、Cupboard，支持性能剖析与预生成管理。
+公开发布后，这里会提供完整整合包与启动器导入说明。目前请不要把仓库源码压缩包当作游戏实例：仓库主要保存配置、脚本、设计资料和版本清单，第三方模组 JAR 不随源码仓库分发。
 
-## 仓库结构
+## 开发状态与已知限制
 
-```
-├── mods/                # 模组文件（105 个基线模组）
-├── config/              # 全部模组配置（纳入版本控制）
-├── defaultconfigs/      # 新存档默认配置
-├── kubejs/              # KubeJS 魔改脚本
-├── resourcepacks/       # 资源包（含中文本地化包）
-├── shaderpacks/         # 官方默认光影
-├── docs/design/         # 设计知识库（见下）
-├── PCL/                 # 启动器实例配置
-└── dist/                # 分发产物
-```
+- 料理配方仍在持续统一，部分盖饭路径完成了静态验证，但仍需更多运行时回归。
+- 下界与末地主题扩展已经加入；它们的完整内容范围及世界生成影响仍在盘点。
+- 独立战利品的多人回归、高掉落密度下的视觉性能，以及低配设备的默认光影表现仍待系统测试。
+- 公开发布包、启动器导入流程和更新机制尚未完成。
 
-> `logs/`、`crash-reports/`、`saves/`、`cache/`、`downloads/` 等为运行时噪音，不纳入版本控制。
+开发版本可能调整配方、配置或模组组合。使用现有实例游玩时，请在更新前备份重要世界。
 
-## 设计知识库
+## 项目资料
 
-本包的全部设计决策记录于 [`docs/design/`](docs/design/README.md)：
+- [设计文档总览](docs/design/README.md)：产品定义、组件地图与跨系统约束
+- [设计变更记录](docs/design/change-log.md)：每批内容调整及其验证状态
+- [料理配方统一宪章](design/charter.md)：当前料理工序与盖饭路径规则
+- [当前内容清单](docs/design/_generated/current-inventory.md)：由本地扫描生成的模组与配置证据
+- [问题反馈](https://github.com/Aero-Seira/Seki/issues)：报告崩溃、兼容问题或体验建议
 
-- [设计文档总览](docs/design/README.md) —— 产品定义、设计支柱、系统地图、跨系统约束
-- [变更日志](docs/design/change-log.md) —— 每批模组的添加理由与设计影响
-- [组件文档](docs/design/components/) —— 按 `platform / performance / aesthetic / utility / content / integration / library` 分类的逐模组文档
-- [调研报告](docs/design/research-report-v1.md) —— 1.21.1 NeoForge 生态与长线运营方案调研
+如需参与开发，请先阅读 [AGENT.MD](AGENT.MD) 中的兼容性、验证与文档维护约定。
 
-## 参与开发
+## 致谢
 
-1. 修改任何模组、配置、资源包、脚本等包内容前，先阅读 [`AGENTS.md`](AGENTS.md) 与 [`AGENT.MD`](AGENT.MD)。
-2. 每次变更后执行 `$maintain-modpack-design` 流程：扫描整合包 → 更新 `docs/design/` → 重新生成清单 → 确认 `pending-changes.md` 无待处理变更。
-3. 新模组必须明确支持 Minecraft 1.21.1 + NeoForge 21.1.x，并检查依赖链与服务端兼容性。
-4. 新增内容模组必须在阶段系统中定义默认解锁状态。
+感谢所有模组、资源包、光影与工具作者，让 Seki 得以建立在成熟的 Minecraft 社区生态之上；也感谢持续提供测试、反馈与翻译的玩家。
 
-## Git 与 packwiz 安全
-
-- Git 只跟踪 `pack.toml`、`index.toml`、`*.pw.toml`、配置和脚本；本地 `mods/*.jar` 以及资源包、光影 ZIP 由 `.gitignore` 保留在实例中。
-- 普通 `git add`、`commit`、`push` 不会删除未跟踪且被忽略的本地 JAR；提交前的 GitHub Actions 也会拒绝任何被强制加入的 JAR 或源归档。
-- 不要在真实游戏实例中运行 `packwiz curseforge detect`：该命令会删除成功匹配的源 JAR。需要识别旧实例时，应在临时副本中运行，只带回生成的 `.pw.toml`。
-- 不要在真实游戏实例中运行 `git clean -fdx` 或 `git clean -fdX`；这两个命令会主动清理被忽略的本地二进制文件。
-
-## 命名
-
-**灯台（とうだい / Toudai）**：灯塔。基底包如灯塔般固定、可见、可靠——不随内容章节变动，为所有航线（衍生包）指引方向。
+Minecraft 属于 Mojang Studios。各模组、资源包与光影的著作权及许可归其各自作者所有。
