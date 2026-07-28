@@ -31,6 +31,10 @@ backups/
 .cache/
 cache/
 
+# Python 字节码缓存
+__pycache__/
+*.pyc
+
 # Mixin 运行时输出
 .mixin.out/
 

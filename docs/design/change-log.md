@@ -1,5 +1,14 @@
 # 设计变更记录
 
+## 2026-07-29 - 新增跨平台安全提交工作流
+
+- 新增 `scripts/commit-pack.ps1` 与 `scripts/commit-pack.sh`，分别面向 Windows PowerShell 和 macOS/Linux Bash；两者要求显式提供暂存路径，不调用 `git add .`。
+- 新增共用校验器 `scripts/validate-packwiz-staged.py`：校验 Git 暂存快照中的 `pack.toml`/`index.toml` 与全部索引文件哈希，阻止 JAR/ZIP 被跟踪或暂存，并验证本地描述符与 JAR。
+- 提交前记录全部本地 JAR 的文件名、大小和 SHA-256；提交及可选推送后再次比较，确保 Git 操作没有改动真实实例二进制。
+- 提交前执行远端 fetch/分叉检查；远端领先时中止，由维护者明确处理，不自动 pull、merge 或 rebase。
+- `scripts/` 已加入 `.packwizignore`，工作流工具只存在于源码仓库，不进入客户端 packwiz 安装内容。
+- 验证状态：Python 编译与实机暂存快照验证、PowerShell 帮助入口、Bash 语法检查均通过；设计库存接受后为零 pending。
+
 ## 2026-07-29 - 迁移到 packwiz 分发并停止 Git 托管第三方 JAR/ZIP
 
 - 新增 122 个 `mods/*.pw.toml` 与 1 个 Complementary Unbound 光影描述符；根 `pack.toml` / `index.toml` 现负责固定 Minecraft 1.21.1、NeoForge 21.1.235、配置、KubeJS 内容与下载元数据。

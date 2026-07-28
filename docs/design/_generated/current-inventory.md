@@ -1,6 +1,6 @@
 # Current modpack content inventory
 
-Generated: `2026-07-29T01:28:04+08:00`
+Generated: `2026-07-29T02:00:24+08:00`
 
 This file is generated. Put design intent in the human-maintained component pages.
 
@@ -409,6 +409,10 @@ This file is generated. Put design intent in the human-maintained component page
 | `kubejs/server_scripts/main.js` | main.js | - | 116 B | `components/main.md` |
 | `kubejs/server_scripts/unify/rice_carrier_paths.js` | rice_carrier_paths.js | - | 1.2 KiB | `components/rice-carrier-paths.md` |
 | `kubejs/startup_scripts/main.js` | main.js | - | 117 B | `components/main.md` |
+| `scripts/commit-pack.ps1` | commit-pack.ps1 | - | 6.9 KiB | `components/commit-pack.md` |
+| `scripts/commit-pack.sh` | commit-pack.sh | - | 4.5 KiB | `components/commit-pack.md` |
+| `scripts/README.md` | README.md | - | 2.7 KiB | `components/readme.md` |
+| `scripts/validate-packwiz-staged.py` | validate-packwiz-staged.py | - | 8.7 KiB | `components/validate-packwiz-staged.md` |
 
 ## shader-pack
 

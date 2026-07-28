@@ -73,6 +73,7 @@ Seki 是由 ProjectNautic 制作的 Minecraft 1.21.1 NeoForge 生活冒险整合
 - [设计变更记录](docs/design/change-log.md)：每批内容调整及其验证状态
 - [料理配方统一宪章](design/charter.md)：当前料理工序与盖饭路径规则
 - [当前内容清单](docs/design/_generated/current-inventory.md)：由本地扫描生成的模组与配置证据
+- [安全提交工作流](scripts/README.md)：Windows PowerShell 与 macOS/Linux 提交、校验和推送脚本
 - [问题反馈](https://github.com/Aero-Seira/Seki/issues)：报告崩溃、兼容问题或体验建议
 
 如需参与开发，请先阅读 [AGENT.MD](AGENT.MD) 中的兼容性、验证与文档维护约定。

@@ -5,7 +5,7 @@
 - 类型：other（分发基础设施）
 - 状态：active
 - 证据可信度：verified
-- 来源路径：`pack.toml`、`index.toml`、`.packwizignore`、`.gitignore`、`mods/*.pw.toml`、`shaderpacks/complementary-unbound.pw.toml`
+- 来源路径：`pack.toml`、`index.toml`、`.packwizignore`、`.gitignore`、`mods/*.pw.toml`、`shaderpacks/complementary-unbound.pw.toml`、`scripts/commit-pack.ps1`、`scripts/commit-pack.sh`、`scripts/validate-packwiz-staged.py`
 - 标识与版本：packwiz `pack-format = "packwiz:1.1.0"`
 - 加载器或包格式：Minecraft 1.21.1、NeoForge 21.1.235
 
@@ -37,6 +37,8 @@ packwiz 采用标准的“描述符与目标文件同目录”布局：根目录
 5. 在独立空目录通过官方 packwiz-installer 重建客户端；验证所有自动下载文件的哈希，并为禁止第三方下载的 CurseForge 文件执行人工放置后的哈希校验。
 6. 提交前重新比对真实实例全部 JAR 的文件名、大小和 SHA-256。只暂存描述符、索引、配置、脚本与文档。
 
+日常提交可使用仓库内的 [安全提交工作流](../../../scripts/README.md)。Windows PowerShell 与 macOS/Linux 包装脚本共用一个 Python 校验器：显式暂存路径、检查远端分叉、校验 Git 暂存快照中的全部 packwiz 哈希、阻止 JAR/ZIP 进入版本控制，并在提交及推送前后比较本地 JAR 快照。`scripts/` 属于仓库维护工具，已由 `.packwizignore` 排除，不随游戏客户端安装。
+
 不要在真实实例运行会清理或重写内容的检测、安装或清理命令。`git clean -x` 会删除被忽略的本地 JAR，也不属于日常更新流程。
 
 ## 兼容性与性能
@@ -53,6 +55,7 @@ packwiz 采用标准的“描述符与目标文件同目录”布局：根目录
 - [x] Complementary Unbound ZIP 哈希一致
 - [x] Git 跟踪 JAR/ZIP 数为 0
 - [x] 真实实例 124 个 JAR、286,692,928 字节保持不变
+- [x] Windows/macOS/Linux 提交流程脚本通过语法检查与暂存快照校验器实测
 
 ## 风险与开放问题
 
@@ -62,4 +65,5 @@ packwiz 采用标准的“描述符与目标文件同目录”布局：根目录
 
 ## 历史
 
+- 2026-07-29：新增 Windows PowerShell、macOS/Linux 安全提交包装脚本及共用的暂存快照校验器
 - 2026-07-29：完成首次 packwiz 迁移与隔离重建验证；Git 停止托管 JAR/ZIP，真实实例二进制保持原样。
