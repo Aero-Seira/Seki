@@ -1,18 +1,19 @@
-# ProjectNautic 设计文档
+# Seki 设计文档
 
 ## 产品定义
 
 - Minecraft 版本：1.21.1
 - 模组加载器：NeoForge 21.1.235（FML 4.0.42）
 - Java 版本：21
-- 目标玩家：待定义
-- 核心体验：待定义
-- 当前阶段：**Base Pack 已定稿收尾（2026-07-21）**——基础性能模组、魔改框架、扩展 QoL 工具与集成插件已加载；第三批以中文本地化、聊天/社交、信息展示、环境视听与底层性能优化为主的 QoL 模组已就位；第四批确立官方默认光影（Complementary + EuphoriaPatches）并引入多人协作标记、越肩视角、实体纹理与 tooltip 视觉增强；第五批补充输入/日志维度性能优化（Ixeris、Async Logger）与启动体验 QoL（Progress Peek，Gnetum 已于第六批撤出）；第六批扩容 HUD/血条体系（Stylish Effects、Inventory HUD+、Enhanced Boss Bars、Overflowing Bars、Leave My Bars Alone、Pick Up Notifier、Configured、Armor Statues、Pixelshot、Distinguished Potions、MEED、GUI Tween）、补齐性能矩阵网络/红石/世界生成/实体剔除维度（Krypton FNP、PacketFixer、Alternate Current、Noisium、EntityCulling、Acedium）并首次落地机制类模组（BetterDays 时间/睡眠、Brutal Respawn 死亡惩罚）。收尾日实机验证中开启 GUI Tween 主开关并刷新汉化包，105 个模组的内容基线已归档接受，后续开发在此基础上以"章节解锁"方式投放内容模组
+- 目标玩家：生活冒险向玩家（单人或与好友共享聚落）
+- 核心体验：围绕料理、探索与战利品重新组织生存节奏——外出寻找食材与资源，回到厨房完成加工烹饪，再带着收获走向更远的地方（verified，根 README 2026-07-28 重写）
+- 项目沿革：前身为 ProjectNautic 的 Toudai（灯台）Basepack 基底包；2026-07-28 更名为 Seki 并转向"生活冒险整合包"定位，放弃"基底包 + 衍生章节包"架构
+- 当前阶段：**Base Pack 已定稿收尾（2026-07-21）**——基础性能模组、魔改框架、扩展 QoL 工具与集成插件已加载；第三批以中文本地化、聊天/社交、信息展示、环境视听与底层性能优化为主的 QoL 模组已就位；第四批确立官方默认光影（Complementary + EuphoriaPatches）并引入多人协作标记、越肩视角、实体纹理与 tooltip 视觉增强；第五批补充输入/日志维度性能优化（Ixeris、Async Logger）与启动体验 QoL（Progress Peek，Gnetum 已于第六批撤出）；第六批扩容 HUD/血条体系（Stylish Effects、Inventory HUD+、Enhanced Boss Bars、Overflowing Bars、Leave My Bars Alone、Pick Up Notifier、Configured、Armor Statues、Pixelshot、Distinguished Potions、MEED、GUI Tween）、补齐性能矩阵网络/红石/世界生成/实体剔除维度（Krypton FNP、PacketFixer、Alternate Current、Noisium、EntityCulling、Acedium）并首次落地机制类模组（BetterDays 时间/睡眠、Brutal Respawn 死亡惩罚）。收尾日实机验证中开启 GUI Tween 主开关并刷新汉化包，105 个模组的内容基线已归档接受。**2026-07-28 第七批（首个内容章节）已落地**：森罗物语料理家族（厨房本体 + 国味/酒馆/玩偶/下界/末地/次元酒/世界酒 + 兼容层 + 思索教学）、Lootr 独立战利品、VanillaBackport 内容回移植、战利品反馈强化线（GachaAddiction + Loot Beams + RarityCore）、Tooltip Overhaul 替代 Obscure Tooltips，以及配方统一工具链 ModPack IDE Exporter——Base Pack 纯 QoL/性能底座的阶段正式结束，进入内容模组投放期
 
 ## 设计支柱
 
 1. **长线运营优先**：整合包以服务器长期运营为首要目标，所有设计决策须考虑版本迭代兼容性、存档连续性、玩家进度迁移成本。
-2. **类原版起步，阶段式解锁**：第一版为"类原版"体验——不新增任何模组物品、方块、实体等注册表内容，但允许机制优化与 QoL 模组（如红石计算优化、渲染/性能优化、界面增强）存在；此类模组可改变原版的性能表现或交互感受，但不得向玩家暴露新的可获得内容。通过 Chapters + KubeJS 预留完整的阶段解锁框架，后续大版本更新以"解锁新内容章节"形式投放，而非重置世界。
+2. **内容直接投放，无阶段门控**：整合包不使用 Chapters/GameStages 类阶段锁定系统（2026-07-28 维护者决策，取代原"类原版起步，阶段式解锁"支柱）。新增内容模组落地即为玩家可用状态，体验节奏由内容本身与配方设计承载，而非外置解锁框架。
 3. **魔改即基础设施**：KubeJS 7.0 是核心魔改框架，配方、事件、自定义物品、阶段控制全部脚本化。魔改脚本须具备版本间可迁移性。
 4. ~~**服务端与客户端同源**：所有模组选择必须同时支持服务端与客户端部署，配置与脚本通过版本控制统一管理，支持热更新。~~
 5. **更正第4条**：服务端与客户端模组不完全相同，部分可仅服务端模组应仅存在服务端中，且服务端中绝对不能出现仅客户端模组。
@@ -22,7 +23,7 @@
 | 组件 | 作用 | 状态 | 关键依赖 |
 | --- | --- | --- | --- |
 | [运行平台与基础配置](components/platform/platform-runtime.md) | 固定 Minecraft、NeoForge 与 Java 运行基线 | active | Minecraft 1.21.1、NeoForge 21.1.235、Java 21 |
-| [调研报告：长线运营方案](research-report-v1.md) | 1.21.1 NeoForge 生态调研、魔改框架选型、版本更新机制设计 | completed | KubeJS 7.0、Chapters、FTB 生态 |
+| [调研报告：长线运营方案](research-report-v1.md) | 1.21.1 NeoForge 生态调研、魔改框架选型、版本更新机制设计（注：其中 Chapters 阶段系统选型已于 2026-07-28 被维护者否决，仅作历史参考） | completed | KubeJS 7.0、FTB 生态 |
 | [配方统一阶段 0 可行性试验](research/recipe-unifier-stage0-feasibility.md) | 森罗料理配方索引能力、统计边界与后续前置条件 | completed | `modpack-recipe-unifier`、123 个 JAR、1440 条配方 |
 | [Sodium](components/performance/sodium.md) | 渲染引擎优化，提升帧率与减少卡顿 | active | CLIENT；与 Embeddium 不兼容 |
 | [Lithium](components/performance/lithium.md) | 游戏逻辑与物理模拟优化 | active | BOTH |
@@ -131,17 +132,40 @@
 | [Leaves Be Gone](components/utility/leavesbegone.md) | 砍树后树叶快速腐烂 | active | BOTH；依赖 PuzzlesLib |
 | [BetterDays](components/content/betterdays.md) | 时间流速与睡眠加速机制 | active | BOTH；内嵌 whitenoise |
 | [Brutal Respawn](components/content/brutal-respawn.md) | 死亡惩罚：低血/低饱食重生 | active | BOTH；依赖 YACL |
+| [森罗物语：厨房](components/content/kaleidoscope-cookery.md) | 料理章节核心：炒锅/汤锅/石磨烹饪系统 | active | BOTH；KubeJS 盖饭路径修正 |
+| [森罗厨房：国味](components/content/kaleidoscope-chinesefood.md) | 中式菜肴扩展 | active | BOTH；依赖厨房本体 |
+| [森罗物语：酒馆](components/content/kaleidoscope-tavern.md) | 酿酒系统与酒馆装饰 | active | BOTH；依赖厨房本体 |
+| [森罗物语：玩偶](components/content/kaleidoscope-doll.md) | 玩偶收集装饰 | active | BOTH |
+| [森罗物语：下界](components/content/kaleidoscope-nether.md) | 下界主题内容扩展 | active | BOTH；世界生成范围待核实 |
+| [森罗物语：末地](components/content/kaleidoscope-end.md) | 末地主题内容扩展 | active | BOTH；世界生成范围待核实 |
+| [森罗物语：次元酒](components/content/kaleidoscope-dim-wine.md) | 第三方维度酒品扩展 | active | BOTH |
+| [森罗物语：世界酒](components/content/kaleidoscope-world-liquor.md) | 第三方世界名酒扩展 | active | BOTH |
+| [森罗物语：兼容](components/integration/kaleidoscope-compat.md) | 森罗系列官方兼容层（物品统一/模糊配方） | active | BOTH |
+| [森罗厨房：思索](components/integration/ponderforkc.md) | 厨房机器 Ponder 可视化教学 | active | BOTH |
+| [Lootr](components/content/lootr.md) | 每人独立战利品容器（多人运营基础） | active | BOTH；Jade Addons 已支持 |
+| [VanillaBackport](components/content/vanillabackport.md) | 高版本原版内容回移植 | active | BOTH；存档敏感 |
+| [GachaAddiction](components/aesthetic/gachaaddiction.md) | 开箱抽奖转盘演出 | active | CLIENT；FTB Quests 可选联动 |
+| [Tooltip Overhaul](components/aesthetic/tooltipoverhaul.md) | 现代化 tooltip（替代 Obscure Tooltips） | active | CLIENT；3D 预览默认开启 |
+| [Loot Beams Refork](components/aesthetic/lootbeams.md) | 掉落物稀有度光束指示 | active | CLIENT |
+| [RarityCore](components/library/raritycore.md) | 全包物品稀有度数据层 | active | CLIENT；tooltip/光束/抽奖共用数据源 |
+| [Nirvana Lib](components/library/nirvana-lib.md) | Clefal 系列共享库 | active | BOTH；宿主模组待核实 |
+| [Platform](components/library/platform.md) | Architectury 跨平台 API 库 | active | BOTH |
+| [Common Networking](components/library/commonnetworking.md) | 跨平台网络层库 | active | BOTH |
+| [ModPack IDE Exporter](components/other/mpide-exporter.md) | 游戏内最终态数据导出（开发工具链） | active | CLIENT；服务端部署应排除 |
+| ~~[Obscure Tooltips](components/_archive/obscure-tooltips.md)~~ | 风格化 tooltip（已由 Tooltip Overhaul 替代） | removed | CLIENT |
 
 ## 跨系统约束
 
 - 兼容性：新增模组应明确支持 Minecraft 1.21.1 与 NeoForge 21.1.x。
 - 客户端/服务端范围：当前目录是客户端实例；加入联机或服务端内容时需要单独核对服务端依赖与配置同步方式。所有魔改脚本（KubeJS）须兼容服务端热重载。
-- 存档兼容性：尚无玩法组件，后续加入世界生成、注册表内容或数据包时必须记录移除风险。新模组加入应尽量不影响已生成区块。
+- 存档兼容性：第七批起整合包已包含注册表内容模组（森罗家族、VanillaBackport、Lootr），移除任一内容模组均会产生缺失方块/物品风险，版本锁定与迁移预案成为硬要求。森罗下界/末地与 VanillaBackport 是否改动世界生成尚未核实（见各组件页开放问题）。新模组加入应尽量不影响已生成区块。
 - 性能预算：当前 105 个模组，处于"中量包"区间。性能优化矩阵已覆盖渲染（Sodium + Iris、Acedium mesh shader 进阶）、实体剔除（EntityCulling、Flerovium）、客户端 HUD（ImmediatelyFast；Gnetum 已于第六批移除且 `hud_batching` 暂时关闭）、逻辑（Lithium）、红石（Alternate Current）、配方匹配（FastSuite）、区块（C2ME）、世界生成噪声（Noisium）、光照（ScalableLux）、内存（Ferrite Core + ModernFix）、网络栈（Krypton FNP + PacketFixer）、树叶剔除（CullLeaves）、扩展渲染选项（Sodium Extra）、输入管线（Ixeris）、日志异步化（Async Logger）以及多项微优化（BadOptimizations、Cupboard）。后续引入大型内容模组时需重点补充启动耗时与内存影响。参考基准：轻量包 <50 模组、中量包 50-200 模组、服务端内存预算 6-8GB、客户端建议 4-6GB。
-- 阶段锁定：所有新增内容模组必须在 Chapters 阶段系统中定义默认解锁状态，确保未来可通过阶段进行内容开关。
+- 内容投放节奏：不使用阶段锁定系统（见设计支柱 2）；新内容模组加入即生效，投放节奏由批次规划与实机验证把关。
+- tooltip 体系替换：Obscure Tooltips（+ Fragmentum 依赖）已由 Tooltip Overhaul + RarityCore + colortooltips 样式配置替代；遗留孤儿配置 `config/obscuria/obscure_tooltips-client.toml` 与 `config/legendarytooltips.toml` 待裁决清理。
 - 着色器兼容性：Iris 已加载并预置官方默认光影（Complementary Unbound r5.8.1 + EuphoriaPatches 1.9.3，经 Euphoria Patcher 游戏内补丁）。后续渲染相关模组须验证与该光影管线的兼容性，避免引入与 Embeddium 相关的冲突模组；光影设置文件随包分发，升级策略待明确。
 - 脚本依赖链：KubeJS → Rhino 为硬依赖；KubeJS Additions、KubeJS Data Component、LootJS → KubeJS 为硬依赖。脚本系统面向未来所有内容魔改。
 - 视听叠加风险：第三批同时引入 Ambiance、AmbientSounds、Particular、Visuality、Effectual、Inventory Particles、Extra Sounds、Smooth Swapping/Scrolling 等大量视听反馈模组，第四批又叠加官方光影、Entity Texture Features、Presence Footsteps、Obscure Tooltips 与越肩视角。第六批再叠加 HUD 层模组（Stylish Effects、Inventory HUD+、Enhanced Boss Bars、Overflowing Bars、Leave My Bars Alone、Pick Up Notifier、GUI Tween）——其中 Stylish Effects 与 Inventory HUD+ 的药水 HUD 功能重叠需二选一，GUI Tween 已于 Base Pack 收尾日实机开启（叠加观感待回归验证）。单个效果开销小，但叠加后在低配设备上可能产生明显的帧率与感知噪音，需在目标硬件上验证并准备关闭清单。
+- [X] ~~Obscure Tooltips~~：2026-07-28 移除，见归档。
 - 中文本地化双轨：I18nUpdateMod 与 Minecraft Mod Language Modpack 同时提供中文翻译，二者加载顺序与覆盖关系会直接影响玩家看到的文本。需要明确默认推荐顺序并在说明文档中告知玩家。
 - 聊天/社交模组耦合：No Chat Reports、Chat Heads、Beautified Chat Server、ChatNotify 共同作用于聊天系统；服务端配置（NCR、Beautified Chat Server）与客户端配置（Chat Heads、ChatNotify）需保持兼容，避免聊天显示异常或安全提示冲突。
 - 库版本耦合：Placebo → FastSuite、Collective → Beautified Chat Server、CreativeCore → AmbientSounds、Particle Effects → Inventory Particles、Fragmentum → Obscure Tooltips、Shoulder Surfing → SSR Camera Fixes、Ping Wheel → Ping to Map 等依赖链已建立。升级库模组时必须同步验证下游模组兼容性。

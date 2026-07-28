@@ -3,9 +3,9 @@
 ## 记录
 
 - 类型：mod
-- 状态：active
+- 状态：removed
 - 证据可信度：verified
-- 来源路径：`mods/obscure_tooltips-neoforge-1.21.1-4.2.2.jar`
+- 来源路径：`mods/obscure_tooltips-neoforge-1.21.1-4.2.2.jar`（已于 2026-07-28 移除）
 - 标识与版本：mod_id = `obscure_tooltips`；版本 `4.2.2`
 - 加载器或包格式：NeoForge 21.1.235（Minecraft 1.21.1）
 
@@ -44,5 +44,6 @@ Obscure Tooltips 将物品提示框升级为**风格化、带平滑动画与特�
 
 ## 历史
 
+- 2026-07-28: **移除**，由 Tooltip Overhaul + RarityCore 体系替代（见 aesthetic/tooltipoverhaul.md、library/raritycore.md）。遗留孤儿配置 `config/obscuria/obscure_tooltips-client.toml`（仍有 mtime 更新，属卸载残留）；Fragmentum 依赖链解除，其去留待核
 - 2026-07-20: `armorPreviewEnabled` true → false（关闭 3D 盔甲预览，减少 tooltip 渲染开销/视觉噪音）
 - 2026-07-19: 作为第四批视觉与协作体验批次添加

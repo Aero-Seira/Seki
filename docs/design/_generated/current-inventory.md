@@ -1,6 +1,6 @@
 # Current modpack content inventory
 
-Generated: `2026-07-28T08:12:56+08:00`
+Generated: `2026-07-28T23:08:06+08:00`
 
 This file is generated. Put design intent in the human-maintained component pages.
 
@@ -68,19 +68,19 @@ This file is generated. Put design intent in the human-maintained component page
 | `config/inventory-particles/cache/corn_delight/atlas.png` | atlas.png | - | 266 B | `components/atlas.md` |
 | `config/inventory-particles/cache/corn_delight/regions.txt` | regions.txt | - | 496 B | `components/regions.md` |
 | `config/inventory-particles/cache/corn_delight/spawn_areas.cached` | spawn_areas.cached | - | 399 B | `components/spawn-areas.md` |
-| `config/inventory-particles/cache/kaleidoscope_chinesefood/atlas.png` | atlas.png | - | 18.0 KiB | `components/atlas.md` |
+| `config/inventory-particles/cache/kaleidoscope_chinesefood/atlas.png` | atlas.png | - | 18.2 KiB | `components/atlas.md` |
 | `config/inventory-particles/cache/kaleidoscope_chinesefood/regions.txt` | regions.txt | - | 38.5 KiB | `components/regions.md` |
 | `config/inventory-particles/cache/kaleidoscope_chinesefood/spawn_areas.cached` | spawn_areas.cached | - | 23.5 KiB | `components/spawn-areas.md` |
-| `config/inventory-particles/cache/kaleidoscope_cookery/atlas.png` | atlas.png | - | 36.1 KiB | `components/atlas.md` |
+| `config/inventory-particles/cache/kaleidoscope_cookery/atlas.png` | atlas.png | - | 36.6 KiB | `components/atlas.md` |
 | `config/inventory-particles/cache/kaleidoscope_cookery/regions.txt` | regions.txt | - | 107.4 KiB | `components/regions.md` |
 | `config/inventory-particles/cache/kaleidoscope_cookery/spawn_areas.cached` | spawn_areas.cached | - | 64.8 KiB | `components/spawn-areas.md` |
-| `config/inventory-particles/cache/kaleidoscope_dim_wine/atlas.png` | atlas.png | - | 11.4 KiB | `components/atlas.md` |
+| `config/inventory-particles/cache/kaleidoscope_dim_wine/atlas.png` | atlas.png | - | 10.3 KiB | `components/atlas.md` |
 | `config/inventory-particles/cache/kaleidoscope_dim_wine/regions.txt` | regions.txt | - | 28.3 KiB | `components/regions.md` |
 | `config/inventory-particles/cache/kaleidoscope_dim_wine/spawn_areas.cached` | spawn_areas.cached | - | 22.2 KiB | `components/spawn-areas.md` |
 | `config/inventory-particles/cache/kaleidoscope_doll/atlas.png` | atlas.png | - | 146.5 KiB | `components/atlas.md` |
 | `config/inventory-particles/cache/kaleidoscope_doll/regions.txt` | regions.txt | - | 380.2 KiB | `components/regions.md` |
 | `config/inventory-particles/cache/kaleidoscope_doll/spawn_areas.cached` | spawn_areas.cached | - | 177.3 KiB | `components/spawn-areas.md` |
-| `config/inventory-particles/cache/kaleidoscope_end/atlas.png` | atlas.png | - | 6.5 KiB | `components/atlas.md` |
+| `config/inventory-particles/cache/kaleidoscope_end/atlas.png` | atlas.png | - | 6.4 KiB | `components/atlas.md` |
 | `config/inventory-particles/cache/kaleidoscope_end/regions.txt` | regions.txt | - | 27.5 KiB | `components/regions.md` |
 | `config/inventory-particles/cache/kaleidoscope_end/spawn_areas.cached` | spawn_areas.cached | - | 18.4 KiB | `components/spawn-areas.md` |
 | `config/inventory-particles/cache/kaleidoscope_nether/atlas.png` | atlas.png | - | 18.8 KiB | `components/atlas.md` |
@@ -92,7 +92,7 @@ This file is generated. Put design intent in the human-maintained component page
 | `config/inventory-particles/cache/kaleidoscope_twilight/atlas.png` | atlas.png | - | 938 B | `components/atlas.md` |
 | `config/inventory-particles/cache/kaleidoscope_twilight/regions.txt` | regions.txt | - | 2.5 KiB | `components/regions.md` |
 | `config/inventory-particles/cache/kaleidoscope_twilight/spawn_areas.cached` | spawn_areas.cached | - | 1.0 KiB | `components/spawn-areas.md` |
-| `config/inventory-particles/cache/kaleidoscope_world_liquor/atlas.png` | atlas.png | - | 22.8 KiB | `components/atlas.md` |
+| `config/inventory-particles/cache/kaleidoscope_world_liquor/atlas.png` | atlas.png | - | 23.0 KiB | `components/atlas.md` |
 | `config/inventory-particles/cache/kaleidoscope_world_liquor/regions.txt` | regions.txt | - | 31.6 KiB | `components/regions.md` |
 | `config/inventory-particles/cache/kaleidoscope_world_liquor/spawn_areas.cached` | spawn_areas.cached | - | 19.2 KiB | `components/spawn-areas.md` |
 | `config/inventory-particles/cache/lootr/atlas.png` | atlas.png | - | 1.4 KiB | `components/atlas.md` |
@@ -125,7 +125,7 @@ This file is generated. Put design intent in the human-maintained component page
 | `config/jei/jei-mod-id-format.ini` | jei-mod-id-format.ini | - | 477 B | `components/jei-mod-id-format.md` |
 | `config/jei/recipe-category-sort-order.ini` | recipe-category-sort-order.ini | - | 964 B | `components/recipe-category-sort-order.md` |
 | `config/jei/world/local/新的世界/bookmarks.json` | bookmarks.json | - | 216 B | `components/bookmarks.md` |
-| `config/jei/world/local/新的世界/lookupHistory.json` | lookupHistory.json | - | 10.7 KiB | `components/lookuphistory.md` |
+| `config/jei/world/local/新的世界/lookupHistory.json` | lookupHistory.json | - | 11.4 KiB | `components/lookuphistory.md` |
 | `config/jeresources-common.toml` | jeresources-common.toml | - | 264 B | `components/jeresources-common.md` |
 | `config/jerintegration-client.toml` | jerintegration-client.toml | - | 503 B | `components/jerintegration-client.md` |
 | `config/kaleidoscope_chinesefood-client.toml` | kaleidoscope_chinesefood-client.toml | - | 1.3 KiB | `components/kaleidoscope-chinesefood-client.md` |

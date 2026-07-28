@@ -1,5 +1,36 @@
 # 设计变更记录
 
+## 2026-07-28 - 设计决策：取消 Chapters 阶段锁定体系；项目更名 Seki 并转向生活冒险定位
+
+- 维护者裁决：本包不使用 Chapters/GameStages 类阶段解锁系统，设计思路与"版本即章节"方案不同。设计支柱 2 已由"类原版起步，阶段式解锁"修订为"内容直接投放，无阶段门控"。
+- 同日根 README 全面重写（verified）：项目由 ProjectNautic 的 Toudai（灯台）Basepack 更名为 **Seki**，定位从"不装载内容的基底整合包"转向"围绕料理、探索与战利品的生活冒险整合包"；启动器档案 `Toudai.json` → `Seki.json` 同步印证。设计文档产品定义已同步更新。
+- 影响面：README（产品定义、支柱 2、当前阶段表述、跨系统约束"阶段锁定"→"内容投放节奏"、调研报告条目加历史参考注）、kaleidoscope-cookery 与 vanillabackport 组件页（移除 Chapters 待办/约束）；上一批次条目中"Chapters 阶段锁定为最高优先级待办"的结论作废。
+- 保留：`research-report-v1.md` 不改写，作为已完成调研的历史记录，其 Chapters 选型结论已被本决策取代。
+- 新增内容模组的风险把关方式随之切换：由"阶段默认锁定"改为"批次规划 + 实机验证"。
+
+## 2026-07-28 - 第七批归档：首个内容章节（森罗料理家族）+ 战利品反馈强化线 + tooltip 体系替换
+
+- 背景：Base Pack 收尾（2026-07-21，105 模组基线）后，维护者分批投放了首个内容章节与配套体验层；本条目将累积的 100 项新增、23 项修改、2 项移除整体归档，并接受新的库存基线。
+- 新增模组（20 个，均已建档）：
+  - **料理章节（森罗物语家族）**：[厨房本体](components/content/kaleidoscope-cookery.md) 1.4.1、[国味](components/content/kaleidoscope-chinesefood.md) 1.1.8、[酒馆](components/content/kaleidoscope-tavern.md) 1.2.0、[玩偶](components/content/kaleidoscope-doll.md) 1.4.1、[下界](components/content/kaleidoscope-nether.md) 1.1.4、[末地](components/content/kaleidoscope-end.md) 1.0.14、[次元酒](components/content/kaleidoscope-dim-wine.md) 1.5.3（第三方）、[世界酒](components/content/kaleidoscope-world-liquor.md) 1.1.7（第三方）、[兼容层](components/integration/kaleidoscope-compat.md) 2.9.7、[思索教学](components/integration/ponderforkc.md) 1.0.0
+  - **战利品反馈强化线**：[Lootr](components/content/lootr.md)（每人独立战利品，多人运营基础）、[GachaAddiction](components/aesthetic/gachaaddiction.md)（开箱抽奖演出）、[Loot Beams Refork](components/aesthetic/lootbeams.md)（掉落物光束）、[RarityCore](components/library/raritycore.md)（稀有度数据层，其 auto_rarity 映射已覆盖森罗全家族物品，verified）
+  - **tooltip 体系替换**：[Tooltip Overhaul](components/aesthetic/tooltipoverhaul.md) 1.5.1 替代 Obscure Tooltips，3D 物品/盔甲预览默认开启
+  - **内容回移植**：[VanillaBackport](components/content/vanillabackport.md) 1.1.7.10
+  - **依赖库**：[Nirvana Lib](components/library/nirvana-lib.md) 2.2.0、[Platform](components/library/platform.md) 1.3.3、[Common Networking](components/library/commonnetworking.md) 1.0.21
+  - **开发工具链**：[ModPack IDE Exporter](components/other/mpide-exporter.md) 0.1.0（运行时最终态 SQLite 导出，已支撑配方修正验证）
+- 移除：Obscure Tooltips 4.2.2（组件页移入 `_archive`，状态 removed；遗留 `config/obscuria/obscure_tooltips-client.toml` 孤儿配置）；启动器档案 `Toudai.json` → `Seki.json`（重命名，verified 为 remove+add 对）
+- 已建档配置：各森罗模组 common/client toml（默认生成）、`kaleidoscope_compat.jsonc`（COMPAT 模式 + 模糊配方）、tooltipoverhaul 双配置、lootbeams 五配置、gachaaddiction-client、lootr 双配置、vanillabackport 双配置、raritycore 三配置、colortooltips 样式表、pack.toml
+- 孤儿配置（无对应 JAR，verified）：`config/legendarytooltips.toml`、`config/colortooltips/` 样式表归属待实机核实，暂不清理
+- 噪音项（仅记录，不建档）：`config/inventory-particles/cache/**`（12 组运行时粒子图集缓存）、`spark/activity.json`、`jei/world/local/**/lookupHistory.json`、`usercache.json`、`asyncparticles-mixin.properties`、`iris.properties`、`packetfixer.properties`、fml.toml、jade/jei 排序配置等运行时重写；`kaleidoscope_chinesefood-common-1.toml.bak` 为升级迁移残留
+- 汉化资源包与光影设置 txt 内容刷新（verified，随新模组译名更新），已更新既有组件页历史口径
+- 设计影响：
+  - "类原版起步"阶段正式结束：整合包首次引入注册表内容模组，存档兼容性约束从"暂无风险"升级为硬要求（README 已同步）
+  - 多人运营基础落地：Lootr 独立战利品 + 抽奖/光束演出构成长线运营的奖励体验闭环
+  - 视听叠加清单新增 Tooltip Overhaul 3D 预览、Loot Beams、GachaAddiction 三项，低配回归范围扩大
+  - Fragmentum 依赖链解除（Obscure Tooltips 移除），库去留待核
+- 验证状态：全部 125 项 pending 变更经本地文件核实；新内容未经实机启动验证，森罗下界/末地与 VanillaBackport 的世界生成范围、tooltip 叠加观感均为最高优先级待办
+- 遗留问题：各新模组配置均为默认值，首次实机体验后需逐项收敛（注：本条最初提出的"Chapters 阶段锁定缺失"已被同日设计决策否决，见上方决策条目）
+
 ## 2026-07-28 - 修复森罗厨房本体五种盖饭路径
 
 - verified：红烧牛肉、鱼香肉丝、番茄炒蛋、青椒炒肉、糖醋里脊的盖饭均使用 `kaleidoscope_cookery:rice_bowl` 工作台路径，且缺少对应熟米饭 carrier 的炒锅路径。
