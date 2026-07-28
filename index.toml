@@ -6,15 +6,15 @@ hash = "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
 
 [[files]]
 file = "config/ModernUI/client.toml"
-hash = "fe572e6ff3e0a2abab57efb3249c9c8a11a9f4c902858d136aa63ac60618e836"
+hash = "285821dd9c6fbb651b91dbed068571b730364505488f4599bde0ca32bbf84c5e"
 
 [[files]]
 file = "config/ModernUI/common.toml"
-hash = "25f3610a946a2c22a1a369339f78a655dbd94319666ac1c59529421d9760e4a0"
+hash = "4d62633c4dff81eec0d7559e389346a906a73bcc100fb92299a0c8a6ddf32ceb"
 
 [[files]]
 file = "config/ModernUI/text.toml"
-hash = "e1b912518100e42af60cfea0fd5eaa663dac38df013d72b47dba02dcc55cadd8"
+hash = "76f71651b68eccfbe4efa74874f9b4a62a40a9a039181e99ab3a4d1a30395161"
 
 [[files]]
 file = "config/MouseTweaks.cfg"
@@ -50,15 +50,15 @@ hash = "c98f572839ace55b0792042fa4b984311e7d876abdaccfc8a4694f5bebad766c"
 
 [[files]]
 file = "config/appleskin-client.toml"
-hash = "7127a276c7305371397053cd8d0833e6825c828850626e4067b9fed1430ed217"
+hash = "6a3624ed584e6d2c4323957c3ca3d17bf2c01c7bbb73b9ee487378ff69d88aba"
 
 [[files]]
 file = "config/armorstatues-client.toml"
-hash = "beba9b2bec8a2df054d8035dd698aad5587f9832247cfd921724254ad678ecc3"
+hash = "02fa62a5e5de124174d2fe1e363d47e451d1b2969f7d8c228f36aba6dd329bd3"
 
 [[files]]
 file = "config/asynclogger.toml"
-hash = "e0804713763b355f2d434ae1c930dd9fe5e720db313ca68fad3ea32c208b1d59"
+hash = "b9c172ad2e5bfcd14ea96421a6c38844bee7aad97485956fb771d176ccda13fc"
 
 [[files]]
 file = "config/asynclogger/default.toml"
@@ -66,7 +66,7 @@ hash = "dee286337f4d870b63bb0a4c8d9add6385b363f1edd04209e6a74ff9fd7d9d6e"
 
 [[files]]
 file = "config/asyncparticles/asyncparticles-mixin.properties"
-hash = "3550b94cc2e9d57cbbd94cfdf72783149d2856d5fce5ca4f162155e528b05972"
+hash = "408ca28650cbf92b90be41c7e205f4a15ef40eabcaf9496111465100ae0f2dca"
 
 [[files]]
 file = "config/asyncparticles/asyncparticles.json"
@@ -86,19 +86,19 @@ hash = "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
 
 [[files]]
 file = "config/better-advanced-tooltips-client.toml"
-hash = "5b0da765c45397402cffe340f632544a8e740a767937f353a3a8206b6cdde0fa"
+hash = "167486d8ac09ab9959c9b98c97c169365eaa9e5be0488b9ff8e6a04695d456e0"
 
 [[files]]
 file = "config/betteradvancements-client.toml"
-hash = "38e88509078026a5a660e00947e5a6db74a3c374c8c7978ef64c360167f84db9"
+hash = "5b965898d5b13c5557b603c68ed4ac79a4f850f3a7205eb3dbfc6116f2caf19a"
 
 [[files]]
 file = "config/betterdays-client.toml"
-hash = "730b13a15e01a03825fc40477758799ed8801c783d9cf829867c43c1b08f7ad9"
+hash = "dae026d4419175e0fecdd856ac27adcfead736d6474b76cbbb0654a8d7676929"
 
 [[files]]
 file = "config/betterdays-common.toml"
-hash = "03e4858e141353192b4616f179003be4086cca2a4c22aa37872f610ac6285573"
+hash = "a7693129427283db32ab9fd1351da38799e24082cb15161c1493078a3ddae9a4"
 
 [[files]]
 file = "config/brutal_respawn.json"
@@ -106,7 +106,7 @@ hash = "e0f32349a1c0c96fe14f4ae928fcd12c4c03bf8dd20801814169bb1247ed3cd6"
 
 [[files]]
 file = "config/c2me.toml"
-hash = "2ce4823e7eec432a21dcbb963203ff3a271fe0635f057a375e43f9212ea767fb"
+hash = "93025fc9dcf8eb0430bebf247943ed60f08850bbd877cd358ff9145997caaba9"
 
 [[files]]
 file = "config/catalogue.properties"
@@ -186,15 +186,15 @@ hash = "937698438af081495eebab187013f66570218e1443f35db8a2ca0b4cb6d9638b"
 
 [[files]]
 file = "config/distinguishedpotions-client.toml"
-hash = "8ecaae9429cc19c575136ec3dccd10954dc411a20227952852812c364ba299e9"
+hash = "e7ae269fbc344dcd75fc51759bc356000aa9c79dd5f1ceb02085ff7f064f9653"
 
 [[files]]
 file = "config/distinguishedpotions-common.toml"
-hash = "961bdc2c840767e87f9e23c2abbc612cb3776f384216ecd3726cdc72e167f3e3"
+hash = "c4deb20003f4c45e4e14cd0da4012261ecf2229b35a21ae30c1966b36e43ad08"
 
 [[files]]
 file = "config/effectdescriptions-client.toml"
-hash = "8d3c11831129a1745350a4b00e9ee92fe36eef835cf0b098f0ab02c7e76e5661"
+hash = "b62e547bdf334e01356807c69a7adc5d9c3ff8d9f18b3ab45d61bd60855aa2dd"
 
 [[files]]
 file = "config/effectual.json"
@@ -210,7 +210,7 @@ hash = "e92e6772c4b6ec28b9c179c80831d56d11fc65064591424a120133d397b2ab49"
 
 [[files]]
 file = "config/euphoria_patcher/settings.toml"
-hash = "d4ff06f1b6d8b191853b72996f8ba1d20cc90fa4e98e3222ab7fe552cf52b31e"
+hash = "fec26d01025e152ce4d897a86863b1125be7ff5d03266f19b000de4d9bdb617f"
 
 [[files]]
 file = "config/extrasounds.json"
@@ -218,11 +218,11 @@ hash = "764b1720967b62495fb809a1c7b050e07247cb32af2c15ab9efcb35add1e9f50"
 
 [[files]]
 file = "config/fastsuite.cfg"
-hash = "44198ad591572d87a9f71b0b636229d91508a8c971f9dca907bed3c6d6754193"
+hash = "4d26b4c93838e3e912a8e09f9be0395cd0b7a264f250ea8aa72d68507ce12250"
 
 [[files]]
 file = "config/ferritecore-mixin.toml"
-hash = "1356f9d52b2dcb2afa5a593e53c286d9c1c3778a6f8b1cf761953b185b7dce78"
+hash = "b6c85cb392f799ed932ffe8d6051f48a283a0df3f8674acf4f8d89341836e686"
 
 [[files]]
 file = "config/flerovium.json"
@@ -230,7 +230,7 @@ hash = "b9191d66e27631be50d24e6294603c98d9256d37e499465efe519a37d8c4d187"
 
 [[files]]
 file = "config/fml.toml"
-hash = "8227d035adb892e30643d6bd4376643c68ff0b7f0312c91b7614274034f2bfb7"
+hash = "cab48eae58ba66b0132cbc11f30c6e3a74e52143148bb40a57a065db43ddb3ca"
 
 [[files]]
 file = "config/fzzy_config/keybinds.toml"
@@ -242,15 +242,15 @@ hash = "103317c4c1c5ae1421946c921428cbfbd9b2a17ee37115d9778d0b22e3b64e19"
 
 [[files]]
 file = "config/gachaaddiction-client.toml"
-hash = "b014ddf9c660ef5271e77bd0580de7f80c0b4b4c54bbb2a5851da7c80d2cc42b"
+hash = "7bbcc573e25094f60ebd633675a7294b72129dd8ace03a23180f0fe83933b9bc"
 
 [[files]]
 file = "config/guitween-client.toml"
-hash = "0618f766149a1551c602762f333eefb1d15d55f0deb67d8665936496b64d18d4"
+hash = "b95d05910ddac4fbeca537dbe6c3af643f45ea08d3e48923e4ec687ac535d714"
 
 [[files]]
 file = "config/healthbars-client.toml"
-hash = "98ad339cb0c395fef3134c9a6b35fb4598beeebefd939a77164043f7fee4c5d7"
+hash = "27905d407aa2eee4c598d095cc14dd0d3b80690364256145fca3f494eb3f95ab"
 
 [[files]]
 file = "config/immediatelyfast.json"
@@ -266,7 +266,7 @@ hash = "fbd08cbb8fbc7606ccbec8ab7e084678ee433051c5329dad365a50cc0ba506c3"
 
 [[files]]
 file = "config/inventoryhud-client.toml"
-hash = "f45a6976e14ad1bd2a9574e9a4b7e7c971a2ed9ea75c4b1ecd089663de63cbb2"
+hash = "aa7b47279d7a375e5ac146030f64f7e27d9027b0bb53ac443ce4cd6cb24d7d89"
 
 [[files]]
 file = "config/iris-excluded.json"
@@ -274,11 +274,11 @@ hash = "4d3264b58c502afaeca3f44e8d2db0843c54b8ba957afd21a2d450fe10dafefb"
 
 [[files]]
 file = "config/iris.properties"
-hash = "f6cea57ca32fc2cc90f4475f61e5451ced77d3f8008bf11e0b2ae3edbfc6ac5e"
+hash = "8e301189d3cc7cbe6213ddcf9cd3e59b58426256a1134c37a6046cbdb16d01c9"
 
 [[files]]
 file = "config/ixeris.toml"
-hash = "81eba96be0162e3f0e6e3d6a9b481103bff2041246eeb14c970fdac5c7fa3d88"
+hash = "04cfe52d0e86c9c5cbaf08c31a9ed874edc3884c9c7459b3dfde63041ba3ed4f"
 
 [[files]]
 file = "config/jade/hide-blocks.json"
@@ -302,7 +302,7 @@ hash = "2ad18e6d585043b69d3183863a5b2f68fbdfc70c3f4d0e21434e7c15a562b6b0"
 
 [[files]]
 file = "config/jecharacters-client.toml"
-hash = "fa50334504c91ef5d6de1f5fae40f59f2928498e5c8b1ccbc5b5aa1894e1e216"
+hash = "b6b201f17fdca5dbd1c94ef8bf0d33a5f48f793e8eb80a6fc5a0a73a146d7422"
 
 [[files]]
 file = "config/jecharacters-extra.json"
@@ -310,11 +310,11 @@ hash = "621f44c75d9c9e038e3a9f2c809342b5fc007e15a443b62e299ada1f2b21fb7a"
 
 [[files]]
 file = "config/jeed-client.toml"
-hash = "80f13c2608d62c6906c2689dfc6cfb7d353ee88cd4eac11f4fac1c29e7d09539"
+hash = "efeeef9ad990c14cf5edad303128301a21016088afc076634f56e8fedad9081c"
 
 [[files]]
 file = "config/jei-server.toml"
-hash = "702acd04d99445bce659d04fcc488e1a98c8a803983c31ae262b0f3a47fdc8d3"
+hash = "57d741871716e29b3a318b625e740d590598f001c362b6a4a95e3ee628c5cbc3"
 
 [[files]]
 file = "config/jei/blacklist.json"
@@ -322,87 +322,83 @@ hash = "b4174dc6e985aa90be5002c14e94b956d8d586683c44b7b6710c44d08fb13648"
 
 [[files]]
 file = "config/jei/ingredient-list-mod-sort-order.ini"
-hash = "5f15cd0d065c00757ca2d5e614fba96ab9d63c02c2199de96748c677fa3c1128"
+hash = "4204dbebfc4f492becc4c2e31bb905708ea25b6561ee631825b4c6a07cd18636"
 
 [[files]]
 file = "config/jei/ingredient-list-type-sort-order.ini"
-hash = "2cabb71b5e07aaf9a414b4f7ccf1694077ab0827cde19431f032061cd51651d3"
+hash = "1a2ea27561cb4c6084c6ea1d973cd73ef55e524cea61f4e9f5143d04ec488113"
 
 [[files]]
 file = "config/jei/jei-client.ini"
-hash = "a2d183d3e078ba8e60fa990edb255e5ea7a7a6e3250d106908573822dec3a2aa"
+hash = "964fe87905c057b2257c8314e9263b435d47e332477ba4209bda3a3ad3a02db2"
 
 [[files]]
 file = "config/jei/jei-colors.ini"
-hash = "37ac7d250a69357afb14cbb7c7d3c67310c208bc9315a2f7f348f51853fe5e83"
+hash = "2669e88dd936f33a91080ad83230ebd884d9d8d9dadda7c7b9f744de8c5d2143"
 
 [[files]]
 file = "config/jei/jei-debug.ini"
-hash = "5fbb28e705d346c4e55c3e3cd10555c2c555d1138fc1c1536c6275b621636697"
+hash = "6307f45613a78489f6dfbd60cc60cee5ef7473fae698d27e65413ecb2439cdd3"
 
 [[files]]
 file = "config/jei/jei-mod-id-format.ini"
-hash = "6af091efbd8c5000e45a48db5957c566dbda6d4323c2ca1f3ca95c29c2bf4b0a"
+hash = "b6fbdc3a92e50965222079ec185cb4f3dd33cc6c259f1af2e0ee30466ac750a9"
 
 [[files]]
 file = "config/jei/recipe-category-sort-order.ini"
-hash = "4f79b95eacd822d36ef7e38fd34df17811e7c18f228effa0356b0d03df721e69"
+hash = "b0b8b305c9031ce690204fdc26e98e10311212e6c3c7ad9195d43e349e22aacf"
 
 [[files]]
 file = "config/jeresources-common.toml"
-hash = "b8e340097e9b479a5d66593f01c1c84a8a8fdc1ed960eccb11676ee7612537e2"
+hash = "6f411079b9ae2699015a6838623159d92c9eee0b52614b998abae4037f489fcd"
 
 [[files]]
 file = "config/jerintegration-client.toml"
-hash = "a1fb95fac2be3f803b90944489402a5e5841f4d1e872e8535f10238c56efb857"
+hash = "6b9310c4530a981835634b0d13999e9aeea8e2402ac866e6cfee34bdb78177fd"
 
 [[files]]
 file = "config/kaleidoscope_chinesefood-client.toml"
-hash = "942207d219f560c10d4eef88c3982f68243d405a060d6ccabdf8d99c89a6a24e"
-
-[[files]]
-file = "config/kaleidoscope_chinesefood-common-1.toml.bak"
-hash = "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+hash = "78d850cde998b3f0b5d7b8ce602a9d9a00bd35f627d5350a259a77f45886dd04"
 
 [[files]]
 file = "config/kaleidoscope_chinesefood-common.toml"
-hash = "c95a7112812b8fcc59a01547c6723ace775f5bac7233dadfbf7a25dcd563a672"
+hash = "9611e6dd578b6e8dc256cef0feb9ece6e73cf759bc258779ddb8a328193c3bdc"
 
 [[files]]
 file = "config/kaleidoscope_compat.jsonc"
-hash = "b4fc4775d7f3099026ecfe14abc31ca77975c58cd35dbf1d9bb31f3b8df34d3e"
+hash = "ba894ffaa364b10a6446d14cbd4ecfaba6c4efdc0198249bf1bec8e1d47f9852"
 
 [[files]]
 file = "config/kaleidoscope_cookery-client.toml"
-hash = "5b178027fc7d507ef3634d91b42bfa2b9dc1340c5a4fa2d9cfa2ba374202840f"
+hash = "1bd47fc7b41a718d64e96ad9019f20f2606f56b3bbf3fe52e46db2b4c6cf67d0"
 
 [[files]]
 file = "config/kaleidoscope_cookery-common.toml"
-hash = "ec8de5b9f43a3ffce2978f2150cd00b818fdfca8be892d0c591e99e4b4b62fb5"
+hash = "1338a20f63b2035f56d3ee4743c6ca71f1252c696cd1873cd2c405b1c162af04"
 
 [[files]]
 file = "config/kaleidoscope_dim_wine-common.toml"
-hash = "f170be7ddd3ccb8435ee897c89207183d2ae125da836c5bf3491fb0bfbd8a318"
+hash = "6e16f20f680324283543689b683dfae1d5c266996e506da10ebde4790e065245"
 
 [[files]]
 file = "config/kaleidoscope_doll-common.toml"
-hash = "876851d922f1fff7534015f5e5fd498d63e55b1c65d8c15f6cd01d200edbd76f"
+hash = "751f672c6c433b23ba70d357a322ee79ce15de0dbc7f74f278db15c87cbfdaa1"
 
 [[files]]
 file = "config/kaleidoscope_end-common.toml"
-hash = "34442616a693719d0dfa0059ba51f8383bde7d340ebc6d2a098eb16fc0b17874"
+hash = "7cfe88c3ed3362d148c32d9f1e721217eed53dc5d1271754262d68a0d0d03e9b"
 
 [[files]]
 file = "config/kaleidoscope_nether-common.toml"
-hash = "ace8293d1878fba66e77711c4448b5f2c011bbe19309dbc975bd0835e14a26b1"
+hash = "ec5029adfb5df2792c1518c8d2b38fb486d01e8d757dfa9e50d1f1f7e33ddd64"
 
 [[files]]
 file = "config/kaleidoscope_tavern-common.toml"
-hash = "975b4fc542f8d49e92c1dcd8152fdd33a9352f477c9179fbcc4cb2686cd23dc9"
+hash = "71a279f165328b5489b82dc39bfe66f406ab40fe125f9c594414212e19080d37"
 
 [[files]]
 file = "config/kaleidoscope_world_liquor-common.toml"
-hash = "5a71703a226e6d8e8d878325a046a7fc5f1c28090ee95d9bca10febdec2cf2f3"
+hash = "a76ad282d3e5576a211a3bc48a9ea3bb86188a6edcc7f417f8eb96232e85b2d7"
 
 [[files]]
 file = "config/krypton_fnp.yaml"
@@ -410,15 +406,15 @@ hash = "7637131dbf6d97f0edca39274fa1afdf43260052c0b62649faf51283c5a1f0be"
 
 [[files]]
 file = "config/leavemybarsalone-client.toml"
-hash = "9116cc2fe8ae47e634bfdff08d73b91eec08c2bd29762d4bcf8e95a43fc03af5"
+hash = "15009215cd908542ad6d4bcdce57834e90f1ba36d9ba21d2540807c0ad72a256"
 
 [[files]]
 file = "config/leavesbegone-server.toml"
-hash = "24ff0a6e8d2d18678868edbb77056c1818dc0a02990e626f0d91c6d683c5b632"
+hash = "e41e4f60aa1919d031ef42aa5af412ad8198390c3833cab3f617f6392aaf9cfc"
 
 [[files]]
 file = "config/legendarytooltips.toml"
-hash = "3ee86b7d3db0c11d9e4288110804777e598f49a8445fa63d7fbec00f74a0f92f"
+hash = "ba2cce41d2777d8462be391f5c99763cca383beff9b91e6d0c844ad56a26feb3"
 
 [[files]]
 file = "config/lithium.properties"
@@ -446,11 +442,11 @@ hash = "88e3ee984d86ee074c45496c7006ab2394ad50de30531d4c3758c0739af27eb8"
 
 [[files]]
 file = "config/lootr-client.toml"
-hash = "4da5bc00c2cc7db774e16f6905929303bfca802367d49133ba9742a6330238ad"
+hash = "4dd03ec5be94c8e56794c8fb0d0d1c907228d6881787d06e2743035e1dd4ca10"
 
 [[files]]
 file = "config/lootr-common.toml"
-hash = "cb848383f0abff383a96a6cbf59bb91135cce38cb71711f3ffe5baca20fabf9a"
+hash = "2efbd58d0330a2eb357c51c33a4346bce57ff8f4c9226660d3bf1aa549eead4b"
 
 [[files]]
 file = "config/midnightlib.json"
@@ -458,7 +454,7 @@ hash = "b14c45c6447f9ee5474d70784a2ef96731abbeca1e92485b7599e76e9dce1444"
 
 [[files]]
 file = "config/modernfix-common.toml"
-hash = "72ca2bcea2a9946a3a54842f14eff6f7b47d8fc96ef497c1b56406643b153fd7"
+hash = "ee24e2b1bc100942a1c605f996255742cd6a5bb3662877aa906bc301100ccf27"
 
 [[files]]
 file = "config/modernfix-mixins.properties"
@@ -466,15 +462,15 @@ hash = "d3a3839bec8e21825fe791a24d6226c1dd3fc94b38588fa52d42cf773868b7c7"
 
 [[files]]
 file = "config/neoforge-client.toml"
-hash = "d58d93e2c429410d0abf25507d1679f732e1023b03bb52414348efcf5cf3ddb0"
+hash = "a5f0eb38f8daf8574f7672a8393a0ab5c668d6ec6e7ae43fc8669e928786929d"
 
 [[files]]
 file = "config/neoforge-common.toml"
-hash = "fe878a2717a145cd890621eac5b3be1e1fd656f7ff9abc6e8d53f670d37474c4"
+hash = "e6f7578cf8c11ade0a47e36bf3863fc96f84cdf4bb679c0fceabb1e8a2f42399"
 
 [[files]]
 file = "config/neoforge-server.toml"
-hash = "b1e3b38d612295f8d9dfa0fbdb538a992b7a1a3b7a766c491b4e9fdf3823396f"
+hash = "0f1415d7fef6d7f6194275501d500b633dd3310aea40d64128edd1b096372f60"
 
 [[files]]
 file = "config/newvisualkeybing/keybind_profiles.json"
@@ -498,15 +494,15 @@ hash = "5d8c0a477a68a2f68ae3e55491c9981e79089836b9fbb1a64de14de7fb5b29f3"
 
 [[files]]
 file = "config/obscuria/obscure_tooltips-client.toml"
-hash = "99b7a278bc57a0d6c2a7bdb4684a8639904b4c8a551bde1f9a4c65cbde9f65b2"
+hash = "83ff6dbb6c1375f6a95bfcaf1eeeef023f68af049075cf10e6c9f95042a25feb"
 
 [[files]]
 file = "config/overflowingbars-client.toml"
-hash = "9037e801784c5d10420d23445e1086e8ac39480bce15eef4b73d9b519a373561"
+hash = "37bbb8df722f5abbd7305048007cc0ca5e0a9b84d3229d983a6753f7dbcfae80"
 
 [[files]]
 file = "config/packetfixer.properties"
-hash = "461c5c59db9adff9bb0fe53d46a6c1f526faa218e87494d4e7bd7a6b388af736"
+hash = "645ee629cb8c57507d4393206175a7a3b5a772fa92a5ee27734f5438d95f5b76"
 
 [[files]]
 file = "config/particle_effects.json5"
@@ -514,19 +510,19 @@ hash = "d8e4194f91f8f374d89cd84d06a68dd4e3bef91a655d18330acc99842157df21"
 
 [[files]]
 file = "config/particular-common.toml"
-hash = "683ff3df19e031d701a51f59aeb56a0be74f40bdce4f6c0a7ab48914e0f56e37"
+hash = "60cda1e46eec81fe6a73303f7654e858deab88119a0188fb4c8e49679c6be73b"
 
 [[files]]
 file = "config/pickupnotifier/pickupnotifier-client.toml"
-hash = "079be54b7b6059b2864b3ed140dc1e20219589f6afba32dc4ff203c981ea6a4e"
+hash = "88d14188d9e0dfab26d20e735f90c00a7717e9655bd457d01aa190ebdf245c88"
 
 [[files]]
 file = "config/pickupnotifier/pickupnotifier-server.toml"
-hash = "f307605d2e9622fcb9290a02a28c37febfe87676faebe600899c339c1f9453e4"
+hash = "c8236a676f7771c9096483f7d51ccbbe6368a7b167b2d37955a26458fe2d2a24"
 
 [[files]]
 file = "config/pingtomapxaeros-client.toml"
-hash = "bedd325481f67787ea7dd5d70561f01b4aa9db6deb0dbda552e8b12abecbaeec"
+hash = "92f18d14f8b682699a0a768e8f7a00f488d3bc559b0a91a7001acb20d8b8e1e0"
 
 [[files]]
 file = "config/pingwheel.json"
@@ -538,11 +534,11 @@ hash = "821d5d12d0c096996c82d1a65349ac803adffcc25b89420a146c727fb92b381a"
 
 [[files]]
 file = "config/pixelshot-client.toml"
-hash = "5c85980cf66c7ba7b9ad192bf0c0b248b8862585b754d632fa78345f9ae85f29"
+hash = "8a662df7625a28f847822681bed0e4d5040bf20db14c13bff0a05040831426e4"
 
 [[files]]
 file = "config/placebo.cfg"
-hash = "eb7e9906d126543f03c2257ca98efa4b845d1e7479dc8b069a12b194c86debcf"
+hash = "6bbc71c6dc18b1ba4952e1bc54ed2b98c3a90f04cec4257ec3f7566cdf0c0e2a"
 
 [[files]]
 file = "config/presencefootsteps/updater.json"
@@ -554,7 +550,7 @@ hash = "8cf6192eda81b3a27737440cfdedc05c40a8c1b552583114c1aa6fb2673ca907"
 
 [[files]]
 file = "config/progresspeek.toml"
-hash = "47d0dd977322772c1a3405299c25fd1d9c0963655e44b2e08ab330265c746166"
+hash = "d51a716f609620f6f728bb9a05b6c35f3c3258e369489d5f14aad37d62c8291f"
 
 [[files]]
 file = "config/raritycore/FinalRarity.json"
@@ -590,11 +586,11 @@ hash = "ade1b4a28332a849a0b3dfe006db3d1ef22810301999316fd58a34b130968fb5"
 
 [[files]]
 file = "config/shouldersurfing-client.toml"
-hash = "e6043a66fece702b83969fcd061d37476e152acf6a5f9d2e11867d4d8c1c20e3"
+hash = "698370c14a2a6a937bfd1037a2fd857ffe3195518d57f5fbeed4787bc782e70f"
 
 [[files]]
 file = "config/smoothscrolling-client.toml"
-hash = "3e4f99871e77750a90a52056da0576c993bfff7c53fa5518bd312980ddb2947d"
+hash = "d408cd430c0fa60ca56d63e089a082c336bb61312070ea2e9e601a8504156974"
 
 [[files]]
 file = "config/smoothswapping.json"
@@ -602,7 +598,7 @@ hash = "2fc2171585b8a25e7048a54d836a6e9b6d13943ef993e454b7655d5578f24334"
 
 [[files]]
 file = "config/sodium-extra-options.json"
-hash = "49897093abfdee204e74740483b2e4d12fa60feb5bca1954e1d5e0fac4c454ba"
+hash = "c107123a0fcdc1cc98d4f660fa773a5df26cb45d3c8f2511846d6188637dfa40"
 
 [[files]]
 file = "config/sodium-extra.properties"
@@ -622,11 +618,11 @@ hash = "992ba9f3a4a7ce3de112eb95575328956fdc3ce6781c455ebce7b23db7e7da42"
 
 [[files]]
 file = "config/ssrcamerafixes-client.toml"
-hash = "a1b7cd9dcc6cea18bf9efe50d07b8a443100d5d3eb9eba5d22122fe587b589ea"
+hash = "bbf7ae2fd2c70f0721bd1caf5baa00a70be6ebf1d13a9670561f0707bab8e81e"
 
 [[files]]
 file = "config/stylisheffects-client.toml"
-hash = "1e02077599b5ea195d74cd07e3f1cd731f15536318bc2a96824a7ec03097e33f"
+hash = "884f68a8c3cace81ba3a3b65d6af36a94b3aa0508856fba1ddd55a30f2e25747"
 
 [[files]]
 file = "config/tooltipoverhaul/custom_frames.json"
@@ -634,7 +630,7 @@ hash = "5fe285a83924db98f45f7daabbf77e1df8ad177f3fa0893d76525c6a685a7c87"
 
 [[files]]
 file = "config/tooltipoverhaul/tooltipoverhaul.toml"
-hash = "776fb2a6c7b1f0b2b2c1f9c25afa692d0115b431096642ce316c1975929a33cd"
+hash = "af30de1623fee6f4a582b29f00d14498912e2313fe16c9e83acbf554f935973d"
 
 [[files]]
 file = "config/transition.json"
@@ -646,15 +642,15 @@ hash = "0a282f3623f7f9443a1d10b5768865f69e58b74e000dcfb4f40399626b7a6124"
 
 [[files]]
 file = "config/vanillabackport-client.toml"
-hash = "52908e6b607acb0132818d29fd7c2fcaf02dbc8b743c509400db8f65f1e00eb1"
+hash = "4b6f99955f574707a5d2e5b6bcfefd9c5391559c6a0e5ab1dc0bd36aeb93c03f"
 
 [[files]]
 file = "config/vanillabackport-common.toml"
-hash = "15c887868f49ecd06f43c62a6a98fcc1503908470f317f5a257cead14b1c4d38"
+hash = "0c8eca696f9811ad4af1bdac9ca5b5ac06c6dabe50aac551401a1a40e30d20d8"
 
 [[files]]
 file = "config/visuality/config.toml"
-hash = "8eb00d7011fe645839281c68c3c67fb28cdc97e4541bc6b45d94426ffd3bfd50"
+hash = "108e11fa832c1f8d5573d7fd9b8ff7e096bf6d213feca6da76efdb6878939f97"
 
 [[files]]
 file = "config/visuality/particle_emitters/block_ambient.json"
@@ -674,75 +670,11 @@ hash = "db1fe2d772c0ed136c2d1da0c315bc50ba9760032a60253be6f37ce1d7e38ead"
 
 [[files]]
 file = "config/whitenoise-client.toml"
-hash = "00c6e34f0adbb41db954d296fd7c55dc3412463a38038dc836626433dd7f6d92"
-
-[[files]]
-file = "config/xaero/lib/client.cfg"
-hash = "43ed9dbfa5b4d6f0f3d2e8c2ced17ad298164b22c68ff11d415257a39b074336"
-
-[[files]]
-file = "config/xaero/lib/common.cfg"
-hash = "98f698d96a6d21d830a455b4ad045b70516fa63c298021742d8499e7f0366cd2"
-
-[[files]]
-file = "config/xaero/lib/profiles/default.cfg"
-hash = "34ae854b17d896d7cb853bdc28c27231a3947e91cb9f0991f372846ee3c2a907"
-
-[[files]]
-file = "config/xaero/lib/server_profiles/default.cfg"
-hash = "d438aea41ca41e93697e059f523686935c0add482f6abe96b532bbf10c6ed80a"
-
-[[files]]
-file = "config/xaero/minimap/client.cfg"
-hash = "c0915eff5d1a7905cd1038d646eb9086fd1a29e2f637d53535e4da161de17b9f"
-
-[[files]]
-file = "config/xaero/minimap/common.cfg"
-hash = "2b49df024c03a369c62a303c72755e7fedeb4f4653ff53a12fd37bd83ccd4ed0"
-
-[[files]]
-file = "config/xaero/minimap/default_radar_categories_client.json"
-hash = "8ec85ecdff2a7b60389a80cbffa420876fcf83b3a72120e3564076da50dc3fca"
-
-[[files]]
-file = "config/xaero/minimap/default_radar_categories_server.json"
-hash = "a4c652cafa7dea324e5f5cf3b1df46a84e54b6d4f877195857bce55a559c1cfd"
-
-[[files]]
-file = "config/xaero/minimap/profiles/default.cfg"
-hash = "1a4765d792c9c43faa0a5a7de1b7bfacf0c8f79b484e6e5449b99d9567d0f102"
-
-[[files]]
-file = "config/xaero/minimap/profiles/entity_radar_categories/default.cfg.json"
-hash = "19158fce70907d6f9239c758c767ce2de0d79f7b3ad4b60b8937c1067d613fc5"
-
-[[files]]
-file = "config/xaero/minimap/profiles/info_display_config/default.cfg.txt"
-hash = "6a452ff7c5bb4cb0bc44963ac74e7cdb1104ebd104211ce1cb575a4fc825bb1b"
-
-[[files]]
-file = "config/xaero/minimap/server_profiles/default.cfg"
-hash = "d438aea41ca41e93697e059f523686935c0add482f6abe96b532bbf10c6ed80a"
-
-[[files]]
-file = "config/xaero/world-map/client.cfg"
-hash = "d0f079a8df083f6f60a0e0c1316a25fc841755a91bdcb2f86c66ead8e7d4d13d"
-
-[[files]]
-file = "config/xaero/world-map/common.cfg"
-hash = "0c229eb0daf85bd09af51f21eeeb99497a3bd50a825d5ab1ca695fb21bf6cf9d"
-
-[[files]]
-file = "config/xaero/world-map/profiles/default.cfg"
-hash = "5422abf9c83fedef6509144293fad20f588d4bb6ce0cf1af78cbcd2bcd0d2ccf"
-
-[[files]]
-file = "config/xaero/world-map/server_profiles/default.cfg"
-hash = "d438aea41ca41e93697e059f523686935c0add482f6abe96b532bbf10c6ed80a"
+hash = "86061aeaa531953c4bbdd96610bca2c54d41c5cba9c8b91e67ce77b340071c1e"
 
 [[files]]
 file = "config/xaerohud.txt"
-hash = "6de57f88c55043cfafb952219205e2080da514284c822a277cd9f1ef804f0def"
+hash = "8d13c5f398016036aa4fdefb366ef3926d89f96ca104155bc9f6e5a7ec682ecd"
 
 [[files]]
 file = "config/xaeropatreon.txt"
@@ -751,10 +683,6 @@ hash = "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
 [[files]]
 file = "config/yacl.json5"
 hash = "121b93764159be6fb7dab523b29a844e2bb78400ce8c48f52135a097e9b0006e"
-
-[[files]]
-file = "dist/maintain-modpack-design.zip"
-hash = "7424f5c51d7ec2c1202e334f6284c499c52cd21ba42864579da6e6b87eac74d8"
 
 [[files]]
 file = "kubejs/README.txt"
@@ -833,2465 +761,616 @@ file = "kubejs/startup_scripts/main.js"
 hash = "5c4659e7bb368960801ccfce24ac3493fa14aae88a7e17b2a9cdfe1931985ffe"
 
 [[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3.txt"
-hash = "d20be78634deecbb3a5f748c4347eab7d9e1cc4230b2f0a821835f37e4c8d6c8"
+file = "mods/acedium-sodiumized.pw.toml"
+hash = "b1a2c91a13c8a0a4e8a0026d997d6da2ecda0d845c20515713a48638d8c37c5c"
+metafile = true
 
 [[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/ComplementaryLicense.txt"
-hash = "68197060d55c2ee8ddf03411d66787d5e6d8c5b95efa0925d372a2e8698ac60d"
+file = "mods/alternate-current.pw.toml"
+hash = "571293a6ddb6b5ea7b9c1f5454d0cfc584a5aa50397942bea4906d3b54e02e02"
+metafile = true
 
 [[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/Credits.txt"
-hash = "26173b99b0c3d9988197562d17e4fad318afa5b6602f9394f6788cd3442dec1b"
+file = "mods/ambientsounds.pw.toml"
+hash = "2a44fba9da06b296bd012654b8f68d3cdeffbf0b3d1dc013e3f291befd61d057"
+metafile = true
 
 [[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/EuphoriaPatchesLicense.txt"
-hash = "1e88c99b7ef6453d4f76a3641a7ccad61379f739b9468d0198d9ed3600776945"
+file = "mods/appleskin.pw.toml"
+hash = "662d6a0016158d1b681974a34cad2dbeb1617b02c7152ea8fd09ebb0ced4b998"
+metafile = true
 
 [[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/InformationEuphoriaPatches.md"
-hash = "936d311eccf07dcb3668971a7136fde6afa8e78c41b91ed581c981422c835fdd"
+file = "mods/architectury-api.pw.toml"
+hash = "6d3a1c92eee4dd671253c41ec000ae48064a33c45263d6adce5cad466395169d"
+metafile = true
 
 [[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/Made for Complementary Shaders r5.8.1.txt"
-hash = "e9ee3ecad631cdfeac2d7da7505e7a675c17e0ca557f3a3ea990b5ef440ad9c3"
+file = "mods/armor-statues.pw.toml"
+hash = "4f5e2e271bc23583ad0e46b951d69497ef744895491447597c77dcd9e6aaa01f"
+metafile = true
 
 [[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/addedMods.md"
-hash = "bc9420b1263ed0e2a63951bb6e5dc7244b3a873dfecc2913e862605c49aace16"
+file = "mods/asynclogger.pw.toml"
+hash = "3c8b00fb3ed2c02ce21d83fe628fd9eeba3322cc5f01cc66eb75bfe5c97cb82d"
+metafile = true
 
 [[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/block.properties"
-hash = "28ff8de6f441a7245bf9571ed11810435c333c9cb656995a7abe8d873a50e139"
+file = "mods/asyncparticles.pw.toml"
+hash = "39c1de8e1063d124a2c120da2b16c2dbb8b29a5785d40c19c4e2b2f369d87088"
+metafile = true
 
 [[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/blockProperties/1.13+/block.10080-10156.properties"
-hash = "07f464344ee4b39a6202a0dfa2ddfccab1e84147d7e1bdecc4015d1e45be17aa"
+file = "mods/aurae.pw.toml"
+hash = "548697e4a24b9339e0eeb63f40b6690622d3c762e700caf52f200270e95df0b2"
+metafile = true
 
 [[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/blockProperties/1.13+/block.10157-10237.properties"
-hash = "d5100c991a453efc6b41320cb2e14a010ad9e83cf9234f033269a3a0b636cfa8"
+file = "mods/badoptimizations.pw.toml"
+hash = "e2f2a6f6ff38054ce8d91a43a20b79ea7b4e84cb924142fb7d2bcfdd95fe5b57"
+metafile = true
 
 [[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/blockProperties/1.13+/block.10240-10341.properties"
-hash = "6838f9bc3a198aa45e4c30b521cedbf190dd9c7d18868d63528c520d24cb23f7"
+file = "mods/beautified-chat-server.pw.toml"
+hash = "5d5cc9d5bfbd990e737c4c9f2f7e33bd61a9a75a706aa71aeaacda4fb500fa89"
+metafile = true
 
 [[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/blockProperties/1.13+/block.10344-10453.properties"
-hash = "f27a38f20ebe213bc72833c6b41670bf2f71355420492211a00f273673f8fb2f"
+file = "mods/better-advancements.pw.toml"
+hash = "7aa4ef2f0327640b74e8495255b36b6029e62429020334023744073e415232ef"
+metafile = true
 
 [[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/blockProperties/1.13+/block.10456-10604.properties"
-hash = "e36f39d61b93f00ee4d4359054d7b604a2e1397583be786e52405761876ddf6e"
+file = "mods/betterdays.pw.toml"
+hash = "72ca919be55dd04a4d8369ef530427382fe6c4e6df35c4d3d67fbf0ff365622f"
+metafile = true
 
 [[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/blockProperties/1.13+/block.10605-10736.properties"
-hash = "ada4813bbe04d7dc6e46ebbb281d3afc95e57a27921bec194557759de104c42d"
+file = "mods/brutal-respawn.pw.toml"
+hash = "c44ecba77e769c7aff3e4e9c1a8c3f4dcdea9ae4fac2f54476dcb6074d669219"
+metafile = true
 
 [[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/blockProperties/1.13+/block.10737-10846.properties"
-hash = "62a94e8addf0c9e1bffe2632e57599600472b38241fed77e5770f1a9e2b62fdb"
+file = "mods/c2me.pw.toml"
+hash = "446d148534a731008312302cb330d8153c4695e18c941f52342a1490e0b1fb17"
+metafile = true
 
 [[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/blockProperties/1.13+/block.10848-10944.properties"
-hash = "ef3e486e07cb9558dfac28c311065a660730239e1ea2c28ab79da2f06ab55c89"
+file = "mods/chat-heads.pw.toml"
+hash = "1223fbbf86229b6982b1e100e35444f8d08c6d7b22a587c13393cdcce2ecaf53"
+metafile = true
 
 [[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/blockProperties/1.13+/block.10948-31015.properties"
-hash = "2354479932db23f876e3b25d01ece01240130f0e076900144cdb8453644dfa26"
+file = "mods/chat-impressive-animation.pw.toml"
+hash = "663e706fee044bedbc8edbfa09e4ab1b022e6f1c02c882bd7fa63e5b5158ee62"
+metafile = true
 
 [[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/blockProperties/1.13+/block.31016-32016.properties"
-hash = "22e059b8a4b518289f96bb148bccadd6d52f52a1b59aa7acb17a52417c429768"
+file = "mods/chatnotify.pw.toml"
+hash = "732f4e9ed9687e0ef6389c20864094ad4729c589d60d267751c5a32c9c9bde71"
+metafile = true
 
 [[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/blockProperties/1.13+/block.5000-10079.properties"
-hash = "1b3166893e6967e323add06addabdc9b6ea28f17101e45d1ae0abbed31dfef3d"
+file = "mods/chunky-pregenerator-forge.pw.toml"
+hash = "7c39e6a42e0b633b49b61de06fa71bedf4f751d97a89c17e30d000b7b3f2c54a"
+metafile = true
 
 [[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/blockProperties/1.13+/index.md"
-hash = "f706eec9aafcf9e0d32be68a5441a1035d80d6a06f956e3297575a36ca4c4f5e"
+file = "mods/clickable-advancements.pw.toml"
+hash = "6141d1082c6cfdc08fe411327e6a847e73541ab07bd40f89b88cac3fa9028cd3"
+metafile = true
 
 [[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/blockProperties/1.7.10/block.properties"
-hash = "3a09ad6138174628aeabb6ec6a52af00c6d02efda9e9a8deaa98d9134437ccfc"
+file = "mods/cloth-config.pw.toml"
+hash = "22286fa216349c0767808903a0a38662857d2adee54950a18cbf26c167a06029"
+metafile = true
 
 [[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/blockProperties/1.8+/block.properties"
-hash = "b2d2eddf2ca93d2eb8ebf91a3f2aea695b9e4ec047268f4442f01543565663bd"
+file = "mods/collective.pw.toml"
+hash = "e95dae6d96a6fd51e34a470f3950e543434007afb9d07c3adc07507bbea33219"
+metafile = true
 
 [[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/blockProperties/README.md"
-hash = "eda358cc7182806f89bd6badb6ae0d14395327506f760113bef8bf29862fa72b"
+file = "mods/common-network.pw.toml"
+hash = "cd8078f4d044e9fb548c2b792f2f1f1c04e1b80e1479446f67de3e8687dfbf67"
+metafile = true
 
 [[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/blockProperties/instructions/readme.properties"
-hash = "05eb8c57980563265778a809634081b62d998931e4bc237ddea63862ece08a8d"
+file = "mods/configuration.pw.toml"
+hash = "6d8bb466bac6b7615c9e28aca1032e2b101e573b1d07a6a3b4ccc62cedcfb37e"
+metafile = true
 
 [[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/blockProperties/renderlayers/renderlayers.properties"
-hash = "f218c0492ca43ba26eb5dd0650e6d64d9c3b176c65fc205b9236e01daac724f4"
+file = "mods/configured.pw.toml"
+hash = "7b397ee3909fcd80252ca9f943baf582c7a24c3a0acd7834202f87e5b17fb928"
+metafile = true
 
 [[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/blockProperties/tags/tags.properties"
-hash = "ba45613684962f750d8b874bc090973a8025ea1b730862c573b5c42011f70454"
+file = "mods/creativecore.pw.toml"
+hash = "51851da1eec44c74801f9b00525c119aa136be6b4c4ba2b5bd8b6d0dcf4791df"
+metafile = true
 
 [[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/colorwheel.properties"
-hash = "bbe3b3302655f1c7160e62765b6b2881181b183c02951c7438c754aaf6566017"
+file = "mods/cull-leaves.pw.toml"
+hash = "fbbcd05ab367f60b3b3c40c84e2650e6a692c263b342558e263213793794bcef"
+metafile = true
 
 [[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/dimension.properties"
-hash = "bf8be7f0cbbbebc996cce9bad3adc7a72d39ed28c3128e6f4b7c0b189de06f12"
+file = "mods/cupboard.pw.toml"
+hash = "0eaf99546b07ea456f4b8f198b646a06f5b9446fb735494f034871f70d36c569"
+metafile = true
 
 [[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/entity.properties"
-hash = "6b269d4830794d24b930526706fcb7af55a209194ce31a3c4a0f5c9238d0900e"
+file = "mods/distinct-potions.pw.toml"
+hash = "f11a1798d455837aacec6afb0ffbb1cac9d642a36b134387bfd26da86c28e7ab"
+metafile = true
 
 [[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/item.properties"
-hash = "881ca086c528302fa8b2af2fc03dbcd7ff87a3de0dcb74d8706eed8360a131c6"
+file = "mods/effect-insights.pw.toml"
+hash = "cf4f5d24aa3f225ada442c8868fa30af84e757565cdfc5e6c5422e83964b875c"
+metafile = true
 
 [[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/lang/en_US.lang"
-hash = "8cc56d85e63291344c4d5f777b6f569f0280d8d2005fc120ae018a92f504a581"
+file = "mods/effectual.pw.toml"
+hash = "97a3eaf875c257964383c7156e4fd3e6537e3f8adee6d5b81bc5f4316e3806d3"
+metafile = true
 
 [[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/lang/ja_JP.lang"
-hash = "9e30920d0db98552f14c4b06975cbefeb4dd6a20219b579b6d6778cbac6fcebc"
+file = "mods/enhanced-boss-bars.pw.toml"
+hash = "ca4aadaff150e3607f6596beb7919ceeff2447020141b2049ac7f22c8a572e30"
+metafile = true
 
 [[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/lang/ko_KR.lang"
-hash = "f094e3a9291dbc1c75312e4aefa2e4ce2d35d003d40c87f8724503b910599d0a"
+file = "mods/entity-texture-features-fabric.pw.toml"
+hash = "3ee84a3962aa9b945f07ee820c7bf456b8dbbfc6a71910f0b8a036396fa99e10"
+metafile = true
 
 [[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/lang/pl_PL.lang"
-hash = "6a3d61b87444a9aa7de154175bb23e0ff432095d41ff4ed8a93d3d50e5450272"
+file = "mods/entityculling.pw.toml"
+hash = "7875f95c150dc2b7e3b96a9ad01ef5fd329e1944b25f91bb5462eca1e87c1839"
+metafile = true
 
 [[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/lang/pt_BR.lang"
-hash = "ac0480a90696ed8ef751b653457ea99afa99402f65dcec1efc46875ea482aead"
+file = "mods/euphoria-patches.pw.toml"
+hash = "1010c34ac2177d15b77d843b7e514d152df73d5f0c05b59247eeaa525b23698d"
+metafile = true
 
 [[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/lang/ru_RU.lang"
-hash = "a8c16eaa8767541be2a21892d2799f5782894d35a8ccde30d2cf17aa6910eb5c"
+file = "mods/extrasounds-forge.pw.toml"
+hash = "074107f75703c864591e89357baab5fe6d1b8941e01f35d71d0002e5a68075cb"
+metafile = true
 
 [[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/lang/uk_UA.lang"
-hash = "e65fe8379644dd2358b7f28ce90d5910cec96fbf292dcd3e2c7d888bd47cdad9"
+file = "mods/fastsuite.pw.toml"
+hash = "89baab3f4c2f3b52a9be7b3e5fd531f8962649d31e1f701308c7fedac5801f10"
+metafile = true
 
 [[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/lang/zh_CN.lang"
-hash = "501871298c5d14160504dfcfe5dc654bc2a7efae8abfb45172a23e0fa275d6c2"
+file = "mods/ferritecore.pw.toml"
+hash = "a1c925f498ad7c195956c4c0dee3c6fe5d31f9a705afd753d2d46db9b3a4b094"
+metafile = true
 
 [[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/lib/antialiasing/fxaa.glsl"
-hash = "5797e7fbe5ab4cdda840574879a37b72a8ee0a1c7956db5ddc36dff66251d1b8"
+file = "mods/flerovium.pw.toml"
+hash = "168fe78691159761dd1e18dac4325621cfbd1fe29cf956a26f044384a115398c"
+metafile = true
 
 [[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/lib/antialiasing/jitter.glsl"
-hash = "da474995b0eba47d0ccc3345956ca83233cbb570e59739de074857255d29168a"
+file = "mods/fragmentum-neoforge.pw.toml"
+hash = "0b1558e2b5fb42926a5e7bab494ef32e4c7c6d6d1de249e51e37f52a2d9d230e"
+metafile = true
 
 [[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/lib/antialiasing/taa.glsl"
-hash = "7f41051ace753026a239ad95f67dc737478fe7cc6f8feb050bd0d7f4f80be61f"
+file = "mods/fzzy-config.pw.toml"
+hash = "0b7687a29b0dd4400e6c2db295a81b9543c7275674f8b357f57dc64b9d5f49be"
+metafile = true
 
 [[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/lib/atmospherics/auroraBorealis.glsl"
-hash = "e374b3b5859e76818056c6378d103a987442a4eec81f47e51d8d25e24d5f8dcf"
+file = "mods/gachaaddiction.pw.toml"
+hash = "c3b8a5adb256dff0d60be372e02cd7fb340edf6e0e944e19eee5509f2a9f1d09"
+metafile = true
 
 [[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/lib/atmospherics/auroraBorealisVisibility.glsl"
-hash = "2e3e4dec52970db33698dcac417b991a5075c1d6da4e2435d68e8327f868f033"
+file = "mods/gui-tween.pw.toml"
+hash = "f4be4bc13645b596608fb27d3cc849a0d88e2b1b2ef142e56675eb6285c6ee59"
+metafile = true
 
 [[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/lib/atmospherics/bedrockNoise.glsl"
-hash = "5e29e8837501326b9f4827fdca57943d2f25146cf870f1cc5306580d196efe73"
+file = "mods/i18nupdatemod.pw.toml"
+hash = "e4163c05060e04211317d5affda1ab5f5e5196696efd12dcf207542f0ee1995d"
+metafile = true
 
 [[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/lib/atmospherics/clouds/cloudCoord.glsl"
-hash = "73937ee1c11ae6f694afd64be405b4b8df9ab52fa194972f5c8cbca16b054c52"
+file = "mods/iceberg.pw.toml"
+hash = "3b17298cf4cb7969ba2ff7f009d15c4779870922c0dfc1224c3994aa0d65b788"
+metafile = true
 
 [[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/lib/atmospherics/clouds/mainClouds.glsl"
-hash = "77fc21a4b1a2d34eb6c2d06282d24054fa6eea38dac823386ac24f39f4cf7159"
+file = "mods/immediatelyfast.pw.toml"
+hash = "37c3d507be086258aec8a0814224578a1c665749adbb0332d33c32a684086d94"
+metafile = true
 
 [[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/lib/atmospherics/clouds/reimaginedClouds.glsl"
-hash = "c36bfae86a5e11408b3671053a913632385b94fc59e420004f791a19c2e62640"
+file = "mods/inventory-hud-forge.pw.toml"
+hash = "b19034c3f1056045f04e1f8be214fad263e60feafafa47d33e5bee0a5cf35dc3"
+metafile = true
 
 [[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/lib/atmospherics/clouds/unboundClouds.glsl"
-hash = "6e3763d8354828b50ca90183adb0fca95a04e38f170956ab60e28e5f722587dc"
+file = "mods/inventory-particles.pw.toml"
+hash = "894362330eb3b8a192152b34c5dc384b2d27b24b49cadf5dc833206b861e2779"
+metafile = true
 
 [[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/lib/atmospherics/endCrystalVortex.glsl"
-hash = "da961b9fb0fb02436a7768edae65f9e72f4f3080c6c771af09766e351286e53a"
+file = "mods/irisshaders.pw.toml"
+hash = "763ed0c115b2b9a1e37e38cb153748c9c3f3c31869fd3d56acfaad54c63e78af"
+metafile = true
 
 [[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/lib/atmospherics/endFlash.glsl"
-hash = "a37e503757d42ce95fec1ade476702ee984a8e19f36e5038d50695a518713968"
+file = "mods/ixeris.pw.toml"
+hash = "ed52bee75849fb55b4c88abadf27a47aa3c81739bc8f310fa9d237f9cf570097"
+metafile = true
 
 [[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/lib/atmospherics/endPortalBeam.glsl"
-hash = "2d80432dcb1eda4d1e5b10ba25b8b8a5661782de44cce9a3efae6743d77cb5a3"
+file = "mods/jade-addons.pw.toml"
+hash = "89420f657cec1038646f75531ae388e92d27c51c84b1f121e935ae5aecf995be"
+metafile = true
 
 [[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/lib/atmospherics/enderStars.glsl"
-hash = "3d0359bb9965d9b9f6f95f565308a3bfa57645f0bbfbd9e5c22dbe17611cfca5"
+file = "mods/jade.pw.toml"
+hash = "62b10ddd25ef761a0c06a102da96995570f41e16d449298fc90c12b6bcafcd97"
+metafile = true
 
 [[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/lib/atmospherics/fog/bloomFog.glsl"
-hash = "9411103b5e6de0de93088c0000646e49731247038b4997e7f15c287c188455ff"
+file = "mods/jei.pw.toml"
+hash = "f65e291ba1cc114e2d7c0e054361be28cc0a715b6020fc32068484b95e58902a"
+metafile = true
 
 [[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/lib/atmospherics/fog/caveFactor.glsl"
-hash = "223ef83b535b268b76a4b4488df5086b1d66c22be1f70c3085a66c8e4a13331c"
+file = "mods/jer-integration.pw.toml"
+hash = "444bbd7538f8439463d3b3cc43c138323e860d605903f6d1f7ac7c35e28c14ee"
+metafile = true
 
 [[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/lib/atmospherics/fog/coloredLightFog.glsl"
-hash = "761fd62619fdb439cd3787aff94fcf5c7ee10ad36b29f03ac8bf62a2441cacaf"
+file = "mods/just-enough-effect-descriptions-jeed.pw.toml"
+hash = "49be58014400569db1ef76c550b777b0ffabbe35f470ae8a6b55c66a2c246097"
+metafile = true
 
 [[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/lib/atmospherics/fog/endCenterFog.glsl"
-hash = "4b06d046b82e7189c6198c2d84804cb84abfd0fb6f738455afd7c81ae616a643"
+file = "mods/just-enough-resources-jer.pw.toml"
+hash = "f61a3526d323d232fbac74dedb5d89e07f45981db1c5a705c66dbe5da7507a68"
+metafile = true
 
 [[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/lib/atmospherics/fog/mainFog.glsl"
-hash = "3166190277b9d71d108b4bb810a880de680805f5f5565a53493ce6593f920506"
+file = "mods/kaleidoscope-chinese-food.pw.toml"
+hash = "2899c1bc2dc44285062f3b7132f45135e3e28e9396704a457c2957131696dd3f"
+metafile = true
 
 [[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/lib/atmospherics/fog/waterFog.glsl"
-hash = "783847fb46712a1cba42a57eb5d99f2478cc6b9721480f8ca88b3f60d7132a7b"
+file = "mods/kaleidoscope-compat.pw.toml"
+hash = "3d0069ec70ac8284b3813b17472800c0eb474eb624fe5629399cd01d90d6ca43"
+metafile = true
 
 [[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/lib/atmospherics/netherNoise.glsl"
-hash = "badb2e3c6027953e10c5a65256171a40117e5b7e0d1c32f3abde7dce8ef2a3c5"
+file = "mods/kaleidoscope-cookery.pw.toml"
+hash = "c6dcabd590122b7e2a94ef97542f7c2c2628eda150458adb7bdfce657f95044f"
+metafile = true
 
 [[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/lib/atmospherics/netherStorm.glsl"
-hash = "696adccd3c3eaadca54fdbaa4c1ca5605b236d7e563b0a63e86bcc0e7dfda1a7"
+file = "mods/kaleidoscope-dimensions-wine.pw.toml"
+hash = "5df288957e1c7f5b02a771f8d0e4b37491c44714847f0b12799bb5563cef54ac"
+metafile = true
 
 [[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/lib/atmospherics/nightNebula.glsl"
-hash = "9e651038e9f80eb4c81d64828bc8232d79398f18404fb1d56f89d8bec09637ae"
+file = "mods/kaleidoscope-doll.pw.toml"
+hash = "b45a7c774ad4dd913964336e91aa1a8218b4d400dde96de0e2e84c33ca498e30"
+metafile = true
 
 [[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/lib/atmospherics/overworldBeams.glsl"
-hash = "7c7f9c897afe1d16ddf5167f4fbbef5d65fd7fb9abd5060ff9dc94c84d1f6362"
+file = "mods/kaleidoscope-end.pw.toml"
+hash = "9b6e1a72b28d290d5265bec024bedeb7de24117eee55900efe8ccb3d185d0443"
+metafile = true
 
 [[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/lib/atmospherics/rainbow.glsl"
-hash = "8276b484baad5f8e590f09fc4f83f6c352238b89703acc3e61014aa3c1585dab"
+file = "mods/kaleidoscope-nether.pw.toml"
+hash = "841d584b8dfe152786b5a1d192f71984e55ae05075b8b1f33716c014efff05b3"
+metafile = true
 
 [[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/lib/atmospherics/shootingStars.glsl"
-hash = "9cf19fe128d375f1780c9b6a6fe893e9ba1cf30fbf13503ab42e7012743391fc"
+file = "mods/kaleidoscope-tavern.pw.toml"
+hash = "4d773b84f3fff99c906ebe426a1f63edc41bedde4b15b5da0dea8d767033cd5b"
+metafile = true
 
 [[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/lib/atmospherics/sky.glsl"
-hash = "4badb0a4dfca97017e20a54cfdd7d85216698a4fef0944d860256382de47f3c3"
+file = "mods/kaleidoscope-world-liquor.pw.toml"
+hash = "150428c13d2b58132ee61cda24f9ed7c74f0fb43385c65da8b1d29ed368dd22c"
+metafile = true
 
 [[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/lib/atmospherics/stars.glsl"
-hash = "b1e488b10bae3bb52bf72e062bf9403fd58c4f7bf9a75265b1600f8ce58b9b03"
+file = "mods/kotlin-for-forge.pw.toml"
+hash = "1506a3d749a45bc760b3ad57ef1fbb959f0c166b6d1d4955114fd66db7a4855d"
+metafile = true
 
 [[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/lib/atmospherics/volumetricLight/enderBeams.glsl"
-hash = "3cbeae3b73c41c683abd5ca49bcce3be4ebe8ea1e1097c36f6c16e1bd301a7c1"
+file = "mods/krypton-fnp.pw.toml"
+hash = "90ddefcf8c4a77e108d4465c7dc1928e3305cde39bce388b526f404d6cd52d37"
+metafile = true
 
 [[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/lib/atmospherics/volumetricLight/volumetricLight.glsl"
-hash = "7634c7b6bd130a56e445e9443158a46c4ace284df72a74823a35f2e4a4fc8806"
+file = "mods/kubejs-additions.pw.toml"
+hash = "9058b5df2365ac4fe3591ef7d95ccf8c84756e649a842875704194e4f74ac1c9"
+metafile = true
 
 [[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/lib/colors/blocklightColors.glsl"
-hash = "03d470edaf9fcb19cfd2996a9def906ad9c4d057654711ac9e6bb060241d5925"
+file = "mods/kubejs-data-component.pw.toml"
+hash = "67d1cf43832cd70229ea2848fe9ad4eb24cffef090bfd53a4dbaccb22edcd88d"
+metafile = true
 
 [[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/lib/colors/blocklightColorsACT.glsl"
-hash = "20b687e1fe04f0169541c4975b612d5d92fff535569c98dadd22f835e06f2e08"
+file = "mods/kubejs.pw.toml"
+hash = "018fd970193f808f8c28f873d8b8c69ac9ba134712c7db27fc8d639cb226c9a6"
+metafile = true
 
 [[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/lib/colors/cloudColors.glsl"
-hash = "da98f494e5f572f2fefe910536f6bf1b7c70afe94286a0887413fb34237061f9"
+file = "mods/leave-my-bars-alone.pw.toml"
+hash = "36c2550d2b32f34cc0c3caf8f915dee98843263465ee07ed2c20e9191cfa24e0"
+metafile = true
 
 [[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/lib/colors/colorMultipliers.glsl"
-hash = "d43e8765c584c1233e382eaf88c9fc28631083f03a3b96231e93f5acfe72a06f"
+file = "mods/leaves-be-gone.pw.toml"
+hash = "76806236c79f5437953100c618c15aaba2c4e349e29d83113286bb808c687683"
+metafile = true
 
 [[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/lib/colors/lightAndAmbientColors.glsl"
-hash = "07a94fc41c031bf770f018bef59927c33ff16c3102a66640eedda88363840c38"
+file = "mods/lithium.pw.toml"
+hash = "01c826f5be0c57ced745ad461f11027dc9b85af783fca819967f382c2dfe675b"
+metafile = true
 
 [[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/lib/colors/moonPhaseInfluence.glsl"
-hash = "91b63c93a137dafb43b09fd6f3c54404cf3081b27bbf1d7808da8736d37d74c2"
+file = "mods/loot-beams-refork.pw.toml"
+hash = "153ee20b2753a8c03d5c4f6f955de95b64102a87eb4fb25550be2ad503d9664c"
+metafile = true
 
 [[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/lib/colors/skyColors.glsl"
-hash = "0bafc4525a7bc51d64d6c1769e207eda00154167ce9219149d32d7efec699cad"
+file = "mods/lootjs.pw.toml"
+hash = "2bf24ba89ee34b9c0f698a2d3ca2c64eb7676407b56ab311fa91a8dd7a1ad4a9"
+metafile = true
 
 [[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/lib/colors/tonemaps.glsl"
-hash = "9be7cb4f545a8c710b066c9de0f4620f1de1bb9e1660b2606ee3046c7a477bdf"
+file = "mods/lootr.pw.toml"
+hash = "b8ff01729e29868e7b48d6829d14136f300e176365a91fbd517e3d6d8155320f"
+metafile = true
 
 [[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/lib/common.glsl"
-hash = "674c3ac3e68cee9412f960792dfb48565dfe360b7ab22aff09e720ee7da63c51"
+file = "mods/midnightlib.pw.toml"
+hash = "1e7a69de13ee96b512350358c746a7b3bf67b07bc532fe5b26f7b3b3f7ee8117"
+metafile = true
 
 [[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/lib/lighting/blocklightCaustics.glsl"
-hash = "5765136c0dee0b0319be799335cda19e81de62db88f74eebdc2daa4bceb7dc01"
+file = "mods/moderately-enough-effect-descriptions-meed.pw.toml"
+hash = "556563a53261ae22429a1d52c99798309e8d62f1918358d8bdc6437954ca6563"
+metafile = true
 
 [[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/lib/lighting/cloudShadows.glsl"
-hash = "412f1fe931f9fca40a765ce49f8cb456286b04824eb1d79e7223e0f26beaf069"
+file = "mods/modern-ui.pw.toml"
+hash = "b7718d3406e68c6831a25efcb997fc516091e729ff9e129d462f97ddb86bdd0c"
+metafile = true
 
 [[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/lib/lighting/coloredBlocklight.glsl"
-hash = "d94145d42b3afac647a92f3ee59355bf492f77045dbdc45fc521f34bc6d8970d"
+file = "mods/modernfix.pw.toml"
+hash = "c98b575c98bf518bf07a9c1bdd031226502e792f8d2ff438cf46f9420d2d73bf"
+metafile = true
 
 [[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/lib/lighting/ggx.glsl"
-hash = "0fad6fdfbf8e2ab13b7e9441d86ae3a5182096c1735c65e6841295aa6e0deb9e"
+file = "mods/mossylib.pw.toml"
+hash = "9bc55f7d7f0b3faa82c8175a1172a61ec339a7587a611b99442546f9050ee4db"
+metafile = true
 
 [[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/lib/lighting/heldLighting.glsl"
-hash = "acc1dad4967357d49e3dfb0ee3aa74cf85d13fc621bf9c6b2ed128d8d5efff4d"
+file = "mods/mouse-tweaks.pw.toml"
+hash = "937afae4d0af248e9004168bc181ef4d600fa870d285e7b115b45d5ffabb6d95"
+metafile = true
 
 [[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/lib/lighting/mainLighting.glsl"
-hash = "c215461b552c91940d0e0b7d494511c9d97aafbc879280454dffdd8aff3979c2"
+file = "mods/new-visual-keybing.pw.toml"
+hash = "87d1d0c784e721b3e2a4925b4d7f200b58758b139c54ff45f146949637334da0"
+metafile = true
 
 [[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/lib/lighting/minimumLighting.glsl"
-hash = "8e1ee20a4226185f6292c4fa9c99f5860f4930b54cb54459fba062c662a9818d"
+file = "mods/nirvana-library.pw.toml"
+hash = "40b96a2c48827cc0f2c777a078442a954139750425c5e7e25447b4e20eeafc90"
+metafile = true
 
 [[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/lib/lighting/shadowSampling.glsl"
-hash = "ccd737776f0ff298af32b84fc09c56c337661e60e909308f68a93fb41f15ee15"
+file = "mods/no-chat-reports.pw.toml"
+hash = "d2ad4ad52ed284fbe0ba86ed70f9868054421c0bbf50f0a115e394fc0d37e255"
+metafile = true
 
 [[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/lib/materials/materialHandling/blockEntityIPBR.glsl"
-hash = "0088f7767ab59994fbdbcdca8e11b917462b898b4fa58b4f6a1f894fbf710ba4"
+file = "mods/noisiumforked.pw.toml"
+hash = "9c93eb7b597436c3f71fd4c19121633146776c50b7c9b3b06c7dc9441d722da9"
+metafile = true
 
 [[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/lib/materials/materialHandling/customMaterials.glsl"
-hash = "2acb156154410b42fd8cf1fc0d46dd97c09e6494925a7ff025794f2a74c11510"
+file = "mods/overflowing-bars.pw.toml"
+hash = "94e451110472bb47c50bfb8eba8758f2be2ba699b6ddcf4b140b8014a06facfd"
+metafile = true
 
 [[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/lib/materials/materialHandling/deferredIPBR.glsl"
-hash = "549975fba2c32aa022c837f962c9b47196561bc24f72fb96f319daeff7a5e672"
+file = "mods/packet-fixer.pw.toml"
+hash = "75d42d0a0bcfbcce376fb229f72b75e3a40592fdff5490b997c19ef439a9c832"
+metafile = true
 
 [[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/lib/materials/materialHandling/deferredMaterials.glsl"
-hash = "3ba76167fd067eb4501745647d2fdf3655d2db216e6a6ede476299979083e038"
+file = "mods/particle-effects.pw.toml"
+hash = "c2749df96a9eef1182b6d298ce036bbb72a9df09f24bd56830da8064d405d0b0"
+metafile = true
 
 [[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/lib/materials/materialHandling/entityIPBR.glsl"
-hash = "8b6dea3ca71b4e08756a7cb10cf4a7707c4f35a2adebd06febe65b9a4042e3b1"
+file = "mods/particular-reforged.pw.toml"
+hash = "93420f736d02cebba15a00f256e4ce370e7adaae9301c83260c973df145203aa"
+metafile = true
 
 [[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/lib/materials/materialHandling/irisIPBR.glsl"
-hash = "70af1c2d6d4086e48fff1d32a5d842298106762fa6bbaec6676cb80f045d3c04"
+file = "mods/pick-up-notifier.pw.toml"
+hash = "14b29822b7027ed775848598db8baad4bdd505f54e5895bac0153c1777d87abc"
+metafile = true
 
 [[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/lib/materials/materialHandling/materialDefines.glsl"
-hash = "009cb22126f2dfe08bb00ec7c69209610e19ecaa1e0e7f1167449ee67bacaf4e"
+file = "mods/ping-to-map-xaeros.pw.toml"
+hash = "93faf3d1a5ab6afa15dcbbac2ff7d2d30a8555662b55e187d301c0eac956123e"
+metafile = true
 
 [[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/lib/materials/materialHandling/terrainIPBR.glsl"
-hash = "80d02e7f5e4b1cbace36eee14c8026bb3471a90c0e112bac37dd9dfadcba2046"
+file = "mods/ping-wheel.pw.toml"
+hash = "fc58a3e283c0769d6861b3d07c0a919ba8a35dbca9fa040fbb574a1f5d7bad1a"
+metafile = true
 
 [[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/lib/materials/materialHandling/terrainMaterials.glsl"
-hash = "62b3071bad5723cfab8a08f2b06b5affb8a545eb7842b2084d7d27b25ec9af07"
+file = "mods/pixelshot.pw.toml"
+hash = "ee406ace45a23c0cc632b2475efb29ce6f8e5d0385e00a108a9ea7df0a498ebf"
+metafile = true
 
 [[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/lib/materials/materialHandling/translucentIPBR.glsl"
-hash = "ba5004370e417f47e5b8feec6e68c90b50243f5d0177946a85f9c909f0f3c770"
+file = "mods/placebo.pw.toml"
+hash = "a80d243759a5998d1f61cab61a9769526c21e1a9ac2f328ec1f213bb97311bfe"
+metafile = true
 
 [[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/lib/materials/materialHandling/translucentMaterials.glsl"
-hash = "94e09695c9cd3114d18bed62cb94f7c5cff7d6c779728d5e76fb76121261c696"
+file = "mods/platform.pw.toml"
+hash = "cf4f9fdb9d7cf582d1068fae6ca9bf7fe6d3f0f1dbb031627f339f73477d325c"
+metafile = true
 
 [[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/lib/materials/materialMethods/anisotropicFiltering.glsl"
-hash = "4dbc5b6000ec1d09dce24cb1fe5e380220f3b2b610d7211e4ac49a94cd26f2cc"
+file = "mods/polymorph.pw.toml"
+hash = "5f6142a8656587913d67abe284c95307f731e284ef291c5af4bd4a821bd67c33"
+metafile = true
 
 [[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/lib/materials/materialMethods/coatedTextures.glsl"
-hash = "b0e0ba035604722db41d21b4407d3dc2c2c244aacb263871067877f4e92d4d9c"
+file = "mods/ponder-for-kaleidoscope-cookery.pw.toml"
+hash = "9a5d36bee20ce10bb4ddd49676850d66885b2a1eaf89eb9773a2c896cac9da1b"
+metafile = true
 
 [[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/lib/materials/materialMethods/connectedGlass.glsl"
-hash = "a1b1f8909b6eb886d29c0275271adae6ccf2cf4ad94dab394707def81c12e840"
+file = "mods/presence-footsteps-forge.pw.toml"
+hash = "2750726ed55810cc608251307b0fda9e6cd844bcd31bd4dbe9e94d4f3ab28856"
+metafile = true
 
 [[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/lib/materials/materialMethods/customEmission.glsl"
-hash = "8a3c4f40448004be6f79192be6b410a877fbdc82e7a0970239d12d4312d3d905"
+file = "mods/prism-lib.pw.toml"
+hash = "5328219480c6d7aa255c6288f2839b683ffc1bcc52449383244cd11cfbf85f83"
+metafile = true
 
 [[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/lib/materials/materialMethods/generatedNormals.glsl"
-hash = "25602e4cb0188ace2299bc2e86d993c55664149a1436a12df5e027d78b6f44bf"
+file = "mods/progresspeek.pw.toml"
+hash = "b19570c0cdf24d9cedda319ee6e9e1f813121382c4a643c76bc2b1102ef1c92f"
+metafile = true
 
 [[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/lib/materials/materialMethods/playerRayTracer.glsl"
-hash = "445a7c3fc8ff7a08e3aee69338a0641041d05bab50d9edbba9858729388ffb97"
+file = "mods/puzzles-lib.pw.toml"
+hash = "6a07261762a29c6108ea6030ec71ff6801e03127a0004cf105490004c77eacf5"
+metafile = true
 
 [[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/lib/materials/materialMethods/pomEffects.glsl"
-hash = "59f27de86c3b6ee983a90db220dad8f4611a5bdce02ab085d03247a2cf7a1d21"
+file = "mods/raritycore.pw.toml"
+hash = "91bd70ea9c8a8367478a05e89882a96a3cc5561a4d5b5528a86e2c2218f8b330"
+metafile = true
 
 [[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/lib/materials/materialMethods/reflectionBackground.glsl"
-hash = "15bb5625248915431ce8491f8366c42764606ad40bc382adea916e2d1b5f74bd"
+file = "mods/resourcify.pw.toml"
+hash = "c338a5bfc1b1e43d4a9b7ab501e0d0e4fba1f8c3b6e3d958ae7b7df39723e15b"
+metafile = true
 
 [[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/lib/materials/materialMethods/reflectionBlurFilter.glsl"
-hash = "34293ed39a5805da1bb090e83329eb9c7fcc1b76f19d8030805e434a7b2cb5bc"
+file = "mods/rhino.pw.toml"
+hash = "444fd456ca0227293bc5bd5619da6f09902242f9c25e7d13c0fdcba8e095d3c2"
+metafile = true
 
 [[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/lib/materials/materialMethods/reflections.glsl"
-hash = "f05657aec46586f2a8798e451139ddab8f592072ab17657dd9a35705fff0145e"
+file = "mods/scalablelux.pw.toml"
+hash = "05149c12740ae3bd4a504c3a73994630f33565a580aec335595d5b362c4b4e3f"
+metafile = true
 
 [[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/lib/materials/materialMethods/refraction.glsl"
-hash = "7aa34d565c261ee9182a13e22d7f196609784f1c96b53404e7e39c9c56dee791"
+file = "mods/screenshot-to-clipboard.pw.toml"
+hash = "7218a0e940c4c089586eb909eec7d48caad863b7f2544b3c21d4def006389d19"
+metafile = true
 
 [[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/lib/materials/materialMethods/snowyWorld.glsl"
-hash = "405974cd6e5b7533d1ad5368eaf026a3655453300484712cfc880852f424389c"
+file = "mods/shoulder-surfing-reloaded-camera-fixes-additions.pw.toml"
+hash = "1d799378067768206800263aa41933a516a8184fc910a52a65824f3b374c735c"
+metafile = true
 
 [[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/lib/materials/materialMethods/translucentTweaks.glsl"
-hash = "130f8f9eba9134a793bda7a84ba7294ed7921731a003c9b349825373932f9a87"
+file = "mods/shoulder-surfing-reloaded.pw.toml"
+hash = "464f5d6ffebe1195a7757f9ff1668032f26748a0694363843f8236e5569fe848"
+metafile = true
 
 [[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/lib/materials/materialMethods/waterProcedureTexture.glsl"
-hash = "72c90152fd8a1b35d4a88f655b652818c2352dc74945b278159e7fce54bcefa9"
+file = "mods/smooth-scrolling-reforged.pw.toml"
+hash = "b8b1e77eefea358de1ec37f0dcf494386fc1d138f78e2f044eedee610d6f7cfd"
+metafile = true
 
 [[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/lib/materials/materialMethods/wavingBlocks.glsl"
-hash = "1b8bda9913871a70b60a92a808b2ab5e14f43b6b21651ba3c8cb1f8c19f40823"
+file = "mods/smooth-swapping.pw.toml"
+hash = "e8433292f3a059fd7776a979b89aae9ca416ba1c83eb23c5cf36b33dae24cbb7"
+metafile = true
 
 [[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/lib/materials/materialMethods/worldSpaceRef.glsl"
-hash = "fe602d99c794f6a79da37ad987e1251fdc152e2b709408799e38d6a885c5bf2a"
+file = "mods/sodium-extra.pw.toml"
+hash = "97934c26dabb66e0819a93ebc63eb3a3f378383d1bbb948ea0d712f286252a3e"
+metafile = true
 
 [[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/lib/materials/overlayNoise.glsl"
-hash = "a45fef99079de47be661cefc55a391d53bd73bfe19e0cb5b7fd9320e23a44d81"
+file = "mods/sodium.pw.toml"
+hash = "659c62d5ab3040559c668c7c5cb24f7b6417ee4ce9fa5c245af7ce3ffd465a3e"
+metafile = true
 
 [[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/lib/materials/overlayNoiseApply.glsl"
-hash = "f3cc6b626332036dc4b222e6685e691a76bb1e6f378c7856e7b926a9c2893a26"
+file = "mods/spark.pw.toml"
+hash = "82ee74fd6678ddc85914af25c8c50c92a0ac738f982f2d6bb7f55236be3ff298"
+metafile = true
 
 [[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/lib/materials/seasons.glsl"
-hash = "94abedcb06a3239d3ef873dd8834605d6bfeb0af444388d3c09fbef70ec33479"
+file = "mods/stylish-effects.pw.toml"
+hash = "335508a4dea6fa749ebb39169bc86cb6929eaf30c1afb66a84f3596906b7b82e"
+metafile = true
 
 [[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/lib/materials/seasonsTime.glsl"
-hash = "c0a4b083a3291efb00c863e90750c567d085b8fb48460e3bcb0d01141a62a5fc"
+file = "mods/tlib.pw.toml"
+hash = "01c57ab8a322c8fc541b26e449ada6010f6af811bdcfb9c296bf59adc332a0b4"
+metafile = true
 
 [[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/lib/materials/specificMaterials/entities/glowItemFrame.glsl"
-hash = "836623d3e0bd37fc5da4243107756aa0283f9e6ec4771f7bb69e788a3ea24c12"
+file = "mods/tooltip-overhaul.pw.toml"
+hash = "2cca1ae0c1408c86247490192a39b0629fd1a487b1fa14d2c9f4d3e983b988af"
+metafile = true
 
 [[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/lib/materials/specificMaterials/entities/itemFrame.glsl"
-hash = "5da8aef26dd12f13fb731f421354e49365a1d60c4b8eb04a08c2661ec2997480"
+file = "mods/vanillabackport.pw.toml"
+hash = "2ed8143d74813a492685aa18210835862a6bd70789e6a0301ceb270174b51460"
+metafile = true
 
 [[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/lib/materials/specificMaterials/others/SpacEagle17.glsl"
-hash = "f66e9a26fe104b6c32dd9c709d241e80ec735c5b8e785882556112edcbfe5d1d"
+file = "mods/visuality-reforged.pw.toml"
+hash = "12c0223e0109507af5a62185a20cab54e27e718198edc92cc87cceb51a7563e5"
+metafile = true
 
 [[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/lib/materials/specificMaterials/others/endPortalEffect.glsl"
-hash = "a5f2a2e32bb7ddecbaf806feade2dc33ed5e8a90aee17a97061e014ef3dbcaa5"
+file = "mods/xaeros-minimap.pw.toml"
+hash = "e1c3cfff848c2c0d581e2016c7be80727a40400ba66c2e060ca778fa2df17831"
+metafile = true
 
 [[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/lib/materials/specificMaterials/others/lightningBolt.glsl"
-hash = "10ff6d9144043034680fd9c9011e4facc71681b067a744310f49d0cced1049de"
+file = "mods/xaeros-world-map.pw.toml"
+hash = "210cce3a74344d8ccbe0023ea0399b5573c5e622ae970d0cf81b753b18f1fc3f"
+metafile = true
 
 [[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/lib/materials/specificMaterials/others/signText.glsl"
-hash = "abd1454e2f8d841d43ac72e73d20ac99d346bedbf865588e5308339111abc5ad"
+file = "mods/yacl.pw.toml"
+hash = "492daa3391b6079b541685db276007b286774bab3b9881505127b7aef6b3f16c"
+metafile = true
 
 [[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/lib/materials/specificMaterials/others/trident.glsl"
-hash = "27f5720c2422645fc90db091ac4fc803606d9ce8985156ea22d7ee39ca6861cc"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/lib/materials/specificMaterials/planks/acaciaPlanks.glsl"
-hash = "cf93bcf15e36b79d8da82325ebb37de1a92eab8d0a5dbbec40c96f76ff1f7877"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/lib/materials/specificMaterials/planks/bambooPlanks.glsl"
-hash = "c0f10c36c4eee4cfdc22daadfe4d8788af05d01f941630f155a7b0c8469177d6"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/lib/materials/specificMaterials/planks/birchPlanks.glsl"
-hash = "f44e5423ec2540c018ca5b00177f8ffcf55ec113cd69beb36be3f678cbad0a41"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/lib/materials/specificMaterials/planks/cherryPlanks.glsl"
-hash = "442052d0c904a764a01cf210670c612851444cebbafbdc09a49b365b9aa44031"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/lib/materials/specificMaterials/planks/crimsonPlanks.glsl"
-hash = "5f5b85273765a2c26f386a2418be8b27407e2384f395911144f4abb023883c5f"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/lib/materials/specificMaterials/planks/darkOakPlanks.glsl"
-hash = "0f502cbde662a4b216e7e54f3b52df7413bc1c785f63ab910e0bb1a85f5e40e9"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/lib/materials/specificMaterials/planks/junglePlanks.glsl"
-hash = "2b04073a2764b8ba962805fe335e769bf72b63242da552d323c34f1fd736f2b7"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/lib/materials/specificMaterials/planks/mangrovePlanks.glsl"
-hash = "e232dd0f2cdbd44bd62f162b618a93ddc4f09afb455973eaeac2be4dc6a88e2c"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/lib/materials/specificMaterials/planks/oakPlanks.glsl"
-hash = "33dd104c86f6a7a2685e1cc8b92ae71e3c9a10714db49116fc9ce0e3c781fc89"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/lib/materials/specificMaterials/planks/paleOakPlanks.glsl"
-hash = "dede4f3b7d712d67594ad6e7c05eaf06840bd515927de0a1825620baea43ad26"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/lib/materials/specificMaterials/planks/sprucePlanks.glsl"
-hash = "b700095091578ae8dcc6a03ac94a98c57f0ff240fd0ed59889d66968b1e39f5e"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/lib/materials/specificMaterials/planks/warpedPlanks.glsl"
-hash = "59e6d2ace976f81fe8b9ce2214313607c2789c9cfd35da231006297e24276d9b"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/lib/materials/specificMaterials/terrain/amethyst.glsl"
-hash = "da584a6527c319d88138f5219fc71c2f9163da8659cd7133d949014dd6cff37e"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/lib/materials/specificMaterials/terrain/anvil.glsl"
-hash = "0662dfb894e42edc05c0821ec190f574b654ced82bbf410d2d6cf4b05609af66"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/lib/materials/specificMaterials/terrain/autoModdedOres.glsl"
-hash = "9d05202ed9d3bd144d8abe4306b557f0a7fa421656dfb9fd1bac0e4ef63dfdd8"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/lib/materials/specificMaterials/terrain/blackstone.glsl"
-hash = "6e755e75879fc2cfaf1dbf1cac41d7754dd0faf0eed58e41a77721d2ff461d1b"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/lib/materials/specificMaterials/terrain/candle.glsl"
-hash = "7c3d061bd999fe9e5d629473a2fb3ed1a205b1cad1fe7458e3729a342f33a5ae"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/lib/materials/specificMaterials/terrain/cobblestone.glsl"
-hash = "4c5c8e51582a87f0483aac3ffb68823af4e38c92359bec1290660532bdb3a428"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/lib/materials/specificMaterials/terrain/copperBlock.glsl"
-hash = "50eb662c008b6f9a9d0bb92abe58053f68069e56d9c555ecb75c41af9278f496"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/lib/materials/specificMaterials/terrain/copperBulb.glsl"
-hash = "8ce41c8a3b34de3c98242c74c42259554e1faedf352b2a312da9fe76e533a0d4"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/lib/materials/specificMaterials/terrain/coral.glsl"
-hash = "0a3228e03798183c8acaf0256fb649e1a1e0ee6531d2d6f5d64146816eb316da"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/lib/materials/specificMaterials/terrain/cryingObsidian.glsl"
-hash = "cef2bc3a5fa2e16e68a90f291406ea565f650331bc46857506a950a5bfd402b5"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/lib/materials/specificMaterials/terrain/deepslate.glsl"
-hash = "6fad5b3d786e9f25976a67266ce3680d1e2e23399fab3e1aab8847a87327704a"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/lib/materials/specificMaterials/terrain/diamondBlock.glsl"
-hash = "ccf10f42b8f098a11a4dfd49d75ccffa60b750dfacff177c70881ca0c6858295"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/lib/materials/specificMaterials/terrain/dirt.glsl"
-hash = "be7a8973dbdf72b53e2b554144a354eb5a291955b85751909387ecde8436783d"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/lib/materials/specificMaterials/terrain/emeraldBlock.glsl"
-hash = "53eda3498388c929280007600f2e7bf31911cd59f7d62a9818b4c3873ebea0bc"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/lib/materials/specificMaterials/terrain/endPortalFrame.glsl"
-hash = "1f54feb2f0f8e0fa1b19671aad10713e63bb1c8b7bf7e847506365348602a1f8"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/lib/materials/specificMaterials/terrain/endStone.glsl"
-hash = "477ac6aaac05b8f6f391cb100c57ee26a08d1b664941d1b610951e5f10ae801d"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/lib/materials/specificMaterials/terrain/froglights.glsl"
-hash = "e82ab091980837e385dd41b150d220ba0f6801087951d5bbc868f67d6383eea4"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/lib/materials/specificMaterials/terrain/goldBlock.glsl"
-hash = "e8a768213c2692a767151e0a56352f7d2aaadf4a9f36876622c0f445c1cb906b"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/lib/materials/specificMaterials/terrain/ironBlock.glsl"
-hash = "68bf067287cce875400663e278b5f74d05ccb6ab21ead112663c6b66b82f2312"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/lib/materials/specificMaterials/terrain/lanternMetal.glsl"
-hash = "043b1ba0a9764669234b9d7b7feaef8eb87f82cdd92f953dfbdb9964def5ae57"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/lib/materials/specificMaterials/terrain/lapisBlock.glsl"
-hash = "845256aa330329fcca63eade2954dcfd27fecb93504b2fcf09c4c56986f0ac77"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/lib/materials/specificMaterials/terrain/lava.glsl"
-hash = "ad0fdef64e0e53ed8a5f5a8de9ccb780ce7cd7104d77cdebd86fffd65762dbf2"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/lib/materials/specificMaterials/terrain/lavaEdge.glsl"
-hash = "aedd416709c77c803eba24b0edc66a35412ca880ffe20b02576c4d8777ccb8d7"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/lib/materials/specificMaterials/terrain/lavaNoise.glsl"
-hash = "6c1fd386ca996d29b2dd3ac6fafa8cc5741e4b4c61195d6d41e2f26e2217d82a"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/lib/materials/specificMaterials/terrain/leaves.glsl"
-hash = "4049bcc982234095a3d2526fb4543b63b5caa6514a0465b4f5be6a26073409a0"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/lib/materials/specificMaterials/terrain/netheriteBlock.glsl"
-hash = "78b59b42f86c6ef41758010e74bf4bf0efac73d0bab98c0295d4c0a2af25b01e"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/lib/materials/specificMaterials/terrain/netherrack.glsl"
-hash = "76e15ba671daf9652311285e35bb945c360382a04fa4a163769228994e8a9c54"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/lib/materials/specificMaterials/terrain/oakWood.glsl"
-hash = "a88f580dde2750e08b89b468b047a8551c6af99c7dfcfc15f5eb4c5305fdabc6"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/lib/materials/specificMaterials/terrain/obsidian.glsl"
-hash = "5112b789955679f871342cda0559d06d3b5cd01d619612ff6b00ccc971ce2d8b"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/lib/materials/specificMaterials/terrain/openEyeblossom.glsl"
-hash = "ad47b4c463a52defc9bab8933e51aedacf225383d185e735e97f80749b33957e"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/lib/materials/specificMaterials/terrain/paleOakWood.glsl"
-hash = "271ba200b77159489f852065162c840f6ae99d1b7f98b67b1740eee670de9370"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/lib/materials/specificMaterials/terrain/pumpkin.glsl"
-hash = "016ef28833b6e3fd726518a8617229a4f530935b23f3d37205482edfffd92d8b"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/lib/materials/specificMaterials/terrain/quartzBlock.glsl"
-hash = "a683bf6cf3d888530f7d03e080f7c6b67bdaced66d13fc4159f9e44432ac75a6"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/lib/materials/specificMaterials/terrain/rawCopperBlock.glsl"
-hash = "f2f245c3da1f610875b186cc54ed3e8fe525eee6f197d3310eb0ba1a5089bd51"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/lib/materials/specificMaterials/terrain/rawGoldBlock.glsl"
-hash = "e60f97631f2f68c06a4b9e7beef6794ed1de5996665dd7ddb4b06f418d9428a4"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/lib/materials/specificMaterials/terrain/rawIronBlock.glsl"
-hash = "17ab2aa1c891c54cd3c470b39e7aef16beb9d2b1adf410cce04e289d7a8f6f7d"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/lib/materials/specificMaterials/terrain/redstoneBlock.glsl"
-hash = "bdec270fc31bd35f5e9d3bc4bc1dbde2dd072037d9e8d87f9131e69b13431685"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/lib/materials/specificMaterials/terrain/redstoneTorch.glsl"
-hash = "5a94c9d908d5823646f63708a5c32d9041cac8f8a9bfc12df948fff6960b11fb"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/lib/materials/specificMaterials/terrain/snow.glsl"
-hash = "60c286afdf7dcbb27a2be841d68b0a3620efd4b864f469e90a7eedb24a0a680d"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/lib/materials/specificMaterials/terrain/stone.glsl"
-hash = "8cd674b9b04a9038c37dc91f0efa4fbc2f3b4f317a9fb23e1a91bf1ec4fd05a6"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/lib/materials/specificMaterials/terrain/torchflower.glsl"
-hash = "0a3d82f4d7cca144f830b71ed58a6fe63717f0afd651238ee0430b083a4b9469"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/lib/materials/specificMaterials/translucents/glass.glsl"
-hash = "cbc43d24e1a30fcec06f318d7e4cd9390e7b77da98308b4f5abc22b49b57f526"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/lib/materials/specificMaterials/translucents/netherPortal.glsl"
-hash = "ae4e512ae03f9e2a7f46d15cae07f269f094f836ccc0e0daeba19f7b8d7baf71"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/lib/materials/specificMaterials/translucents/stainedGlass.glsl"
-hash = "0e4ee68f02b4937acb968b4169ab21c9aab9a10787a4c826dffdc829c0f481fd"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/lib/materials/specificMaterials/translucents/water.glsl"
-hash = "e92fdbb06d4f442622e28235bd77bb2ad20a50a1db725d532e8e3c4db907188e"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/lib/misc/colorCodedPrograms.glsl"
-hash = "a27c45e49a28e5d9c3d4bdcdc8b98e1ead5b4024ca6f7cd9720065fde6e6a3ff"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/lib/misc/darkOutline.glsl"
-hash = "44d00f997e5555d75be64c9f3e69b1cc96130b79fd1473033dac27a7060e6b39"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/lib/misc/dhSSAO.glsl"
-hash = "95e2d37ed95a32034529aedd24adf442bdd56c9f4ddbc57f425a8a4fddd7376e"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/lib/misc/distantLightBokeh.glsl"
-hash = "2404315fa26c87943fbacee120c65214692a0409961efa07be4bf636969c4ead"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/lib/misc/distortWorld.glsl"
-hash = "b7133521073d4b4a91efb81897a5c92b3a8d3328c65e59fdde4823f195d7f317"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/lib/misc/endCreditsBackground.glsl"
-hash = "7f27eb4d2a1daac4806e626d899751b8788f20e2efe067a76b5fbcd37f1c7ff4"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/lib/misc/handSway.glsl"
-hash = "72b571a76e41aeef9c7f36edfa0fb19fd8c74773db85d38cdd0803c36eb403ce"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/lib/misc/lensFlare.glsl"
-hash = "6ccece931b8e199e863fc7a968a356fce28038091c67fe7fc15334ebcf5e0b3a"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/lib/misc/myFile.glsl"
-hash = "95b7ee1162efb2322c5777948673182da98f5c5b052d5e3c9d08f9421b308eaa"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/lib/misc/packing.glsl"
-hash = "b732ac6f24e80a8594e7d704cd3f94f924ca232b53e3a7eaca6b215f685ac734"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/lib/misc/pixelCraft.glsl"
-hash = "9cd7af39644c7eed79f299902a4bc3b488bc0128d264adab36550eeddde82834"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/lib/misc/pixelation.glsl"
-hash = "51b448f627dc0705d634f22b6005cfbd64387b13cadc218f85cefd27fe817f39"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/lib/misc/potato.glsl"
-hash = "19464688657e6a20fea2552e59e518250aea00ee8af1429f218b61ac6ddf2fa5"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/lib/misc/reprojection.glsl"
-hash = "2d85a383ae2888c549560970a81314cc4d9260fc609bf8560b2d02fbddadd522"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/lib/misc/shockwave.glsl"
-hash = "b125f6ed97d88d1cac9ef9408fefe19a1911cb7659538af22de9e328f650d4b0"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/lib/misc/showLightLevels.glsl"
-hash = "4b56f400b681ed4a9a04ababfb91bb244d34a8c72769fefe3cd669e90cd4bbf0"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/lib/misc/worldOutline.glsl"
-hash = "9ddc84e91a1d40b86709867de6865808999a0fb65145e1a7171e8ee7d2505157"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/lib/pipelineSettings.glsl"
-hash = "74150bd0f44daa47ff63a70c4a41e54b035bb9f48fd8b2f06d30cee27da52a7a"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/lib/shaderSettings/SSAO.glsl"
-hash = "a3fa0975d3b131f60062d815f5b2d0544aeb99c41af091446ca0b627b8b9438c"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/lib/shaderSettings/activateSettings.glsl"
-hash = "3944e7f2db40fb988b94fcbee2ba4d43459fa6bfab76ba152f193c2b733eff51"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/lib/shaderSettings/bloom.glsl"
-hash = "a052110fb6ab30894959447826a15a215044ed44d2f95378bb402eba7a79b991"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/lib/shaderSettings/blueScreen.glsl"
-hash = "14fadf77d678ad4823191a9b182583f13581af2dad8c9f32e3fc0e62bd720725"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/lib/shaderSettings/clouds.glsl"
-hash = "d2aaadc8a964433667e7ad053f71998fdc3836bcd895b3d4544bde8cb00a0575"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/lib/shaderSettings/cloudsAndLighting.glsl"
-hash = "6a6ce7f656386bd42b5f99127f1de0604c8f9a532925fedbfb4424c29d1328c4"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/lib/shaderSettings/colorMult.glsl"
-hash = "fff24109b107378c15d5c30491257cdb585fd930c2e50da3eefaf5fee755b6a1"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/lib/shaderSettings/composite1.glsl"
-hash = "1b9c99975d229a87da15f593cc086f97f33274e7b967573e57e37923b9858d26"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/lib/shaderSettings/composite2.glsl"
-hash = "84476ed4ec480179e9bcabaebe1350bc2570f24026dfa2962e30460e102ca110"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/lib/shaderSettings/composite3.glsl"
-hash = "6a473c21ba12c2a7fda9d90e9d58f4ef983170efaf204d3fbc8b33758ee3fed3"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/lib/shaderSettings/composite5.glsl"
-hash = "b4b86f373ce1ca18a94d63317922d53403ef4591b9835ea6f50e6b1178749b2e"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/lib/shaderSettings/deferred1.glsl"
-hash = "92deb10021c0c57e4a4fe4318303dc22065a3a5b883ab393ba8db3985f198ce9"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/lib/shaderSettings/emissionMult.glsl"
-hash = "16c0a701153a74a01718bfec38e4837fc72d07337cd58648fb389f60491e223f"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/lib/shaderSettings/emissiveFlowers.glsl"
-hash = "286fdba94de94df3ecc47710f915e726713a5770efdbd97dba521a743e140d8c"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/lib/shaderSettings/endBeams.glsl"
-hash = "c1decebd1772aade2af3a052543a0c98095882c46424e71f1e16c3dfa3361232"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/lib/shaderSettings/enderStars.glsl"
-hash = "fc3a6f2dd948f551817aa9570d1efce235fb3be9b2c369dd641499d2a0c6c907"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/lib/shaderSettings/entities.glsl"
-hash = "6f244883998b85cebfa0b9240603850ca4a42e42466447821fc5fc4849b913f2"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/lib/shaderSettings/entityMaterials.glsl"
-hash = "b3747e0457eda106725633d80ad4a27a8b4c373b3452118e1591e5f139e84acd"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/lib/shaderSettings/final.glsl"
-hash = "7a4b7598da04264d3da011574faaf88f1208a482e10e04ef7af7edbbf07947c8"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/lib/shaderSettings/interactiveFoliage.glsl"
-hash = "2099f562aa4fd536e10a05a934aff153285a6582c410acd68ba2fe40e40d98cb"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/lib/shaderSettings/lightAndAmbientColors.glsl"
-hash = "66ac608560a1fd1692431d9269b30bf7b617ae4f139881cab0a9e0a3488a8ba1"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/lib/shaderSettings/longExposure.glsl"
-hash = "6f1d35317c1dc1d86df7260e343095898855da59003ed78be705099f628b60ae"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/lib/shaderSettings/mainFog.glsl"
-hash = "bc196a0dc7ee52f1c9f50031568987eb42f4181fd78d863fcb4a67f4ec4fe969"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/lib/shaderSettings/mainLighting.glsl"
-hash = "07e34497d92cd296d88eab515a08d1a638fa9b6cbe1f578b2f1e760d0cf4cb2f"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/lib/shaderSettings/materials.glsl"
-hash = "64b544531bd38e2b0f6c47f88f413d6797e588329c878c5246a13876f9be1071"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/lib/shaderSettings/nightNebula.glsl"
-hash = "84b5aa7ca22cb7f46eed78256e10beaa69de1a29d68e7e00255944b7d97f614d"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/lib/shaderSettings/overworldBeams.glsl"
-hash = "5f275ee0fa3c0acef202e398166d18a270ad3a02237f6051768c870ec9d04258"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/lib/shaderSettings/photonics.glsl"
-hash = "603d244c3d050a2acf92da4910a4f735ab6a57cc4e54aa8801055dbff0ef2151"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/lib/shaderSettings/raindropColor.glsl"
-hash = "57b36579f83e1c0d53cf90050c73605c55761ccb9bcef8923826505aaa2d4e0d"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/lib/shaderSettings/settingsFileDefines.glsl"
-hash = "23dd609f920ae9e283f5417b8532727ab45776c3fcfebd7e270bb755d0c4ae97"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/lib/shaderSettings/shockwave.glsl"
-hash = "e3dca930b54de377e457c25e8d9417c034915fa64c49053379f56791c0e9c925"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/lib/shaderSettings/stars.glsl"
-hash = "00146a248ce860817eea9ddd0b085e42977bce3263d63f2840117c5051125f5c"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/lib/shaderSettings/tonemaps.glsl"
-hash = "b20b2b1fc0bbcbabe7ff8708a58ffde808f4624d0617a7a20551f32a299066f4"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/lib/shaderSettings/volumetricLight.glsl"
-hash = "54af2303badb1c3477ef3f2ca04ec595c8a4c5c08e0cad481bbff559582da985"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/lib/shaderSettings/water.glsl"
-hash = "c2253809f33e2ec863181f765ac971b6763c73f9014438b1c8d90675d220d6a1"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/lib/shaderSettings/wavingBlocks.glsl"
-hash = "9ac51149b8c139df22ac91033327ce7049a7b34a0159f431ebdd7cb3e42f7013"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/lib/shaderSettings/worldMotionBlur.glsl"
-hash = "106194d7350c79f8de90b2a528648a6b133255718de32a2a8f24a8f3a5a49c35"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/lib/textRendering/all_text_messages.glsl"
-hash = "a8fd9d5ce746ecc03eb0d18bcdbda2fd855c7c7f7affe16d600ddbd33209532e"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/lib/textRendering/color_code_info.glsl"
-hash = "b86e6eb973df02507cb9a89ebf8b800fc6d08a5966124500e13f29dc2f18f0b4"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/lib/textRendering/error_apple_act.glsl"
-hash = "73f63bee4e50d1098e9e9243d3e179a09921fb53e5868f512ff9e969d2c619eb"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/lib/textRendering/error_apple_dragon_death.glsl"
-hash = "2b235fe88891470431ed00eea8df89c7141b07008ab9b239ed8e24086bbc5e82"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/lib/textRendering/error_apple_end_crystal.glsl"
-hash = "1184c56adab1dc672a9def6d3b9404302d987f1428988e8a05880d86e3d0c9a8"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/lib/textRendering/error_apple_photonics.glsl"
-hash = "50e25230dea763eb048814a1fc6f9fb2937c31cf8946dc03781e5b9da925530b"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/lib/textRendering/error_apple_portal_beam.glsl"
-hash = "a8fe98abe47b2c67f7cceca8380190f635d96a2a0a6a1658faa456305babf5da"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/lib/textRendering/error_coordinates_act.glsl"
-hash = "4c7eb9e785699c35e041f62af58427be40f6ebc0333e9e8411d90c149ef78e6d"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/lib/textRendering/error_coordinates_photonics.glsl"
-hash = "7c02cc7c471db9101bc0c408e119e14ecc2fa3b87c6a642cdf602754b80a5a6e"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/lib/textRendering/error_multiple_lod_mods.glsl"
-hash = "0d90c24c4026f8c97d13f10e72c2e6f863c31fce644dcce31ceedb154c9187c6"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/lib/textRendering/error_old_photonics.glsl"
-hash = "f8efe124e661d55bd3b61874214fb4002cbde3190fd1f10b89135e034bc6563b"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/lib/textRendering/error_optifine_act.glsl"
-hash = "7b10e937df955a56cd0f1b413e616dba3ad67df8d03042f8f4d2779d298f0e4e"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/lib/textRendering/error_optifine_af.glsl"
-hash = "e7766be48b1e8b08b89f75ad8affa080f2fe51926af2ab8f277850d9cd5844d6"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/lib/textRendering/error_optifine_dragon_death.glsl"
-hash = "df7562a50615e6746018014c31602a33036f6949cefc36af0370374593b45533"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/lib/textRendering/error_optifine_end_crystal.glsl"
-hash = "1c00ac84697c7887e24ec08c0650a61c08ee32c9bd3d90327028ee109704e276"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/lib/textRendering/error_optifine_photonics.glsl"
-hash = "5ac2817c1b6893d9b1f29b2d21012de4c18aabdeb32a04dd2718b42bacc32cba"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/lib/textRendering/error_optifine_portal_beam.glsl"
-hash = "4e60311af8b78c41a15e5f00f48f433522971d3459a771e25202d1863944bb7b"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/lib/textRendering/error_palette_not_found.glsl"
-hash = "07d3162b3bf0f8170d6f918c81de38d90f75f028581c945e2b8c25a5f1b18dbe"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/lib/textRendering/error_player_reflection_3d_layers.glsl"
-hash = "ad32277b5c005d5398df1f3f6b0507e070ed2c1f3035ffba260f17716dda92d2"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/lib/textRendering/error_shadowdistance_act.glsl"
-hash = "951da40cb008d8f8edb35fde5016b9d49afbda6af97af61f8087b51d8e7e5e10"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/lib/textRendering/error_shadows_act.glsl"
-hash = "5c3657b240a6f7e46ecf869cc26969a3dd69e1d5a723c2bf81e217679eeeb544"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/lib/textRendering/error_wsr_missing_act.glsl"
-hash = "605b6cfb6d3694ae4710d94eb00d65fa618d68965df72df98bd255af26e5d984"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/lib/textRendering/new_Euphoria_Version.glsl"
-hash = "c640252b01b6d31b8e04980605b41b098a76e555b3f447fb8ee239c662085e06"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/lib/textRendering/old_ssbl_error.glsl"
-hash = "bd4e638d8b938a4434d6ad5eec070c0dd0b88cc6008aaf28507f6f0ba66eaf91"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/lib/textRendering/old_version_ssbl_error.glsl"
-hash = "204390f006a2de0923cf6ec497836de2983b185a436e3f5c7db1a65e585cee1b"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/lib/textRendering/textRenderer.glsl"
-hash = "678e647de413d635b7486b3588850c82468bd91f3be5b11cfe4767d1163a7220"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/lib/textures/cloud-water-old.png"
-hash = "e03a26c2a265e0d39b8bed90124cf5dcaa788f8a2f3a1191a485460d7f05ffca"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/lib/textures/cloud-water-old.png.mcmeta"
-hash = "6e630170fafe1a018838f02249539bfe48feddb2261f1154411f6c4eea206d5c"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/lib/textures/cloud-water.png"
-hash = "49174f769c70f0d13d0421ab8daf0dfacb5d0c3de4028ceeb7d0b7547c51ab60"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/lib/textures/cloud-water.png.mcmeta"
-hash = "6e630170fafe1a018838f02249539bfe48feddb2261f1154411f6c4eea206d5c"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/lib/textures/clouds_minecrafty-water.png"
-hash = "3d8f1ef4e3f0bab6a5e6eaa9f5f9064815de8fa94d24f6223654867d58178f2c"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/lib/textures/clouds_minecrafty-water.png.mcmeta"
-hash = "6e630170fafe1a018838f02249539bfe48feddb2261f1154411f6c4eea206d5c"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/lib/textures/cucumber.png"
-hash = "93ee6240e35a9749ea939788618b4028610a8b06c4d42d54e36dbf6468979a80"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/lib/textures/cucumber.png.mcmeta"
-hash = "895f75ec322f79b3bc8597ea92375339af58de570018b0e73a1e81b89f624aca"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/lib/textures/euphoria_patches.png"
-hash = "09c4960ab67bb5fb88e7f670656036841a8fcd5f9b01ecfe73b0630b235e8b8b"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/lib/textures/euphoria_patches.png.mcmeta"
-hash = "3de8318bf3af133476ebbf215eb8b340113acb2576f397ae4e27175b05a10e57"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/lib/textures/noise.png"
-hash = "c810be7b1154640ec514f34f61cece2882514e6f5887101f20a1c57386cc15a1"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/lib/textures/noise.png.mcmeta"
-hash = "6e630170fafe1a018838f02249539bfe48feddb2261f1154411f6c4eea206d5c"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/lib/textures/potato.png"
-hash = "8ca2a7135cf39991387285a32bacef3652ced3901d80f24c2b8b54f10c0a90a4"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/lib/textures/potato.png.mcmeta"
-hash = "895f75ec322f79b3bc8597ea92375339af58de570018b0e73a1e81b89f624aca"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/lib/uniforms.glsl"
-hash = "f292e2fc6c9510874339cd837fdb7fba95874d533bbbc325de400482ff5a5ef7"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/lib/util/colorConversion.glsl"
-hash = "e885cbc4ffcf95a0719c40e9494950ad0acc9fecf7f63e42d5c9754eda00fbad"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/lib/util/commonFunctions.glsl"
-hash = "c710087702f05a019825517f354501d7760857865543b6a9c4382d4dd40a50b7"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/lib/util/dFdxdFdy.glsl"
-hash = "67d8af93d13f67e2c7a4a24a3b552d97a117d1e066e7f7c3fbd794170727db44"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/lib/util/dither.glsl"
-hash = "2d33f664722d505dfcca46677544daff08aa924ce36d56de415c16b42df2faab"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/lib/util/miplevel.glsl"
-hash = "7562f2c1df2c2c6780920fd91073e1153059dbf624151b8b3c1aa37d3a5aa141"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/lib/util/spaceConversion.glsl"
-hash = "ef38920329f36b0cbe044c550ba551396ff338e8d3b3bdf0d05fb8ff782bd465"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/lib/voxelization/SSBOs/blockDataBuffer.glsl"
-hash = "9da3830e723d9f7c7670f6feaa95dbcb550f87e5db05258599c7edab0e25e218"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/lib/voxelization/SSBOs/clearSSBOs.glsl"
-hash = "64102afc9f2ffa3e76e81fd8394e0cfc9cafe375116a279e075ff9e141dc160e"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/lib/voxelization/SSBOs/playerVerticesBuffer.glsl"
-hash = "ac867892a724b1531b992ceaae1e1fb1685cade9bfcfb931721726f58bdab7f5"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/lib/voxelization/endCrystalVoxelization.glsl"
-hash = "06b50aea577f8d6d7d887f4e0332a7f8772ecf3f8a5d249dd87981eafb0d53ef"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/lib/voxelization/leavesVoxelization.glsl"
-hash = "82c16554044287340d734ff87a44cd8c19f511c061b3674315d9681ffa269eb7"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/lib/voxelization/lightVoxelization.glsl"
-hash = "c232012d31c70b3a6110e9335ccbad9568620a9242d57b5a402e1e0b5e6a5c74"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/lib/voxelization/puddleVoxelization.glsl"
-hash = "6e6d3079fd6df7d27cd83dc8dc1a5aea3deac925e97feded65b94e036d5781e5"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/lib/voxelization/reflectionVoxelData.glsl"
-hash = "be0608029ae3d11c85ce03b45b4b302cbc273a18a61235f1065d13378c391965"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/lib/voxelization/reflectionVoxelization.glsl"
-hash = "f12bacf79e9964750af5ce236e97a624511310b894d0705f1f8f4c5d3ace640c"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/pack.json"
-hash = "c407e27b9855390726f51b8ba9f8fbf633b1b6c343a9c530a5266fb45f48c7bc"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/pack.png"
-hash = "e6bea12e30c993b3195c4be5991dc395d3105a5b248204596f38b14b2ee0e0e7"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/palettes/INSTRUCTIONS.txt"
-hash = "863876f68ebe2c1c942616b22186ad57a0fb25a74bb092a8ffaa123194dbc27e"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/palettes/palette1.png"
-hash = "e969382d0d76fa4fe1bbbfe6a22e0941564c976b2bb896fcf151e2fed0f64162"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/palettes/palette10.png"
-hash = "3540617c32e636c02a03c1c324addb07cbaa1cc4485bc287345941c00f49975d"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/palettes/palette2.png"
-hash = "f5d3a8b1c9e69e79f41dcc1c9f3e6d05e4210be77cacad0f8db5d3a37e01089f"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/palettes/palette3.png"
-hash = "2c735e1c7c766d1649f3d7c81b03964629670d01e4c5ffc0359e4636167d86b5"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/palettes/palette4.png"
-hash = "fa9a0c58a3457da441fe3c4dc94bdf1d4adb345433ad25e6a3df9838767242d6"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/palettes/palette5.png"
-hash = "5403e261f9e8e4dc89e80dd4b5805fea19b533fb395dd1631ba697d1c3159b0d"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/palettes/palette6.png"
-hash = "b5d44a3c030cda5699775d4a10cd7d848e324a1c3a18a578a375a580ff541a8b"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/palettes/palette7.png"
-hash = "f6ff6b3c41effa6bc51da847efd333b265d2d582b7f12d9c99224d4827266450"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/palettes/palette8.png"
-hash = "84948fca826082b77753e4f8c4a46e28b9d2a6574a2c757c259e8313c0b9af4d"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/palettes/palette9.png"
-hash = "b323deaf1a1c32c29e5afb6ed5188022812ac39a754157951b7aa3e117de518c"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/ph_lights.json"
-hash = "9d6e905b5dab369723298f36ea03980cbfe607869f30281a9695c7888b2764f0"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/photonics/modifiers/handheld_light_pulse_modifier.glsl"
-hash = "e7b662f37bd42fdbecfddc5371af8e6d6f3bfc1b5b9786cf52c96638d9688a36"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/photonics/modifiers/is_hand_modifier.glsl"
-hash = "9af3d443a35b83c7c56ea31347b2a3265e70b29db038e5b4d10b1361eb1503a5"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/photonics/modifiers/light_modifier.glsl"
-hash = "89419b16e753fa7c9e95f476c31009815121199168f133f9e272357456bc0e6a"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/photonics/modifiers/restir_denoiser_depth_fetch_modifier.glsl"
-hash = "dd697dcc6850decb607f224600a58b340ee79aa551999d7afa86f7d06e49ba1a"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/photonics/modifiers/restir_gi_modifier.glsl"
-hash = "1a42349f25741288ee2200fe5bee7ea1f41db04b49858a78739718a9b97b06e5"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/photonics/modifiers/voxel_color_modifier.glsl"
-hash = "0d4ea27177937557034b88cb4045c0633541b593c0f60a06ffde2c0eb3edee43"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/photonics/ph_samplers.glsl"
-hash = "9db750480ed9d54e0142ec1bf8a36af057d6332a64ed6a5aef7a643578f175be"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/photonics/photonics.glsl"
-hash = "9db750480ed9d54e0142ec1bf8a36af057d6332a64ed6a5aef7a643578f175be"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/photonics/shader_interface.glsl"
-hash = "d80793c6f323ffbf873894cde3402982bc3c670dec49c77317de7106d5c19d6f"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/photonics/write_indirect.glsl"
-hash = "cd13bc2b8b8970f189680f27749825d35146a12721192e2be83829b5b30a6afc"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/program/composite.glsl"
-hash = "7a27dcb96d08cf3711b5dd1cd687950558688cfa02571bbf5c1e8dfdfc42ad6d"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/program/composite1.glsl"
-hash = "88a9633afb20ee4aa9a9f0dddf9fd3516a34deaeb64611e3ce959dc09f60ce94"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/program/composite2.glsl"
-hash = "40582e0fa254289ca59e9722655bbb711d008350fd737236a4846c15865da723"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/program/composite3.glsl"
-hash = "b5fc2630a4fe37800467ea61dd81d891bf874dce04af9e1e5ba22a773917fb99"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/program/composite4.glsl"
-hash = "52e5bacac08841916461e2edc98c43e143327ac503de7bd3141b91239feed6b1"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/program/composite5.glsl"
-hash = "e4e2a4f9ea3562dfc1d85f45549cf8a5602a50add029441e285fb3a8822ac6a4"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/program/composite6.glsl"
-hash = "3f975765715913bef42a735df7cfc7ad31e9503ef5c065aba9f60d37e230d8ee"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/program/composite7.glsl"
-hash = "888c06a3a53c3b55acae061ffbe795e7457aa375ebb2fa0f007de201f02c2a8c"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/program/composite8.glsl"
-hash = "bb52e3a1ca4c0ad4b7151053e55116884f91641549fb95e8771e02db5b1b4c62"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/program/composite9.glsl"
-hash = "67a20cf8ff2b64d96032648ed610edf2d1626999a5d96277f6842638895859d4"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/program/deferred1.glsl"
-hash = "3f72d48566025bbfe0a34cd9fae848cb5ba945c1c3f77b8cf08bb7054ff28977"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/program/dh_terrain.glsl"
-hash = "c8d7b78c2108ff0fb125122aa4e275a555178de4ed4da1936a8e1478acc4e21f"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/program/dh_water.glsl"
-hash = "b4caa8a03b4ced9fb10097128e5ddcedf8be2acf8ee10ab502356803dd861766"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/program/final.glsl"
-hash = "2f44976b5ad15530c6f7dee922ff8947727a5daeda0992556bc4b21f181abf9c"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/program/gbuffers_armor_glint.glsl"
-hash = "ebba6eeb1f8756fe89634d2973040f5087da855ee8e6452316b6f87b23bb115e"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/program/gbuffers_basic.glsl"
-hash = "18c9bc1a79e4e0bb0fdc4ad6f91b7416084f05f22952908db6cee73ddbd3c671"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/program/gbuffers_beaconbeam.glsl"
-hash = "166e49003b17a08ca3bcd74199c6d1e75e870b325bb7a3916f8156045c2c5f0e"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/program/gbuffers_block.glsl"
-hash = "625291ffe986f201aaec66b0fccd72902c28f5b0ab4fdfaf600d0d7477f01d37"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/program/gbuffers_clouds.glsl"
-hash = "178d7ceeae2b2753c3b5297eb9b4f6b8c041858cdbea5f4d51a04451281b16b4"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/program/gbuffers_damagedblock.glsl"
-hash = "47ad1f55ce635797a340c78d52b86536a6b5134b885020d9a8f251a12a46c664"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/program/gbuffers_entities.glsl"
-hash = "b751e7ef3062619af898699f21319aa05ca3e3cdba4dd2b4e5d5412e5fc481f9"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/program/gbuffers_hand.glsl"
-hash = "6036bdd59a0d3160e7a77287dcfad39636e7756a8a8547a5b8926356c6795025"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/program/gbuffers_lightning.glsl"
-hash = "022ae40cfa447c0a556d65430a8c4c4b5626932e141aa91393340b9e0fe41ada"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/program/gbuffers_skybasic.glsl"
-hash = "d143bcc96e6e21cbe01a6085155eeddf374d02f009ed509b6fdc1694ab58134c"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/program/gbuffers_skytextured.glsl"
-hash = "d469f38eeb2eb979afae230b1a1d3c8b980313b2f5a966f7dc0f2c1d8badf4c3"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/program/gbuffers_spidereyes.glsl"
-hash = "b04fc9a9135599825b16048823ef7a343d7a16bd5a7ca1ce98dcb25312a00928"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/program/gbuffers_terrain.glsl"
-hash = "66be1afcd30981c02ddf0971cedf5555151263445b807c9ac13d8325577aa142"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/program/gbuffers_textured.glsl"
-hash = "90c7a58cd63c8a45aae5fcb9711d684425d4ab71d028a191da2a197e1ff4c699"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/program/gbuffers_water.glsl"
-hash = "617b5ac190f084154aba772b2dbddabfcd6a9fa37c79a107a0ea2c7d4c8f57ea"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/program/gbuffers_weather.glsl"
-hash = "2d29a5ca8cac9080c2ae3b300e0188af0b0b88f13499190cdda4692c8aa345a1"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/program/prepare.glsl"
-hash = "67d624255009d1dd8086b706c883888feb3dc09ad24cf022033ed37295569ff5"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/program/shadow.glsl"
-hash = "9f7cf1773f75a225f977dcebc5736c1a5294f52bff7cd9c47bf34b639377c74b"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/program/shadow_voxels.glsl"
-hash = "4b269bf34c526e8d96d88fcf6140b7ce3f151a747fea1591840c275b530d8dac"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/program/shadowcomp.glsl"
-hash = "06972e42c001125b08cf58c4b359b4416dad3f0d8eff23a60b485112015fc76e"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/program/template.glsl"
-hash = "bda2002c002ece65bbeb48aa9ee771ca17df1b4c43659c7d825dbe27c1f58659"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/program/voxy.json"
-hash = "d18e3b66e3d6e4c8f400bc6456f80a8c3a5c5ab39bff22fefd6dbd52dda646c2"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/program/voxy_opaque.glsl"
-hash = "de498b3c4eadd9c090335db5408b61183ccfdace7c4f59a9cff7cec43ff27225"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/program/voxy_translucent.glsl"
-hash = "2b16d7daa24790def8eae7b3dc5ee78a9d8fec7d9fed0a817f5e8b6f2e7ab9af"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/shaders.properties"
-hash = "80fbd89cb152f0d8876b6ec16a77d48bd0f3f7546c3c166ea38da4ca4a516e16"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world-1/clrwl_gbuffers.fsh"
-hash = "ac601772243219fe670e16d39efb0edb5e9434af7291fb7ecfb342e296294aa6"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world-1/clrwl_gbuffers.vsh"
-hash = "a3fa9e05097452dbc191757965d86c3122d677ae9315ecdadaa47aab8e17873b"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world-1/clrwl_gbuffers_damagedblock.fsh"
-hash = "399da68ad4be3f5082dc83315214ce66d3261b5aef5cd768b9ecae87db4f1097"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world-1/clrwl_gbuffers_damagedblock.vsh"
-hash = "a00401f74a2b466c015bc17cab50d96f24d9f2211a7cebcd0958b7cfe28ddf72"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world-1/clrwl_gbuffers_translucent.fsh"
-hash = "7aa4ff765904425688ee55e784790265178c9442229b9036f7fea60954ae0631"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world-1/clrwl_gbuffers_translucent.vsh"
-hash = "e7795875f14ae62b18c4e6b24a01a5fdabb8c1a4b2275556651127d78ee52e60"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world-1/clrwl_shadow.fsh"
-hash = "8eaad8d364d8e6ecc2c361510045667c807b205121e5c67d791870393536007b"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world-1/clrwl_shadow.vsh"
-hash = "ed71ab5b5ad296aa0f9de7e35fce11a465631960dae6c259054e637a9a44550f"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world-1/composite.fsh"
-hash = "4c4171aeee1a11d7429feaa5a3da7f6f1338bcdc7028ecc02e53011266b1630b"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world-1/composite.vsh"
-hash = "a251921f7be8b2cbaa1222e2b4f35b37d841e1800ba9e3460c6be4994e378ba9"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world-1/composite1.fsh"
-hash = "26e2c8bd926c3dd852078c8b79b751c8e5577f6506c40b30c635825ad9529c2d"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world-1/composite1.vsh"
-hash = "d9778ba3a72d2c76d7d385bdbb3ecb18dbc11e7653f5e47ceb7f2c528aaa5cac"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world-1/composite2.fsh"
-hash = "229d0de4756352633233ad5431b9b325767f67c5aaa1205ce4f4226f23e71ffe"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world-1/composite2.vsh"
-hash = "50f9937a45259e3c53c17c7cf1ee2fdbd311d7c12477952cf25b1076767d4be7"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world-1/composite3.fsh"
-hash = "0115b51ba336f83034e125154cd3977ba54c9ddac2cae2407178e72326ff66db"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world-1/composite3.vsh"
-hash = "3a2d87efac9a81c8c17bcd8a4f41b06140fee123f57a8126d1969ab93a11b3c3"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world-1/composite4.fsh"
-hash = "e5e87f404530542789dd615ff82c0d3b1fca2468aab4d78252dc4c38d87acd1a"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world-1/composite4.vsh"
-hash = "39b1b7fbc9c878f71f7c09073810a8b041625f823ceb3d7489d96d859ee2a7c4"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world-1/composite5.fsh"
-hash = "714d3a169977ce543f846ee44c1c43f9818a14c197206c322503a89e2600cc86"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world-1/composite5.vsh"
-hash = "df6bfc30abf0beec5e7ceca61dd71f11e0bfddd9aa111bab5953b2b85d46c0a0"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world-1/composite6.fsh"
-hash = "1c416c37674bfea6da994428104e7624944b35b228f2bb975f75975e1c6d9875"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world-1/composite6.vsh"
-hash = "f4a646ce9eccf4ba578ee4aaaf013cacbff8330a9a05e4be276f5a1260368bdc"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world-1/composite7.fsh"
-hash = "0125af8df0bed83452318144f59c5a435b30f549fabc9f8a413fe3515da0eed1"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world-1/composite7.vsh"
-hash = "dfc183dfd6d789c49aa3ae953071579ac71efc0ef94d3736236b7d88b418e413"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world-1/composite8.fsh"
-hash = "6bc1c268be0f09810f3832ac13b24945c501425bda561d4a9e24d56c377ac0e6"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world-1/composite8.vsh"
-hash = "ab0996e8e0dc64ed46b348e33334651930cc91a8f102ba35dcef5c3dd02966be"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world-1/composite9.fsh"
-hash = "0704ada08dc3ec3d9bdbfafed07ebd411d7df481bc3e573139c9a032bfe62357"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world-1/composite9.vsh"
-hash = "679d0dc5c1597fafd2396d5007408aced7f0a90970b29c6a22fbd829eca9b8f5"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world-1/deferred1.fsh"
-hash = "bd575feaebfbcca0a3f61a7d2f0f4bf44c27be2eebdce9f30434cbb01b02657d"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world-1/deferred1.vsh"
-hash = "4f69c4de537a0dfd4279daf009f14e0b584aa9438332d1a5a4005b6080b4784a"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world-1/dh_terrain.fsh"
-hash = "de055355de623259553267e32d1d65db08cd47a728e52f39d5fa4b7caa362f78"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world-1/dh_terrain.vsh"
-hash = "0dbedcdb514e28cc3cf9c69955f2f094d4c0e2df97c27b81ba283d10b6ed6801"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world-1/dh_water.fsh"
-hash = "1ec36d3f3f76fc45b9e06cd2916f6a1c6ce1be2a2fdcdba2990fe32ac669cf99"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world-1/dh_water.vsh"
-hash = "9a0d76dcdcedfe4fc97d0ea9b565225322ecb7a235c8e3ff1679941882ca0dfc"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world-1/final.fsh"
-hash = "409f56dad3a9abb0e1a1b0dfa7da345787667c2ff24a74cfa51079401fc367c0"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world-1/final.vsh"
-hash = "4fd934cb13e669edeb2d8750b22abdd6e0bf4c84eaebd3bdc142ff90a76e8e05"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world-1/gbuffers_armor_glint.fsh"
-hash = "924b532a377f94056b773dbf8f4667567b150d604769bf13e5f437348b252b4d"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world-1/gbuffers_armor_glint.vsh"
-hash = "08eb3769cdc095531a12fcda33500f00b5fb1e4f1b9a4784b64801abbf5eea6c"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world-1/gbuffers_basic.fsh"
-hash = "99f0938a5824d325bbca4e3125f67305283ab7062daed492967d683ef14511cc"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world-1/gbuffers_basic.vsh"
-hash = "55e8b918fbaff5bc6d2677295f9793b24232e8667b99ab43c7e1b1b74582fe8f"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world-1/gbuffers_beaconbeam.fsh"
-hash = "f204f785af392bfb5bbc49a293c386d7017f76195ad1f3b67281a835c9f9ef3f"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world-1/gbuffers_beaconbeam.vsh"
-hash = "c5192f897c16607ba275261c0ce2963651fd7bb5c06d4b873e690504b49a704f"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world-1/gbuffers_block.fsh"
-hash = "e84b8992b797081daa338fff099e9167e5babe4e764c5d45b7c682e5c6ad7a33"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world-1/gbuffers_block.vsh"
-hash = "52bed14255587dbe44d393bcc22a0d7bcf7ccc557d9e3ba117b479d14bf96273"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world-1/gbuffers_block_translucent.fsh"
-hash = "5e683819748e3f87836588c6d3c4f9bc33d3823dcdee4c5a37d46326742b9742"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world-1/gbuffers_block_translucent.vsh"
-hash = "ea02429b84a532a43eac1972936d6e55cf43b07bf90db2fff85f79f9b96b27bb"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world-1/gbuffers_clouds.fsh"
-hash = "939d180523921339d64b14768ab79720fa93cf62ba80ba8b84e83d3153fc96e4"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world-1/gbuffers_clouds.vsh"
-hash = "89bbdf7d9628cb153b8c5b895b6a18a8b074bc9af8332d1d4d5c09837c65c70d"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world-1/gbuffers_damagedblock.fsh"
-hash = "a4e58af0761c5927b08475ee6d12f78c8d032b5fc2e538bb1e4c8f6274011d39"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world-1/gbuffers_damagedblock.vsh"
-hash = "725ed085fca62f9f021a763a37a6d3c647df85571031f1c33312ed874b5c5609"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world-1/gbuffers_entities.fsh"
-hash = "7ea733c10dc7193c222a48aa2e81dff7e304fdf213019e943e5366ab124c5777"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world-1/gbuffers_entities.vsh"
-hash = "7832bad928608c222fbe8d4a4e6d1b7631b2706b025e9f49f66ed1c7c923aff3"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world-1/gbuffers_entities_glowing.fsh"
-hash = "28a89abd4d8cd6e60b29d4a7b8eb56b4b37e0d03f182396ccf382b6cab5132df"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world-1/gbuffers_entities_glowing.vsh"
-hash = "0c5c81614b139a918d25be12a28d538b6b235b599329b4fa58820dbeae35adfc"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world-1/gbuffers_entities_translucent.fsh"
-hash = "03b0cd19cbe0819ea60d4ab6abd00bc05a5a2605d4a7852236dabba0ab0760ab"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world-1/gbuffers_entities_translucent.vsh"
-hash = "ce4bc0d949ed765570bdb462390a3d25db5e1913afab231459107b5016a01e22"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world-1/gbuffers_hand.fsh"
-hash = "537aeb7c45511e0c7b2347698840238ab67dce9d97ca03a453b4c9cfbbc40f04"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world-1/gbuffers_hand.vsh"
-hash = "353a9141577d3ae8341983ae5c39ed3f2d17ed0125cd0deacbd3a00de74ee79b"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world-1/gbuffers_lightning.fsh"
-hash = "e88a6d82f167ecc33922597b32504fb5b7c156ac48bc951defb3d0f151deb91e"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world-1/gbuffers_lightning.vsh"
-hash = "61c65e8b74fa1d8f161b7e9e0903cfb17bb5e4702a1138d7bb10bb525a85c6c5"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world-1/gbuffers_line.fsh"
-hash = "bf217f1ecbe4475d5980bf9e64b8cc54c3288364e3ae1c0bb7df16e7480055eb"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world-1/gbuffers_line.vsh"
-hash = "233d10ce5236efda647b0882b7b87a86d0aad09445578e25a8f9c7674e0aaf51"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world-1/gbuffers_skybasic.fsh"
-hash = "dcb2ff6c920f70ffa03d8008fbba998b2f88bb78dd01b7e89769850859b18301"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world-1/gbuffers_skybasic.vsh"
-hash = "74cffece3b45a09f85264613875a6aba62ec464441053a8fd526fcbc97219b3f"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world-1/gbuffers_skytextured.fsh"
-hash = "e4df83ee65f27d94b004214f808536a7f91bbe6251af9a295514e339ab61284f"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world-1/gbuffers_skytextured.vsh"
-hash = "cbbf1015779a8912301b899f856abb7aeaeeb6d1a5cef6eec6be2a9748329c1d"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world-1/gbuffers_spidereyes.fsh"
-hash = "1c904ffe8f40db00562e85f20d893c9d3577ebc8153b635bfb28e5a2591aac70"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world-1/gbuffers_spidereyes.vsh"
-hash = "97a458a98e5c4c3a99d7b757dfdbd3cb559c638a19f12ba40d7ab56afce8390e"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world-1/gbuffers_terrain.fsh"
-hash = "a44bf1b4efc0b6a9a7bf29a0f8d9d29103bafe68c3467afedfe52bcbd471375c"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world-1/gbuffers_terrain.vsh"
-hash = "01f85b120014dc26ac312c15d6a10a924e20cd6f6385ae9e65a013e77ee8d2bc"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world-1/gbuffers_textured.fsh"
-hash = "0fc9016e22d69f0a36fb6984774b64af6c30bcc53bc890811ed2babc76a2174b"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world-1/gbuffers_textured.vsh"
-hash = "e95454898b459de221a02dbb802b144087e3da13f0f77f01b385db95d02ca58b"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world-1/gbuffers_voxels.fsh"
-hash = "0a7f07a6ceddc814b26becb59b5970bbb1458e3b7d922a8acaa7d84bee67a376"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world-1/gbuffers_voxels.vsh"
-hash = "f9e45d5a464879f16aa617d89813d41b2542f62fbc60af0a6cec1832a37db634"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world-1/gbuffers_water.fsh"
-hash = "8a0b9f92c65d24b0d7d6cf719e74c52ec986fc1b7b2565a5e67f4236faa7c47f"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world-1/gbuffers_water.vsh"
-hash = "67d8319e515c2bac346c98b6d8e67a996142e7b61ee0829e8523aa659f1a0368"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world-1/gbuffers_weather.fsh"
-hash = "918f03423cb3291291be2ada392ed54c9c5c6ab83394027eca56ca991860f558"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world-1/gbuffers_weather.vsh"
-hash = "d3524904893fbad3944c97dc18cd5dfb6d8883dc855497d0b1d9021ce00369a2"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world-1/shadow.fsh"
-hash = "c2effb15f127e6c15d7d5870eb1765fa3cb1c9e237eb46bb384dde92c77b2706"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world-1/shadow.vsh"
-hash = "6827460a04ee8cca485fe13e82d5e04d277ec6e8e360fd7bcf0656c03e11a755"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world-1/shadow_voxels.fsh"
-hash = "1dd9c518b2e0ea36fb557bbdef0b45e6109055c8fe56a6842c34afa0916d110e"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world-1/shadow_voxels.vsh"
-hash = "4f7495fc0a7dab94afdcdaf85a0238be3e81b63f0c2d09573f27637751c385f8"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world-1/shadowcomp.csh"
-hash = "a257622ca7c6c5f76778b6a1b3da6029981dfb5856cfdffc794046dd7ca27dd5"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world-1/voxy.json"
-hash = "c7a804a137ef1c7fad815e4b19cfb5bba9754dcb5aae66e5369308a5b294d1d1"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world-1/voxy_opaque.glsl"
-hash = "e0d00a5c995c04456505e04a2b15755b9c8babeb456aaf5ac49d37263dab71bf"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world-1/voxy_translucent.glsl"
-hash = "5d0254b3dbc8a26250a972a8a29714ad7d5ef30904bd89f9553c6e261b696130"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world0/clrwl_gbuffers.fsh"
-hash = "3ec27c2eeb23d8fe698f3f9dd92a81a9505e756b18062a6a3c85e7bfadd6bc95"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world0/clrwl_gbuffers.vsh"
-hash = "701fdf23d09ecc001219b7719ab45d3d1d9b1680ab0cabcaadef9804857e2daa"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world0/clrwl_gbuffers_damagedblock.fsh"
-hash = "6d5b5ffb0a94a7f4053690959acf3692a09c4200f1d0715ae296ba0fc8189435"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world0/clrwl_gbuffers_damagedblock.vsh"
-hash = "a162cb015f22b123d9a42feb2e2e318c4c44486dba6257c8b558d2a7e60768bc"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world0/clrwl_gbuffers_translucent.fsh"
-hash = "bd45e4e51b81f1c1508a2fea98971b06e8e2bd05f09133b252ffd345a5d062e8"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world0/clrwl_gbuffers_translucent.vsh"
-hash = "c57788b28df127d05f85388add571ef58b63ed2af1aa3844ba8bf8316e5bd48a"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world0/clrwl_shadow.fsh"
-hash = "16161e3e82f4fea794e1fd934b0d9e949a552126e7408a6494e57deba34be8f0"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world0/clrwl_shadow.vsh"
-hash = "301937c967884cdda1767648e881f1affd488380f691a87213f37bd6cab579b4"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world0/composite.fsh"
-hash = "86c27551c0f8a28c38fe7610de757b891407c0ecd84fc17a6569b093a15111a6"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world0/composite.vsh"
-hash = "314cfffc1fa4fea6392e02b33e2fbc23f4c7b015b9a71f5346c22f10f9dff149"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world0/composite1.fsh"
-hash = "caf4237c9f3a53d78b18c5ae73650a301e3fd2ba5220d8458614c370156b4c8f"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world0/composite1.vsh"
-hash = "eb54c4158af328c6515d0294141b9e26d7d76742fab868f3aafb74e5cc71b1cb"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world0/composite2.fsh"
-hash = "a6d4d061bce23a484452e14afe7f7d143bb124dde52b460ef7563c02443c3d88"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world0/composite2.vsh"
-hash = "eaea2d461f0a7225def8979f81091777ed513665983b3dffa84d70a58a9867f3"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world0/composite3.fsh"
-hash = "e282bc2758bc6fd9ef1cf7cd8bacd6e9015515f28fff01de39e07a76dcc35fec"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world0/composite3.vsh"
-hash = "cb17aefc55105cfe94ac579c69136a87d06503b9eb2f529240e22ce6107741a6"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world0/composite4.fsh"
-hash = "eda8f9da0165b6aa1b6d3cf9156ff57a825b1eac768a4864ab026697badb5a6f"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world0/composite4.vsh"
-hash = "4ff96b76837f717cdb080677f88c1ec99163ddd9149c6d4172375ac7dc0aa78d"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world0/composite5.fsh"
-hash = "bf0c524778a86b30344cb9b7b1453af9efab55feefa4d2963e5e85d3d87c649c"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world0/composite5.vsh"
-hash = "0a6fa6aefba93f6f8437291b92fccabbb90f98dec897e43b4898c4e8b9ea4288"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world0/composite6.fsh"
-hash = "f050175a252d167f750a04654ee9a5956c0f8a9fcb949e29663f1d072989953f"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world0/composite6.vsh"
-hash = "d06ad445b901026be912d052dbff1f174ea821715f0f659f5a0916ba715e1bbf"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world0/composite7.fsh"
-hash = "dbf0c23c53593a67c99b447f10e89c2d9edd915357e0bd302952b23b0e9d2abe"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world0/composite7.vsh"
-hash = "5602d5b85c64264e1384b74682669d61652b69a5b6c34e509e34dc5a6be42b3f"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world0/composite8.fsh"
-hash = "43b79deeca0d9d591f7e1dd7f403ebeb753ff6ec3663bed89c25df425d638102"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world0/composite8.vsh"
-hash = "69d9603993e0657f5e0ff380b320402c9c04108bdce3a6a2b2733c0012f34eed"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world0/composite9.fsh"
-hash = "a3aeca66419b01f93a82014f3f313a6b20d1048285d4b76762c82d281846fdc1"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world0/composite9.vsh"
-hash = "77bd1976eced7ab0450ae6ee3ed58f62d69032be31edb377d652b2e41fc58c41"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world0/deferred1.fsh"
-hash = "05d5c59a614e9cc45d1238200fff7f6cb3d9b831ac51ac622134de379b89aa52"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world0/deferred1.vsh"
-hash = "d5b4424994012b183665becfb3f98744dde3610f38a82f2a9e2b122aa6348d2b"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world0/dh_terrain.fsh"
-hash = "4e886f58170cf843958656afe0cd8354807dab9556198f99218b9692d4d703f3"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world0/dh_terrain.vsh"
-hash = "3fd4e482b6ce9d5ca81e19a349a2a53f5de54370032ddb0a4b841ff38f1fbddb"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world0/dh_water.fsh"
-hash = "6e6c6ab7d00e175ee2aa71395a988e3fad5b7389e1ae380466871ea77dca623e"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world0/dh_water.vsh"
-hash = "8c3fb62d9c830afd0d819dbbf5f4f57828db6022e63a0b988aaaeb2498dc6ac8"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world0/final.fsh"
-hash = "a31fb000ae6dd1f963f44ff2cd238af3583d46a696c998f8e33762c569d9738f"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world0/final.vsh"
-hash = "0b8b251baf8bb331b2e19612922a1631bc7de169808f85eafffa0a8a6be92a2a"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world0/gbuffers_armor_glint.fsh"
-hash = "82f6350305fb70eb0d892a917554f78cfa829302416a57c548dae8959dc61a6b"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world0/gbuffers_armor_glint.vsh"
-hash = "6b5c2b67c668de1b8ea991f90922ac05d42b03d2a32a8e53a857c460e3a24fd2"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world0/gbuffers_basic.fsh"
-hash = "0afdc00384f4ee3fad365e04a85e4402781b61107f8d289642736de28f8e7048"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world0/gbuffers_basic.vsh"
-hash = "07793007038554da622ac5af82612f969902d0f9a9b480574795f386d8555ddc"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world0/gbuffers_beaconbeam.fsh"
-hash = "e573fbf99a0dcd93b9e02636181b2e7d996952d1baed26a1df122f618f722151"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world0/gbuffers_beaconbeam.vsh"
-hash = "76389f7e9ee681ece47d2cd1888cee097bb31de48ad294e003b578b7a4862912"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world0/gbuffers_block.fsh"
-hash = "8394f01095f34310d90c36bbfefe4eb5027b28ad6c886b5eda053d4ed26342f1"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world0/gbuffers_block.vsh"
-hash = "4fb14cf077e2e925acfd7ea4eb8a873e2ffa978a29221a77bcdb3f11f6bec255"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world0/gbuffers_block_translucent.fsh"
-hash = "65ca290c7b0ea5109b773330d7c708d846ada19c09b926a914777a9ac84725de"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world0/gbuffers_block_translucent.vsh"
-hash = "c6b491ee418d6fe982a948d0f18c2bca9a46216cec515900283c2a09eb6e7790"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world0/gbuffers_clouds.fsh"
-hash = "969525f83d4b4ad212dbdf154d2709e5a50463b73b6762f4d2e641b37ab84edf"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world0/gbuffers_clouds.vsh"
-hash = "b81da2a75ebd78f15ed7f25902d607adc45a0eef70d51d613dc1cc03f8f1e5b8"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world0/gbuffers_damagedblock.fsh"
-hash = "31bb0e5d2fa54b9604de4f4e691eeace87e727ca061b36b1e65b6fcfc3008b37"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world0/gbuffers_damagedblock.vsh"
-hash = "6b14792bb575f5f9ddff3cae67cfac2eb0a0f6ceb8417f9d74215536fe5c3de6"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world0/gbuffers_entities.fsh"
-hash = "d2ff3fd16cabbb8820c5771a5e320c55910dd3ab422113a851d2c1e0bc572a57"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world0/gbuffers_entities.vsh"
-hash = "2029c06fd3cb48cecab40b94c0a5c3e963fcf281ea9d2f22156bb272b6f58f99"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world0/gbuffers_entities_glowing.fsh"
-hash = "2d53a8393766e1f92e72e7dd2bb7c5a1108c2ee05f1f1200346c63135f05f46a"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world0/gbuffers_entities_glowing.vsh"
-hash = "c90830430f7b4df544d5fb4af98f7dcbf20bf9d94f5765c0ffcebcaa72dd3cdf"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world0/gbuffers_entities_translucent.fsh"
-hash = "dccb31bdbd2281114110f9ee7e6a04d4768f8a7b071f3acc267cf189a367e5a1"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world0/gbuffers_entities_translucent.vsh"
-hash = "c0193e8d533f9f03c407f570f2abda895092ed20d7492682b0438d09f83c01b6"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world0/gbuffers_hand.fsh"
-hash = "f2f8f8a6e24dc8e47a40a97560667e3e86f0243f4da74ff4431fd4eeb4c485fe"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world0/gbuffers_hand.vsh"
-hash = "7e065c6247a9d2a83cc435fb83a909659a2e5d194ce5456d94d2fae847814ec5"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world0/gbuffers_lightning.fsh"
-hash = "a155bb548423ba3704e812dddaf801f7f0c7c28922cd9d670525625b1561529c"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world0/gbuffers_lightning.vsh"
-hash = "6f0098b5e2b7e7f632910b763cee4f544faf3411ddafa9a189d3594bf0f0531c"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world0/gbuffers_line.fsh"
-hash = "ed079aff5256be28751485e73cf46ab3e35e630cf632f07357e12d96312db710"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world0/gbuffers_line.vsh"
-hash = "d068fd9e4e7af2655cc0e0b7645b21db9f7bc8d35ceb0e817f97fdc7d4975b2b"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world0/gbuffers_skybasic.fsh"
-hash = "e797abd4504d5f01b90241b9693d6fe086622be398dbfbbc31da82a11e493bb3"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world0/gbuffers_skybasic.vsh"
-hash = "a191e6a57bcf0622936951b12139c74873c4b23aaf5e4a8e3beb18cca4e7cddf"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world0/gbuffers_skytextured.fsh"
-hash = "4db8425b28d6823d887382c440400f0d5a56d8151a0ac0d2787c9e1f4cac85f1"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world0/gbuffers_skytextured.vsh"
-hash = "d43076b1fc5a12f7821af4e7d53180850b397bdb5e9a97a19faeb66e9cf4b5d2"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world0/gbuffers_spidereyes.fsh"
-hash = "777b54bda3ef9f80aab5a61e3c1eb87d10bd36fd1a5c67a7cb012af075cfd0d2"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world0/gbuffers_spidereyes.vsh"
-hash = "5d124aed6a7a4c07ea9a9b26f42b379a968d7b4059987ca13e28a3cbf2f0d2e9"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world0/gbuffers_terrain.fsh"
-hash = "bcae88267bed16a24cb4661a4820abab3d751a6ae7156e2f3d0e804330aa9c5a"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world0/gbuffers_terrain.vsh"
-hash = "2af78a57feed4370178ff7309d33d08f2d4500e467377f57e3df1df5b340a413"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world0/gbuffers_textured.fsh"
-hash = "41e0283e21c69a9401ebd9ccc4b5b5d13ab5b37a1e3896daec059d1a60af0b6a"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world0/gbuffers_textured.vsh"
-hash = "4ad7095765d9284a504a8d3c7449bfd3ad5072405fdd210480462089c99a506b"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world0/gbuffers_voxels.fsh"
-hash = "63cab37818537999835418be9ef810b30f13469ef8995bb52f381b97b6659177"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world0/gbuffers_voxels.vsh"
-hash = "c13b677be1beaf20fed83c929215e75ab219b24e3afa2b528c799094e1fc4516"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world0/gbuffers_water.fsh"
-hash = "893fac013538ad81d2b79ea58d1aad970e31bc6ea8e40ee02244db2b03096be2"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world0/gbuffers_water.vsh"
-hash = "fa9beeee0d2f5837fe5f9bdd20b614f5d39707f8c1ab1c5965ef0d6291c54ff6"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world0/gbuffers_weather.fsh"
-hash = "4f9a83ef90cfb59af69540177591524741c20e22a08a419221569f928107a964"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world0/gbuffers_weather.vsh"
-hash = "9b495d62b7e327168c2aa9ef93653447770a6cf9641b96685cbf80330c96425e"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world0/prepare.fsh"
-hash = "dac50917fd925d9ff0b3c70720c965c4abcebc6be3e2858944d8c4e0e8a24fa0"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world0/prepare.vsh"
-hash = "98e33760b37d1386b3c44e3b7de82ecf3b87b7d513cc4f52363a888f9b78bc21"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world0/shadow.fsh"
-hash = "5d71d587c230f9a14777ea165ad8209dc4f6a177058762c17610fd1a0ec09ace"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world0/shadow.vsh"
-hash = "22d63fd5b936443c1d385bf363c4964beaac67dc57eebd393f681d261d1edafd"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world0/shadow_voxels.fsh"
-hash = "fe30c91e9a8c7de9e26f4f8ffd19c9428465f827220a0cb93de65e8b272311fc"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world0/shadow_voxels.vsh"
-hash = "a433d3242c3a45df381a743e70300e1c1036bb502314ae91eaed2201ce3ac317"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world0/shadowcomp.csh"
-hash = "a55d1c19d6f3b4f2019efe0bf4ca5c53e5f11b6b0e0416f482ce1f9053d97192"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world0/voxy.json"
-hash = "c7a804a137ef1c7fad815e4b19cfb5bba9754dcb5aae66e5369308a5b294d1d1"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world0/voxy_opaque.glsl"
-hash = "872c07fd88845251e9854b34ad5cc0dc7294e5eaeae489929705faba25cd131d"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world0/voxy_translucent.glsl"
-hash = "764fe6e7061527124b7b321f02cc9ebb745063d3f29b0a50473cfc3b2ccb8b2e"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world1/clrwl_gbuffers.fsh"
-hash = "546910b91e584b9055458970bc590c84bd08faf9126eb18dce244a5824c9bafc"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world1/clrwl_gbuffers.vsh"
-hash = "7ce0bd1733d4a31e57d6eab7c67c2d4fc4cf33a27391a72d5d427edebfe92d5c"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world1/clrwl_gbuffers_damagedblock.fsh"
-hash = "d2d55b0715babbdd819db7bab95c214b342f6ef7a48015d2a73128f7c1b5afe3"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world1/clrwl_gbuffers_damagedblock.vsh"
-hash = "edec9436bd220d4de13b2887b4bae0d8e8a6cd36fc60f977bbbb11bdff609602"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world1/clrwl_gbuffers_translucent.fsh"
-hash = "dcafd5ecaa559c60fc99771542ad8145d2929895004a87b8b75c6ffda238e6ae"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world1/clrwl_gbuffers_translucent.vsh"
-hash = "e905b1be92b70db290f3c17585c816f7549ae1c66e9d228478bab76e146978b1"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world1/clrwl_shadow.fsh"
-hash = "d273f5fc1d52836994a5b46f2a6e183e77e8202b57a6d293f6a713c40c7acdf0"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world1/clrwl_shadow.vsh"
-hash = "0a5f54562e5256e3541262f5051dbc9923ed1e5d8f19be4a6a439f7dca60eac2"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world1/composite.fsh"
-hash = "aa636e73690ba2ab72bb0b3e68626f8921e79995fb57d522fe7f5b77be0c0294"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world1/composite.vsh"
-hash = "d58f23434796212eb56cf920ae59da9944f3c954eab2e0f3679d32616da56cf7"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world1/composite1.fsh"
-hash = "99d83257e2e115f807c352125ead2e305ba6f4e9652abdc9df63b5db87b4b87f"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world1/composite1.vsh"
-hash = "7ad4ece8e508b106d845b8b9846c90b5b06d91a4fe7892ea8ba184e54d7b65ad"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world1/composite2.fsh"
-hash = "066521fcade7878d765fd55d9beba648eaa4aeb3e24c851888050a594d3b53f9"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world1/composite2.vsh"
-hash = "4a520de13f52431d8e2711ebfc15855d3bcd5db4aaab691e8f169b387d8fcae8"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world1/composite3.fsh"
-hash = "48482c4cf18d6163e70f8376056e6e09615a7be9ddd05346a24be637f98ab93a"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world1/composite3.vsh"
-hash = "d1d6c9ee97d23c03c605f2463be05741a12fa74a391032f208b6eca9630ded0e"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world1/composite4.fsh"
-hash = "85a8ded648a4b011dc4cd72ac4faccdbbf79b43333e7310e3b1f7feb1f821464"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world1/composite4.vsh"
-hash = "eed87f3e500207e7f05d257b59b55fb79906e9018affd426cd14d5a49a915f40"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world1/composite5.fsh"
-hash = "10059510005d1f30466288f2ea5977660bf27d510145168546d85228dec92742"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world1/composite5.vsh"
-hash = "eef5d880b6551f3329b9a708e793a5546dea2ff62fbff2aa8148430e43604056"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world1/composite6.fsh"
-hash = "49f498dc087f09e83b1eb68efadff3cb09c0151daac9ad16ed8987c2d322f99b"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world1/composite6.vsh"
-hash = "eb2a1dbb5f8736da6cba26c0a22b65b08a5ee3182c926d905dc8eee53a60aadf"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world1/composite7.fsh"
-hash = "cd87aed623e8a24f94ad23ece5f52cdcfc69883380d0dc10ede3621f028c82fe"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world1/composite7.vsh"
-hash = "0dee90934ad3c6fc6335414cc72ee403fe6a69dea41e2333191ed229a2fe7653"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world1/composite8.fsh"
-hash = "49823d4c5f37b5f5f1175456c542083665b47ab6bb48cb5ce4a5b5b2627cb8cb"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world1/composite8.vsh"
-hash = "0685ce1ef2d2beaca717127e713007ce69bddee977ab6cfdd9b41c2a69c9e5c1"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world1/composite9.fsh"
-hash = "2704b9beefb0eee70204759acf4a1476b6b88fa371cb5f95710b93626994ae71"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world1/composite9.vsh"
-hash = "c6bfec5af6eef6f623d58edc6ddebae1012bdb8fc67209d35b027d4558de9f87"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world1/deferred1.fsh"
-hash = "f6e6fcedb848d2ac4b2899a88c151a04c7fc14fd1a0b45b46537b9130304ecd7"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world1/deferred1.vsh"
-hash = "35d2faac2b1194fbb6c658c94ee46b74659be9cbe8c3a2bd1a24cc16ade056f6"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world1/dh_terrain.fsh"
-hash = "67b7d170ee35d93355a0380e5b696e067744531cc266c910335a756b1a7cf478"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world1/dh_terrain.vsh"
-hash = "5c1c96de3079df226ab554e1d01c945c3670f92972983dad81c0d85df904f20e"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world1/dh_water.fsh"
-hash = "c401cb87ce9c0a16bb06492362d7c228e0d91fce2ece5dfce91c9771a4d2d63c"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world1/dh_water.vsh"
-hash = "7a3b179ea42a4ea80840ad4a0c1f041e65194bb0a8dbf9ec41ab0a35661cf0e9"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world1/final.fsh"
-hash = "9acb32cb6c88f3b358cb920aa804d15d53c8e3a832d167b7d9815f6270845abd"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world1/final.vsh"
-hash = "17e4004eb4de77d7fae23b52a29f3741a46a2b31c81c63670ae4ca8197af8ae3"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world1/gbuffers_armor_glint.fsh"
-hash = "2fbe2facf866077cc5f0b6588e757e2772a2eb543b80483020f106ec62e6f6a5"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world1/gbuffers_armor_glint.vsh"
-hash = "1864dccb9d9fe70276b36f48aef5225290d85a8d333b1e59f2501cbf8e1dbf3d"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world1/gbuffers_basic.fsh"
-hash = "2435c14dcbc24b02e9d34d45e827010bf53f71a67fb0722ced09ffb4a0956d3e"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world1/gbuffers_basic.vsh"
-hash = "bef944793abef82ccfcb101ce2b21105cd95d787e5fe43b2a3c71396b644af04"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world1/gbuffers_beaconbeam.fsh"
-hash = "db17d4310da965022b8bf07070a7ee21bb3d8e97f4a6be2936ddac775c9ebc86"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world1/gbuffers_beaconbeam.vsh"
-hash = "e0cd1a35f49d96696d1f248874d533f684a6dd7e59d7ae67f61bf4bf4a8a4b7b"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world1/gbuffers_block.fsh"
-hash = "903c3bace569cfea077831e1a001e9fe38e83615e1de19e0b16e7bf35c284ba0"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world1/gbuffers_block.vsh"
-hash = "8d784493f0e3b4252fb573539f28f86a6f5ab8b14f564595cb6145be6deeff92"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world1/gbuffers_block_translucent.fsh"
-hash = "a7e5d410e1a5a4ad7bb10b475d1e6d6d68e067ecf8e5b2e60188527d1c2dc189"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world1/gbuffers_block_translucent.vsh"
-hash = "779d6dde0c3e252bf9f863f0f90f74a2f7427be2ca151e46e7dbcc52aa7c7ddf"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world1/gbuffers_clouds.fsh"
-hash = "239ad9d47c29daba0c39f54be84a2c78145f02fa12b4ce2955f9f786e538bdba"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world1/gbuffers_clouds.vsh"
-hash = "e0398b6d7700bbcd97fb7dc149d4d23a9d63fa90f02e3c14f54111a53c45f089"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world1/gbuffers_damagedblock.fsh"
-hash = "d440fe47b6bea0ce646b786897dc1f542c0f9ed3452d79c1f897bf714d8b610a"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world1/gbuffers_damagedblock.vsh"
-hash = "6e4f517d0a175bf4850359aefbb7adbfded8070b8a0f4e543697d9d8615ed3b4"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world1/gbuffers_entities.fsh"
-hash = "2163e3305813d9efa7e3f20e9957ec02a823532a16a39da277e2817238ed8491"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world1/gbuffers_entities.vsh"
-hash = "830dc3dbd42f2bbe323535b7e8842460b31f49ba480801512c619cb73ee89858"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world1/gbuffers_entities_glowing.fsh"
-hash = "ed0a8882d1b1f8fbe2e24cd6216f9c4293cd8e78862dcff54f70037aa918a28d"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world1/gbuffers_entities_glowing.vsh"
-hash = "0dc55561054aeb1f8ecbfce713fc5075e5fd6c4321d013f6606adb1e85504b50"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world1/gbuffers_entities_translucent.fsh"
-hash = "71c76a1ed3ffcdbddb58790d7772aa8a6e188e90258e9ac97508c105748a6f41"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world1/gbuffers_entities_translucent.vsh"
-hash = "af8cfe20f7ba8a7652b31ed66fe65511b7857028e9ae39838f01dc2a85ae39eb"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world1/gbuffers_hand.fsh"
-hash = "cabbfe84d13f6383da5aa58948f504b3832339b9c111763e8310f1e0c6265163"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world1/gbuffers_hand.vsh"
-hash = "7929aa85cdb9f14e57da85a65d1973f306fed2668317164ee4154d491ee39b72"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world1/gbuffers_lightning.fsh"
-hash = "7e3488cddbebda3da87dbfa561d5ebce3016cfd3565df570e6e7b14819b30716"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world1/gbuffers_lightning.vsh"
-hash = "a4d3cdfc923fa87b4f7d3f15d30cae53c7e7585736b1b8d20334926e2d033077"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world1/gbuffers_line.fsh"
-hash = "d08ba12cd9b36b56489deaba528f43b1b5183180d6e8a6f60bf37d4d5ce1018c"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world1/gbuffers_line.vsh"
-hash = "abf4bb3c47fccf3c14d9362ee790ccd5930ed1b5f824c35dc6f5dd797d34d262"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world1/gbuffers_skybasic.fsh"
-hash = "2252c92fe909aaa82897e79bf59f089bc8c2736010ac04bb0de66fdf062a758a"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world1/gbuffers_skybasic.vsh"
-hash = "03c043727c320eec3e81066b3596794b4b3cd45bf5d984c726d84c189270b477"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world1/gbuffers_skytextured.fsh"
-hash = "5643a433071184edac78fbf1a5c63ed97a07fa77abf245419da59fe24bf6dd48"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world1/gbuffers_skytextured.vsh"
-hash = "506332426c65d1482de874b193af145f368e8cc2b430399ab9c10f531866cfe2"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world1/gbuffers_spidereyes.fsh"
-hash = "e66e3f9b67dee63f04b430c4e4703cc88b7c26808324c0dd33f0c05096bf9430"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world1/gbuffers_spidereyes.vsh"
-hash = "bd512449b0cbc081b1fc396819deab1f577b26f22c16af5694393fadd41050da"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world1/gbuffers_terrain.fsh"
-hash = "3bd4518637b7fab5f5df7ce543c6bc519c23ade9acce6e712afb5c5a5b9dbfef"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world1/gbuffers_terrain.vsh"
-hash = "975a6c92d595470b3c98f67892efb295e2047968bcb2e19ee80fa8625d6091b5"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world1/gbuffers_textured.fsh"
-hash = "effbb7c4e0b57620a50ce9a5db4a384ba90e0cd818d116f06a7246e7e2072148"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world1/gbuffers_textured.vsh"
-hash = "518be8a9477bac5d11519a35199b46421de51c841c62383eb2d0bb3e8d7a2e8e"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world1/gbuffers_voxels.fsh"
-hash = "4b2b3bd28adbc1309167c1873f889c1c519bd3fd97320a456ffe0653c1355f33"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world1/gbuffers_voxels.vsh"
-hash = "db763e1e53cd02331c458be59465a3d7b13eb8e7fe526017117311378b29aceb"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world1/gbuffers_water.fsh"
-hash = "77b9d1a21eb1e95dead5d3947c2cadfff39cbc99c650a0f529bf935f375f347a"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world1/gbuffers_water.vsh"
-hash = "59dd0846852a80467ee1c4da38789b558d3c3f32657d8316d610ee04057b9211"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world1/gbuffers_weather.fsh"
-hash = "c40b627d30707a95c318e5515f9edbd0d86f6bf933831151565d54783cda5918"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world1/gbuffers_weather.vsh"
-hash = "3e42a0992ba2d9c79808a0e89fe49eb8e7b8d62bf93b0722c69f943d9cad1408"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world1/prepare.fsh"
-hash = "d33ee22879ede18e49e0bad5a97f223e0e05ab42df738e5ea56d6c4628343a6d"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world1/prepare.vsh"
-hash = "53b425c64eb79e5f09d874ccc15f773002ff02efac206e6119f074879a419de2"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world1/shadow.fsh"
-hash = "97a42bc4a81e6f55752d5ffa5935209adbc3380ce33f974b6f1571a1dedfa4e6"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world1/shadow.vsh"
-hash = "fa022a9302f25401a854a85a7e67bfe850769d59ebf3c1d7355814f09468e924"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world1/shadow_voxels.fsh"
-hash = "626111139858260ae7df72e813f2b3c159b9fe4454d2978f5f5ddf1b633eaa22"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world1/shadow_voxels.vsh"
-hash = "53c728e6a4841dc3198e81f2443857480909c3d07761895e72707e6bda8be6a3"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world1/shadowcomp.csh"
-hash = "1ff2a3529f60f4cdf66e2e8ac09d90813ce479ef340c18440deeccf845141ff3"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world1/voxy.json"
-hash = "c7a804a137ef1c7fad815e4b19cfb5bba9754dcb5aae66e5369308a5b294d1d1"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world1/voxy_opaque.glsl"
-hash = "155e1639ff4710142d4632854909f62524bd1face612edc33bf2aff2a407fca7"
-
-[[files]]
-file = "shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/shaders/world1/voxy_translucent.glsl"
-hash = "873732bf4872d105393846f41f40cc6c39881b422a35a507ec12580083e57a65"
+file = "shaderpacks/complementary-unbound.pw.toml"
+hash = "608b87f75b2387a9fbd340cb18a8238bbbe5a0afc54202634b34f3000246b6e7"
+metafile = true

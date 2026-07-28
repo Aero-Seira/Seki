@@ -1,6 +1,6 @@
 # Detected pack profile
 
-Generated: `2026-07-28T23:08:06+08:00`
+Generated: `2026-07-29T01:28:04+08:00`
 
 - Pack Name: Seki
 - Name: usernamecache
@@ -9,4 +9,4 @@ Generated: `2026-07-28T23:08:06+08:00`
 - Fml Version: 4.0.42
 - Java Version: 21
 - Observed Mod Loaders: {"neoforge":115,"fabric":8}
-- Content Counts: {"mod":124,"resource-pack":1,"shader-pack":3,"config":233,"script-content":19,"launcher-profile":4}
+- Content Counts: {"mod":124,"resource-pack":1,"shader-pack":4,"config":233,"script-content":19,"launcher-profile":4}

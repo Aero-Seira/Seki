@@ -1,0 +1,13 @@
+name = "Kaleidoscope Nether"
+filename = "[森罗物语：下界] kaleidoscope_nether-1.1.4-neoforge+mc1.21.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "b860c9a32bcbb991aceed2effff1a1a8e6dbec68"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8328038
+project-id = 1417862

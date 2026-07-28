@@ -1,0 +1,13 @@
+name = "KubeJS Data Component"
+filename = "kubejs_datacomponent-1.0.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "d0dc2b504c8cbd198c0edd972cfd94f1c0622596"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 7368090
+project-id = 1384092

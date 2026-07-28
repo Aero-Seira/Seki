@@ -1,0 +1,13 @@
+name = "Kaleidoscope End"
+filename = "[森罗物语：末地] kaleidoscope_end-1.0.14-neoforge+mc1.21.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "4dd55ea7902260f7938827e41c12320dad6a5a7a"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8323724
+project-id = 1456076

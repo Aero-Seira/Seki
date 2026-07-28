@@ -1,0 +1,13 @@
+name = "Pixelshot"
+filename = "Pixelshot-v21.1.1-1.21.1-NeoForge.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "6df74c6e67710c4f028bf7d3619a5d010a26850d"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 7356473
+project-id = 1369180

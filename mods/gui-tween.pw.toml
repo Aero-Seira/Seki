@@ -1,0 +1,13 @@
+name = "GUI Tween"
+filename = "guitween-3.3.7-1.21.1+neoforge.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "7a73ddafe7654be857b850cd2d65f0c56378e7b2"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8236878
+project-id = 1399693

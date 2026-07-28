@@ -6,6 +6,7 @@
 /.tools/
 /_skill_packages/
 /_skill_staging/
+/dist/
 /docs/
 /design/
 /index/
@@ -56,9 +57,9 @@
 /shaderpacks/*.zip
 
 # Generated shader/resource caches; the original archives are restored by packwiz
-/shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/
-/shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3.txt
+/shaderpacks/ComplementaryUnbound_r5.8.1*
 /config/inventory-particles/cache/
+/config/xaero/
 /config/jei/world/
 /config/spark/tmp/
 /config/spark/tmp-client/
@@ -67,3 +68,4 @@
 /config/euphoria_patcher/.data.json
 /config/etf_warnings.json
 /config/beautifiedchatserver/players.json
+*.bak

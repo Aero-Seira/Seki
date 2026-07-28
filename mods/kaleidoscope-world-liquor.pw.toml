@@ -1,0 +1,13 @@
+name = "Kaleidoscope World Liquor"
+filename = "kaleidoscope_world_liquor-1.1.7-neoforge+1.21.1.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "15abe78fc73436b058fdf761d1824266a17aab24"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8398238
+project-id = 1502365

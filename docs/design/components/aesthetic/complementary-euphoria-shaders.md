@@ -5,7 +5,7 @@
 - 类型：shader-pack
 - 状态：active
 - 证据可信度：verified
-- 来源路径：`shaderpacks/ComplementaryUnbound_r5.8.1.zip`、`shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/`（已打补丁衍生目录）、`shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3.txt`（光影设置文件）
+- 来源路径：`shaderpacks/complementary-unbound.pw.toml`、`shaderpacks/ComplementaryUnbound_r5.8.1.zip`（packwiz 下载）、`shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/` 与同名 `.txt`（运行时衍生状态）
 - 标识与版本：Complementary Shaders Unbound 风格 r5.8.1 + EuphoriaPatches 1.9.3
 - 加载器或包格式：Iris（OptiFine 光影包格式）
 
@@ -30,8 +30,9 @@
 
 ## 配置意图
 
-- 衍生目录为 Euphoria Patcher 对基础 zip 打补丁后的产物；基础 zip 同时保留，便于补丁失败时回退或重新生成。
-- `.txt` 设置文件随包分发，作为官方默认视觉参数基线。
+- 基础 zip 由 Modrinth 项目 `R6NEzAwj`、版本 `VMHXIk50` 的 packwiz 描述符恢复，SHA-512 已与本地文件核对一致。
+- 衍生目录为 Euphoria Patcher 对基础 zip 打补丁后的运行时产物；它不进入 Git 或 packwiz 索引，可由基础 zip 重新生成。
+- `.txt` 设置文件由运行时维护，当前不随 Git/packwiz 分发；官方可复现边界是基础 ZIP、Iris 选择项与 Euphoria Patcher 版本。
 
 ## 兼容性与性能
 
@@ -46,10 +47,11 @@
 
 ## 风险与开放问题
 
-1. 玩家修改 `.txt` 后整合包更新会覆盖，需文档告知或改为分发默认值。
+1. `.txt` 未作为团队默认值分发，不同玩家的 Euphoria 细项可能漂移；若未来需要严格统一宣传画面，应另行固化一份可审计设置基线。
 2. 光影包体积较大，对分发带宽的影响待评估。
 
 ## 历史
 
+- 2026-07-29: 基础 ZIP 改由 packwiz/Modrinth 恢复；Euphoria Patcher 展开缓存与本地设置从索引排除
 - 2026-07-20: 设置 `.txt` 重新写入（仅时间戳变化，无参数 delta）
 - 2026-07-19: 作为官方默认光影随第四批添加

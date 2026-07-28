@@ -1,0 +1,13 @@
+name = "Kaleidoscope：Dimensions wine"
+filename = "kaleidoscope_dim_wine-1.5.3-mc1.21.1-neoforge.jar"
+side = "both"
+
+[download]
+hash-format = "sha1"
+hash = "bcacdab9ba6d2117eccad6f4480e1de652c261e8"
+mode = "metadata:curseforge"
+
+[update]
+[update.curseforge]
+file-id = 8369853
+project-id = 1506363

@@ -43,7 +43,7 @@ Seki 是由 ProjectNautic 制作的 Minecraft 1.21.1 NeoForge 生活冒险整合
 | Minecraft | `1.21.1` |
 | 模组加载器 | `NeoForge 21.1.235` |
 | Java | 64 位 Java 21 |
-| 当前模组数量 | 124 |
+| 当前模组数量 | 124（packwiz 管理 122，另有 2 个本地开发例外） |
 | 客户端内存建议 | 6–8 GB |
 | 游玩方式 | 单人 / 多人 |
 | 开发状态 | 开发中可试玩 |
@@ -54,14 +54,16 @@ Seki 是由 ProjectNautic 制作的 Minecraft 1.21.1 NeoForge 生活冒险整合
 
 **[GitHub Releases（即将开放）](https://github.com/Aero-Seira/Seki/releases)**
 
-公开发布后，这里会提供完整整合包与启动器导入说明。目前请不要把仓库源码压缩包当作游戏实例：仓库主要保存配置、脚本、设计资料和版本清单，第三方模组 JAR 不随源码仓库分发。
+仓库现已使用 packwiz 保存可复现的安装清单：根目录 `pack.toml` / `index.toml` 固定版本与文件哈希，`mods/*.pw.toml` 记录模组下载来源。第三方 JAR/ZIP 不进入 Git；本地开发实例中的文件仍保留在原目录，普通提交和推送不会删除它们。
+
+公开发布前，可使用兼容 packwiz 的启动器或 packwiz-installer 指向 [`pack.toml`](pack.toml) 进行开发安装。客户端会安装 121 个 JAR；Brutal Respawn 仅服务端，JECharacters 4.5.26 与 ModPack IDE Exporter 0.1.0 暂为本地专用例外。另有 12 个 CurseForge 模组因作者关闭第三方下载，需要按安装器提示手工下载原文件。完整维护与安全流程见 [packwiz 分发说明](docs/design/components/platform/packwiz-distribution.md)。
 
 ## 开发状态与已知限制
 
 - 料理配方仍在持续统一，部分盖饭路径完成了静态验证，但仍需更多运行时回归。
 - 下界与末地主题扩展已经加入；它们的完整内容范围及世界生成影响仍在盘点。
 - 独立战利品的多人回归、高掉落密度下的视觉性能，以及低配设备的默认光影表现仍待系统测试。
-- 公开发布包、启动器导入流程和更新机制尚未完成。
+- 面向普通玩家的启动器导入封装尚未完成；packwiz 开发分发链已建立，但 CurseForge 人工下载项与两个本地专用例外仍需在公开发布前处理。
 
 开发版本可能调整配方、配置或模组组合。使用现有实例游玩时，请在更新前备份重要世界。
 

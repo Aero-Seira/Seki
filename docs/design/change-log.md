@@ -1,5 +1,18 @@
 # 设计变更记录
 
+## 2026-07-29 - 迁移到 packwiz 分发并停止 Git 托管第三方 JAR/ZIP
+
+- 新增 122 个 `mods/*.pw.toml` 与 1 个 Complementary Unbound 光影描述符；根 `pack.toml` / `index.toml` 现负责固定 Minecraft 1.21.1、NeoForge 21.1.235、配置、KubeJS 内容与下载元数据。
+- 真实开发实例的 124 个 JAR（286,692,928 字节）保持原位，Git 跟踪 JAR/ZIP 数为 0；描述符与 JAR 同处 `mods/`，由 `.gitignore` 使 GitHub 只展示 `*.pw.toml`。
+- packwiz 管理 122 个模组；JECharacters 4.5.26 因官方尚未发布对应构件、ModPack IDE Exporter 0.1.0 因公开来源不可访问，作为两个本地专用例外保留。
+- 客户端隔离重建得到 121 个 JAR；Brutal Respawn 的 `side = "server"` 被正确跳过。12 个 CurseForge 作者禁用第三方下载的文件经人工放置后全部通过描述符哈希验证。
+- Complementary Unbound r5.8.1 改由 Modrinth 描述符恢复；Euphoria Patcher 展开目录从索引排除。汉化 ZIP 经 `logs/I18nUpdateMod.log` 确认为运行时动态合成物，不建立固定下载项。
+- 扫描器同时观察到 AsyncParticles/Iris/PacketFixer 时间戳、Inventory Particles 图集缓存、JEI 世界搜索历史、`usercache.json`、动态汉化 ZIP 与 Euphoria 本地设置刷新；这些均为已核实的运行时派生状态，不进入本次 Git 分发内容，也不删除玩家文件。
+- 为保证 GitHub 原始文件与 `index.toml` 哈希一致，新增 `.gitattributes` 并将 77 个被 packwiz 索引的文本配置从 CRLF 规范为 LF；逻辑键值没有变化。扫描器本轮共记录 78 个修改项（含 `pack.toml` 索引哈希），属于分发字节规范化而非游戏设计改动。
+- 安全约束：禁止在真实实例执行 `packwiz curseforge detect` 或安装清理；所有检测和重建都在 `.tools/` 隔离目录完成。普通 Git 提交/推送不会删除未跟踪且已忽略的本地 JAR。
+- 验证状态：122 个模组描述符均与真实 JAR 唯一哈希匹配；官方 packwiz-installer v0.5.14 隔离重建成功；客户端文件与描述符、真实实例三方哈希一致。
+- 设计文档：[packwiz 分发与本地实例保护](components/platform/packwiz-distribution.md)、[JECharacters](components/utility/jecharacters.md)、[ModPack IDE Exporter](components/other/mpide-exporter.md)、[汉化资源包](components/resourcepacks/minecraft-mod-language-modpack-converted-1-21-1.md)、[默认光影](components/aesthetic/complementary-euphoria-shaders.md)。
+
 ## 2026-07-28 - 设计决策：取消 Chapters 阶段锁定体系；项目更名 Seki 并转向生活冒险定位
 
 - 维护者裁决：本包不使用 Chapters/GameStages 类阶段解锁系统，设计思路与"版本即章节"方案不同。设计支柱 2 已由"类原版起步，阶段式解锁"修订为"内容直接投放，无阶段门控"。
