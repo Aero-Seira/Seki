@@ -1,0 +1,69 @@
+# Repository metadata and local tooling
+/.git/
+/.github/
+/.agents/
+/.codex/
+/.tools/
+/_skill_packages/
+/_skill_staging/
+/docs/
+/design/
+/index/
+/mpide-exporter/
+/README.md
+/AGENT.MD
+/.gitignore
+/.packwizignore
+/removes.txt
+
+# Launcher/runtime files supplied independently of the pack
+/Seki.jar
+/Seki.json
+/Toudai.jar
+/Toudai.json
+/PCL/
+/*-natives/
+/python/
+
+# Runtime and player state
+/logs/
+/crash-reports/
+/downloads/
+/saves/
+/screenshots/
+/backups/
+/cache/
+/.cache/
+/.mixin.out/
+/.delightify/
+/data/
+/local/
+/xaero/
+/XaeroWaypoints_BACKUP*/
+/particular_cache/
+/resourcify-temp/
+/command_history.txt
+/options*.txt
+/servers.dat*
+/usercache.json
+/usernamecache.json
+/knownpacks.json
+/realms_persistence.json
+
+# Packwiz metadata replaces these source binaries in Git and in the index
+/mods/*.jar
+/resourcepacks/*.zip
+/shaderpacks/*.zip
+
+# Generated shader/resource caches; the original archives are restored by packwiz
+/shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/
+/shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3.txt
+/config/inventory-particles/cache/
+/config/jei/world/
+/config/spark/tmp/
+/config/spark/tmp-client/
+/config/spark/activity.json
+/config/sodium-fingerprint.json
+/config/euphoria_patcher/.data.json
+/config/etf_warnings.json
+/config/beautifiedchatserver/players.json

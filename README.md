@@ -65,6 +65,13 @@ Toudai 是一个"类原版"基础包——**不新增任何模组物品、方块
 3. 新模组必须明确支持 Minecraft 1.21.1 + NeoForge 21.1.x，并检查依赖链与服务端兼容性。
 4. 新增内容模组必须在阶段系统中定义默认解锁状态。
 
+## Git 与 packwiz 安全
+
+- Git 只跟踪 `pack.toml`、`index.toml`、`*.pw.toml`、配置和脚本；本地 `mods/*.jar` 以及资源包、光影 ZIP 由 `.gitignore` 保留在实例中。
+- 普通 `git add`、`commit`、`push` 不会删除未跟踪且被忽略的本地 JAR；提交前的 GitHub Actions 也会拒绝任何被强制加入的 JAR 或源归档。
+- 不要在真实游戏实例中运行 `packwiz curseforge detect`：该命令会删除成功匹配的源 JAR。需要识别旧实例时，应在临时副本中运行，只带回生成的 `.pw.toml`。
+- 不要在真实游戏实例中运行 `git clean -fdx` 或 `git clean -fdX`；这两个命令会主动清理被忽略的本地二进制文件。
+
 ## 命名
 
 **灯台（とうだい / Toudai）**：灯塔。基底包如灯塔般固定、可见、可靠——不随内容章节变动，为所有航线（衍生包）指引方向。

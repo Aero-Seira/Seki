@@ -1,0 +1,13 @@
+name = "Seki"
+author = "ProjectNautic"
+version = "2026.07.28"
+pack-format = "packwiz:1.1.0"
+
+[index]
+file = "index.toml"
+hash-format = "sha256"
+hash = "2eacc0321ee676b2902e3548306bd16993fdeb1505903d4fc3cbfa77dbaf8a58"
+
+[versions]
+minecraft = "1.21.1"
+neoforge = "21.1.235"

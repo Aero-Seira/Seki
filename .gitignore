@@ -1,0 +1,204 @@
+# ============================================================
+# ProjectNautic 整合包 Git 忽略规则
+# 目标：仅保留整合包设计内容与版本基线
+# ============================================================
+
+# --------------------------------------------------
+# 1. 运行时 / 环境生成（绝对忽略）
+# --------------------------------------------------
+
+# 日志与遥测
+logs/
+*.log
+
+# 下载缓存
+downloads/
+
+# 玩家存档（个人数据）
+saves/
+
+# 崩溃报告
+crash-reports/
+
+# 截图与视频
+screenshots/
+schematics/
+
+# 备份
+backups/
+
+# 缓存
+.cache/
+cache/
+
+# Mixin 运行时输出
+.mixin.out/
+
+# 模组在整合包根目录生成的运行时数据（如 Collective 汉化缓存）
+/data/
+
+# --------------------------------------------------
+# 2. 启动器个人配置（含认证信息）
+# --------------------------------------------------
+
+# PCL 启动器本地配置
+PCL/
+
+# HMCL / 其他启动器账户缓存
+launcher_accounts.json
+
+# 游戏个人设置
+options.txt
+optionsof.txt
+optionsshaders.txt
+servers.dat
+servers.dat_old
+usercache.json
+usernamecache.json
+realms_persistence.json
+knownpacks.json
+
+# --------------------------------------------------
+# 3. 原生库 / 可执行文件（由启动器按需下载）
+# --------------------------------------------------
+
+# Windows 本地库
+*-natives/
+*.dll
+
+# Linux / macOS 本地库
+*.so
+*.dylib
+*.jnilib
+
+# --------------------------------------------------
+# 4. 游戏主 Jar / 分发构建产物
+# --------------------------------------------------
+
+# 版本主 Jar（由启动器通过版本 JSON 下载）
+Toudai.jar
+Seki.jar
+
+# packwiz 只提交下载元数据，不提交第三方二进制源文件
+*.jar
+mods/*.jar
+resourcepacks/*.zip
+shaderpacks/*.zip
+
+# 本地 packwiz 工具与缓存
+.tools/
+.packwiz-cache/
+
+# 本地分析、技能开发与运行时导出（不属于整合包分发内容）
+_skill_packages/
+_skill_staging/
+mpide-exporter/
+index/
+
+# 启动器生成的版本描述由 packwiz 版本字段替代
+Seki.json
+
+# 构建产物目录
+dist/
+
+# --------------------------------------------------
+# 5. IDE / 编辑器 / 系统文件
+# --------------------------------------------------
+
+# IntelliJ IDEA
+.idea/
+*.iml
+
+# VS Code
+.vscode/
+
+# Eclipse
+.classpath
+.project
+.settings/
+
+# 系统文件
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# --------------------------------------------------
+# 6. 其他临时 / 测试文件
+# --------------------------------------------------
+
+test-*.txt
+*.tmp
+*.temp
+*.bak
+*.swp
+*~
+
+# --------------------------------------------------
+# 7. 保留规则（显式声明关键内容）
+#    下方目录即使被上方规则部分匹配，也应保留：
+#    - config/          模组配置
+#    - defaultconfigs/  默认配置
+#    - mods/            模组（由具体策略决定）
+#    - resourcepacks/   资源包
+#    - docs/            设计文档
+#    - *.json（版本清单等）
+# --------------------------------------------------
+
+!config/
+!defaultconfigs/
+!mods/
+!resourcepacks/
+!docs/
+!AGENTS.md
+!Toudai.json
+
+# --------------------------------------------------
+# 8. KubeJS 运行时生成
+# --------------------------------------------------
+
+# KubeJS 本地开发配置（个人偏好，如 open_uri_format: vscode）
+local/kubejs/dev.json
+
+# KubeJS 日志输出
+logs/kubejs/
+
+# --------------------------------------------------
+# 9. 其他运行时 / 个人数据
+# --------------------------------------------------
+
+# Xaero 地图缓存与路径点（个人本地数据）
+xaero/
+XaeroWaypoints_BACKUP*/
+
+# JEI 本地世界搜索历史
+config/jei/world/
+
+# 扫描器临时工具（portable Python 运行时）
+python/
+
+# spark 临时采样目录
+config/spark/tmp/
+config/spark/tmp-client/
+config/spark/activity.json
+
+# 本机或玩家派生状态，不进入仓库
+config/sodium-fingerprint.json
+config/euphoria_patcher/.data.json
+config/etf_warnings.json
+config/beautifiedchatserver/players.json
+
+# Particular 粒子缓存
+particular_cache/
+
+# Inventory Particles 运行时生成的图集缓存
+config/inventory-particles/cache/
+
+# Euphoria Patcher 运行时生成的合成光影目录与标记
+shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3/
+shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3.txt
+
+# Delightify 本地数据库
+.delightify/
+
+# 启动器命令历史
+command_history.txt

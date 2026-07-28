@@ -1,0 +1,9 @@
+^kaleidoscope_chinesefood:beef_with_scrambled_eggs_rice$
+^kaleidoscope_chinesefood:stir_fried_three_fresh_vegetables_rice$
+^kaleidoscope_chinesefood:stir_fried_yellow_beef_rice$
+^kaleidoscope_chinesefood:twice_cooked_pork_rice$
+^kaleidoscope_cookery:braised_beef_rice_bowl$
+^kaleidoscope_cookery:fish_flavored_shredded_pork_rice_bowl$
+^kaleidoscope_cookery:scramble_egg_with_tomatoes_rice_bowl$
+^kaleidoscope_cookery:stir_fried_pork_with_peppers_rice_bowl$
+^kaleidoscope_cookery:sweet_and_sour_pork_rice_bowl$
