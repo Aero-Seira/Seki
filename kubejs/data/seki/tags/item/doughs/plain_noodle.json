@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "kaleidoscope_cookery:raw_dough",
+    "create:dough",
+    "refurbished_furniture:dough"
+  ]
+}

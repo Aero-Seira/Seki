@@ -1,6 +1,10 @@
 hash-format = "sha256"
 
 [[files]]
+file = "config/InventoryHUD/curios.json"
+hash = "5dff9f0a7a263dff1e92856daf73426d235e224758dc58292dd8e80494bc8497"
+
+[[files]]
 file = "config/ModernUI/bootstrap.properties"
 hash = "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
 
@@ -41,6 +45,406 @@ file = "config/NoChatReports/README.md"
 hash = "c52b76ccad2bd1063a22c7f6bb9e7c5db6b00fb53a6fd605585972ee0e5fc01f"
 
 [[files]]
+file = "config/alexscaves-client.toml"
+hash = "496e0dc3aae66369be68a810f9bb3a24c84c335aad2157d595a6bdb9e49765b0"
+
+[[files]]
+file = "config/alexscaves-general.toml"
+hash = "6858891962ef4912f82743ca313c95ec83b59064dcac0e4ff7121162ea642db9"
+
+[[files]]
+file = "config/alexscaves_biome_generation/.version"
+hash = "7902699be42c8a8e46fbbb4501726517e86b22c56a189f7625a6da49081b2451"
+
+[[files]]
+file = "config/alexscaves_biome_generation/abyssal_chasm.json"
+hash = "7a0aca34fad9cf3895e1f8035fe40fe75c3fbea31fd69f07151cc6d221e224d3"
+
+[[files]]
+file = "config/alexscaves_biome_generation/candy_cavity.json"
+hash = "e68dac5fc506c198dedf07566e0184872be730c4d369c4bbb245f5b12673bd19"
+
+[[files]]
+file = "config/alexscaves_biome_generation/forlorn_hollows.json"
+hash = "aabb95c7efcedff55a3add91832b1395d767f1b8bc5736064b809f16293481c7"
+
+[[files]]
+file = "config/alexscaves_biome_generation/magnetic_caves.json"
+hash = "5b9a96de68eb17b03b5b19808dc2bae7854948c81e57aeda60bab927b4a54e8e"
+
+[[files]]
+file = "config/alexscaves_biome_generation/primordial_caves.json"
+hash = "ad81cc492bce6aad55b2becdff94bddde8007070e467445610dc124b4f8d3c68"
+
+[[files]]
+file = "config/alexscaves_biome_generation/toxic_caves.json"
+hash = "f9e79d5c2c508e03e72da253925f7060acc9146191df44d5f21f0513a4b34c66"
+
+[[files]]
+file = "config/alexsmobs-common.toml"
+hash = "245c03ddfbc326e48883d192289f669654826ca972112e511fad036f694e7555"
+
+[[files]]
+file = "config/alexsmobs/alligator_snapping_turtle_spawns.json"
+hash = "b2c962e1ec2f65014b97c16621dc6cb8820caac55e993f2db5f826fa87e7dbe0"
+
+[[files]]
+file = "config/alexsmobs/anaconda_spawns.json"
+hash = "8e15d68e53a141d14643fba55f3cc63448dee4c94550d825d0da59b51f995ea0"
+
+[[files]]
+file = "config/alexsmobs/anteater_spawns.json"
+hash = "f65e31155b2f2e033bed66dc5ec2ce7f6962be3389369ff800b69dfdecb5d990"
+
+[[files]]
+file = "config/alexsmobs/bald_eagle_spawns.json"
+hash = "f0f1a3d700fac98d9e477b1f110ca56523d1850c0640918a1e5d9f9da15bf211"
+
+[[files]]
+file = "config/alexsmobs/banana_slug_spawns.json"
+hash = "ef4ea5b1a4900421e985933a4dcc81ac0cfd1e40249d87475524fea60642e477"
+
+[[files]]
+file = "config/alexsmobs/bison_spawns.json"
+hash = "b95a9b0b1b80ebbf3d7ea6027aa6265e07c1914c068dd18f8bebb0786b1a237c"
+
+[[files]]
+file = "config/alexsmobs/blobfish_spawns.json"
+hash = "7e7b175c33aed22c3d2cd31e215c6243e3790b07a3664b42d130a8f3b897489f"
+
+[[files]]
+file = "config/alexsmobs/blue_jay_spawns.json"
+hash = "7d1f784ab378e1e851e73dbb6f81866420c1328d25f754546d82c417bf304644"
+
+[[files]]
+file = "config/alexsmobs/bone_serpent_spawns.json"
+hash = "652c2a676464495dff29204b33fee2b1db081c94f841f3e368b06f9f416ef231"
+
+[[files]]
+file = "config/alexsmobs/bunfungus_spawns.json"
+hash = "27e113507e31a182ed76fa02064ae58452536fbd2d8e26853cdd66cbafa28157"
+
+[[files]]
+file = "config/alexsmobs/cachalot_whale_beached_spawns.json"
+hash = "73b8f83ddfa936642b38af1003e3c47eab6f089ad61612ee5181137409038f57"
+
+[[files]]
+file = "config/alexsmobs/cachalot_whale_spawns.json"
+hash = "5a5927a66e1c24d8b386cb13d4415df2d1dd3522c88ef758137d9150b8787857"
+
+[[files]]
+file = "config/alexsmobs/caiman_spawns.json"
+hash = "542cca079ae671a6d928737b622b205deebfe2aed5864a01b5048f501aec2753"
+
+[[files]]
+file = "config/alexsmobs/capuchin_monkey_spawns.json"
+hash = "83b68d395236771ae9276f48b2988cfa9eb65e14dc41531b37a6b4e77c64859a"
+
+[[files]]
+file = "config/alexsmobs/catfish_spawns.json"
+hash = "f6d84836c75f15c7e6e675409790dfd332a1374c86ac29a9c21f75cf0df7403c"
+
+[[files]]
+file = "config/alexsmobs/cave_centipede_spawns.json"
+hash = "36b830b73b5ffe68683fa71398f9493c21253bfbd3b513f913d88a9c7e31eb2f"
+
+[[files]]
+file = "config/alexsmobs/cockroach_spawns.json"
+hash = "2d0c8e8200bbb68914c6946da08086cab49daaaeec7ecc9b8c8eba47d2c3c4a1"
+
+[[files]]
+file = "config/alexsmobs/comb_jelly_spawns.json"
+hash = "cf9ba87b0d2001543fe09d8f6a4c602c03644643a9bd49d1e9ca0b041ab4dc02"
+
+[[files]]
+file = "config/alexsmobs/cosmaw_spawns.json"
+hash = "8e1d05a9b4ab8b923ff4951ef391665f3bdd218d943152f6f1f57509786bc0f7"
+
+[[files]]
+file = "config/alexsmobs/cosmic_cod_spawns.json"
+hash = "aed14e990ed38ee78214b1ea4a15e06bca1b8d098e1e440596be9ab14e4403b8"
+
+[[files]]
+file = "config/alexsmobs/crimson_mosquito_spawns.json"
+hash = "1cf401388aea02d007e088bf7ca8e063220f1f912cd51a6dd70da57e046c0fd1"
+
+[[files]]
+file = "config/alexsmobs/crocodile_spawns.json"
+hash = "672e06a2a1c5956c40e339ecf6a3f3e33d3a653357abb3a2b86c38e763812a44"
+
+[[files]]
+file = "config/alexsmobs/crow_spawns.json"
+hash = "c05de2f6e7bb44fcc65dfe79a84dadabad92302a284765dfefa83021f2a17cd3"
+
+[[files]]
+file = "config/alexsmobs/devils_hole_pupfish_spawns.json"
+hash = "e7855fa7d73f4d3af77f47ddd70b4fcbab7862302d004b4ddae9dddc75c4e402"
+
+[[files]]
+file = "config/alexsmobs/dropbear_spawns.json"
+hash = "ba40881477ddf8b05cd029b0e72e40c6926bec009b99d7dadf08a9abcb10d978"
+
+[[files]]
+file = "config/alexsmobs/elephant_spawns.json"
+hash = "cac271d780a6ed65db7b22e6944b6d456805d72b309865d6293ad6aa4f60c3e2"
+
+[[files]]
+file = "config/alexsmobs/emu_spawns.json"
+hash = "70e30e058709266e665eb6642df126eeee744d05e63d77344501e78cb4a37851"
+
+[[files]]
+file = "config/alexsmobs/endergrade_spawns.json"
+hash = "ca6e68bd3e74eb9cedcdbae4c82f594c4e85bdd54e1d0e35344a3febb9672980"
+
+[[files]]
+file = "config/alexsmobs/enderiophage_spawns.json"
+hash = "846748f4f352dead7fae39221d653713b7cbd775eaf10f80e0dea86f4e9ccb9a"
+
+[[files]]
+file = "config/alexsmobs/farseer.json"
+hash = "d409ed44fc328b64361ed982c8c5612df84c54d08b8a36804f1ec492c1b24d93"
+
+[[files]]
+file = "config/alexsmobs/flutter_spawns.json"
+hash = "f729be2a0bc7bccc88cde40464f990d6074bfcf52a0d1d6719d8ebcd63c496ff"
+
+[[files]]
+file = "config/alexsmobs/fly_spawns.json"
+hash = "e7855fa7d73f4d3af77f47ddd70b4fcbab7862302d004b4ddae9dddc75c4e402"
+
+[[files]]
+file = "config/alexsmobs/flying_fish_spawns.json"
+hash = "5284c91ec65d12ee5849aa286d1973a488db3a95fdf1c1f3f19e883233511771"
+
+[[files]]
+file = "config/alexsmobs/frilled_shark_spawns.json"
+hash = "7e7b175c33aed22c3d2cd31e215c6243e3790b07a3664b42d130a8f3b897489f"
+
+[[files]]
+file = "config/alexsmobs/froststalker_spawns.json"
+hash = "2cc43cdc9df3b20cc2eeb75a3c11736558f544571640607d08dec5c0a939c02d"
+
+[[files]]
+file = "config/alexsmobs/gazelle_spawns.json"
+hash = "17a5c3263942410596f91fb0aece138e5115bfabfa2a5913a63406fcb64b42d0"
+
+[[files]]
+file = "config/alexsmobs/gelada_monkey_spawns.json"
+hash = "bc8333dbc284015ef6382e7b86ef4e65d0c0a3020a3c3749d8c6835a0609ca0f"
+
+[[files]]
+file = "config/alexsmobs/giant_squid_spawns.json"
+hash = "7e7b175c33aed22c3d2cd31e215c6243e3790b07a3664b42d130a8f3b897489f"
+
+[[files]]
+file = "config/alexsmobs/gorilla_spawns.json"
+hash = "8c90151f66a632b01e7b8f6998f72618720aae5362c1df0bdd7fefdb13cc20c8"
+
+[[files]]
+file = "config/alexsmobs/grizzly_bear_spawns.json"
+hash = "7d1f784ab378e1e851e73dbb6f81866420c1328d25f754546d82c417bf304644"
+
+[[files]]
+file = "config/alexsmobs/guster_spawns.json"
+hash = "e7f7b29482e6a7159cde6cac5ee881ce21006c3af8afbac0f8862380ee890d2d"
+
+[[files]]
+file = "config/alexsmobs/hammerhead_shark_spawns.json"
+hash = "b327b0296c63cad3aba49394539ec75ed74804fa23742ecb44151da0c2cb6262"
+
+[[files]]
+file = "config/alexsmobs/hummingbird_spawns.json"
+hash = "6aa305d47ca32364d445c04c8a20da36a7ccef97955c27e834d4114604d2785d"
+
+[[files]]
+file = "config/alexsmobs/jerboa_spawns.json"
+hash = "486bdc6b7998cefb468dd4334d5cd862f799c5bb125dab7bfdf9ca799c546b05"
+
+[[files]]
+file = "config/alexsmobs/kangaroo_spawns.json"
+hash = "70e30e058709266e665eb6642df126eeee744d05e63d77344501e78cb4a37851"
+
+[[files]]
+file = "config/alexsmobs/komodo_dragon_spawns.json"
+hash = "15ec4df7835e1b537c5c17e868fad1989afa121f40b025b4532470284e42838b"
+
+[[files]]
+file = "config/alexsmobs/laviathan_spawns.json"
+hash = "07d0215377f12f1299ec46b6277426c3cf957aa1d310c97fa943cdf5ace8d260"
+
+[[files]]
+file = "config/alexsmobs/leafcutter_anthill_spawns.json"
+hash = "f65e31155b2f2e033bed66dc5ec2ce7f6962be3389369ff800b69dfdecb5d990"
+
+[[files]]
+file = "config/alexsmobs/lobster_spawns.json"
+hash = "bb0c918e8dbd4d003417a1bcabb38b8433d1f9be95fe6f8feef95d30616b49a7"
+
+[[files]]
+file = "config/alexsmobs/maned_wolf_spawns.json"
+hash = "8483d96341369b430ff2ebfebd7562b0c58c40b96be541cc88189fc696606a0d"
+
+[[files]]
+file = "config/alexsmobs/mantis_shrimp_spawns.json"
+hash = "fdeec28104444939401b76a5ef855e045a65ac017a6cb5a95c4fe2b1efd34f41"
+
+[[files]]
+file = "config/alexsmobs/mimic_octopus_spawns.json"
+hash = "b1d2212502e10784f9570d8532760ac633ba92b1ca5582cb82262cca1b309aa5"
+
+[[files]]
+file = "config/alexsmobs/mimicube_spawns.json"
+hash = "f56695c60bf45ccd06c91a7efc6d0cc4d364aee4d0ba93d69d6de7a89e772fe1"
+
+[[files]]
+file = "config/alexsmobs/moose_spawns.json"
+hash = "e32817696a069841bdafd69ba3e395b7bd72602ccc4df8468279b0ee7e8ac236"
+
+[[files]]
+file = "config/alexsmobs/mudskipper_spawns.json"
+hash = "542cca079ae671a6d928737b622b205deebfe2aed5864a01b5048f501aec2753"
+
+[[files]]
+file = "config/alexsmobs/mungus_spawns.json"
+hash = "27e113507e31a182ed76fa02064ae58452536fbd2d8e26853cdd66cbafa28157"
+
+[[files]]
+file = "config/alexsmobs/murmur.json"
+hash = "36b830b73b5ffe68683fa71398f9493c21253bfbd3b513f913d88a9c7e31eb2f"
+
+[[files]]
+file = "config/alexsmobs/orca_spawns.json"
+hash = "42a7171b73061d1fb46f88e26dc47cdab4ab4a81b7c145e21ac00dd6692e9439"
+
+[[files]]
+file = "config/alexsmobs/platypus_spawns.json"
+hash = "2c6fb5fda7290ea523340da5c43379f832deb3b05a4787fcc2a1875c6c372b41"
+
+[[files]]
+file = "config/alexsmobs/potoo_spawns.json"
+hash = "59c5832a40ef0e7212a4d499862f931a5dfcd3ff6d68598153f1274191b0939d"
+
+[[files]]
+file = "config/alexsmobs/raccoon_spawns.json"
+hash = "041ae6f0d8066aa98ecc3a25dfd16cbd044d201a9fa5c75f132dd357eef7e901"
+
+[[files]]
+file = "config/alexsmobs/rain_frog_spawns.json"
+hash = "486bdc6b7998cefb468dd4334d5cd862f799c5bb125dab7bfdf9ca799c546b05"
+
+[[files]]
+file = "config/alexsmobs/rattlesnake_spawns.json"
+hash = "cc788f89838e3922dd1d01d0c304559b1312d9e858f423f8093ef7d4053c6c28"
+
+[[files]]
+file = "config/alexsmobs/rhinoceros_spawns.json"
+hash = "17a5c3263942410596f91fb0aece138e5115bfabfa2a5913a63406fcb64b42d0"
+
+[[files]]
+file = "config/alexsmobs/roadrunner_spawns.json"
+hash = "cc788f89838e3922dd1d01d0c304559b1312d9e858f423f8093ef7d4053c6c28"
+
+[[files]]
+file = "config/alexsmobs/rocky_roller_spawns.json"
+hash = "a8b7d484adc606e3642d18ed3d8a7b23e60f83c46a17fa142d135d67b3393806"
+
+[[files]]
+file = "config/alexsmobs/seagull_spawns.json"
+hash = "4dca182ebef46ea0076b8e8066add18f69527cf2f81da83e77e0409127c92dc4"
+
+[[files]]
+file = "config/alexsmobs/seal_spawns.json"
+hash = "e3e339f2e42cac6d94ba7e3c270a5015e6eb0c5bd5cd8da43744233e71716723"
+
+[[files]]
+file = "config/alexsmobs/shoebill_spawns.json"
+hash = "56e9173a4dd8c19b42884157a155589cb43f7fb12ea8973f045f4c6d2b601f56"
+
+[[files]]
+file = "config/alexsmobs/skelewag_spawns.json"
+hash = "353fb24ad5592af296807a73bf7af8d3520521ab98f52967d03506ba72a4847c"
+
+[[files]]
+file = "config/alexsmobs/skreecher.json"
+hash = "82e2559c68421a60e33ec27a5e7b6ed6d532b035eb33619f1485ad7f61704a1c"
+
+[[files]]
+file = "config/alexsmobs/skunk_spawns.json"
+hash = "8454cdf8d7ceed92e8f7bf6a26074190646199d382852b88cf59309cbc0dc5f9"
+
+[[files]]
+file = "config/alexsmobs/snow_leopard_spawns.json"
+hash = "062dfadb1d57364c8a45170f5cd6c6a89797ff48f52f51865b5bb06533c1ad63"
+
+[[files]]
+file = "config/alexsmobs/soul_vulture_spawns.json"
+hash = "f98bf4c1d1b0921b3c02d21d4d850df1aae1d31374caabce1cf288a84f7b44f6"
+
+[[files]]
+file = "config/alexsmobs/spectre_spawns.json"
+hash = "ca6e68bd3e74eb9cedcdbae4c82f594c4e85bdd54e1d0e35344a3febb9672980"
+
+[[files]]
+file = "config/alexsmobs/straddler_spawns.json"
+hash = "63afa20424aad66f25af4dcaa09a4f8b94055968e07b1d16d6cf6e37ac57df1c"
+
+[[files]]
+file = "config/alexsmobs/stradpole_spawns.json"
+hash = "63afa20424aad66f25af4dcaa09a4f8b94055968e07b1d16d6cf6e37ac57df1c"
+
+[[files]]
+file = "config/alexsmobs/sugar_glider_spawns.json"
+hash = "cec5208e2e9f12aa8ce13d0f6d34a18500a77d143441c9b511df21c623fe368f"
+
+[[files]]
+file = "config/alexsmobs/sunbird_spawns.json"
+hash = "7b82ff39e191bd213cd8ecf06ff9a78c4658e6f6b9d8b48a4fcc4017e7268cb5"
+
+[[files]]
+file = "config/alexsmobs/tarantula_hawk_spawns.json"
+hash = "486bdc6b7998cefb468dd4334d5cd862f799c5bb125dab7bfdf9ca799c546b05"
+
+[[files]]
+file = "config/alexsmobs/tasmanian_devil_spawns.json"
+hash = "a96fdeb86ba5974cbde7d8ed5f36883b21567209890f077e5d2f967f6e71c558"
+
+[[files]]
+file = "config/alexsmobs/terrapin_spawns.json"
+hash = "2c6fb5fda7290ea523340da5c43379f832deb3b05a4787fcc2a1875c6c372b41"
+
+[[files]]
+file = "config/alexsmobs/tiger_spawns.json"
+hash = "f88fc1b519759fe41347afca59030619365e173c577e8c1adfcb88777078d066"
+
+[[files]]
+file = "config/alexsmobs/toucan_spawns.json"
+hash = "f65e31155b2f2e033bed66dc5ec2ce7f6962be3389369ff800b69dfdecb5d990"
+
+[[files]]
+file = "config/alexsmobs/triops_spawns.json"
+hash = "486bdc6b7998cefb468dd4334d5cd862f799c5bb125dab7bfdf9ca799c546b05"
+
+[[files]]
+file = "config/alexsmobs/tusklin_spawns.json"
+hash = "f77be9f2dd0db0b9a0861b122ba11bee27434cddf7b2f25c2235685051630e45"
+
+[[files]]
+file = "config/alexsmobs/underminer.json"
+hash = "2d0c8e8200bbb68914c6946da08086cab49daaaeec7ecc9b8c8eba47d2c3c4a1"
+
+[[files]]
+file = "config/alexsmobs/void_worm_spawns.json"
+hash = "6712a2d6165ed52b7d251a8fc4cbfb6c1f834210a8bda82b55440402fd2d3273"
+
+[[files]]
+file = "config/alexsmobs/warped_mosco_spawns.json"
+hash = "6712a2d6165ed52b7d251a8fc4cbfb6c1f834210a8bda82b55440402fd2d3273"
+
+[[files]]
+file = "config/alexsmobs/warped_toad_spawns.json"
+hash = "72126b26d7f3ae03b80df97dd103e0cec87d10829e86ac8b08da23abc7b318d8"
+
+[[files]]
 file = "config/ambiance.json"
 hash = "3f4e155a8a577d4a7c4e59db29b88e76626e8298b66d2b82b6ab886310a2603f"
 
@@ -51,6 +455,10 @@ hash = "c98f572839ace55b0792042fa4b984311e7d876abdaccfc8a4694f5bebad766c"
 [[files]]
 file = "config/appleskin-client.toml"
 hash = "6a3624ed584e6d2c4323957c3ca3d17bf2c01c7bbb73b9ee487378ff69d88aba"
+
+[[files]]
+file = "config/aquaculture-common.toml"
+hash = "d1612983c820e2b48163ade6b618eed62b4910c35edd820aaac6128ab412e841"
 
 [[files]]
 file = "config/armorstatues-client.toml"
@@ -66,7 +474,7 @@ hash = "dee286337f4d870b63bb0a4c8d9add6385b363f1edd04209e6a74ff9fd7d9d6e"
 
 [[files]]
 file = "config/asyncparticles/asyncparticles-mixin.properties"
-hash = "408ca28650cbf92b90be41c7e205f4a15ef40eabcaf9496111465100ae0f2dca"
+hash = "8b603345899395520e640891a63b458f0a072bd83ddd93247672e55b24673dbf"
 
 [[files]]
 file = "config/asyncparticles/asyncparticles.json"
@@ -75,6 +483,18 @@ hash = "35bda34f9fc333a46e1fcd5307260add7f745240f1146c9102d6665b08b22d60"
 [[files]]
 file = "config/badoptimizations.txt"
 hash = "cae5ba66971b2f61e0b523c5aeb8b8d4fa806f0bea8a1709860e4fea94426ac9"
+
+[[files]]
+file = "config/bakeries-common.toml"
+hash = "f2eef5a3c2a1e48d41437cbf1198a0a356f803174328faf398abe565fda17785"
+
+[[files]]
+file = "config/bakery-common.toml"
+hash = "a4d4307e0233b125cb0d7b3ffb73ce3c714a0311225a8c705dfb3a3bd43e5544"
+
+[[files]]
+file = "config/beachparty-common.toml"
+hash = "652e3ef889c34ddefd2ce7a97fdd118ceee29f261c7127c4533bf8400b105ff4"
 
 [[files]]
 file = "config/beautifiedchatserver.json5"
@@ -99,6 +519,14 @@ hash = "dae026d4419175e0fecdd856ac27adcfead736d6474b76cbbb0654a8d7676929"
 [[files]]
 file = "config/betterdays-common.toml"
 hash = "a7693129427283db32ab9fd1351da38799e24082cb15161c1493078a3ddae9a4"
+
+[[files]]
+file = "config/brewinandchewin-client.toml"
+hash = "1bb070627f60188b5924bd27f1e7fbf0b4cfe573c8a1f54bf7927c3c4d437f05"
+
+[[files]]
+file = "config/brewinandchewin-common.toml"
+hash = "cf7e8f3ae75a942e0c8b62f14fa68df3963b47c9c38895c2d7ba59c2bcb079ab"
 
 [[files]]
 file = "config/brutal_respawn.json"
@@ -131,6 +559,10 @@ hash = "80052a04acbb99107ffb2af8b6b5d56f55eef7afaf38dbd1f3a11eac0cded8dc"
 [[files]]
 file = "config/chunky/config.json"
 hash = "c7384a22595488f79f3125b22cc175eb729267267807a084479419349797abc8"
+
+[[files]]
+file = "config/citadel-common.toml"
+hash = "95d2d649bb8fbc282b539ae01db3e2a37b3c68aa998a1e7ce60fa8732748e1f7"
 
 [[files]]
 file = "config/clickadv.json"
@@ -169,6 +601,46 @@ file = "config/configured-client.properties"
 hash = "a9f1058d68eb630eb4783d12da4a5dea5c2f5481fdf38280e33944b9593d2d9c"
 
 [[files]]
+file = "config/crabbersdelight-common.toml"
+hash = "8cb8dd29c8c22e6042cbdaee008f3a2ad891a91530d4fab663f137531014f0ab"
+
+[[files]]
+file = "config/create-client.toml"
+hash = "16774bad3d5684a5ecfb6e9e9a8ca5c158fbc8bb3c97568af830be925e6d3d2a"
+
+[[files]]
+file = "config/create-common.toml"
+hash = "1c632f62c30f4e1223669267196d2ff1a2c03e400bf565ff4fe81e20c7cd2bdf"
+
+[[files]]
+file = "config/create-server.toml"
+hash = "f1a3edd31cdcf2b602b7d51d1fe8ba5e88d6403580ba382ba4cbfab1ecb3a365"
+
+[[files]]
+file = "config/create_bitterballen.toml"
+hash = "e52c9a42c8977ea6b6f48631c0901018c3668e1cad91742574b3e50c3b05aadd"
+
+[[files]]
+file = "config/create_central_kitchen-client.toml"
+hash = "cd23ac4f2ce6a45b649d26077484476f18854d28bae7749d132dfc7d1139ca8d"
+
+[[files]]
+file = "config/create_central_kitchen-common.toml"
+hash = "9181ff82252d2e51065cc6cbfbe612bc597d1246146a579b0a6f38cc444fc4e9"
+
+[[files]]
+file = "config/create_dragons_plus-client.toml"
+hash = "a3888f58a510d8e33e3caf8444af00c726f895f75f1d85f5b99c20c6ca420290"
+
+[[files]]
+file = "config/create_dragons_plus-common.toml"
+hash = "8f6fb30e56b4eec815d02127682717d9846a724dcd7d77ca8309aa7300498d22"
+
+[[files]]
+file = "config/create_dragons_plus-server.toml"
+hash = "690d2f38456d0c23d3ed246e50251e8ac9f6a465f96dc7e58cda234256f4f189"
+
+[[files]]
 file = "config/creativecore-client.json"
 hash = "acb6c8c1394d4d6f2d0c98d5c314c5ef8ad34b8a76f0a420fc596733bcbc51ac"
 
@@ -181,8 +653,28 @@ file = "config/cullleaves.json"
 hash = "6596cbe9453cc9cf69b4addfb02fe9d1501ffc9254ac047d9cd7a23bc6ce7dcc"
 
 [[files]]
+file = "config/culturaldelights-common.toml"
+hash = "d640c77b9cbb56c6ca4bd3bf4194ad5fa6dd3572cd22934e29c547d9d8942632"
+
+[[files]]
 file = "config/cupboard.json"
 hash = "937698438af081495eebab187013f66570218e1443f35db8a2ca0b4cb6d9638b"
+
+[[files]]
+file = "config/curios-client.toml"
+hash = "f1e31eed2ff11e1c6eda6517dc8b24dabd5b752ba1f8a3503c5ce750af1fc7b4"
+
+[[files]]
+file = "config/curios-common.toml"
+hash = "16c71790deac2bbdea0099e39cdf8eb47b3dd7ef6337b69ba9fce793a1bf9674"
+
+[[files]]
+file = "config/curios-server.toml"
+hash = "3c34cf9f7918c6a9ec15b14a87aa4570a751c1688f8ac01cb2e9acfb9392a734"
+
+[[files]]
+file = "config/displaydelight-common.toml"
+hash = "2906049bd5b0a276d4db903a97936029c6b209b2f1f75ae313dd18c5c533c9ac"
 
 [[files]]
 file = "config/distinguishedpotions-client.toml"
@@ -193,12 +685,28 @@ file = "config/distinguishedpotions-common.toml"
 hash = "c4deb20003f4c45e4e14cd0da4012261ecf2229b35a21ae30c1966b36e43ad08"
 
 [[files]]
+file = "config/dungeonsdelight-client-config.toml"
+hash = "219c9c9af0d32132ee6b0e0391a9357817c3a1dff7fcc7bd4f69a1ecccd373fc"
+
+[[files]]
+file = "config/dungeonsdelight-config.toml"
+hash = "f5c6d92ce720dbc7216163cdd79af777ae7292a63b5aa37e5fd8a5608b181794"
+
+[[files]]
 file = "config/effectdescriptions-client.toml"
 hash = "b62e547bdf334e01356807c69a7adc5d9c3ff8d9f18b3ab45d61bd60855aa2dd"
 
 [[files]]
 file = "config/effectual.json"
 hash = "8792984e714a0a60d8e18b3da0d7879b78ba096e55142ed8354945587647bc91"
+
+[[files]]
+file = "config/endersdelight-common.toml"
+hash = "0b9d4a831ea7636874706c7dd7943779e8255f51c8e1f2debe77778b92cd6e56"
+
+[[files]]
+file = "config/ends_delight-common.toml"
+hash = "3518ceefb467631775957588db1f0ff6fc44c203a8d00c28e07f1813bbf06f1d"
 
 [[files]]
 file = "config/entity_texture_features.json"
@@ -217,6 +725,18 @@ file = "config/extrasounds.json"
 hash = "764b1720967b62495fb809a1c7b050e07247cb32af2c15ab9efcb35add1e9f50"
 
 [[files]]
+file = "config/farm_and_charm-common.toml"
+hash = "2e93b17ed7edf7873abd44fd44535b43062d5421fb62ec63d62a4f4c30a6363e"
+
+[[files]]
+file = "config/farmersdelight-client.toml"
+hash = "4404ba02b39d4de63e4ab8fb5dd74e7994c23c67b15319c30f9fa207fa23ab1b"
+
+[[files]]
+file = "config/farmersdelight-common.toml"
+hash = "1eecc5b541b94652f11619de138f2f958a71034e3466a7d7096f1b739060dce6"
+
+[[files]]
 file = "config/fastsuite.cfg"
 hash = "4d26b4c93838e3e912a8e09f9be0395cd0b7a264f250ea8aa72d68507ce12250"
 
@@ -229,8 +749,16 @@ file = "config/flerovium.json"
 hash = "b9191d66e27631be50d24e6294603c98d9256d37e499465efe519a37d8c4d187"
 
 [[files]]
+file = "config/flywheel-client.toml"
+hash = "9a8019a2819cf8f27a30c0788b458ed7e9b6d749faea23d8feafa0424c4bb568"
+
+[[files]]
 file = "config/fml.toml"
 hash = "cab48eae58ba66b0132cbc11f30c6e3a74e52143148bb40a57a065db43ddb3ca"
+
+[[files]]
+file = "config/frightsdelight.json"
+hash = "83f85aed7dfdcac9b24bbb26e78ca7f5ac2645cd4643bd6bb74c9edf536388ba"
 
 [[files]]
 file = "config/fzzy_config/keybinds.toml"
@@ -257,6 +785,10 @@ file = "config/immediatelyfast.json"
 hash = "e5c4348eee374e407813023bcb5ad97dacf884a6f913132689ab0f4671eef2ed"
 
 [[files]]
+file = "config/immortalers_delight-common.toml"
+hash = "6ae5adc7434f760fbab1565cce00fd71051539dd0efb4a024ee86dabe208fefd"
+
+[[files]]
 file = "config/inventory_interactions.json5"
 hash = "bbbb5ea226170096ee3ef5fa3cf2f61401d9b686dd61540b007d68aefd6cd156"
 
@@ -274,7 +806,7 @@ hash = "4d3264b58c502afaeca3f44e8d2db0843c54b8ba957afd21a2d450fe10dafefb"
 
 [[files]]
 file = "config/iris.properties"
-hash = "8e301189d3cc7cbe6213ddcf9cd3e59b58426256a1134c37a6046cbdb16d01c9"
+hash = "94be4f8fd1c9ec66506383c288f1942faec156f1cbe3be449da635a05d9664ca"
 
 [[files]]
 file = "config/ixeris.toml"
@@ -294,11 +826,11 @@ hash = "e20eab6fbb01d807d78a5508eb41053934b6b812ab1c8b1dd98b25e9bf2a0066"
 
 [[files]]
 file = "config/jade/plugins.json"
-hash = "097bb3e8176f6e6e0bf8ba7ccd6eae372de6c848d0020b198927f8efea4e6d8c"
+hash = "98c4a689ba9a2701e49da293a601848415a5aeb6ea605edd38a1d16604ffbdef"
 
 [[files]]
 file = "config/jade/sort-order.json"
-hash = "2ad18e6d585043b69d3183863a5b2f68fbdfc70c3f4d0e21434e7c15a562b6b0"
+hash = "fedc1c325e155b05f6c22e48301b8dab2f8de60cd87076305bddeec4b10066fd"
 
 [[files]]
 file = "config/jecharacters-client.toml"
@@ -322,7 +854,7 @@ hash = "b4174dc6e985aa90be5002c14e94b956d8d586683c44b7b6710c44d08fb13648"
 
 [[files]]
 file = "config/jei/ingredient-list-mod-sort-order.ini"
-hash = "4204dbebfc4f492becc4c2e31bb905708ea25b6561ee631825b4c6a07cd18636"
+hash = "f82a124572511a792559c74696be8dbf882872a55dc7332241370d11e5555a2c"
 
 [[files]]
 file = "config/jei/ingredient-list-type-sort-order.ini"
@@ -346,7 +878,7 @@ hash = "b6fbdc3a92e50965222079ec185cb4f3dd33cc6c259f1af2e0ee30466ac750a9"
 
 [[files]]
 file = "config/jei/recipe-category-sort-order.ini"
-hash = "b0b8b305c9031ce690204fdc26e98e10311212e6c3c7ad9195d43e349e22aacf"
+hash = "04a756c6f9fe98e438514308fbcea9122eddc8960b40e7c4407372f3691d291e"
 
 [[files]]
 file = "config/jeresources-common.toml"
@@ -366,7 +898,7 @@ hash = "9611e6dd578b6e8dc256cef0feb9ece6e73cf759bc258779ddb8a328193c3bdc"
 
 [[files]]
 file = "config/kaleidoscope_compat.jsonc"
-hash = "ba894ffaa364b10a6446d14cbd4ecfaba6c4efdc0198249bf1bec8e1d47f9852"
+hash = "22966ba23888bdbc6d4cfdfcbe9757b7ceaaf1edb5c1d59413910bfa3ebabdc1"
 
 [[files]]
 file = "config/kaleidoscope_cookery-client.toml"
@@ -405,6 +937,14 @@ file = "config/krypton_fnp.yaml"
 hash = "7637131dbf6d97f0edca39274fa1afdf43260052c0b62649faf51283c5a1f0be"
 
 [[files]]
+file = "config/l2configs/l2core-client.toml"
+hash = "a605a2838f843537e1eabe55ba0a6f14e7e8fdedd8b72a80b4e599bb5bfe98f0"
+
+[[files]]
+file = "config/l2configs/l2damagetracker-server.toml"
+hash = "39c299d15b33187d1b6e3e8efece13553e96498adab24dd6ac8aca67b2b05b51"
+
+[[files]]
 file = "config/leavemybarsalone-client.toml"
 hash = "15009215cd908542ad6d4bcdce57834e90f1ba36d9ba21d2540807c0ad72a256"
 
@@ -419,6 +959,10 @@ hash = "ba2cce41d2777d8462be391f5c99763cca383beff9b91e6d0c844ad56a26feb3"
 [[files]]
 file = "config/lithium.properties"
 hash = "6cf6f83720071fd1657c8e79b357caf68d40f410ae123e5f922483eb1d1d25be"
+
+[[files]]
+file = "config/lodestone-client.toml"
+hash = "964c94d1f00b084d2b017641d3182a8af4846d602db0a26911ec0fdae72f8c43"
 
 [[files]]
 file = "config/lootbeams/custom_config.toml"
@@ -447,6 +991,10 @@ hash = "4dd03ec5be94c8e56794c8fb0d0d1c907228d6881787d06e2743035e1dd4ca10"
 [[files]]
 file = "config/lootr-common.toml"
 hash = "2efbd58d0330a2eb357c51c33a4346bce57ff8f4c9226660d3bf1aa549eead4b"
+
+[[files]]
+file = "config/meadow-common.toml"
+hash = "d766f736dadd3697ce75c5fe080d0ac84a21a22424363420b86814baf20b55e6"
 
 [[files]]
 file = "config/midnightlib.json"
@@ -502,7 +1050,7 @@ hash = "37bbb8df722f5abbd7305048007cc0ca5e0a9b84d3229d983a6753f7dbcfae80"
 
 [[files]]
 file = "config/packetfixer.properties"
-hash = "645ee629cb8c57507d4393206175a7a3b5a772fa92a5ee27734f5438d95f5b76"
+hash = "f2cd08e797513e2a80b23c662832c3eb7d303242734fdee0f158ba3114683606"
 
 [[files]]
 file = "config/particle_effects.json5"
@@ -541,6 +1089,10 @@ file = "config/placebo.cfg"
 hash = "6bbc71c6dc18b1ba4952e1bc54ed2b98c3a90f04cec4257ec3f7566cdf0c0e2a"
 
 [[files]]
+file = "config/ponder-client.toml"
+hash = "57fe579bf4cdbcab6c6702dc0dad2727b899f07f28fea686bca1e4b25b20bbfb"
+
+[[files]]
 file = "config/presencefootsteps/updater.json"
 hash = "1e7c61df09c105e1eeca8cf3dcbdfeb976700e9904bcb3983fc7791adb7fad2e"
 
@@ -577,12 +1129,32 @@ file = "config/raritycore/server.json"
 hash = "43e8b650956f9bf83385526c1d9117dfce2ddf9e5732e647acb7c38487d38578"
 
 [[files]]
+file = "config/ratatouille-server.toml"
+hash = "8f0072bbfd10a44eaebb33f01fe3a01709bcd1105ccb5b18ac4636765a691a66"
+
+[[files]]
+file = "config/refurbished_furniture.client.toml"
+hash = "4f1a5223024ed65213ddb62c3d4f0a80584a0a94f4f9a6028f76dad8865f70a2"
+
+[[files]]
+file = "config/refurbished_furniture.server.toml"
+hash = "d473f95f1004fbf45cdb9d3015385d464ffff0f17de5ead35be1dcd073c28d3b"
+
+[[files]]
 file = "config/resourceful-config-web.json"
 hash = "f308ccc9a69765376bc52a266cb97240d056ad9b6b35b4dfa17ca5c73473ec71"
 
 [[files]]
 file = "config/resourcify.json"
 hash = "ade1b4a28332a849a0b3dfe006db3d1ef22810301999316fd58a34b130968fb5"
+
+[[files]]
+file = "config/runiclib.json"
+hash = "d8b59dc047396b66cf2e6a8d2de8bd9c85a0a37b0f569eef520f2a52409aae54"
+
+[[files]]
+file = "config/saraddons-common.toml"
+hash = "d640c77b9cbb56c6ca4bd3bf4194ad5fa6dd3572cd22934e29c547d9d8942632"
 
 [[files]]
 file = "config/shouldersurfing-client.toml"
@@ -613,6 +1185,14 @@ file = "config/sodium-options.json"
 hash = "ef3242a314c4311b64b88ce016acea790d42a35f7c81f0a02934841e64efcda1"
 
 [[files]]
+file = "config/someassemblyrequired-client.toml"
+hash = "7257d55de61e847c8685a329421804a1dea257abb80a4656deec8de967ef36c9"
+
+[[files]]
+file = "config/someassemblyrequired-server.toml"
+hash = "f9866c313d6de65e01e1e3337457cfd1114f2a963bdf60ac55bbf2d1f294ec35"
+
+[[files]]
 file = "config/spark/config.json"
 hash = "992ba9f3a4a7ce3de112eb95575328956fdc3ce6781c455ebce7b23db7e7da42"
 
@@ -623,6 +1203,10 @@ hash = "bbf7ae2fd2c70f0721bd1caf5baa00a70be6ebf1d13a9670561f0707bab8e81e"
 [[files]]
 file = "config/stylisheffects-client.toml"
 hash = "884f68a8c3cace81ba3a3b65d6af36a94b3aa0508856fba1ddd55a30f2e25747"
+
+[[files]]
+file = "config/terrablender.toml"
+hash = "499d188162ddcf7fcf450cdcdc96bd41ac582501ecad5ed4a74dd9ed6b01990a"
 
 [[files]]
 file = "config/tooltipoverhaul/custom_frames.json"
@@ -647,6 +1231,14 @@ hash = "4b6f99955f574707a5d2e5b6bcfefd9c5391559c6a0e5ab1dc0bd36aeb93c03f"
 [[files]]
 file = "config/vanillabackport-common.toml"
 hash = "0c8eca696f9811ad4af1bdac9ca5b5ac06c6dabe50aac551401a1a40e30d20d8"
+
+[[files]]
+file = "config/vinery.toml"
+hash = "2997d7a214fc95f0c8309ff3ea699555e28261f818d3718a5d5b906f2501df23"
+
+[[files]]
+file = "config/vintagedelight-common.toml"
+hash = "b32452b3f1b61e0389a704d68319a10889b13eae39d0b29a85c3c69fee50f869"
 
 [[files]]
 file = "config/visuality/config.toml"
@@ -685,6 +1277,10 @@ file = "config/yacl.json5"
 hash = "121b93764159be6fb7dab523b29a844e2bb78400ce8c48f52135a097e9b0006e"
 
 [[files]]
+file = "config/youkaisfeasts-server.toml"
+hash = "5d4173bcfb03bf18088e7e983ecdfefe0636621aa7f1bac95d2571dcd2fbf8db"
+
+[[files]]
 file = "kubejs/README.txt"
 hash = "989f3737ae4621b8ff6730bce4cbeeee756921e7e510e0c281c8a350501d98af"
 
@@ -697,8 +1293,56 @@ file = "kubejs/assets/kubejs/textures/item/example_item.png"
 hash = "45a5f56eba6066ad05c70988a32b72c50cfeb6e35857739bd582007011ea002b"
 
 [[files]]
+file = "kubejs/assets/seki/models/item/dough_sheet.json"
+hash = "3483fccf7d36e1955cfbef2d63ddf14d7529b3891094dc2e02d9b3fe3b6901c1"
+
+[[files]]
+file = "kubejs/assets/seki/models/item/fermented_dough.json"
+hash = "8fc739dd33cacbb4cc54988db8418471594955f2f368af5f27f249c8a7f40ade"
+
+[[files]]
+file = "kubejs/assets/seki/models/item/leavened_dough_sheet.json"
+hash = "44e1a92b43494e0b3a127bc58333243f38016c780ce50b99cc69e6a2e38e747d"
+
+[[files]]
+file = "kubejs/assets/seki/models/item/raw_baozi.json"
+hash = "69cecd942a79dae33fe87d96ae4b83d4f11201e25c07c60cbbbed6b4fe276f64"
+
+[[files]]
+file = "kubejs/assets/seki/models/item/raw_dumpling.json"
+hash = "5a53dbb93f1f1e51f5c23e2106afa9f47efc6c177f112e0a040df4d8b05def9e"
+
+[[files]]
+file = "kubejs/assets/seki/models/item/raw_mantou.json"
+hash = "2b7f012c016c3b82c235fc22e2c833a4ef848845b9ee3aa0b9fefe7526c97752"
+
+[[files]]
+file = "kubejs/assets/seki/models/item/raw_meat_pie.json"
+hash = "c8167075490bd0b79ba6520d7b33e9c728e7089cc63f94ae6af2706056408d39"
+
+[[files]]
+file = "kubejs/assets/seki/models/item/raw_shengjian.json"
+hash = "c51c9835cb9024aae4a924807b116a3c0edc54a13c88b6fb2c20df86092a1f9f"
+
+[[files]]
+file = "kubejs/assets/seki/models/item/raw_wonton.json"
+hash = "fec60a56848cd66684762801916f228c87141e2bd61c4740ea6d9b7ec3708628"
+
+[[files]]
+file = "kubejs/assets/seki/models/item/wonton_wrapper.json"
+hash = "4b7697ebb0be1d0a3b75a0a0e7a3380f11d6f15f37adb53072bfa7d2bd435586"
+
+[[files]]
+file = "kubejs/assets/seki/models/item/yeasted_dough.json"
+hash = "02a4d955910a002e43dd2bbb6dcaa6967570e3db2af8dae7c54e23ff90e2eca4"
+
+[[files]]
 file = "kubejs/client_scripts/main.js"
 hash = "3df46f0add819bf2602642215b5c62f0581ffdaaf97e77c80a8c4d966e05adcf"
+
+[[files]]
+file = "kubejs/client_scripts/unify/food_names.js"
+hash = "76bfff7b326add015ea398f37b1488e0cb11754c85d1d98b59a10327e23919ff"
 
 [[files]]
 file = "kubejs/config/client.json"
@@ -711,6 +1355,90 @@ hash = "e00a67922942660d77c213379b5128a46c5abc894178b0be04006d325ff5f6b3"
 [[files]]
 file = "kubejs/config/web_server.json"
 hash = "45dbc0a43989a39e7fce860e3eeb2a9533933a6646eb99c2b382af4ed70df54d"
+
+[[files]]
+file = "kubejs/data/bakeries/recipe/blender/cocoa_dough.json"
+hash = "e2d98a9862bcc678eea896573199329ba00f4dcdbf8ad77e90aee05891b64d67"
+
+[[files]]
+file = "kubejs/data/bakeries/recipe/blender/salted_dough.json"
+hash = "f477eed1b7b8e38a4031e90195c72c4ec8dd53b54e864845fdb278f1c57ad7e0"
+
+[[files]]
+file = "kubejs/data/bakeries/recipe/blender/sweet_dough.json"
+hash = "eaed384df25f18b7b4c5188773592e855b0697d973bd5847c189935a7621f97d"
+
+[[files]]
+file = "kubejs/data/bakeries/recipe/blender/whole_wheat_dough.json"
+hash = "5aee2e715160872ea286f035b53f6cdab551fa9a396fb70a0b4ff9fd4602b0ef"
+
+[[files]]
+file = "kubejs/data/bakeries/recipe/integration/create/mixing/cocoa_dough.json"
+hash = "75b91d9eb88d27db7059e27eb618211c6d28e0641a0a53b8b854414cce777137"
+
+[[files]]
+file = "kubejs/data/bakeries/recipe/integration/create/mixing/salted_dough.json"
+hash = "d781d04754a03b2af9d9dd1a35b34d1a69d0c6b48bdfe3a6b049b83d5feb3ca3"
+
+[[files]]
+file = "kubejs/data/bakeries/recipe/integration/create/mixing/sweet_dough.json"
+hash = "02578147c5ff45653fba8ac5179f03ed49e693783b2a2ac61babc9712dc8b5f5"
+
+[[files]]
+file = "kubejs/data/bakeries/recipe/integration/create/mixing/whole_wheat_dough.json"
+hash = "465cc28510fb63b1e6885381a6a32a26a9c0db3b295a1b6a0d9af920f2e4645f"
+
+[[files]]
+file = "kubejs/data/create/recipe/crafting/appliances/dough.json"
+hash = "f792497088bbc5bf0fdc9183d411131704268400c37f5b0264c60e1380950ae4"
+
+[[files]]
+file = "kubejs/data/create/recipe/mixing/dough_by_mixing.json"
+hash = "0541ede8dfbd26e13d62d1c5d17fbd50713a1edf19b050511a39c4d684ccffb2"
+
+[[files]]
+file = "kubejs/data/create/recipe/splashing/wheat_flour.json"
+hash = "a73b22d41c43886ef4e70c026db5dc8c3c155704f9f774df9bc6d28ea18d76ee"
+
+[[files]]
+file = "kubejs/data/farm_and_charm/recipe/crafting_bowl/cake_dough.json"
+hash = "54dbe44f55f98f7c389835a4a580774227522141a78b8793443788fcf9d61a0b"
+
+[[files]]
+file = "kubejs/data/farm_and_charm/recipe/crafting_bowl/dough.json"
+hash = "f8696c29d99e4bcf7b71cc728a4e7dd4c80c6b947bb68b09c0b2df03cba278c5"
+
+[[files]]
+file = "kubejs/data/farm_and_charm/recipe/crafting_bowl/sweet_dough.json"
+hash = "e78de3d21766cfae86090f13a38851f85895d6cf1775d1e63ac8178694945f17"
+
+[[files]]
+file = "kubejs/data/farm_and_charm/recipe/mincer/raw_pasta.json"
+hash = "b61862c1be21b0be706cf3a2c4f669a2aa957601724138bd7b3fb77c985b4ee0"
+
+[[files]]
+file = "kubejs/data/farm_and_charm/recipe/stove/apple_pie.json"
+hash = "9d1319cde9517df819ff5665939bcdaff5fe5e7eada95e59a2c7b7bc845bf703"
+
+[[files]]
+file = "kubejs/data/farm_and_charm/recipe/stove/baguette.json"
+hash = "792076cfff48efc1e2bffb7ef163f9cb527acf7ff3d273afe9a06e7726b95983"
+
+[[files]]
+file = "kubejs/data/farm_and_charm/recipe/stove/braided_bread.json"
+hash = "d72dd078ce3e9ee41fad1fb7e7ed05724a72a58076cd9bbd91d02833eb3803bb"
+
+[[files]]
+file = "kubejs/data/farm_and_charm/recipe/stove/croissant.json"
+hash = "b1a31987e50508a83606741f8554a975d81342133a77e1e22ac9f5b7b95231c3"
+
+[[files]]
+file = "kubejs/data/farmersdelight/recipe/cutting/tag_dough.json"
+hash = "7505bd10c750b25a019e3287dbe80e7bab5d0fa4dd02bbdc349c7c337bf2a828"
+
+[[files]]
+file = "kubejs/data/immortalers_delight/recipe/oxygrape_evolutcorn_muffin.json"
+hash = "6584c6c647a3a05492344d8515a475413962c3df2a4f2212b3cf3dd4b5a47d04"
 
 [[files]]
 file = "kubejs/data/kaleidoscope_chinesefood/recipe/pot/beef_with_scrambled_eggs_rice.json"
@@ -729,8 +1457,20 @@ file = "kubejs/data/kaleidoscope_chinesefood/recipe/pot/twice_cooked_pork_rice.j
 hash = "7878ed695e36b49284539764bfee9d4ac1dd8923ed32ea04e57167b494a395a6"
 
 [[files]]
+file = "kubejs/data/kaleidoscope_cookery/recipe/chopping_board/raw_noodles_from_raw_dough.json"
+hash = "63a1431ff897a7ec0af076e5fb42985c2982ac172791bc7f9ebd323899e383ca"
+
+[[files]]
+file = "kubejs/data/kaleidoscope_cookery/recipe/flex_pot/donkey_burger.json"
+hash = "cca0cc6e8f2c2ae93a37da77ee3133e53d7e63e89bc3131c6aa7f2276b3e9a32"
+
+[[files]]
 file = "kubejs/data/kaleidoscope_cookery/recipe/pot/braised_beef_rice_bowl.json"
 hash = "4a8494ef33cee9b3bf60cc43df1c28249404c878c46790e92fac85f268827838"
+
+[[files]]
+file = "kubejs/data/kaleidoscope_cookery/recipe/pot/donkey_burger.json"
+hash = "13cba6607ed05d62398785ff04c35bfd0f20d15b4d0cd500462d0b6ed9c3df00"
 
 [[files]]
 file = "kubejs/data/kaleidoscope_cookery/recipe/pot/fish_flavored_shredded_pork_rice_bowl.json"
@@ -745,12 +1485,236 @@ file = "kubejs/data/kaleidoscope_cookery/recipe/pot/stir_fried_pork_with_peppers
 hash = "48a106b46d1ffda97ff0ec3389b9591eaaacf88f71ae5315a61b52d0703a1d7c"
 
 [[files]]
+file = "kubejs/data/kaleidoscope_cookery/recipe/pot/stuffed_dough_food_to_meat_pie_1.json"
+hash = "bace8d8abc73eb5a7dfdb4bcb8f51ed0818316f98236e3cb46b2fece813c932a"
+
+[[files]]
+file = "kubejs/data/kaleidoscope_cookery/recipe/pot/stuffed_dough_food_to_meat_pie_2.json"
+hash = "8fc04404e9bd257021ea68a804c60e59a9fa8942cdb92eef41edb888eb493247"
+
+[[files]]
+file = "kubejs/data/kaleidoscope_cookery/recipe/pot/stuffed_dough_food_to_meat_pie_3.json"
+hash = "5a24a21f867abece7c6d48972cdb2d53b9ccfe7163ac34bb2fcae662fdc4ba7a"
+
+[[files]]
+file = "kubejs/data/kaleidoscope_cookery/recipe/pot/stuffed_dough_food_to_meat_pie_4.json"
+hash = "18c5571c80432c4ea38697e7106a64a00b508f601f06c264905ba23f46754377"
+
+[[files]]
+file = "kubejs/data/kaleidoscope_cookery/recipe/pot/stuffed_dough_food_to_meat_pie_5.json"
+hash = "0fc3be3c2654fa87265315d27aea061b1d7ac2e72154f09dce7c52b4c0bd1cd3"
+
+[[files]]
+file = "kubejs/data/kaleidoscope_cookery/recipe/pot/stuffed_dough_food_to_meat_pie_6.json"
+hash = "233dab2b9f8020eedda1b998e41cbaacb2e28e6c4c56a993009eba1c5ffdefb3"
+
+[[files]]
+file = "kubejs/data/kaleidoscope_cookery/recipe/pot/stuffed_dough_food_to_meat_pie_7.json"
+hash = "ef526788ed35bc3bf207808e2f527664fddf3a2738049f4ca14bacafb6a07922"
+
+[[files]]
+file = "kubejs/data/kaleidoscope_cookery/recipe/pot/stuffed_dough_food_to_meat_pie_8.json"
+hash = "62e2e2d7a93515b22f7465fdd1dae90f9e8c67e5bf32a7b1382df9a2db032a25"
+
+[[files]]
+file = "kubejs/data/kaleidoscope_cookery/recipe/pot/stuffed_dough_food_to_meat_pie_9.json"
+hash = "e8ff0ce7005a1dab8742593a3838eab59be335e4a274b48cc841a4bd2c15c803"
+
+[[files]]
 file = "kubejs/data/kaleidoscope_cookery/recipe/pot/sweet_and_sour_pork_rice_bowl.json"
 hash = "6d5390a1a5418ef9011a85fd822ccb575bd850ff3d87279210cab0a027e3b960"
 
 [[files]]
+file = "kubejs/data/kaleidoscope_cookery/recipe/stockpot/dumpling_count_1.json"
+hash = "0e5e4dbe7cd0b272c250fa40cd5fe0a620da66cb10e8fd59c8eded05f96076c9"
+
+[[files]]
+file = "kubejs/data/kaleidoscope_cookery/recipe/stockpot/dumpling_count_2.json"
+hash = "57b1b093c7e6c2935bb6b6df9b4f84c4edb3b8f26e0ad3198b539ca550d5ef05"
+
+[[files]]
+file = "kubejs/data/kaleidoscope_cookery/recipe/stockpot/dumpling_count_3.json"
+hash = "93cd27448787bee1cad704d74a59dab2632f1dd526470133714fd7198193e6db"
+
+[[files]]
+file = "kubejs/data/kaleidoscope_cookery/recipe/stockpot/dumpling_count_4.json"
+hash = "b82053a9e85069df2576160962f6637897ef0a52c3e0ead6f0d18e0ff2a8def2"
+
+[[files]]
+file = "kubejs/data/kaleidoscope_cookery/recipe/stockpot/dumpling_count_5.json"
+hash = "3985f47060d8cd23f661e7b6b9b0f0ae25a667deaae8cf6c016744879c22751f"
+
+[[files]]
+file = "kubejs/data/kaleidoscope_cookery/recipe/stockpot/dumpling_count_6.json"
+hash = "2229213ed2c2f2dd3b2026ef2580da6c56bcd289a0e9dabb3ec1bbcf9e51e772"
+
+[[files]]
+file = "kubejs/data/kaleidoscope_cookery/recipe/stockpot/dumpling_count_7.json"
+hash = "a1ef5942495cbf7ae218127eb7eff0b7745ea5402ca6a80ae7b9a7d69b7c5985"
+
+[[files]]
+file = "kubejs/data/kaleidoscope_cookery/recipe/stockpot/dumpling_count_8.json"
+hash = "693cf773145c9e103740081b179ca81844b5327459f0d3b4791d989374964214"
+
+[[files]]
+file = "kubejs/data/kaleidoscope_cookery/recipe/stockpot/dumpling_count_9.json"
+hash = "b0e162a30d79d9278c4c73cf6ed31aa4a38803627596607c9bb65c92b2ec88d1"
+
+[[files]]
+file = "kubejs/data/kaleidoscope_cookery/recipe/stockpot/shengjian_mantou_count_1.json"
+hash = "bc103264f2e8be1f4afcfaf62847d3005fac6cf1a95c3b25b13ca6e242b8d3ca"
+
+[[files]]
+file = "kubejs/data/kaleidoscope_cookery/recipe/stockpot/shengjian_mantou_count_2.json"
+hash = "a577c4fe0c06f8d268d44c5500ac7f3c060e5105ee67da70afd7ca968debc80b"
+
+[[files]]
+file = "kubejs/data/kaleidoscope_cookery/recipe/stockpot/shengjian_mantou_count_3.json"
+hash = "7bf2a2ba98b027f2dbe93586aec502cf5ec34b5595760a628704ca2bb84c8f9e"
+
+[[files]]
+file = "kubejs/data/kaleidoscope_cookery/recipe/stockpot/shengjian_mantou_count_4.json"
+hash = "7c2413de8c01f6510663977b41ce33ba021d7eab8c070b865a0c0143d34929c6"
+
+[[files]]
+file = "kubejs/data/kaleidoscope_cookery/recipe/stockpot/shengjian_mantou_count_5.json"
+hash = "cfbf8cbec7470e48785487dff6349faf5e5e79f739ba17fe029343049a31ea05"
+
+[[files]]
+file = "kubejs/data/kaleidoscope_cookery/recipe/stockpot/shengjian_mantou_count_6.json"
+hash = "1b326b870168ef3eeff5af671b3141ab698e3689d92e1b35e864f02e2d0f9d76"
+
+[[files]]
+file = "kubejs/data/kaleidoscope_cookery/recipe/stockpot/shengjian_mantou_count_7.json"
+hash = "15ab0d13ee65be3788cbce5eebb55ff6f51023796f8dfa554024130a35429e4d"
+
+[[files]]
+file = "kubejs/data/kaleidoscope_cookery/recipe/stockpot/shengjian_mantou_count_8.json"
+hash = "ee5ba4e490703290f7b9e5ca991458e0ddab9135f7db16e687c83ddda3e65fc5"
+
+[[files]]
+file = "kubejs/data/kaleidoscope_cookery/recipe/stockpot/shengjian_mantou_count_9.json"
+hash = "9448d4e656713333f8ad584d871ebd8d4ee0703a040980a7052aba36bb8bdf4e"
+
+[[files]]
+file = "kubejs/data/kaleidoscope_nether/recipe/pot/roujiamo_1.json"
+hash = "203fd7edbacb3876a11d441b7cf63f3505d07874bd549148548d1d1e8a4c1dac"
+
+[[files]]
+file = "kubejs/data/kaleidoscope_nether/recipe/pot/roujiamo_2.json"
+hash = "12998df7e457e3b4574096cbb9c9c885dd3927d913c5828a01d0c9e911bd62ec"
+
+[[files]]
+file = "kubejs/data/kaleidoscope_nether/recipe/pot/roujiamo_3.json"
+hash = "2542c7e44d8030b7655ca811be1cc2508bec44437bfa299cf006235f3233814e"
+
+[[files]]
+file = "kubejs/data/letsdocompat/recipe/create/crafting_bowl/cake_dough.json"
+hash = "2c8f5a1f146d72f96110505904f70b3877503b8ae70a783fe5a6e9a56ca207c1"
+
+[[files]]
+file = "kubejs/data/letsdocompat/recipe/create/crafting_bowl/dough.json"
+hash = "85dadf1f818e715e3363a3f3f3cc5aa2b832649bf44f1c14f84dbe4c3d98ec8c"
+
+[[files]]
+file = "kubejs/data/letsdocompat/recipe/create/crafting_bowl/sweet_dough.json"
+hash = "54edce9ef621063faba127ee2b4aaee837be5b90cf8eaac77a5055af705978ee"
+
+[[files]]
+file = "kubejs/data/refurbished_furniture/recipe/combining/cheese_sandwich.json"
+hash = "4bf379c565420cb0989e5ac84bdcd06fc9fdbb8356941abefc12221be731c398"
+
+[[files]]
+file = "kubejs/data/refurbished_furniture/recipe/combining/raw_meatlovers_pizza.json"
+hash = "91d6ef3dd60faa105c46486c4667b1cd8b0445148c4d7da8960fbad8e2fef8de"
+
+[[files]]
+file = "kubejs/data/refurbished_furniture/recipe/combining/raw_vegetable_pizza.json"
+hash = "aa73466e24a26ae25777e3c27373e27450a0a8a8dcacb4ca20f1dbcc7f36dc87"
+
+[[files]]
+file = "kubejs/data/refurbished_furniture/recipe/dough.json"
+hash = "50cf85613b055a3ffda9bec793cd10914aa021cf15abd693800cf9806cb64649"
+
+[[files]]
+file = "kubejs/data/saraddons/recipe/farmersdelight/recipe/cooking/pretzel_dough.json"
+hash = "52d1b546277577162afdd45d49c84e51ba14961a3e5a18af959f8905dee18bde"
+
+[[files]]
+file = "kubejs/data/seki/recipe/chopping_board/egg_pasta.json"
+hash = "8d3cef1044db5c483f315d1ab884e7001c537294e12413e57345c0ace6a215c3"
+
+[[files]]
+file = "kubejs/data/seki/recipe/cutting/create/plain_noodles.json"
+hash = "b128165ee793dc0f72df864cdcd30ad9e76425aad6c939abd197eb38f4ddcfe0"
+
+[[files]]
+file = "kubejs/data/seki/recipe/cutting/farmersdelight/plain_noodles.json"
+hash = "5f931d25e92a0645e47fce45fd86cddf5d9288c4f0757b1caa83b3abd68ae724"
+
+[[files]]
+file = "kubejs/data/seki/recipe/flex_stockpot/sichuan_wonton.json"
+hash = "087284469443064c61f535f6704b4e5fb1abad6f85d05d6c907af96673f0131a"
+
+[[files]]
+file = "kubejs/data/seki/recipe/flex_stockpot/wonton_noodles.json"
+hash = "f701f3a87d8ea1ca2291a12412fdef944f55d7c23059c0435d209a97f2ff650b"
+
+[[files]]
+file = "kubejs/data/seki/recipe/mincer/farm_and_charm/plain_noodles.json"
+hash = "398aba0f0b2e5a995d564228d851358a8ed2f48b660f0dbc4c5d7b516c28966d"
+
+[[files]]
+file = "kubejs/data/seki/recipe/stockpot/sichuan_wonton.json"
+hash = "1470267d0b10018a895bbfac08449f6b46eb2746cbffd9bb5443817a8cfe6ba1"
+
+[[files]]
+file = "kubejs/data/seki/recipe/stockpot/wonton_noodles.json"
+hash = "5a87833d22d3ea9f3557077e155322e833108d8f7d3dc78e3634e0fb783ac517"
+
+[[files]]
+file = "kubejs/data/seki/tags/item/doughs/egg_pasta.json"
+hash = "e63c02ce9217bff7dc02d2444de74269fb5a86dc2df502b8e4f669a509913bbb"
+
+[[files]]
+file = "kubejs/data/seki/tags/item/doughs/flatbread.json"
+hash = "e7d8c6722b003698f452503299a605850dd37a71cfc7869b1c48594621a4d60f"
+
+[[files]]
+file = "kubejs/data/seki/tags/item/doughs/leavened_savory.json"
+hash = "28ec3a70569f35b800f44588ccfe00f97c12767f269007dafac9b502ece35731"
+
+[[files]]
+file = "kubejs/data/seki/tags/item/doughs/plain_noodle.json"
+hash = "e7d8c6722b003698f452503299a605850dd37a71cfc7869b1c48594621a4d60f"
+
+[[files]]
+file = "kubejs/data/seki/tags/item/flours/plain_wheat.json"
+hash = "c139280de3e35d659b31282007e5a1c36b71a2f46dd952a90a512b25b1eb3ba3"
+
+[[files]]
+file = "kubejs/data/seki/tags/item/flours/whole_wheat.json"
+hash = "323ccb17296be12016c8cdceb206552b1fa6fe901d491316259c4752bb1a1b31"
+
+[[files]]
+file = "kubejs/data/someassemblyrequired/recipe/crafting_shapeless/raw_burger_bun.json"
+hash = "85db565f2432e409ec7a6d66465a89fd34e74542d6de79e517102a250a76f443"
+
+[[files]]
+file = "kubejs/data/someassemblyrequired/recipe/cutting/create/dough.json"
+hash = "0abc275e4c0701d7ba420aaf2779760e22170a5c737cecf30ec1c73054eb8b23"
+
+[[files]]
 file = "kubejs/server_scripts/main.js"
 hash = "dae099ae3be7f033c0c190ee8c3b023b42f6b235d9d0591be5926e8435dbd67f"
+
+[[files]]
+file = "kubejs/server_scripts/unify/food_recipes.js"
+hash = "1c77b5953dfe995b2937ece57562bceab8d81fff6e90e1a847e49d3e7ee7d0d2"
+
+[[files]]
+file = "kubejs/server_scripts/unify/food_tags.js"
+hash = "c748cf32d4afc3cc229bc0699190124633aa3151e171a2a98a380d205075dbf2"
 
 [[files]]
 file = "kubejs/server_scripts/unify/rice_carrier_paths.js"
@@ -759,6 +1723,10 @@ hash = "7b3ddb05ca9306b8ffa656af06b794c6dc3de57c6d38f558383bea4295b26e40"
 [[files]]
 file = "kubejs/startup_scripts/main.js"
 hash = "5c4659e7bb368960801ccfce24ac3493fa14aae88a7e17b2a9cdfe1931985ffe"
+
+[[files]]
+file = "kubejs/startup_scripts/unify/food_items.js"
+hash = "d7c5984a46cbc4bb1484b1c4a1fc5d6de92cd9cb4a731ad8bbaaefaa256282a1"
 
 [[files]]
 file = "mods/acedium-sodiumized.pw.toml"
@@ -782,7 +1750,7 @@ metafile = true
 
 [[files]]
 file = "mods/architectury-api.pw.toml"
-hash = "6d3a1c92eee4dd671253c41ec000ae48064a33c45263d6adce5cad466395169d"
+hash = "f22c825e3279aa17926856005b7fa7d415e35c39af851ca9e05b218d11ce8cbb"
 metafile = true
 
 [[files]]

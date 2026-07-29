@@ -1,5 +1,53 @@
 # 设计变更记录
 
+## 2026-07-29 - 按面团谱系分流制面产物
+
+- 新 SQLite（9811 配方，导出于 `2026-07-29T12:48:00.993361400Z`）确认首版统一标签导致死面团在 FD 砧板变成鸡蛋生意面，在 F&C 绞肉机变成农家意面；机器互操作错误覆盖了产物身份。
+- 删除过宽 `seki:doughs/noodle`，拆为 3 成员的清水制面组与 2 成员的鸡蛋意面组；F&C 含酵母面团明确标为发酵面团并退出制面体系。
+- 森罗切菜板、FD 砧板、Create 切制与 F&C 石磨绞肉机各接受两组互斥输入：清水组统一产出清水生面条，鸡蛋组产出 FD 鸡蛋生意面或 F&C 石磨鸡蛋生意面。
+- 横向复核同时删除 8 成员的万能咸食面团标签：驴肉火烧改用 3 成员无酵母火烧组，肉夹馍与汉堡胚改用 3 成员咸味发酵面包组。
+- 制面批次调整 4 条同 ID 覆盖并新增 4 条跨机器分流路径；咸食批次另调整 6 条同 ID 覆盖；静态校验后仍需 `/reload`、JEI 实做和再次导出 SQLite 验收。
+
+## 2026-07-29 - 修复碗装汤锅配方字段静默丢失
+
+- 最新运行时 SQLite 发现四条 `seki:` 四川抄手/云吞面动态配方虽已注册，但 KubeJS recipe component 桥静默丢失 carrier、汤底、纹理、颜色与时间字段。
+- 对照国味 JAR 原始 stockpot 与内嵌 fuzzy flex_stockpot 配方，确认四条路径均应使用碗、标准汤锅纹理/颜色和 300 tick；四川抄手汤底为熔岩，云吞面汤底为水。
+- 将四条配方迁移到 `kubejs/data/seki/recipe/{flex_stockpot,stockpot}/`，保留原 `seki:` ID 和专属生云吞原料；删除脚本 helper 与动态创建逻辑。
+- 原国味万能馅面食路径的精确移除规则继续保留；静态校验完成后仍需 `/reload` 与重新导出 SQLite 验收完整字段。
+
+## 2026-07-29 - 收紧面团使用面并开放机器跨模组原料
+
+- 运行时最终态确认 `kaleidoscope_cookery:chopping_board/raw_noodles_from_raw_dough` 使用宽泛 `c:dough`；该标签间接包含 Bakeries 甜面团，形成甜面团可切普通面条的常识漏洞。
+- 新增普通小麦粉、制面面团、咸食面团三种基础窄语义标签；四类制面机器以及肉夹馍、驴肉火烧、生汉堡胚按使用面改用对应标签，明确排除三种甜面团。
+- F&C 调理碗、Bakeries 搅拌机和 Create 搅拌盆的普通面团/甜面团/蛋糕糊配方改为跨模组普通小麦粉；F&C 和面同时接受已审计的 `c:yeast` 干酵母成员。
+- 精确移除 Bakeries 四条不返还酵母玻璃瓶的旧 `compat/create/*_dough` 路径；保留或新增会返瓶的 `integration/create/mixing/*` 路径。
+- 横向审计发现 `c:flours/wheat` 同时包含普通 Create 小麦粉与 Bakeries 全麦粉；新增全麦粉窄标签，并覆盖 3 条 Create 普通和面与 2 条 Bakeries 全麦和面路径，阻止普通/全麦语义互换。
+- 新鲜静态索引与校验报告为 `NEW ERROR 0`；完整 `/reload`、JEI/实做与重新导出 SQLite 仍待运行时验收。
+- 设计与实施记录：[KubeJS](components/content/kubejs.md)、根目录 `design/charter.md`、`docs/food-mod-unification-implementation-v7-2026-07-29.md`。
+
+## 2026-07-29 - 迁移无盛具锅具配方到同 ID 数据包覆盖
+
+- 新 SQLite 与 `server.log` 对齐确认：饺子/生煎动态配方虽加载但产生 18 条空 carrier 警告，肉饼 1~9 份动态配方因 carrier component 为空全部创建失败。
+- 根因是 KubeJS `event.custom` 的 recipe component 桥接无法可靠表达森罗 `pot/stockpot` 的无盛具状态，而模组原生 serializer 可以；因此不添加虚假的碗类 carrier。
+- 将 27 条饺子、生煎、肉饼配方迁移为原 ID 数据包覆盖，沿用 JAR 字段结构并仅替换为专属生坯；撤销对应删除规则和动态创建逻辑。
+- 静态增量校验保持 `NEW ERROR 0`；需再次 `/reload` 并导出 SQLite，确认 KubeJS `ERROR` 归零、三族各 9 条路径均存在且无 carrier。
+
+## 2026-07-29 - 修正料理统一脚本的 Rhino 语法兼容性
+
+- `logs/kubejs/server.log` 将唯一 KubeJS 错误定位到 `food_recipes.js:191`：当前 Rhino 不支持数组字面量展开元素。
+- 将四川抄手与云吞面 stockpot 配方的两处数组展开改为 `concat`；原料、份数、配方 ID 和自定义 serializer 字段保持不变。
+- 修正后 JavaScript/JSON 校验通过，配方静态增量校验仍为 `NEW ERROR 0`；状态保持运行时待验收，需以新一轮 KubeJS 日志确认错误归零。
+
+## 2026-07-29 - 静态实施料理体系统一 v6
+
+- 新增 11 个 `seki:` 面点中间物/生坯及模型；以待发酵面团适配烘焙坊发酵箱的单输入 serializer，确保酵母实际被消费。
+- 新增 189 个现实语义中文名覆盖，桥接盐/面粉/面团/肉馅/酵母/生菜/番茄标签，并移除熟煎蛋、海龟蛋与烂番茄的标签污染。
+- 精确移除 41 条旧点心/蒸制/装配/预装蒸笼路径并恢复专属生坯路径；迁移包子、饺子、生煎、肉饼、抄手、云吞面、烤包子与双馒头链。
+- 同 ID 覆盖 F&C stove 四条配方：三种面包改用烘焙坊咸面团，苹果派改用 FD 派皮；保留其余甜点心链。
+- 保守偏差：瓶装酵母因玻璃瓶语义不加入 `c:yeast`；不存在的 `vintagedelight:salt` 改按实际 `salt_dust` 处理；未给出消费清单的浓缩高汤/复合调味粉留待独立批次。
+- 验证状态：JavaScript/JSON、189 个目标 ID、11 个模型纹理通过；新鲜静态基线下 `NEW ERROR 0`。仍需完整重启、`/reload`、JEI/实做与重新导出 SQLite。
+- 设计文档：[料理统一实施记录](../../food-mod-unification-implementation-v6-2026-07-29.md)、[KubeJS](components/content/kubejs.md)、根目录 `design/charter.md`。
+
 ## 2026-07-29 - 新增跨平台安全提交工作流
 
 - 新增 `scripts/commit-pack.ps1` 与 `scripts/commit-pack.sh`，分别面向 Windows PowerShell 和 macOS/Linux Bash；两者要求显式提供暂存路径，不调用 `git add .`。
@@ -309,3 +357,11 @@
 - 验证状态：本地元数据与配置文件已检查，客户端成功启动尚待验证。
 - 剩余问题：核心主题、目标玩家、服务端范围和性能目标尚未定义。
 
+## 2026-07-30 - 料理统一 v8：孤立食材桥接与死配方修复（静态）
+
+- 新增：`NAME-04` 小龙虾家具 18 个食物中文名覆盖（`kubejs/client_scripts/unify/food_names.js`），区分度避让 NAME-02 已占用名。
+- 新增：`FURNITURE-BRIDGE-01` 标签桥接（海盐→`c:salt`、鲜奶酪→`c:cheese`、双果酱→`c:jams`）与 4 条同 ID 配方覆盖（家具面团/双披萨/奶酪三明治接入 `seki:flours/plain_wheat`、`seki:doughs/flatbread`、`c:cheese`）。
+- 修复：`DEAD-FIX-01` 两条运行时死配方——immortalers 马芬引用不存在的 `c:foods/egg` 改为 `c:eggs`；saraddons 椒盐卷饼面团引用不存在的 `c:wheat_dough` 改为 `seki:doughs/leavened_savory`。
+- 证据：家具 `cutting_board_combining` serializer 常量池证实 vanilla `Ingredient` 解码（支持 tag）；saraddons JAR 原方与同族 F&C stove/pretzel 比对。
+- 验证状态：`validate.py` 双目标 NEW ERROR 0；10 条模组原生压缩循环登记入校验基线。运行时 `/reload` + JEI + 实机验收待进行。
+- 剩余问题：烘焙坊 blender 容器返还语义（P0-3）未实机证实；设计清单 408+40+1 待接受变更（46 个新模组及配置）阻塞安全提交，待设计文档接受流程处理。

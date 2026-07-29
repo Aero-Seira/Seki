@@ -1,0 +1,23 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "tag": "seki:flours/plain_wheat"
+    },
+    {
+      "item": "minecraft:sugar"
+    },
+    {
+      "tag": "bakery:eggs"
+    },
+    {
+      "tag": "bakery:water_bottles"
+    }
+  ],
+  "results": [
+    {
+      "count": 12,
+      "id": "bakery:sweet_dough"
+    }
+  ]
+}

@@ -7,7 +7,7 @@
      * UNITE: Duplicate items of the unified module
      * Valid Values: NONE, COMPAT, UNITE
      */
-    "datapack_mode": "UNITE",
+    "datapack_mode": "NONE",
     // Enable soup base material
     "soup_datapack_enabled": true,
     "kitchen": {
@@ -70,7 +70,7 @@
         // Whether all Farm and Charm cooking pot recipes are disabled
         "cooking_pot_recipes_disabled": false,
         // Whether Farm and Charm mod compatibility is enabled
-        "farm_and_charm_compat_enabled": true
+        "farm_and_charm_compat_enabled": false
     },
     "vinery": {
         // Whether all Vinery fermentation barrel recipes are disabled

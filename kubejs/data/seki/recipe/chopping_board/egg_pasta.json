@@ -1,0 +1,12 @@
+{
+  "type": "kaleidoscope_cookery:chopping_board",
+  "cut_count": 4,
+  "ingredient": {
+    "tag": "seki:doughs/egg_pasta"
+  },
+  "model_id": "farmersdelight:wheat_dough",
+  "result": {
+    "count": 1,
+    "id": "farmersdelight:raw_pasta"
+  }
+}

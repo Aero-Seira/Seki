@@ -1,0 +1,14 @@
+{
+  "type": "create:cutting",
+  "ingredients": [
+    {
+      "tag": "seki:doughs/egg_pasta"
+    }
+  ],
+  "processing_time": 30,
+  "results": [
+    {
+      "id": "farmersdelight:raw_pasta"
+    }
+  ]
+}

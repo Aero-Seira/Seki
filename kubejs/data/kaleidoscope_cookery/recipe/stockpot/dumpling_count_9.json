@@ -1,0 +1,36 @@
+{
+  "type": "kaleidoscope_cookery:stockpot",
+  "ingredients": [
+    {
+      "item": "seki:raw_dumpling"
+    },
+    {
+      "item": "seki:raw_dumpling"
+    },
+    {
+      "item": "seki:raw_dumpling"
+    },
+    {
+      "item": "seki:raw_dumpling"
+    },
+    {
+      "item": "seki:raw_dumpling"
+    },
+    {
+      "item": "seki:raw_dumpling"
+    },
+    {
+      "item": "seki:raw_dumpling"
+    },
+    {
+      "item": "seki:raw_dumpling"
+    },
+    {
+      "item": "seki:raw_dumpling"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "kaleidoscope_cookery:dumpling"
+  }
+}

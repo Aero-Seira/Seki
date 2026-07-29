@@ -1,0 +1,37 @@
+{
+  "type": "kaleidoscope_cookery:stockpot",
+  "ingredients": [
+    {
+      "item": "seki:raw_shengjian"
+    },
+    {
+      "item": "seki:raw_shengjian"
+    },
+    {
+      "item": "seki:raw_shengjian"
+    },
+    {
+      "item": "seki:raw_shengjian"
+    },
+    {
+      "item": "seki:raw_shengjian"
+    },
+    {
+      "item": "seki:raw_shengjian"
+    },
+    {
+      "item": "seki:raw_shengjian"
+    },
+    {
+      "item": "seki:raw_shengjian"
+    },
+    {
+      "item": "seki:raw_shengjian"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "kaleidoscope_cookery:shengjian_mantou"
+  },
+  "soup_base": "minecraft:lava"
+}

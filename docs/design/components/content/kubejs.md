@@ -190,6 +190,30 @@ kubejs/
 - 静态验证：Node.js 语法检查通过；服务器脚本与 KubeJS 数据配方均为 0 WARN；9 条统一移除规则全部命中。五条恢复配方与森罗厨房 1.4.1 对应标准 `pot` 配方逐字段一致，预测最终态每个盖饭仅保留一条 `pot` 路径。
 - 验证要求：执行 `/reload` 后重新导出 SQLite，确认五个输出各只剩一条 `kaleidoscope_cookery:pot` 路径，且原五个 ID 不再对应 `rice_bowl` 类型。
 
+#### `FOOD-UNIFY-V6`（experimental / runtime validation pending）
+
+- 来源：`kubejs/startup_scripts/unify/food_items.js`、`kubejs/client_scripts/unify/food_names.js`、`kubejs/server_scripts/unify/food_tags.js`、`kubejs/server_scripts/unify/food_recipes.js`、`kubejs/data/{farm_and_charm,kaleidoscope_cookery,seki}/recipe/` 与 `kubejs/assets/seki/models/item/`。
+- 设计依据：`docs/food-mod-unification-design-v6-2026-07-29.md`；实施审计记录见 `docs/food-mod-unification-implementation-v6-2026-07-29.md`。
+- 玩家可见变化：同名食材按品种/做法/地区改名；盐、面粉、面团等公共标签互认；发面食品必须经过酵母、发酵与生坯；裹馅面食拆为皮/馅/专属生坯。
+- 自定义内容：注册 11 个 `seki:` 中间物/生坯并复用现有料理模组纹理；新增 startup 注册意味着升级后必须完整重启。
+- 迁移范围：馒头、包子、饺子、生煎、肉饼、四川抄手、云吞面、烤包子，以及 F&C stove 的长棍、辫子面包、可颂和苹果派。
+- serializer 约束：所有 steamer/stockpot/flex_stockpot/pot/stove/chopping-board/fermentation-box JSON 均复制当前 JAR 同类型结构；酵母通过“待发酵面团”预装配适配发酵箱单 ingredient schema。
+- 标签保守项：瓶装酵母不加入 `c:yeast`，避免玻璃瓶容器语义丢失；森罗死面团不桥接到 `c:foods/dough`。
+- serializer 回归：运行时 SQLite 证明 KubeJS component 桥会静默丢弃四条碗装 stockpot/flex_stockpot 的 carrier、汤底与控制字段；四川抄手/云吞面已改用完整复制 JAR 原文的 `seki:` 静态数据配方。
+- 静态验证：JavaScript/JSON 语法、改名 ID、模型纹理均通过；同一新鲜索引基线下 `NEW ERROR 0`。剩余动态 KubeJS 自定义配方与 JAR 内嵌数据包超出静态校验器解析范围，已由 SQLite/JAR 原文补证。
+- 验证要求：完整重启、`/reload`、KubeJS 日志、JEI/实做与重新导出 SQLite；完成前状态保持 experimental。
+
+#### `FOOD-UNIFY-V7`（static complete / runtime validation pending）
+
+- 来源：`kubejs/data/seki/tags/item/`、`kubejs/data/{bakeries,farm_and_charm,farmersdelight,kaleidoscope_cookery,kaleidoscope_nether,letsdocompat,someassemblyrequired}/recipe/` 与 `kubejs/server_scripts/unify/food_recipes.js`。
+- 设计依据：根目录 `design/charter.md` 第 7 节；实施证据见 `docs/food-mod-unification-implementation-v7-2026-07-29.md`。
+- 玩家可见变化：甜面团不再能切成普通面条，也不能制作肉夹馍、驴肉火烧或生汉堡胚；普通面粉可跨模组用于 F&C 调理碗、Bakeries 搅拌机和 Create 搅拌盆，但不能冒充全麦粉。
+- 标签策略：新增普通粉/全麦粉、清水制面/鸡蛋意面、无酵母火烧/咸味发酵面包六种窄标签；同层标签成员互斥，避免继续扩大 `c:dough`/`c:flours/wheat` 的歧义。
+- 机器策略：F&C 和面使用已审计的 `c:yeast`；Bakeries 瓶装酵母保持精确 ID。四条会吞瓶的旧 Create 兼容配方被精确移除，替换路径返还玻璃瓶。
+- 覆盖范围：8 条按面团谱系分流的制面路径、6 条咸食路径、6 条调理碗/compat 路径、6 条 Bakeries blender/Create mixing 路径，以及 5 条普通粉/全麦粉守恒路径；均复制当前最终态或 JAR 同类型字段结构，只替换业务原料标签与目标产物。
+- 静态验证：新鲜 JAR + `kubejs/data` 索引下 `NEW ERROR 0`；JSON 全量解析通过。运行时重新导出前不得宣称最终完成。
+- 验证要求：`/reload` 后检查 KubeJS 日志与 JEI 输入；实做跨模组面粉/酵母互换和甜面团拒绝路径；重新导出 SQLite 核对 recipe ID、有效类型与玻璃瓶返还。
+
 ## 兼容性与性能
 
 ### 客户端/服务端范围
@@ -243,6 +267,14 @@ kubejs/
 
 ## 历史
 
+- 2026-07-29: 将万能咸食面团拆为无酵母火烧面团与咸味发酵面包团；死面团/鸡蛋面团不再制作肉夹馍或汉堡胚
+- 2026-07-29: 根据新 SQLite 将过宽 `seki:doughs/noodle` 拆为清水制面与鸡蛋意面两组互斥标签；四类机器按原料谱系分流产物，修复死面团在 FD 砧板变成鸡蛋意面等问题
+- 2026-07-29: 将 `FOOD-UNIFY-V6` 四条四川抄手/云吞面汤锅路径迁移为 `seki:` 静态数据配方，修复 KubeJS component 桥静默丢失 carrier、汤底、纹理、颜色和时间字段
+- 2026-07-29: 收紧 `c:flours/wheat` 的普通粉/全麦粉混用；Create 普通面团与 Bakeries 全麦面团改用各自窄标签
+- 2026-07-29: 实施 `FOOD-UNIFY-V7`，以普通粉/全麦粉及制面/咸食面团分层标签修复语义越界与机器原料封闭，并移除四条吞瓶的 Bakeries Create 旧兼容路径
+- 2026-07-29: 根据新 SQLite 修正 `FOOD-UNIFY-V6` 的无盛具自定义配方：27 条饺子/生煎/肉饼配方迁移为同 ID 数据包覆盖，绕开 `event.custom` 的空 carrier 表达限制
+- 2026-07-29: 修正 `FOOD-UNIFY-V6` 的 Rhino 语法兼容性；将两处数组展开改为 `concat`，配方语义与数量不变，运行时复测待完成
+- 2026-07-29: 实施 `FOOD-UNIFY-V6` 静态批次，统一现实语义命名、标签、发面/死面点心链与四条烘焙路径；运行时验收待完成
 - 2026-07-28: 实施 `RICE-CARRIER-03`，修复森罗厨房本体五种盖饭的 `rice_bowl` 工作台路径
 - 2026-07-28: 国味升级至 1.1.8 后实施 `RICE-CARRIER-02`，移除四条 `rice_bowl` 工作台路径并恢复四条炒锅 carrier 配方
 - 2026-07-26: 撤回 `POT-TRIAL-01` 错误加油覆盖；新增 `RICE-CARRIER-01`，移除四种盖饭的工作台无序路径

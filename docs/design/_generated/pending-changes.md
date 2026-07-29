@@ -1,21 +1,467 @@
 # Pending modpack content changes
 
-Generated: `2026-07-29T02:00:24+08:00`
+Generated: `2026-07-30T01:54:14+08:00`
 
-- Added: **0**
-- Modified: **0**
-- Removed: **0**
+- Added: **408**
+- Modified: **40**
+- Removed: **1**
 
 Do not accept the inventory baseline until the human-maintained design documents cover these changes.
 
 ## Added
 
-None.
+- **curios.json** — `config/InventoryHUD/curios.json` (config); suggested doc: `components/curios.md`
+- **alexscaves-client.toml** — `config/alexscaves-client.toml` (config); suggested doc: `components/alexscaves-client.md`
+- **alexscaves-general.toml** — `config/alexscaves-general.toml` (config); suggested doc: `components/alexscaves-general.md`
+- **.version** — `config/alexscaves_biome_generation/.version` (config); suggested doc: `components/version.md`
+- **abyssal_chasm.json** — `config/alexscaves_biome_generation/abyssal_chasm.json` (config); suggested doc: `components/abyssal-chasm.md`
+- **candy_cavity.json** — `config/alexscaves_biome_generation/candy_cavity.json` (config); suggested doc: `components/candy-cavity.md`
+- **forlorn_hollows.json** — `config/alexscaves_biome_generation/forlorn_hollows.json` (config); suggested doc: `components/forlorn-hollows.md`
+- **magnetic_caves.json** — `config/alexscaves_biome_generation/magnetic_caves.json` (config); suggested doc: `components/magnetic-caves.md`
+- **primordial_caves.json** — `config/alexscaves_biome_generation/primordial_caves.json` (config); suggested doc: `components/primordial-caves.md`
+- **toxic_caves.json** — `config/alexscaves_biome_generation/toxic_caves.json` (config); suggested doc: `components/toxic-caves.md`
+- **alexsmobs-common.toml** — `config/alexsmobs-common.toml` (config); suggested doc: `components/alexsmobs-common.md`
+- **alligator_snapping_turtle_spawns.json** — `config/alexsmobs/alligator_snapping_turtle_spawns.json` (config); suggested doc: `components/alligator-snapping-turtle-spawns.md`
+- **anaconda_spawns.json** — `config/alexsmobs/anaconda_spawns.json` (config); suggested doc: `components/anaconda-spawns.md`
+- **anteater_spawns.json** — `config/alexsmobs/anteater_spawns.json` (config); suggested doc: `components/anteater-spawns.md`
+- **bald_eagle_spawns.json** — `config/alexsmobs/bald_eagle_spawns.json` (config); suggested doc: `components/bald-eagle-spawns.md`
+- **banana_slug_spawns.json** — `config/alexsmobs/banana_slug_spawns.json` (config); suggested doc: `components/banana-slug-spawns.md`
+- **bison_spawns.json** — `config/alexsmobs/bison_spawns.json` (config); suggested doc: `components/bison-spawns.md`
+- **blobfish_spawns.json** — `config/alexsmobs/blobfish_spawns.json` (config); suggested doc: `components/blobfish-spawns.md`
+- **blue_jay_spawns.json** — `config/alexsmobs/blue_jay_spawns.json` (config); suggested doc: `components/blue-jay-spawns.md`
+- **bone_serpent_spawns.json** — `config/alexsmobs/bone_serpent_spawns.json` (config); suggested doc: `components/bone-serpent-spawns.md`
+- **bunfungus_spawns.json** — `config/alexsmobs/bunfungus_spawns.json` (config); suggested doc: `components/bunfungus-spawns.md`
+- **cachalot_whale_beached_spawns.json** — `config/alexsmobs/cachalot_whale_beached_spawns.json` (config); suggested doc: `components/cachalot-whale-beached-spawns.md`
+- **cachalot_whale_spawns.json** — `config/alexsmobs/cachalot_whale_spawns.json` (config); suggested doc: `components/cachalot-whale-spawns.md`
+- **caiman_spawns.json** — `config/alexsmobs/caiman_spawns.json` (config); suggested doc: `components/caiman-spawns.md`
+- **capuchin_monkey_spawns.json** — `config/alexsmobs/capuchin_monkey_spawns.json` (config); suggested doc: `components/capuchin-monkey-spawns.md`
+- **catfish_spawns.json** — `config/alexsmobs/catfish_spawns.json` (config); suggested doc: `components/catfish-spawns.md`
+- **cave_centipede_spawns.json** — `config/alexsmobs/cave_centipede_spawns.json` (config); suggested doc: `components/cave-centipede-spawns.md`
+- **cockroach_spawns.json** — `config/alexsmobs/cockroach_spawns.json` (config); suggested doc: `components/cockroach-spawns.md`
+- **comb_jelly_spawns.json** — `config/alexsmobs/comb_jelly_spawns.json` (config); suggested doc: `components/comb-jelly-spawns.md`
+- **cosmaw_spawns.json** — `config/alexsmobs/cosmaw_spawns.json` (config); suggested doc: `components/cosmaw-spawns.md`
+- **cosmic_cod_spawns.json** — `config/alexsmobs/cosmic_cod_spawns.json` (config); suggested doc: `components/cosmic-cod-spawns.md`
+- **crimson_mosquito_spawns.json** — `config/alexsmobs/crimson_mosquito_spawns.json` (config); suggested doc: `components/crimson-mosquito-spawns.md`
+- **crocodile_spawns.json** — `config/alexsmobs/crocodile_spawns.json` (config); suggested doc: `components/crocodile-spawns.md`
+- **crow_spawns.json** — `config/alexsmobs/crow_spawns.json` (config); suggested doc: `components/crow-spawns.md`
+- **devils_hole_pupfish_spawns.json** — `config/alexsmobs/devils_hole_pupfish_spawns.json` (config); suggested doc: `components/devils-hole-pupfish-spawns.md`
+- **dropbear_spawns.json** — `config/alexsmobs/dropbear_spawns.json` (config); suggested doc: `components/dropbear-spawns.md`
+- **elephant_spawns.json** — `config/alexsmobs/elephant_spawns.json` (config); suggested doc: `components/elephant-spawns.md`
+- **emu_spawns.json** — `config/alexsmobs/emu_spawns.json` (config); suggested doc: `components/emu-spawns.md`
+- **endergrade_spawns.json** — `config/alexsmobs/endergrade_spawns.json` (config); suggested doc: `components/endergrade-spawns.md`
+- **enderiophage_spawns.json** — `config/alexsmobs/enderiophage_spawns.json` (config); suggested doc: `components/enderiophage-spawns.md`
+- **farseer.json** — `config/alexsmobs/farseer.json` (config); suggested doc: `components/farseer.md`
+- **flutter_spawns.json** — `config/alexsmobs/flutter_spawns.json` (config); suggested doc: `components/flutter-spawns.md`
+- **fly_spawns.json** — `config/alexsmobs/fly_spawns.json` (config); suggested doc: `components/fly-spawns.md`
+- **flying_fish_spawns.json** — `config/alexsmobs/flying_fish_spawns.json` (config); suggested doc: `components/flying-fish-spawns.md`
+- **frilled_shark_spawns.json** — `config/alexsmobs/frilled_shark_spawns.json` (config); suggested doc: `components/frilled-shark-spawns.md`
+- **froststalker_spawns.json** — `config/alexsmobs/froststalker_spawns.json` (config); suggested doc: `components/froststalker-spawns.md`
+- **gazelle_spawns.json** — `config/alexsmobs/gazelle_spawns.json` (config); suggested doc: `components/gazelle-spawns.md`
+- **gelada_monkey_spawns.json** — `config/alexsmobs/gelada_monkey_spawns.json` (config); suggested doc: `components/gelada-monkey-spawns.md`
+- **giant_squid_spawns.json** — `config/alexsmobs/giant_squid_spawns.json` (config); suggested doc: `components/giant-squid-spawns.md`
+- **gorilla_spawns.json** — `config/alexsmobs/gorilla_spawns.json` (config); suggested doc: `components/gorilla-spawns.md`
+- **grizzly_bear_spawns.json** — `config/alexsmobs/grizzly_bear_spawns.json` (config); suggested doc: `components/grizzly-bear-spawns.md`
+- **guster_spawns.json** — `config/alexsmobs/guster_spawns.json` (config); suggested doc: `components/guster-spawns.md`
+- **hammerhead_shark_spawns.json** — `config/alexsmobs/hammerhead_shark_spawns.json` (config); suggested doc: `components/hammerhead-shark-spawns.md`
+- **hummingbird_spawns.json** — `config/alexsmobs/hummingbird_spawns.json` (config); suggested doc: `components/hummingbird-spawns.md`
+- **jerboa_spawns.json** — `config/alexsmobs/jerboa_spawns.json` (config); suggested doc: `components/jerboa-spawns.md`
+- **kangaroo_spawns.json** — `config/alexsmobs/kangaroo_spawns.json` (config); suggested doc: `components/kangaroo-spawns.md`
+- **komodo_dragon_spawns.json** — `config/alexsmobs/komodo_dragon_spawns.json` (config); suggested doc: `components/komodo-dragon-spawns.md`
+- **laviathan_spawns.json** — `config/alexsmobs/laviathan_spawns.json` (config); suggested doc: `components/laviathan-spawns.md`
+- **leafcutter_anthill_spawns.json** — `config/alexsmobs/leafcutter_anthill_spawns.json` (config); suggested doc: `components/leafcutter-anthill-spawns.md`
+- **lobster_spawns.json** — `config/alexsmobs/lobster_spawns.json` (config); suggested doc: `components/lobster-spawns.md`
+- **maned_wolf_spawns.json** — `config/alexsmobs/maned_wolf_spawns.json` (config); suggested doc: `components/maned-wolf-spawns.md`
+- **mantis_shrimp_spawns.json** — `config/alexsmobs/mantis_shrimp_spawns.json` (config); suggested doc: `components/mantis-shrimp-spawns.md`
+- **mimic_octopus_spawns.json** — `config/alexsmobs/mimic_octopus_spawns.json` (config); suggested doc: `components/mimic-octopus-spawns.md`
+- **mimicube_spawns.json** — `config/alexsmobs/mimicube_spawns.json` (config); suggested doc: `components/mimicube-spawns.md`
+- **moose_spawns.json** — `config/alexsmobs/moose_spawns.json` (config); suggested doc: `components/moose-spawns.md`
+- **mudskipper_spawns.json** — `config/alexsmobs/mudskipper_spawns.json` (config); suggested doc: `components/mudskipper-spawns.md`
+- **mungus_spawns.json** — `config/alexsmobs/mungus_spawns.json` (config); suggested doc: `components/mungus-spawns.md`
+- **murmur.json** — `config/alexsmobs/murmur.json` (config); suggested doc: `components/murmur.md`
+- **orca_spawns.json** — `config/alexsmobs/orca_spawns.json` (config); suggested doc: `components/orca-spawns.md`
+- **platypus_spawns.json** — `config/alexsmobs/platypus_spawns.json` (config); suggested doc: `components/platypus-spawns.md`
+- **potoo_spawns.json** — `config/alexsmobs/potoo_spawns.json` (config); suggested doc: `components/potoo-spawns.md`
+- **raccoon_spawns.json** — `config/alexsmobs/raccoon_spawns.json` (config); suggested doc: `components/raccoon-spawns.md`
+- **rain_frog_spawns.json** — `config/alexsmobs/rain_frog_spawns.json` (config); suggested doc: `components/rain-frog-spawns.md`
+- **rattlesnake_spawns.json** — `config/alexsmobs/rattlesnake_spawns.json` (config); suggested doc: `components/rattlesnake-spawns.md`
+- **rhinoceros_spawns.json** — `config/alexsmobs/rhinoceros_spawns.json` (config); suggested doc: `components/rhinoceros-spawns.md`
+- **roadrunner_spawns.json** — `config/alexsmobs/roadrunner_spawns.json` (config); suggested doc: `components/roadrunner-spawns.md`
+- **rocky_roller_spawns.json** — `config/alexsmobs/rocky_roller_spawns.json` (config); suggested doc: `components/rocky-roller-spawns.md`
+- **seagull_spawns.json** — `config/alexsmobs/seagull_spawns.json` (config); suggested doc: `components/seagull-spawns.md`
+- **seal_spawns.json** — `config/alexsmobs/seal_spawns.json` (config); suggested doc: `components/seal-spawns.md`
+- **shoebill_spawns.json** — `config/alexsmobs/shoebill_spawns.json` (config); suggested doc: `components/shoebill-spawns.md`
+- **skelewag_spawns.json** — `config/alexsmobs/skelewag_spawns.json` (config); suggested doc: `components/skelewag-spawns.md`
+- **skreecher.json** — `config/alexsmobs/skreecher.json` (config); suggested doc: `components/skreecher.md`
+- **skunk_spawns.json** — `config/alexsmobs/skunk_spawns.json` (config); suggested doc: `components/skunk-spawns.md`
+- **snow_leopard_spawns.json** — `config/alexsmobs/snow_leopard_spawns.json` (config); suggested doc: `components/snow-leopard-spawns.md`
+- **soul_vulture_spawns.json** — `config/alexsmobs/soul_vulture_spawns.json` (config); suggested doc: `components/soul-vulture-spawns.md`
+- **spectre_spawns.json** — `config/alexsmobs/spectre_spawns.json` (config); suggested doc: `components/spectre-spawns.md`
+- **straddler_spawns.json** — `config/alexsmobs/straddler_spawns.json` (config); suggested doc: `components/straddler-spawns.md`
+- **stradpole_spawns.json** — `config/alexsmobs/stradpole_spawns.json` (config); suggested doc: `components/stradpole-spawns.md`
+- **sugar_glider_spawns.json** — `config/alexsmobs/sugar_glider_spawns.json` (config); suggested doc: `components/sugar-glider-spawns.md`
+- **sunbird_spawns.json** — `config/alexsmobs/sunbird_spawns.json` (config); suggested doc: `components/sunbird-spawns.md`
+- **tarantula_hawk_spawns.json** — `config/alexsmobs/tarantula_hawk_spawns.json` (config); suggested doc: `components/tarantula-hawk-spawns.md`
+- **tasmanian_devil_spawns.json** — `config/alexsmobs/tasmanian_devil_spawns.json` (config); suggested doc: `components/tasmanian-devil-spawns.md`
+- **terrapin_spawns.json** — `config/alexsmobs/terrapin_spawns.json` (config); suggested doc: `components/terrapin-spawns.md`
+- **tiger_spawns.json** — `config/alexsmobs/tiger_spawns.json` (config); suggested doc: `components/tiger-spawns.md`
+- **toucan_spawns.json** — `config/alexsmobs/toucan_spawns.json` (config); suggested doc: `components/toucan-spawns.md`
+- **triops_spawns.json** — `config/alexsmobs/triops_spawns.json` (config); suggested doc: `components/triops-spawns.md`
+- **tusklin_spawns.json** — `config/alexsmobs/tusklin_spawns.json` (config); suggested doc: `components/tusklin-spawns.md`
+- **underminer.json** — `config/alexsmobs/underminer.json` (config); suggested doc: `components/underminer.md`
+- **void_worm_spawns.json** — `config/alexsmobs/void_worm_spawns.json` (config); suggested doc: `components/void-worm-spawns.md`
+- **warped_mosco_spawns.json** — `config/alexsmobs/warped_mosco_spawns.json` (config); suggested doc: `components/warped-mosco-spawns.md`
+- **warped_toad_spawns.json** — `config/alexsmobs/warped_toad_spawns.json` (config); suggested doc: `components/warped-toad-spawns.md`
+- **aquaculture-common.toml** — `config/aquaculture-common.toml` (config); suggested doc: `components/aquaculture-common.md`
+- **bakeries-common.toml** — `config/bakeries-common.toml` (config); suggested doc: `components/bakeries-common.md`
+- **bakery-common.toml** — `config/bakery-common.toml` (config); suggested doc: `components/bakery-common.md`
+- **beachparty-common.toml** — `config/beachparty-common.toml` (config); suggested doc: `components/beachparty-common.md`
+- **brewinandchewin-client.toml** — `config/brewinandchewin-client.toml` (config); suggested doc: `components/brewinandchewin-client.md`
+- **brewinandchewin-common.toml** — `config/brewinandchewin-common.toml` (config); suggested doc: `components/brewinandchewin-common.md`
+- **citadel-common.toml** — `config/citadel-common.toml` (config); suggested doc: `components/citadel-common.md`
+- **crabbersdelight-common.toml** — `config/crabbersdelight-common.toml` (config); suggested doc: `components/crabbersdelight-common.md`
+- **create-client.toml** — `config/create-client.toml` (config); suggested doc: `components/create-client.md`
+- **create-common.toml** — `config/create-common.toml` (config); suggested doc: `components/create-common.md`
+- **create-server.toml** — `config/create-server.toml` (config); suggested doc: `components/create-server.md`
+- **create_bitterballen.toml** — `config/create_bitterballen.toml` (config); suggested doc: `components/create-bitterballen.md`
+- **create_central_kitchen-client.toml** — `config/create_central_kitchen-client.toml` (config); suggested doc: `components/create-central-kitchen-client.md`
+- **create_central_kitchen-common.toml** — `config/create_central_kitchen-common.toml` (config); suggested doc: `components/create-central-kitchen-common.md`
+- **create_dragons_plus-client.toml** — `config/create_dragons_plus-client.toml` (config); suggested doc: `components/create-dragons-plus-client.md`
+- **create_dragons_plus-common.toml** — `config/create_dragons_plus-common.toml` (config); suggested doc: `components/create-dragons-plus-common.md`
+- **create_dragons_plus-server.toml** — `config/create_dragons_plus-server.toml` (config); suggested doc: `components/create-dragons-plus-server.md`
+- **culturaldelights-common.toml** — `config/culturaldelights-common.toml` (config); suggested doc: `components/culturaldelights-common.md`
+- **curios-client.toml** — `config/curios-client.toml` (config); suggested doc: `components/curios-client.md`
+- **curios-common.toml** — `config/curios-common.toml` (config); suggested doc: `components/curios-common.md`
+- **curios-server.toml** — `config/curios-server.toml` (config); suggested doc: `components/curios-server.md`
+- **displaydelight-common.toml** — `config/displaydelight-common.toml` (config); suggested doc: `components/displaydelight-common.md`
+- **dungeonsdelight-client-config.toml** — `config/dungeonsdelight-client-config.toml` (config); suggested doc: `components/dungeonsdelight-client-config.md`
+- **dungeonsdelight-config.toml** — `config/dungeonsdelight-config.toml` (config); suggested doc: `components/dungeonsdelight-config.md`
+- **endersdelight-common.toml** — `config/endersdelight-common.toml` (config); suggested doc: `components/endersdelight-common.md`
+- **ends_delight-common.toml** — `config/ends_delight-common.toml` (config); suggested doc: `components/ends-delight-common.md`
+- **farm_and_charm-common.toml** — `config/farm_and_charm-common.toml` (config); suggested doc: `components/farm-and-charm-common.md`
+- **farmersdelight-client.toml** — `config/farmersdelight-client.toml` (config); suggested doc: `components/farmersdelight-client.md`
+- **farmersdelight-common.toml** — `config/farmersdelight-common.toml` (config); suggested doc: `components/farmersdelight-common.md`
+- **flywheel-client.toml** — `config/flywheel-client.toml` (config); suggested doc: `components/flywheel-client.md`
+- **frightsdelight.json** — `config/frightsdelight.json` (config); suggested doc: `components/frightsdelight.md`
+- **immortalers_delight-common.toml** — `config/immortalers_delight-common.toml` (config); suggested doc: `components/immortalers-delight-common.md`
+- **atlas.png** — `config/inventory-particles/cache/alexscaves/atlas.png` (config); suggested doc: `components/atlas.md`
+- **regions.txt** — `config/inventory-particles/cache/alexscaves/regions.txt` (config); suggested doc: `components/regions.md`
+- **spawn_areas.cached** — `config/inventory-particles/cache/alexscaves/spawn_areas.cached` (config); suggested doc: `components/spawn-areas.md`
+- **atlas.png** — `config/inventory-particles/cache/alexsdelight/atlas.png` (config); suggested doc: `components/atlas.md`
+- **regions.txt** — `config/inventory-particles/cache/alexsdelight/regions.txt` (config); suggested doc: `components/regions.md`
+- **spawn_areas.cached** — `config/inventory-particles/cache/alexsdelight/spawn_areas.cached` (config); suggested doc: `components/spawn-areas.md`
+- **atlas.png** — `config/inventory-particles/cache/alexsmobs/atlas.png` (config); suggested doc: `components/atlas.md`
+- **regions.txt** — `config/inventory-particles/cache/alexsmobs/regions.txt` (config); suggested doc: `components/regions.md`
+- **spawn_areas.cached** — `config/inventory-particles/cache/alexsmobs/spawn_areas.cached` (config); suggested doc: `components/spawn-areas.md`
+- **atlas.png** — `config/inventory-particles/cache/aquaculture/atlas.png` (config); suggested doc: `components/atlas.md`
+- **regions.txt** — `config/inventory-particles/cache/aquaculture/regions.txt` (config); suggested doc: `components/regions.md`
+- **spawn_areas.cached** — `config/inventory-particles/cache/aquaculture/spawn_areas.cached` (config); suggested doc: `components/spawn-areas.md`
+- **atlas.png** — `config/inventory-particles/cache/aquaculturedelight/atlas.png` (config); suggested doc: `components/atlas.md`
+- **regions.txt** — `config/inventory-particles/cache/aquaculturedelight/regions.txt` (config); suggested doc: `components/regions.md`
+- **spawn_areas.cached** — `config/inventory-particles/cache/aquaculturedelight/spawn_areas.cached` (config); suggested doc: `components/spawn-areas.md`
+- **atlas.png** — `config/inventory-particles/cache/bakeries/atlas.png` (config); suggested doc: `components/atlas.md`
+- **regions.txt** — `config/inventory-particles/cache/bakeries/regions.txt` (config); suggested doc: `components/regions.md`
+- **spawn_areas.cached** — `config/inventory-particles/cache/bakeries/spawn_areas.cached` (config); suggested doc: `components/spawn-areas.md`
+- **atlas.png** — `config/inventory-particles/cache/bakery/atlas.png` (config); suggested doc: `components/atlas.md`
+- **regions.txt** — `config/inventory-particles/cache/bakery/regions.txt` (config); suggested doc: `components/regions.md`
+- **spawn_areas.cached** — `config/inventory-particles/cache/bakery/spawn_areas.cached` (config); suggested doc: `components/spawn-areas.md`
+- **atlas.png** — `config/inventory-particles/cache/barbequesdelight/atlas.png` (config); suggested doc: `components/atlas.md`
+- **regions.txt** — `config/inventory-particles/cache/barbequesdelight/regions.txt` (config); suggested doc: `components/regions.md`
+- **spawn_areas.cached** — `config/inventory-particles/cache/barbequesdelight/spawn_areas.cached` (config); suggested doc: `components/spawn-areas.md`
+- **atlas.png** — `config/inventory-particles/cache/beachparty/atlas.png` (config); suggested doc: `components/atlas.md`
+- **regions.txt** — `config/inventory-particles/cache/beachparty/regions.txt` (config); suggested doc: `components/regions.md`
+- **spawn_areas.cached** — `config/inventory-particles/cache/beachparty/spawn_areas.cached` (config); suggested doc: `components/spawn-areas.md`
+- **atlas.png** — `config/inventory-particles/cache/brewery/atlas.png` (config); suggested doc: `components/atlas.md`
+- **regions.txt** — `config/inventory-particles/cache/brewery/regions.txt` (config); suggested doc: `components/regions.md`
+- **spawn_areas.cached** — `config/inventory-particles/cache/brewery/spawn_areas.cached` (config); suggested doc: `components/spawn-areas.md`
+- **atlas.png** — `config/inventory-particles/cache/brewinandchewin/atlas.png` (config); suggested doc: `components/atlas.md`
+- **regions.txt** — `config/inventory-particles/cache/brewinandchewin/regions.txt` (config); suggested doc: `components/regions.md`
+- **spawn_areas.cached** — `config/inventory-particles/cache/brewinandchewin/spawn_areas.cached` (config); suggested doc: `components/spawn-areas.md`
+- **atlas.png** — `config/inventory-particles/cache/candlelight/atlas.png` (config); suggested doc: `components/atlas.md`
+- **regions.txt** — `config/inventory-particles/cache/candlelight/regions.txt` (config); suggested doc: `components/regions.md`
+- **spawn_areas.cached** — `config/inventory-particles/cache/candlelight/spawn_areas.cached` (config); suggested doc: `components/spawn-areas.md`
+- **atlas.png** — `config/inventory-particles/cache/casualnessdelight/atlas.png` (config); suggested doc: `components/atlas.md`
+- **regions.txt** — `config/inventory-particles/cache/casualnessdelight/regions.txt` (config); suggested doc: `components/regions.md`
+- **spawn_areas.cached** — `config/inventory-particles/cache/casualnessdelight/spawn_areas.cached` (config); suggested doc: `components/spawn-areas.md`
+- **atlas.png** — `config/inventory-particles/cache/citadel/atlas.png` (config); suggested doc: `components/atlas.md`
+- **regions.txt** — `config/inventory-particles/cache/citadel/regions.txt` (config); suggested doc: `components/regions.md`
+- **spawn_areas.cached** — `config/inventory-particles/cache/citadel/spawn_areas.cached` (config); suggested doc: `components/spawn-areas.md`
+- **atlas.png** — `config/inventory-particles/cache/crabbersdelight/atlas.png` (config); suggested doc: `components/atlas.md`
+- **regions.txt** — `config/inventory-particles/cache/crabbersdelight/regions.txt` (config); suggested doc: `components/regions.md`
+- **spawn_areas.cached** — `config/inventory-particles/cache/crabbersdelight/spawn_areas.cached` (config); suggested doc: `components/spawn-areas.md`
+- **atlas.png** — `config/inventory-particles/cache/create/atlas.png` (config); suggested doc: `components/atlas.md`
+- **regions.txt** — `config/inventory-particles/cache/create/regions.txt` (config); suggested doc: `components/regions.md`
+- **spawn_areas.cached** — `config/inventory-particles/cache/create/spawn_areas.cached` (config); suggested doc: `components/spawn-areas.md`
+- **atlas.png** — `config/inventory-particles/cache/create_bic_bit/atlas.png` (config); suggested doc: `components/atlas.md`
+- **regions.txt** — `config/inventory-particles/cache/create_bic_bit/regions.txt` (config); suggested doc: `components/regions.md`
+- **spawn_areas.cached** — `config/inventory-particles/cache/create_bic_bit/spawn_areas.cached` (config); suggested doc: `components/spawn-areas.md`
+- **atlas.png** — `config/inventory-particles/cache/create_deepfried/atlas.png` (config); suggested doc: `components/atlas.md`
+- **regions.txt** — `config/inventory-particles/cache/create_deepfried/regions.txt` (config); suggested doc: `components/regions.md`
+- **spawn_areas.cached** — `config/inventory-particles/cache/create_deepfried/spawn_areas.cached` (config); suggested doc: `components/spawn-areas.md`
+- **atlas.png** — `config/inventory-particles/cache/create_dragons_plus/atlas.png` (config); suggested doc: `components/atlas.md`
+- **regions.txt** — `config/inventory-particles/cache/create_dragons_plus/regions.txt` (config); suggested doc: `components/regions.md`
+- **spawn_areas.cached** — `config/inventory-particles/cache/create_dragons_plus/spawn_areas.cached` (config); suggested doc: `components/spawn-areas.md`
+- **atlas.png** — `config/inventory-particles/cache/culturaldelights/atlas.png` (config); suggested doc: `components/atlas.md`
+- **regions.txt** — `config/inventory-particles/cache/culturaldelights/regions.txt` (config); suggested doc: `components/regions.md`
+- **spawn_areas.cached** — `config/inventory-particles/cache/culturaldelights/spawn_areas.cached` (config); suggested doc: `components/spawn-areas.md`
+- **atlas.png** — `config/inventory-particles/cache/displaydelight/atlas.png` (config); suggested doc: `components/atlas.md`
+- **regions.txt** — `config/inventory-particles/cache/displaydelight/regions.txt` (config); suggested doc: `components/regions.md`
+- **spawn_areas.cached** — `config/inventory-particles/cache/displaydelight/spawn_areas.cached` (config); suggested doc: `components/spawn-areas.md`
+- **atlas.png** — `config/inventory-particles/cache/dungeonsdelight/atlas.png` (config); suggested doc: `components/atlas.md`
+- **regions.txt** — `config/inventory-particles/cache/dungeonsdelight/regions.txt` (config); suggested doc: `components/regions.md`
+- **spawn_areas.cached** — `config/inventory-particles/cache/dungeonsdelight/spawn_areas.cached` (config); suggested doc: `components/spawn-areas.md`
+- **atlas.png** — `config/inventory-particles/cache/endersdelight/atlas.png` (config); suggested doc: `components/atlas.md`
+- **regions.txt** — `config/inventory-particles/cache/endersdelight/regions.txt` (config); suggested doc: `components/regions.md`
+- **spawn_areas.cached** — `config/inventory-particles/cache/endersdelight/spawn_areas.cached` (config); suggested doc: `components/spawn-areas.md`
+- **atlas.png** — `config/inventory-particles/cache/ends_delight/atlas.png` (config); suggested doc: `components/atlas.md`
+- **regions.txt** — `config/inventory-particles/cache/ends_delight/regions.txt` (config); suggested doc: `components/regions.md`
+- **spawn_areas.cached** — `config/inventory-particles/cache/ends_delight/spawn_areas.cached` (config); suggested doc: `components/spawn-areas.md`
+- **atlas.png** — `config/inventory-particles/cache/farm_and_charm/atlas.png` (config); suggested doc: `components/atlas.md`
+- **regions.txt** — `config/inventory-particles/cache/farm_and_charm/regions.txt` (config); suggested doc: `components/regions.md`
+- **spawn_areas.cached** — `config/inventory-particles/cache/farm_and_charm/spawn_areas.cached` (config); suggested doc: `components/spawn-areas.md`
+- **atlas.png** — `config/inventory-particles/cache/farmersdelight/atlas.png` (config); suggested doc: `components/atlas.md`
+- **regions.txt** — `config/inventory-particles/cache/farmersdelight/regions.txt` (config); suggested doc: `components/regions.md`
+- **spawn_areas.cached** — `config/inventory-particles/cache/farmersdelight/spawn_areas.cached` (config); suggested doc: `components/spawn-areas.md`
+- **atlas.png** — `config/inventory-particles/cache/frightsdelight/atlas.png` (config); suggested doc: `components/atlas.md`
+- **regions.txt** — `config/inventory-particles/cache/frightsdelight/regions.txt` (config); suggested doc: `components/regions.md`
+- **spawn_areas.cached** — `config/inventory-particles/cache/frightsdelight/spawn_areas.cached` (config); suggested doc: `components/spawn-areas.md`
+- **atlas.png** — `config/inventory-particles/cache/immortalers_delight/atlas.png` (config); suggested doc: `components/atlas.md`
+- **regions.txt** — `config/inventory-particles/cache/immortalers_delight/regions.txt` (config); suggested doc: `components/regions.md`
+- **spawn_areas.cached** — `config/inventory-particles/cache/immortalers_delight/spawn_areas.cached` (config); suggested doc: `components/spawn-areas.md`
+- **atlas.png** — `config/inventory-particles/cache/meadow/atlas.png` (config); suggested doc: `components/atlas.md`
+- **regions.txt** — `config/inventory-particles/cache/meadow/regions.txt` (config); suggested doc: `components/regions.md`
+- **spawn_areas.cached** — `config/inventory-particles/cache/meadow/spawn_areas.cached` (config); suggested doc: `components/spawn-areas.md`
+- **atlas.png** — `config/inventory-particles/cache/minersdelight/atlas.png` (config); suggested doc: `components/atlas.md`
+- **regions.txt** — `config/inventory-particles/cache/minersdelight/regions.txt` (config); suggested doc: `components/regions.md`
+- **spawn_areas.cached** — `config/inventory-particles/cache/minersdelight/spawn_areas.cached` (config); suggested doc: `components/spawn-areas.md`
+- **atlas.png** — `config/inventory-particles/cache/mynethersdelight/atlas.png` (config); suggested doc: `components/atlas.md`
+- **regions.txt** — `config/inventory-particles/cache/mynethersdelight/regions.txt` (config); suggested doc: `components/regions.md`
+- **spawn_areas.cached** — `config/inventory-particles/cache/mynethersdelight/spawn_areas.cached` (config); suggested doc: `components/spawn-areas.md`
+- **atlas.png** — `config/inventory-particles/cache/ratatouille/atlas.png` (config); suggested doc: `components/atlas.md`
+- **regions.txt** — `config/inventory-particles/cache/ratatouille/regions.txt` (config); suggested doc: `components/regions.md`
+- **spawn_areas.cached** — `config/inventory-particles/cache/ratatouille/spawn_areas.cached` (config); suggested doc: `components/spawn-areas.md`
+- **atlas.png** — `config/inventory-particles/cache/refurbished_furniture/atlas.png` (config); suggested doc: `components/atlas.md`
+- **regions.txt** — `config/inventory-particles/cache/refurbished_furniture/regions.txt` (config); suggested doc: `components/regions.md`
+- **spawn_areas.cached** — `config/inventory-particles/cache/refurbished_furniture/spawn_areas.cached` (config); suggested doc: `components/spawn-areas.md`
+- **atlas.png** — `config/inventory-particles/cache/saraddons/atlas.png` (config); suggested doc: `components/atlas.md`
+- **regions.txt** — `config/inventory-particles/cache/saraddons/regions.txt` (config); suggested doc: `components/regions.md`
+- **spawn_areas.cached** — `config/inventory-particles/cache/saraddons/spawn_areas.cached` (config); suggested doc: `components/spawn-areas.md`
+- **atlas.png** — `config/inventory-particles/cache/seki/atlas.png` (config); suggested doc: `components/atlas.md`
+- **regions.txt** — `config/inventory-particles/cache/seki/regions.txt` (config); suggested doc: `components/regions.md`
+- **spawn_areas.cached** — `config/inventory-particles/cache/seki/spawn_areas.cached` (config); suggested doc: `components/spawn-areas.md`
+- **atlas.png** — `config/inventory-particles/cache/someassemblyrequired/atlas.png` (config); suggested doc: `components/atlas.md`
+- **regions.txt** — `config/inventory-particles/cache/someassemblyrequired/regions.txt` (config); suggested doc: `components/regions.md`
+- **spawn_areas.cached** — `config/inventory-particles/cache/someassemblyrequired/spawn_areas.cached` (config); suggested doc: `components/spawn-areas.md`
+- **atlas.png** — `config/inventory-particles/cache/trailandtales_delight/atlas.png` (config); suggested doc: `components/atlas.md`
+- **regions.txt** — `config/inventory-particles/cache/trailandtales_delight/regions.txt` (config); suggested doc: `components/regions.md`
+- **spawn_areas.cached** — `config/inventory-particles/cache/trailandtales_delight/spawn_areas.cached` (config); suggested doc: `components/spawn-areas.md`
+- **atlas.png** — `config/inventory-particles/cache/vinery/atlas.png` (config); suggested doc: `components/atlas.md`
+- **regions.txt** — `config/inventory-particles/cache/vinery/regions.txt` (config); suggested doc: `components/regions.md`
+- **spawn_areas.cached** — `config/inventory-particles/cache/vinery/spawn_areas.cached` (config); suggested doc: `components/spawn-areas.md`
+- **atlas.png** — `config/inventory-particles/cache/vintagedelight/atlas.png` (config); suggested doc: `components/atlas.md`
+- **regions.txt** — `config/inventory-particles/cache/vintagedelight/regions.txt` (config); suggested doc: `components/regions.md`
+- **spawn_areas.cached** — `config/inventory-particles/cache/vintagedelight/spawn_areas.cached` (config); suggested doc: `components/spawn-areas.md`
+- **atlas.png** — `config/inventory-particles/cache/youkaisfeasts/atlas.png` (config); suggested doc: `components/atlas.md`
+- **regions.txt** — `config/inventory-particles/cache/youkaisfeasts/regions.txt` (config); suggested doc: `components/regions.md`
+- **spawn_areas.cached** — `config/inventory-particles/cache/youkaisfeasts/spawn_areas.cached` (config); suggested doc: `components/spawn-areas.md`
+- **l2core-client.toml** — `config/l2configs/l2core-client.toml` (config); suggested doc: `components/l2core-client.md`
+- **l2damagetracker-server.toml** — `config/l2configs/l2damagetracker-server.toml` (config); suggested doc: `components/l2damagetracker-server.md`
+- **lodestone-client.toml** — `config/lodestone-client.toml` (config); suggested doc: `components/lodestone-client.md`
+- **meadow-common.toml** — `config/meadow-common.toml` (config); suggested doc: `components/meadow-common.md`
+- **ponder-client.toml** — `config/ponder-client.toml` (config); suggested doc: `components/ponder-client.md`
+- **ratatouille-server.toml** — `config/ratatouille-server.toml` (config); suggested doc: `components/ratatouille-server.md`
+- **refurbished_furniture.client.toml** — `config/refurbished_furniture.client.toml` (config); suggested doc: `components/refurbished-furniture-client.md`
+- **refurbished_furniture.server.toml** — `config/refurbished_furniture.server.toml` (config); suggested doc: `components/refurbished-furniture-server.md`
+- **runiclib.json** — `config/runiclib.json` (config); suggested doc: `components/runiclib.md`
+- **saraddons-common.toml** — `config/saraddons-common.toml` (config); suggested doc: `components/saraddons-common.md`
+- **someassemblyrequired-client.toml** — `config/someassemblyrequired-client.toml` (config); suggested doc: `components/someassemblyrequired-client.md`
+- **someassemblyrequired-server.toml** — `config/someassemblyrequired-server.toml` (config); suggested doc: `components/someassemblyrequired-server.md`
+- **terrablender.toml** — `config/terrablender.toml` (config); suggested doc: `components/terrablender.md`
+- **vinery.toml** — `config/vinery.toml` (config); suggested doc: `components/vinery.md`
+- **vintagedelight-common.toml** — `config/vintagedelight-common.toml` (config); suggested doc: `components/vintagedelight-common.md`
+- **youkaisfeasts-server.toml** — `config/youkaisfeasts-server.toml` (config); suggested doc: `components/youkaisfeasts-server.md`
+- **My Nether's Delight 1.10.2** — `mods/MyNethersDelight-1.21.1-1.10.2.jar` (mod); suggested doc: `components/mynethersdelight.md`
+- **MrCrayfish's Furniture Mod: Refurbished 1.0.22** — `mods/[MrCrayfish 的家具：重制] refurbished_furniture-neoforge-1.21.1-1.0.22.jar` (mod); suggested doc: `components/refurbished-furniture.md`
+- **Farmer's Delight 1.3.2** — `mods/[农夫乐事] FarmersDelight-1.21.1-1.3.2.jar` (mod); suggested doc: `components/farmersdelight.md`
+- **ImmortalersDelight 1.21.1-neoforge-1.0.1** — `mods/[千古乐事] immortalers_delight-1.21.1-neoforge-1.0.1.jar` (mod); suggested doc: `components/immortalers-delight.md`
+- **Dungeon's Delight 1.5.0** — `mods/[地牢乐事] neoforge-dungeonsdelight-1.21.1-1.5.0.jar` (mod); suggested doc: `components/dungeonsdelight.md`
+- **Cultural Delights 0.17.8** — `mods/[多元乐事] culturaldelights-0.17.8.jar` (mod); suggested doc: `components/culturaldelights.md`
+- **Youkais' Feasts 1.1.0** — `mods/[幻想乡乐事 -- 妖怪们的飨宴] youkaisfeasts-1.1.0.jar` (mod); suggested doc: `components/youkaisfeasts.md`
+- **Fright's Delight 1.4.8** — `mods/[惊悚乐事] frightsdelight-neoforge-1.21.1-1.4.8.jar` (mod); suggested doc: `components/frightsdelight.md`
+- **End's Delight 2.6.1+neoforge.1.21.1** — `mods/[末地乐事] ends_delight-2.6.1+neoforge.1.21.1.jar` (mod); suggested doc: `components/ends-delight.md`
+- **Ender's Delight 1.3.0** — `mods/[末影乐事] endersdelight-1.3.0.jar` (mod); suggested doc: `components/endersdelight.md`
+- **Create 6.0.10** — `mods/[机械动力] create-1.21.1-6.0.10.jar` (mod); suggested doc: `components/create.md`
+- **Create: Central Kitchen 2.5.0** — `mods/[机械动力：中央厨房] create-central-kitchen-2.5.0.jar` (mod); suggested doc: `components/create-central-kitchen.md`
+- **Create: Deepfried 0.1.3C** — `mods/[机械动力：油炸] create_deepfried-forge-1.21.1-0.1.3C.jar` (mod); suggested doc: `components/create-deepfried.md`
+- **Ratatouille 1.4.0** — `mods/[机械动力：齿轮与麦穗] create_ratatouille-1.21.1-1.4.0.jar` (mod); suggested doc: `components/ratatouille.md`
+- **Create: Dragons Plus 1.11.2b** — `mods/[机械动力：龙+] CreateDragonsPlus-1.11.2b.jar` (mod); suggested doc: `components/create-dragons-plus.md`
+- **Trail&Tales Delight 0.4.1** — `mods/[樱途旅事] trailandtales_delight-0.4.jar` (mod); suggested doc: `components/trailandtales-delight.md`
+- **Aquaculture 2 2.7.21** — `mods/[水产业2／水产品2] Aquaculture-1.21.1-2.7.21.jar` (mod); suggested doc: `components/aquaculture.md`
+- **Aquaculture Delight 1.2.0** — `mods/[水产乐事] aquaculturedelight-1.2.0-neoforge-1.21.1.jar` (mod); suggested doc: `components/aquaculturedelight.md`
+- **[Let's Do] Farm & Charm 1.1.22** — `mods/[沉浸农艺] letsdo-farm_and_charm-neoforge-1.1.22.jar` (mod); suggested doc: `components/farm-and-charm.md`
+- **[Let's Do] Beachparty 2.1.4** — `mods/[沙滩派对] letsdo-beachparty-neoforge-2.1.4.jar` (mod); suggested doc: `components/beachparty.md`
+- **Bakeries 1.21.1-NeoForge-1.0.1** — `mods/[烘焙坊] bakeries-1.21.1-NeoForge-1.0.1.jar` (mod); suggested doc: `components/bakeries.md`
+- **[Let's Do] Candlelight 2.1.12** — `mods/[烛火晚宴] letsdo-candlelight-neoforge-2.1.12.jar` (mod); suggested doc: `components/candlelight.md`
+- **Barbeque's Delight 1.3.0** — `mods/[烧烤乐事] barbequesdelight-1.3.0.jar` (mod); suggested doc: `components/barbequesdelight.md`
+- **[Let's Do] Brewery 2.1.9** — `mods/[盛节精酿] letsdo-brewery-neoforge-2.1.9.jar` (mod); suggested doc: `components/brewery.md`
+- **Miners Delight 1.4.5** — `mods/[矿工乐事] minersdelight-1.21.1-1.4.5.jar` (mod); suggested doc: `components/minersdelight.md`
+- **[Let's Do] Vinery 1.5.3** — `mods/[葡园酒香] letsdo-vinery-neoforge-1.5.3.jar` (mod); suggested doc: `components/vinery.md`
+- **Crabber's Delight 1.2.6** — `mods/[蟹农乐事] crabbersdelight-1.21.1-1.2.6.jar` (mod); suggested doc: `components/crabbersdelight.md`
+- **CasualnessDelight 0.6** — `mods/[随意乐事] casualnessdelight-0.6.jar` (mod); suggested doc: `components/casualnessdelight.md`
+- **[Let's Do] Meadow 1.4.8** — `mods/[青青草甸] letsdo-meadow-neoforge-1.4.8.jar` (mod); suggested doc: `components/meadow.md`
+- **Brewin' And Chewin' 4.5.0** — `mods/[饮酒作乐] BrewinAndChewin-neoforge-4.5.0+1.21.1.jar` (mod); suggested doc: `components/brewinandchewin.md`
+- **[Let's Do] Bakery 2.1.6** — `mods/[馥郁烘焙] letsdo-bakery-neoforge-2.1.6.jar` (mod); suggested doc: `components/bakery.md`
+- **Alex's Caves 2.0.10** — `mods/alexscaves-2.0.10.jar` (mod); suggested doc: `components/alexscaves.md`
+- **Alexs Delight 1.6** — `mods/alexsdelight-1.6.jar` (mod); suggested doc: `components/alexsdelight.md`
+- **Alex's Mobs 1.22.17** — `mods/alexsmobs-1.22.17.jar` (mod); suggested doc: `components/alexsmobs.md`
+- **Architectury 13.0.11** — `mods/architectury-13.0.11-neoforge.jar` (mod); suggested doc: `components/architectury.md`
+- **Citadel 2.7.6** — `mods/citadel-1.21.1-2.7.6.jar` (mod); suggested doc: `components/citadel.md`
+- **Create: Bitterballen 1.0.2C** — `mods/create_bic_bit-1.0.2C.jar` (mod); suggested doc: `components/create-bic-bit.md`
+- **Curios API 9.5.1+1.21.1** — `mods/curios-neoforge-9.5.1+1.21.1.jar` (mod); suggested doc: `components/curios.md`
+- **Display Delight 1.7.0** — `mods/displaydelight-1.7.0.jar` (mod); suggested doc: `components/displaydelight.md`
+- **Framework 0.13.11** — `mods/framework-neoforge-1.21.1-0.13.11.jar` (mod); suggested doc: `components/framework.md`
+- **[Let's Do Addon] Compat 2.3.1** — `mods/letsdocompat-neoforge-2.3.1.jar` (mod); suggested doc: `components/letsdocompat.md`
+- **Lodestone 1.8.2** — `mods/lodestone-1.21.1-1.8.2.jar` (mod); suggested doc: `components/lodestone.md`
+- **RunicLib 5.0.7** — `mods/neoforge-runiclib-1.21.1-5.0.7.jar` (mod); suggested doc: `components/runiclib.md`
+- **sar-add-ons 0.1.0** — `mods/saraddons-0.1.0.jar` (mod); suggested doc: `components/saraddons.md`
+- **Some Assembly Required 5.2.8** — `mods/someassemblyrequired-5.2.8.jar` (mod); suggested doc: `components/someassemblyrequired.md`
+- **Vintage Delight KOTS 0.2.7** — `mods/vintagedelight-kots-0.2.7.jar` (mod); suggested doc: `components/vintagedelight.md`
+- **dough_sheet.json** — `kubejs/assets/seki/models/item/dough_sheet.json` (script-content); suggested doc: `components/dough-sheet.md`
+- **fermented_dough.json** — `kubejs/assets/seki/models/item/fermented_dough.json` (script-content); suggested doc: `components/fermented-dough.md`
+- **leavened_dough_sheet.json** — `kubejs/assets/seki/models/item/leavened_dough_sheet.json` (script-content); suggested doc: `components/leavened-dough-sheet.md`
+- **raw_baozi.json** — `kubejs/assets/seki/models/item/raw_baozi.json` (script-content); suggested doc: `components/raw-baozi.md`
+- **raw_dumpling.json** — `kubejs/assets/seki/models/item/raw_dumpling.json` (script-content); suggested doc: `components/raw-dumpling.md`
+- **raw_mantou.json** — `kubejs/assets/seki/models/item/raw_mantou.json` (script-content); suggested doc: `components/raw-mantou.md`
+- **raw_meat_pie.json** — `kubejs/assets/seki/models/item/raw_meat_pie.json` (script-content); suggested doc: `components/raw-meat-pie.md`
+- **raw_shengjian.json** — `kubejs/assets/seki/models/item/raw_shengjian.json` (script-content); suggested doc: `components/raw-shengjian.md`
+- **raw_wonton.json** — `kubejs/assets/seki/models/item/raw_wonton.json` (script-content); suggested doc: `components/raw-wonton.md`
+- **wonton_wrapper.json** — `kubejs/assets/seki/models/item/wonton_wrapper.json` (script-content); suggested doc: `components/wonton-wrapper.md`
+- **yeasted_dough.json** — `kubejs/assets/seki/models/item/yeasted_dough.json` (script-content); suggested doc: `components/yeasted-dough.md`
+- **food_names.js** — `kubejs/client_scripts/unify/food_names.js` (script-content); suggested doc: `components/food-names.md`
+- **cocoa_dough.json** — `kubejs/data/bakeries/recipe/blender/cocoa_dough.json` (script-content); suggested doc: `components/cocoa-dough.md`
+- **salted_dough.json** — `kubejs/data/bakeries/recipe/blender/salted_dough.json` (script-content); suggested doc: `components/salted-dough.md`
+- **sweet_dough.json** — `kubejs/data/bakeries/recipe/blender/sweet_dough.json` (script-content); suggested doc: `components/sweet-dough.md`
+- **whole_wheat_dough.json** — `kubejs/data/bakeries/recipe/blender/whole_wheat_dough.json` (script-content); suggested doc: `components/whole-wheat-dough.md`
+- **cocoa_dough.json** — `kubejs/data/bakeries/recipe/integration/create/mixing/cocoa_dough.json` (script-content); suggested doc: `components/cocoa-dough.md`
+- **salted_dough.json** — `kubejs/data/bakeries/recipe/integration/create/mixing/salted_dough.json` (script-content); suggested doc: `components/salted-dough.md`
+- **sweet_dough.json** — `kubejs/data/bakeries/recipe/integration/create/mixing/sweet_dough.json` (script-content); suggested doc: `components/sweet-dough.md`
+- **whole_wheat_dough.json** — `kubejs/data/bakeries/recipe/integration/create/mixing/whole_wheat_dough.json` (script-content); suggested doc: `components/whole-wheat-dough.md`
+- **dough.json** — `kubejs/data/create/recipe/crafting/appliances/dough.json` (script-content); suggested doc: `components/dough.md`
+- **dough_by_mixing.json** — `kubejs/data/create/recipe/mixing/dough_by_mixing.json` (script-content); suggested doc: `components/dough-by-mixing.md`
+- **wheat_flour.json** — `kubejs/data/create/recipe/splashing/wheat_flour.json` (script-content); suggested doc: `components/wheat-flour.md`
+- **cake_dough.json** — `kubejs/data/farm_and_charm/recipe/crafting_bowl/cake_dough.json` (script-content); suggested doc: `components/cake-dough.md`
+- **dough.json** — `kubejs/data/farm_and_charm/recipe/crafting_bowl/dough.json` (script-content); suggested doc: `components/dough.md`
+- **sweet_dough.json** — `kubejs/data/farm_and_charm/recipe/crafting_bowl/sweet_dough.json` (script-content); suggested doc: `components/sweet-dough.md`
+- **raw_pasta.json** — `kubejs/data/farm_and_charm/recipe/mincer/raw_pasta.json` (script-content); suggested doc: `components/raw-pasta.md`
+- **apple_pie.json** — `kubejs/data/farm_and_charm/recipe/stove/apple_pie.json` (script-content); suggested doc: `components/apple-pie.md`
+- **baguette.json** — `kubejs/data/farm_and_charm/recipe/stove/baguette.json` (script-content); suggested doc: `components/baguette.md`
+- **braided_bread.json** — `kubejs/data/farm_and_charm/recipe/stove/braided_bread.json` (script-content); suggested doc: `components/braided-bread.md`
+- **croissant.json** — `kubejs/data/farm_and_charm/recipe/stove/croissant.json` (script-content); suggested doc: `components/croissant.md`
+- **tag_dough.json** — `kubejs/data/farmersdelight/recipe/cutting/tag_dough.json` (script-content); suggested doc: `components/tag-dough.md`
+- **oxygrape_evolutcorn_muffin.json** — `kubejs/data/immortalers_delight/recipe/oxygrape_evolutcorn_muffin.json` (script-content); suggested doc: `components/oxygrape-evolutcorn-muffin.md`
+- **raw_noodles_from_raw_dough.json** — `kubejs/data/kaleidoscope_cookery/recipe/chopping_board/raw_noodles_from_raw_dough.json` (script-content); suggested doc: `components/raw-noodles-from-raw-dough.md`
+- **donkey_burger.json** — `kubejs/data/kaleidoscope_cookery/recipe/flex_pot/donkey_burger.json` (script-content); suggested doc: `components/donkey-burger.md`
+- **donkey_burger.json** — `kubejs/data/kaleidoscope_cookery/recipe/pot/donkey_burger.json` (script-content); suggested doc: `components/donkey-burger.md`
+- **stuffed_dough_food_to_meat_pie_1.json** — `kubejs/data/kaleidoscope_cookery/recipe/pot/stuffed_dough_food_to_meat_pie_1.json` (script-content); suggested doc: `components/stuffed-dough-food-to-meat-pie-1.md`
+- **stuffed_dough_food_to_meat_pie_2.json** — `kubejs/data/kaleidoscope_cookery/recipe/pot/stuffed_dough_food_to_meat_pie_2.json` (script-content); suggested doc: `components/stuffed-dough-food-to-meat-pie-2.md`
+- **stuffed_dough_food_to_meat_pie_3.json** — `kubejs/data/kaleidoscope_cookery/recipe/pot/stuffed_dough_food_to_meat_pie_3.json` (script-content); suggested doc: `components/stuffed-dough-food-to-meat-pie-3.md`
+- **stuffed_dough_food_to_meat_pie_4.json** — `kubejs/data/kaleidoscope_cookery/recipe/pot/stuffed_dough_food_to_meat_pie_4.json` (script-content); suggested doc: `components/stuffed-dough-food-to-meat-pie-4.md`
+- **stuffed_dough_food_to_meat_pie_5.json** — `kubejs/data/kaleidoscope_cookery/recipe/pot/stuffed_dough_food_to_meat_pie_5.json` (script-content); suggested doc: `components/stuffed-dough-food-to-meat-pie-5.md`
+- **stuffed_dough_food_to_meat_pie_6.json** — `kubejs/data/kaleidoscope_cookery/recipe/pot/stuffed_dough_food_to_meat_pie_6.json` (script-content); suggested doc: `components/stuffed-dough-food-to-meat-pie-6.md`
+- **stuffed_dough_food_to_meat_pie_7.json** — `kubejs/data/kaleidoscope_cookery/recipe/pot/stuffed_dough_food_to_meat_pie_7.json` (script-content); suggested doc: `components/stuffed-dough-food-to-meat-pie-7.md`
+- **stuffed_dough_food_to_meat_pie_8.json** — `kubejs/data/kaleidoscope_cookery/recipe/pot/stuffed_dough_food_to_meat_pie_8.json` (script-content); suggested doc: `components/stuffed-dough-food-to-meat-pie-8.md`
+- **stuffed_dough_food_to_meat_pie_9.json** — `kubejs/data/kaleidoscope_cookery/recipe/pot/stuffed_dough_food_to_meat_pie_9.json` (script-content); suggested doc: `components/stuffed-dough-food-to-meat-pie-9.md`
+- **dumpling_count_1.json** — `kubejs/data/kaleidoscope_cookery/recipe/stockpot/dumpling_count_1.json` (script-content); suggested doc: `components/dumpling-count-1.md`
+- **dumpling_count_2.json** — `kubejs/data/kaleidoscope_cookery/recipe/stockpot/dumpling_count_2.json` (script-content); suggested doc: `components/dumpling-count-2.md`
+- **dumpling_count_3.json** — `kubejs/data/kaleidoscope_cookery/recipe/stockpot/dumpling_count_3.json` (script-content); suggested doc: `components/dumpling-count-3.md`
+- **dumpling_count_4.json** — `kubejs/data/kaleidoscope_cookery/recipe/stockpot/dumpling_count_4.json` (script-content); suggested doc: `components/dumpling-count-4.md`
+- **dumpling_count_5.json** — `kubejs/data/kaleidoscope_cookery/recipe/stockpot/dumpling_count_5.json` (script-content); suggested doc: `components/dumpling-count-5.md`
+- **dumpling_count_6.json** — `kubejs/data/kaleidoscope_cookery/recipe/stockpot/dumpling_count_6.json` (script-content); suggested doc: `components/dumpling-count-6.md`
+- **dumpling_count_7.json** — `kubejs/data/kaleidoscope_cookery/recipe/stockpot/dumpling_count_7.json` (script-content); suggested doc: `components/dumpling-count-7.md`
+- **dumpling_count_8.json** — `kubejs/data/kaleidoscope_cookery/recipe/stockpot/dumpling_count_8.json` (script-content); suggested doc: `components/dumpling-count-8.md`
+- **dumpling_count_9.json** — `kubejs/data/kaleidoscope_cookery/recipe/stockpot/dumpling_count_9.json` (script-content); suggested doc: `components/dumpling-count-9.md`
+- **shengjian_mantou_count_1.json** — `kubejs/data/kaleidoscope_cookery/recipe/stockpot/shengjian_mantou_count_1.json` (script-content); suggested doc: `components/shengjian-mantou-count-1.md`
+- **shengjian_mantou_count_2.json** — `kubejs/data/kaleidoscope_cookery/recipe/stockpot/shengjian_mantou_count_2.json` (script-content); suggested doc: `components/shengjian-mantou-count-2.md`
+- **shengjian_mantou_count_3.json** — `kubejs/data/kaleidoscope_cookery/recipe/stockpot/shengjian_mantou_count_3.json` (script-content); suggested doc: `components/shengjian-mantou-count-3.md`
+- **shengjian_mantou_count_4.json** — `kubejs/data/kaleidoscope_cookery/recipe/stockpot/shengjian_mantou_count_4.json` (script-content); suggested doc: `components/shengjian-mantou-count-4.md`
+- **shengjian_mantou_count_5.json** — `kubejs/data/kaleidoscope_cookery/recipe/stockpot/shengjian_mantou_count_5.json` (script-content); suggested doc: `components/shengjian-mantou-count-5.md`
+- **shengjian_mantou_count_6.json** — `kubejs/data/kaleidoscope_cookery/recipe/stockpot/shengjian_mantou_count_6.json` (script-content); suggested doc: `components/shengjian-mantou-count-6.md`
+- **shengjian_mantou_count_7.json** — `kubejs/data/kaleidoscope_cookery/recipe/stockpot/shengjian_mantou_count_7.json` (script-content); suggested doc: `components/shengjian-mantou-count-7.md`
+- **shengjian_mantou_count_8.json** — `kubejs/data/kaleidoscope_cookery/recipe/stockpot/shengjian_mantou_count_8.json` (script-content); suggested doc: `components/shengjian-mantou-count-8.md`
+- **shengjian_mantou_count_9.json** — `kubejs/data/kaleidoscope_cookery/recipe/stockpot/shengjian_mantou_count_9.json` (script-content); suggested doc: `components/shengjian-mantou-count-9.md`
+- **roujiamo_1.json** — `kubejs/data/kaleidoscope_nether/recipe/pot/roujiamo_1.json` (script-content); suggested doc: `components/roujiamo-1.md`
+- **roujiamo_2.json** — `kubejs/data/kaleidoscope_nether/recipe/pot/roujiamo_2.json` (script-content); suggested doc: `components/roujiamo-2.md`
+- **roujiamo_3.json** — `kubejs/data/kaleidoscope_nether/recipe/pot/roujiamo_3.json` (script-content); suggested doc: `components/roujiamo-3.md`
+- **cake_dough.json** — `kubejs/data/letsdocompat/recipe/create/crafting_bowl/cake_dough.json` (script-content); suggested doc: `components/cake-dough.md`
+- **dough.json** — `kubejs/data/letsdocompat/recipe/create/crafting_bowl/dough.json` (script-content); suggested doc: `components/dough.md`
+- **sweet_dough.json** — `kubejs/data/letsdocompat/recipe/create/crafting_bowl/sweet_dough.json` (script-content); suggested doc: `components/sweet-dough.md`
+- **cheese_sandwich.json** — `kubejs/data/refurbished_furniture/recipe/combining/cheese_sandwich.json` (script-content); suggested doc: `components/cheese-sandwich.md`
+- **raw_meatlovers_pizza.json** — `kubejs/data/refurbished_furniture/recipe/combining/raw_meatlovers_pizza.json` (script-content); suggested doc: `components/raw-meatlovers-pizza.md`
+- **raw_vegetable_pizza.json** — `kubejs/data/refurbished_furniture/recipe/combining/raw_vegetable_pizza.json` (script-content); suggested doc: `components/raw-vegetable-pizza.md`
+- **dough.json** — `kubejs/data/refurbished_furniture/recipe/dough.json` (script-content); suggested doc: `components/dough.md`
+- **pretzel_dough.json** — `kubejs/data/saraddons/recipe/farmersdelight/recipe/cooking/pretzel_dough.json` (script-content); suggested doc: `components/pretzel-dough.md`
+- **egg_pasta.json** — `kubejs/data/seki/recipe/chopping_board/egg_pasta.json` (script-content); suggested doc: `components/egg-pasta.md`
+- **plain_noodles.json** — `kubejs/data/seki/recipe/cutting/create/plain_noodles.json` (script-content); suggested doc: `components/plain-noodles.md`
+- **plain_noodles.json** — `kubejs/data/seki/recipe/cutting/farmersdelight/plain_noodles.json` (script-content); suggested doc: `components/plain-noodles.md`
+- **sichuan_wonton.json** — `kubejs/data/seki/recipe/flex_stockpot/sichuan_wonton.json` (script-content); suggested doc: `components/sichuan-wonton.md`
+- **wonton_noodles.json** — `kubejs/data/seki/recipe/flex_stockpot/wonton_noodles.json` (script-content); suggested doc: `components/wonton-noodles.md`
+- **plain_noodles.json** — `kubejs/data/seki/recipe/mincer/farm_and_charm/plain_noodles.json` (script-content); suggested doc: `components/plain-noodles.md`
+- **sichuan_wonton.json** — `kubejs/data/seki/recipe/stockpot/sichuan_wonton.json` (script-content); suggested doc: `components/sichuan-wonton.md`
+- **wonton_noodles.json** — `kubejs/data/seki/recipe/stockpot/wonton_noodles.json` (script-content); suggested doc: `components/wonton-noodles.md`
+- **egg_pasta.json** — `kubejs/data/seki/tags/item/doughs/egg_pasta.json` (script-content); suggested doc: `components/egg-pasta.md`
+- **flatbread.json** — `kubejs/data/seki/tags/item/doughs/flatbread.json` (script-content); suggested doc: `components/flatbread.md`
+- **leavened_savory.json** — `kubejs/data/seki/tags/item/doughs/leavened_savory.json` (script-content); suggested doc: `components/leavened-savory.md`
+- **plain_noodle.json** — `kubejs/data/seki/tags/item/doughs/plain_noodle.json` (script-content); suggested doc: `components/plain-noodle.md`
+- **plain_wheat.json** — `kubejs/data/seki/tags/item/flours/plain_wheat.json` (script-content); suggested doc: `components/plain-wheat.md`
+- **whole_wheat.json** — `kubejs/data/seki/tags/item/flours/whole_wheat.json` (script-content); suggested doc: `components/whole-wheat.md`
+- **raw_burger_bun.json** — `kubejs/data/someassemblyrequired/recipe/crafting_shapeless/raw_burger_bun.json` (script-content); suggested doc: `components/raw-burger-bun.md`
+- **dough.json** — `kubejs/data/someassemblyrequired/recipe/cutting/create/dough.json` (script-content); suggested doc: `components/dough.md`
+- **food_recipes.js** — `kubejs/server_scripts/unify/food_recipes.js` (script-content); suggested doc: `components/food-recipes.md`
+- **food_tags.js** — `kubejs/server_scripts/unify/food_tags.js` (script-content); suggested doc: `components/food-tags.md`
+- **food_items.js** — `kubejs/startup_scripts/unify/food_items.js` (script-content); suggested doc: `components/food-items.md`
 
 ## Modified
 
-None.
+- **asynclogger.toml** — `config/asynclogger.toml` (config); suggested doc: `components/asynclogger.md`
+- **asyncparticles-mixin.properties** — `config/asyncparticles/asyncparticles-mixin.properties` (config); suggested doc: `components/asyncparticles-mixin.md`
+- **betterdays-client.toml** — `config/betterdays-client.toml` (config); suggested doc: `components/betterdays-client.md`
+- **betterdays-common.toml** — `config/betterdays-common.toml` (config); suggested doc: `components/betterdays-common.md`
+- **c2me.toml** — `config/c2me.toml` (config); suggested doc: `components/c2me.md`
+- **settings.toml** — `config/euphoria_patcher/settings.toml` (config); suggested doc: `components/settings.md`
+- **ferritecore-mixin.toml** — `config/ferritecore-mixin.toml` (config); suggested doc: `components/ferritecore-mixin.md`
+- **fml.toml** — `config/fml.toml` (config); suggested doc: `components/fml.md`
+- **atlas.png** — `config/inventory-particles/cache/kaleidoscope_chinesefood/atlas.png` (config); suggested doc: `components/atlas.md`
+- **atlas.png** — `config/inventory-particles/cache/kaleidoscope_cookery/atlas.png` (config); suggested doc: `components/atlas.md`
+- **atlas.png** — `config/inventory-particles/cache/kaleidoscope_dim_wine/atlas.png` (config); suggested doc: `components/atlas.md`
+- **atlas.png** — `config/inventory-particles/cache/kaleidoscope_end/atlas.png` (config); suggested doc: `components/atlas.md`
+- **atlas.png** — `config/inventory-particles/cache/kaleidoscope_nether/atlas.png` (config); suggested doc: `components/atlas.md`
+- **atlas.png** — `config/inventory-particles/cache/kaleidoscope_world_liquor/atlas.png` (config); suggested doc: `components/atlas.md`
+- **iris.properties** — `config/iris.properties` (config); suggested doc: `components/iris.md`
+- **ixeris.toml** — `config/ixeris.toml` (config); suggested doc: `components/ixeris.md`
+- **plugins.json** — `config/jade/plugins.json` (config); suggested doc: `components/plugins.md`
+- **sort-order.json** — `config/jade/sort-order.json` (config); suggested doc: `components/sort-order.md`
+- **ingredient-list-mod-sort-order.ini** — `config/jei/ingredient-list-mod-sort-order.ini` (config); suggested doc: `components/ingredient-list-mod-sort-order.md`
+- **jei-client.ini** — `config/jei/jei-client.ini` (config); suggested doc: `components/jei-client.md`
+- **jei-colors.ini** — `config/jei/jei-colors.ini` (config); suggested doc: `components/jei-colors.md`
+- **jei-debug.ini** — `config/jei/jei-debug.ini` (config); suggested doc: `components/jei-debug.md`
+- **jei-mod-id-format.ini** — `config/jei/jei-mod-id-format.ini` (config); suggested doc: `components/jei-mod-id-format.md`
+- **recipe-category-sort-order.ini** — `config/jei/recipe-category-sort-order.ini` (config); suggested doc: `components/recipe-category-sort-order.md`
+- **lookupHistory.json** — `config/jei/world/local/新的世界/lookupHistory.json` (config); suggested doc: `components/lookuphistory.md`
+- **kaleidoscope_compat.jsonc** — `config/kaleidoscope_compat.jsonc` (config); suggested doc: `components/kaleidoscope-compat.md`
+- **packetfixer.properties** — `config/packetfixer.properties` (config); suggested doc: `components/packetfixer.md`
+- **progresspeek.toml** — `config/progresspeek.toml` (config); suggested doc: `components/progresspeek.md`
+- **shouldersurfing-client.toml** — `config/shouldersurfing-client.toml` (config); suggested doc: `components/shouldersurfing-client.md`
+- **sodium-extra-options.json** — `config/sodium-extra-options.json` (config); suggested doc: `components/sodium-extra-options.md`
+- **tooltipoverhaul.toml** — `config/tooltipoverhaul/tooltipoverhaul.toml` (config); suggested doc: `components/tooltipoverhaul.md`
+- **vanillabackport-client.toml** — `config/vanillabackport-client.toml` (config); suggested doc: `components/vanillabackport-client.md`
+- **vanillabackport-common.toml** — `config/vanillabackport-common.toml` (config); suggested doc: `components/vanillabackport-common.md`
+- **whitenoise-client.toml** — `config/whitenoise-client.toml` (config); suggested doc: `components/whitenoise-client.md`
+- **xaerohud.txt** — `config/xaerohud.txt` (config); suggested doc: `components/xaerohud.md`
+- **1.21.1** — `Seki.json` (launcher-profile); suggested doc: `components/1-21-1.md`
+- **pack.toml** — `pack.toml` (launcher-profile); suggested doc: `components/pack.md`
+- **usercache.json** — `usercache.json` (launcher-profile); suggested doc: `components/usercache.md`
+- **Minecraft-Mod-Language-Modpack-Converted-1.21.1** — `resourcepacks/Minecraft-Mod-Language-Modpack-Converted-1.21.1.zip` (resource-pack); suggested doc: `components/minecraft-mod-language-modpack-converted-1-21-1.md`
+- **ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3** — `shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3.txt` (shader-pack); suggested doc: `components/complementaryunbound-r5-8-1-euphoriapatches-1-9-3.md`
 
 ## Removed
 
-None.
+- **Architectury 13.0.8** — `mods/architectury-13.0.8-neoforge.jar` (mod); suggested doc: `components/architectury.md`

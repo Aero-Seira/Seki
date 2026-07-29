@@ -1,0 +1,20 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "tag": "seki:flours/plain_wheat"
+    },
+    {
+      "tag": "c:yeast"
+    },
+    {
+      "tag": "farm_and_charm:water_bottles"
+    }
+  ],
+  "results": [
+    {
+      "count": 5,
+      "id": "farm_and_charm:dough"
+    }
+  ]
+}

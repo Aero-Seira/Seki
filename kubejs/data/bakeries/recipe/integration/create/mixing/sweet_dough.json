@@ -1,0 +1,42 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "tag": "seki:flours/plain_wheat"
+    },
+    {
+      "tag": "seki:flours/plain_wheat"
+    },
+    {
+      "tag": "seki:flours/plain_wheat"
+    },
+    {
+      "tag": "seki:flours/plain_wheat"
+    },
+    {
+      "item": "minecraft:sugar"
+    },
+    {
+      "item": "bakeries:bottle_yeast"
+    },
+    {
+      "tag": "c:salt"
+    },
+    {
+      "tag": "c:butter"
+    },
+    {
+      "amount": 250,
+      "tag": "c:milk",
+      "type": "neoforge:tag"
+    }
+  ],
+  "results": [
+    {
+      "id": "bakeries:sweet_dough"
+    },
+    {
+      "id": "minecraft:glass_bottle"
+    }
+  ]
+}

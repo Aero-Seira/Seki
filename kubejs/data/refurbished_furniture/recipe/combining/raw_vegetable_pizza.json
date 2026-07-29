@@ -1,0 +1,24 @@
+{
+  "type": "refurbished_furniture:cutting_board_combining",
+  "ingredients": [
+    {
+      "tag": "seki:doughs/flatbread"
+    },
+    {
+      "item": "minecraft:carrot"
+    },
+    {
+      "item": "minecraft:beetroot"
+    },
+    {
+      "item": "minecraft:potato"
+    },
+    {
+      "tag": "c:cheese"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "refurbished_furniture:raw_vegetable_pizza"
+  }
+}

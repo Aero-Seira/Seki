@@ -1,0 +1,18 @@
+{
+  "type": "refurbished_furniture:cutting_board_combining",
+  "ingredients": [
+    {
+      "item": "refurbished_furniture:bread_slice"
+    },
+    {
+      "tag": "c:cheese"
+    },
+    {
+      "item": "refurbished_furniture:bread_slice"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "refurbished_furniture:cheese_sandwich"
+  }
+}

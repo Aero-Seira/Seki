@@ -1,0 +1,13 @@
+{
+  "type": "kaleidoscope_cookery:stockpot",
+  "ingredients": [
+    {
+      "item": "seki:raw_shengjian"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "kaleidoscope_cookery:shengjian_mantou"
+  },
+  "soup_base": "minecraft:lava"
+}

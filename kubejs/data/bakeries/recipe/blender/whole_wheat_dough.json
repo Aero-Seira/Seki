@@ -1,0 +1,30 @@
+{
+  "type": "bakeries:blender",
+  "ingredients": [
+    {
+      "tag": "seki:flours/whole_wheat"
+    },
+    {
+      "tag": "seki:flours/whole_wheat"
+    },
+    {
+      "tag": "seki:flours/whole_wheat"
+    },
+    {
+      "tag": "seki:flours/whole_wheat"
+    },
+    {
+      "item": "bakeries:bottle_yeast"
+    },
+    {
+      "tag": "c:salt"
+    },
+    {
+      "item": "minecraft:water_bucket"
+    }
+  ],
+  "output": {
+    "count": 1,
+    "id": "bakeries:whole_wheat_dough"
+  }
+}

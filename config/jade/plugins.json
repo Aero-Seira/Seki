@@ -55,8 +55,15 @@
   "kaleidoscope_world_liquor": {
     "freezer": true
   },
-  "jadeaddons": {
-    "equipment_requirement": ""
+  "jadeaddons.create": {
+    "filter": true,
+    "backtank_capacity": true,
+    "goggles.requires_goggles": true,
+    "goggles": false,
+    "blaze_burner": true,
+    "exact_block": true,
+    "goggles.detailed": false,
+    "placard": true
   },
   "jade_access": {
     "held_item": true,
@@ -64,17 +71,6 @@
     "block": true,
     "entity": true,
     "entity_variant": true
-  },
-  "jadeaddons.lootr": {
-    "info": true
-  },
-  "kaleidoscope_cookery": {
-    "chopping_board": true,
-    "shawarma_spit": true,
-    "recipe_block": true,
-    "food_bite_block": true,
-    "millstone": true,
-    "enamel_basin": true
   },
   "kaleidoscope_chinesefood": {
     "pickle_jar": true
@@ -90,11 +86,31 @@
     "block_properties": false,
     "mod_name": true
   },
-  "kaleidoscope_tavern": {
-    "barrel": true
-  },
   "kaleidoscope_doll": {
     "doll_block": true,
     "doll_entity": true
+  },
+  "immortalers_delight": {
+    "sniffer": true
+  },
+  "jadeaddons": {
+    "equipment_requirement": ""
+  },
+  "jadeaddons.lootr": {
+    "info": true
+  },
+  "kaleidoscope_cookery": {
+    "chopping_board": true,
+    "shawarma_spit": true,
+    "recipe_block": true,
+    "food_bite_block": true,
+    "millstone": true,
+    "enamel_basin": true
+  },
+  "kaleidoscope_tavern": {
+    "barrel": true
+  },
+  "barbequesdelight": {
+    "grill": true
   }
 }

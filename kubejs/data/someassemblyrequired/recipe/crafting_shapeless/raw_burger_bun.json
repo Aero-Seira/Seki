@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "tag": "seki:doughs/leavened_savory"
+    },
+    {
+      "tag": "c:seeds"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "someassemblyrequired:raw_burger_bun"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "type": "kaleidoscope_cookery:pot",
+  "ingredients": [
+    {
+      "item": "seki:raw_meat_pie"
+    },
+    {
+      "item": "seki:raw_meat_pie"
+    },
+    {
+      "item": "seki:raw_meat_pie"
+    },
+    {
+      "item": "seki:raw_meat_pie"
+    },
+    {
+      "item": "seki:raw_meat_pie"
+    },
+    {
+      "item": "seki:raw_meat_pie"
+    },
+    {
+      "item": "seki:raw_meat_pie"
+    },
+    {
+      "item": "seki:raw_meat_pie"
+    }
+  ],
+  "result": {
+    "count": 8,
+    "id": "kaleidoscope_cookery:meat_pie"
+  }
+}

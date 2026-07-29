@@ -1,0 +1,37 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "tag": "seki:flours/plain_wheat"
+    },
+    {
+      "tag": "seki:flours/plain_wheat"
+    },
+    {
+      "tag": "seki:flours/plain_wheat"
+    },
+    {
+      "tag": "seki:flours/plain_wheat"
+    },
+    {
+      "item": "bakeries:bottle_yeast"
+    },
+    {
+      "tag": "c:salt"
+    },
+    {
+      "amount": 250,
+      "components": {},
+      "fluids": "minecraft:water",
+      "type": "neoforge:components"
+    }
+  ],
+  "results": [
+    {
+      "id": "bakeries:salted_dough"
+    },
+    {
+      "id": "minecraft:glass_bottle"
+    }
+  ]
+}

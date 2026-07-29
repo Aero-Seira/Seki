@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "bakeries:flour",
+    "create:wheat_flour",
+    "farm_and_charm:flour",
+    "kaleidoscope_cookery:flour",
+    "refurbished_furniture:wheat_flour"
+  ]
+}

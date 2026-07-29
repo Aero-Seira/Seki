@@ -1,5 +1,9 @@
 * text=auto eol=lf
 
+# Mod-generated TOML comments and markdown hard breaks carry trailing spaces by design.
+*.toml whitespace=-trailing-space
+*.md whitespace=-trailing-space
+
 *.jar binary
 *.zip binary
 *.png binary
