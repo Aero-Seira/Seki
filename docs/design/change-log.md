@@ -365,3 +365,8 @@
 - 证据：家具 `cutting_board_combining` serializer 常量池证实 vanilla `Ingredient` 解码（支持 tag）；saraddons JAR 原方与同族 F&C stove/pretzel 比对。
 - 验证状态：`validate.py` 双目标 NEW ERROR 0；10 条模组原生压缩循环登记入校验基线。运行时 `/reload` + JEI + 实机验收待进行。
 - 剩余问题：烘焙坊 blender 容器返还语义（P0-3）未实机证实；设计清单 408+40+1 待接受变更（46 个新模组及配置）阻塞安全提交，待设计文档接受流程处理。
+## 2026-07-30 - 料理统一 v8 运行时验收通过
+
+- 验证：KubeJS 日志 0 错误 0 警告；`c:salt`/`c:cheese`/`c:jams` 标签桥接、2 条死配方修复、4 条家具同 ID 覆盖在 02:35 导出的最终态 SQLite 中全部生效；配方总数 9815 无净增。
+- 回归：v6/v7 抽查 8/8 通过，无回退。
+- 剩余问题：blender 容器返还语义（P0-3）与实机交互项维持开放；设计文档债待单独立项。

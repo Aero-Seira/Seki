@@ -153,10 +153,10 @@
 
 | 批次 | 日期 | 移除 | 覆盖/新增 | 状态 |
 | --- | --- | ---: | ---: | --- |
-| NAME-04 | 2026-07-30 | 0 | 18 个家具模组食物中文名覆盖（区分度避让 NAME-02 已占用名） | 静态完成 |
-| FURNITURE-BRIDGE-01 | 2026-07-30 | 0 | 3 个标签接入（`c:salt`/`c:cheese`/`c:jams` ← 海盐/鲜奶酪/双果酱）、4 条同 ID 覆盖（家具面团吃 `seki:flours/plain_wheat`；双披萨面团位吃 `seki:doughs/flatbread`、奶酪位吃 `c:cheese`；奶酪三明治奶酪位吃 `c:cheese`） | 静态完成；运行时待验收 |
-| DEAD-FIX-01 | 2026-07-30 | 0 | 2 条死配方同 ID 覆盖：马芬 `c:foods/egg`→`c:eggs`；saraddons 椒盐卷饼面团 `c:wheat_dough`→`seki:doughs/leavened_savory` | 静态完成；运行时待验收 |
+| NAME-04 | 2026-07-30 | 0 | 18 个家具模组食物中文名覆盖（区分度避让 NAME-02 已占用名） | 静态完成（客户端改名不入 SQLite，进游戏目测） |
+| FURNITURE-BRIDGE-01 | 2026-07-30 | 0 | 3 个标签接入（`c:salt`/`c:cheese`/`c:jams` ← 海盐/鲜奶酪/双果酱）、4 条同 ID 覆盖（家具面团吃 `seki:flours/plain_wheat`；双披萨面团位吃 `seki:doughs/flatbread`、奶酪位吃 `c:cheese`；奶酪三明治奶酪位吃 `c:cheese`） | **运行时已验收**（2026-07-30 02:35 导出） |
+| DEAD-FIX-01 | 2026-07-30 | 0 | 2 条死配方同 ID 覆盖：马芬 `c:foods/egg`→`c:eggs`；saraddons 椒盐卷饼面团 `c:wheat_dough`→`seki:doughs/leavened_savory` | **运行时已验收**（2026-07-30 02:35 导出） |
 
 静态验证：`validate.py` 对 `kubejs/data` 与 `kubejs/server_scripts` 均 NEW ERROR 0；10 条模组原生压缩/返还循环（cogwheel/andesite_alloy/flour_bag/lava_bottle/frying_oil/glass_bottle 等）经空目标对照证实与索引同存、非本批引入，已登记入 `index/validate_baseline.md`。WARN 均为既有批次已解释项；移除规则命中 25/27 与上批一致。
 
-运行时验收：`/reload` 后检查 KubeJS 日志；JEI 确认日晒盐可替代他盐、鲜奶酪进入 `c:cheese` 消费方、家具面团接受跨模组普通面粉、双披萨接受死面/Create 面团；实做马芬与椒盐卷饼面团链（→ 生汉堡胚 → 烟熏/营火）；重新导出 SQLite 复核。P0-3（烘焙坊 blender 是否返还水桶/玻璃瓶）仍未实机证实，维持开放。
+运行时验收（2026-07-30 02:35 导出复核）：KubeJS 日志 0 错误 0 警告；`c:salt`/`c:cheese`（12 成员）/`c:jams` 三标签成员全部到位；马芬与椒盐卷饼面团新输入生效；4 条家具覆盖全部生效；配方总数 9815 不变（同 ID 覆盖无净增）；v6/v7 回归抽查 8/8 通过（盖饭 carrier、点心链、抄手汤锅、返瓶 mixing 均在，已移除项保持缺席）。实做交互项（实做马芬/椒盐卷饼链、JEI 目测译名）由玩家侧确认；P0-3（烘焙坊 blender 是否返还水桶/玻璃瓶）仍未实机证实，维持开放。

@@ -474,7 +474,7 @@ hash = "dee286337f4d870b63bb0a4c8d9add6385b363f1edd04209e6a74ff9fd7d9d6e"
 
 [[files]]
 file = "config/asyncparticles/asyncparticles-mixin.properties"
-hash = "8b603345899395520e640891a63b458f0a072bd83ddd93247672e55b24673dbf"
+hash = "a093a4dfd0b68ad8827a7fcb45ae28fa30738f1c3238173922a1f19898a945f5"
 
 [[files]]
 file = "config/asyncparticles/asyncparticles.json"
@@ -806,7 +806,7 @@ hash = "4d3264b58c502afaeca3f44e8d2db0843c54b8ba957afd21a2d450fe10dafefb"
 
 [[files]]
 file = "config/iris.properties"
-hash = "94be4f8fd1c9ec66506383c288f1942faec156f1cbe3be449da635a05d9664ca"
+hash = "d1a43aa9bad487704dfad6f95210d52ac76b25b9615181601bbd2f45eb9fedb7"
 
 [[files]]
 file = "config/ixeris.toml"
@@ -1050,7 +1050,7 @@ hash = "37bbb8df722f5abbd7305048007cc0ca5e0a9b84d3229d983a6753f7dbcfae80"
 
 [[files]]
 file = "config/packetfixer.properties"
-hash = "f2cd08e797513e2a80b23c662832c3eb7d303242734fdee0f158ba3114683606"
+hash = "6717e5eeda1dd3cd355f525fa1622e30ef0a937cf96ae36d43dc2d86b1729163"
 
 [[files]]
 file = "config/particle_effects.json5"
