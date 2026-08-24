@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:salmon",
+    "aquaculture:pink_salmon",
+    "farmersdelight:salmon_slice"
+  ]
+}

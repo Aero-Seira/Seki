@@ -1,0 +1,13 @@
+{
+  "base": "youkaisfeasts:sushi",
+  "input": [
+    {
+      "tag": "seki:fish/raw_tuna_slice"
+    }
+  ],
+  "result": {
+    "count": 2,
+    "id": "youkaisfeasts:tuna_nigiri"
+  },
+  "type": "youkaisfeasts:cuisine_ordered"
+}

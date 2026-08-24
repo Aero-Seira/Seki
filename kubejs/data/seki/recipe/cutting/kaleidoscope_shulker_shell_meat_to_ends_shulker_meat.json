@@ -1,0 +1,8 @@
+{
+  "ingredients": [ { "item": "kaleidoscope_end:shulker_shell_meat" } ],
+  "result": [
+    { "item": { "count": 2, "id": "ends_delight:shulker_meat" } }
+  ],
+  "tool": { "tag": "c:tools/knife" },
+  "type": "farmersdelight:cutting"
+}

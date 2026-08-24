@@ -1,0 +1,8 @@
+{
+  "ingredients": [ { "item": "kaleidoscope_nether:ghast_tentacle" } ],
+  "result": [
+    { "item": { "count": 2, "id": "mynethersdelight:ghasta" } }
+  ],
+  "tool": { "tag": "c:tools/knife" },
+  "type": "farmersdelight:cutting"
+}

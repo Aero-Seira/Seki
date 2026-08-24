@@ -1,0 +1,30 @@
+{
+  "category": "misc",
+  "ingredients": [
+    {
+      "tag": "seki:breads/burger_bun"
+    },
+    {
+      "item": "mynethersdelight:cooked_loin"
+    },
+    {
+      "item": "minecraft:twisting_vines"
+    },
+    {
+      "item": "minecraft:crimson_fungus"
+    },
+    [
+      {
+        "item": "minecraft:warped_fungus"
+      },
+      {
+        "item": "minecraft:crimson_fungus"
+      }
+    ]
+  ],
+  "result": {
+    "count": 1,
+    "id": "mynethersdelight:nether_burger"
+  },
+  "type": "minecraft:crafting_shapeless"
+}

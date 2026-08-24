@@ -1,0 +1,43 @@
+{
+  "experience": 1.0,
+  "ingredients": [
+    {
+      "tag": "seki:meat/raw_meat"
+    },
+    {
+      "tag": "c:drinks/milk"
+    },
+    {
+      "tag": "mynethersdelight:hot_spice"
+    },
+    {
+      "tag": "c:crops/rice"
+    },
+    {
+      "base": {
+        "tag": "c:foods/vegetable"
+      },
+      "subtracted": {
+        "item": "minecraft:melon_slice"
+      },
+      "type": "neoforge:difference"
+    },
+    {
+      "children": [
+        {
+          "item": "minecraft:pumpkin"
+        },
+        {
+          "item": "farmersdelight:pumpkin_slice"
+        }
+      ],
+      "type": "neoforge:compound"
+    }
+  ],
+  "recipe_book_tab": "meals",
+  "result": {
+    "count": 1,
+    "id": "mynethersdelight:spicy_curry"
+  },
+  "type": "farmersdelight:cooking"
+}

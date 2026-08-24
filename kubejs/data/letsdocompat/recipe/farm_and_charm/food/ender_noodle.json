@@ -1,0 +1,46 @@
+{
+  "container": {
+    "count": 1,
+    "id": "minecraft:bowl"
+  },
+  "ingredients": [
+    {
+      "tag": "c:foods/shulker_meat"
+    },
+    {
+      "item": "ends_delight:dried_endermite_meat"
+    },
+    {
+      "item": "ends_delight:chorus_sauce"
+    },
+    [
+      {
+        "item": "minecraft:warped_fungus"
+      },
+      {
+        "item": "minecraft:crimson_fungus"
+      },
+      {
+        "item": "minecraft:brown_mushroom"
+      },
+      {
+        "item": "minecraft:red_mushroom"
+      }
+    ],
+    [
+      {
+        "tag": "seki:doughs/plain_noodle"
+      },
+      {
+        "tag": "c:foods/pasta"
+      }
+    ]
+  ],
+  "requireContainer": true,
+  "requiresLearning": false,
+  "result": {
+    "count": 2,
+    "id": "ends_delight:ender_noodle"
+  },
+  "type": "farm_and_charm:pot_cooking"
+}

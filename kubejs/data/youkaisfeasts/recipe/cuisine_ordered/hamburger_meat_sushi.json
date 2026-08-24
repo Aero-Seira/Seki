@@ -1,0 +1,19 @@
+{
+  "base": "youkaisfeasts:sushi",
+  "input": [
+    {
+      "item": "immortalers_delight:pod_shell_burger_meat_cube"
+    },
+    {
+      "item": "immortalers_delight:pitcher_pod_petal"
+    },
+    {
+      "item": "immortalers_delight:pitcher_pod_petal"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "immortalers_delight:hamburger_meat_sushi"
+  },
+  "type": "youkaisfeasts:cuisine_ordered"
+}

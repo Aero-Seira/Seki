@@ -3,7 +3,7 @@
 > 从灶台出发，去往更远的地方。
 
 ![Minecraft 1.21.1](https://img.shields.io/badge/Minecraft-1.21.1-62B47A?style=flat-square)
-![NeoForge 21.1.235](https://img.shields.io/badge/NeoForge-21.1.235-EF3A3A?style=flat-square)
+![NeoForge 21.1.247](https://img.shields.io/badge/NeoForge-21.1.247-EF3A3A?style=flat-square)
 ![Java 21](https://img.shields.io/badge/Java-21-007396?style=flat-square)
 ![状态：开发中可试玩](https://img.shields.io/badge/status-playable%20development-D97706?style=flat-square)
 
@@ -39,11 +39,11 @@ Seki 是由 ProjectNautic 制作的 Minecraft 1.21.1 NeoForge 生活冒险整合
 
 | 项目 | 当前基线 |
 | --- | --- |
-| 整合包版本 | `2026.07.28` |
+| 整合包版本 | `1.0.0` |
 | Minecraft | `1.21.1` |
-| 模组加载器 | `NeoForge 21.1.235` |
+| 模组加载器 | `NeoForge 21.1.247` |
 | Java | 64 位 Java 21 |
-| 当前模组数量 | 124（packwiz 管理 122，另有 2 个本地开发例外） |
+| 当前模组数量 | 190（187 个远程下载 + 3 个内嵌 jar） |
 | 客户端内存建议 | 6–8 GB |
 | 游玩方式 | 单人 / 多人 |
 | 开发状态 | 开发中可试玩 |
@@ -54,16 +54,16 @@ Seki 是由 ProjectNautic 制作的 Minecraft 1.21.1 NeoForge 生活冒险整合
 
 **[GitHub Releases（即将开放）](https://github.com/Aero-Seira/Seki/releases)**
 
-仓库现已使用 packwiz 保存可复现的安装清单：根目录 `pack.toml` / `index.toml` 固定版本与文件哈希，`mods/*.pw.toml` 记录模组下载来源。第三方 JAR/ZIP 不进入 Git；本地开发实例中的文件仍保留在原目录，普通提交和推送不会删除它们。
+仓库保存 Modrinth 格式（`.mrpack`）的分发源：根目录 `modrinth.index.json` 记录 187 个远程文件的下载清单（含 SHA-1/SHA-512 与多来源下载地址），`config/`、`kubejs/`、`defaultconfigs/` 与少量内嵌文件作为 overrides。第三方 JAR/ZIP 不进入 Git，除非它是没有可靠公开下载源、需要随包分发的内容。
 
-公开发布前，可使用兼容 packwiz 的启动器或 packwiz-installer 指向 [`pack.toml`](pack.toml) 进行开发安装。客户端会安装 121 个 JAR；Brutal Respawn 仅服务端，JECharacters 4.5.26 与 ModPack IDE Exporter 0.1.0 暂为本地专用例外。另有 12 个 CurseForge 模组因作者关闭第三方下载，需要按安装器提示手工下载原文件。完整维护与安全流程见 [packwiz 分发说明](docs/design/components/platform/packwiz-distribution.md)。
+GitHub Actions 会在每次推送时构建 `Seki-<版本>.mrpack` 并上传为 workflow artifact；推送 `v*` 标签时自动附加到 GitHub Release。支持 mrpack 导入的启动器（如 Modrinth App、Prism Launcher、ATLauncher）可直接安装。当前有 3 个内嵌 jar（Immortaler's Delight、KubeJS Data Component、ModPack IDE Exporter）与汉化资源包因无可靠公开下载源而随包分发。完整维护与构建说明见 [mrpack 分发与 CI 构建](docs/design/components/platform/mrpack-distribution.md) 与 [构建工作流](scripts/README.md)。
 
 ## 开发状态与已知限制
 
 - 料理配方仍在持续统一，部分盖饭路径完成了静态验证，但仍需更多运行时回归。
 - 下界与末地主题扩展已经加入；它们的完整内容范围及世界生成影响仍在盘点。
 - 独立战利品的多人回归、高掉落密度下的视觉性能，以及低配设备的默认光影表现仍待系统测试。
-- 面向普通玩家的启动器导入封装尚未完成；packwiz 开发分发链已建立，但 CurseForge 人工下载项与两个本地专用例外仍需在公开发布前处理。
+- 面向普通玩家的公开发布仍在筹备；mrpack 构建链已建立，正式 Release 前的远程下载全量校验与安装回归仍需完成。
 
 开发版本可能调整配方、配置或模组组合。使用现有实例游玩时，请在更新前备份重要世界。
 
@@ -73,7 +73,7 @@ Seki 是由 ProjectNautic 制作的 Minecraft 1.21.1 NeoForge 生活冒险整合
 - [设计变更记录](docs/design/change-log.md)：每批内容调整及其验证状态
 - [料理配方统一宪章](design/charter.md)：当前料理工序与盖饭路径规则
 - [当前内容清单](docs/design/_generated/current-inventory.md)：由本地扫描生成的模组与配置证据
-- [安全提交工作流](scripts/README.md)：Windows PowerShell 与 macOS/Linux 提交、校验和推送脚本
+- [mrpack 构建工作流](scripts/README.md)：本地构建与 CI 发布说明
 - [问题反馈](https://github.com/Aero-Seira/Seki/issues)：报告崩溃、兼容问题或体验建议
 
 如需参与开发，请先阅读 [AGENT.MD](AGENT.MD) 中的兼容性、验证与文档维护约定。

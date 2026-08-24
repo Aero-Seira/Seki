@@ -1,0 +1,27 @@
+{
+  "container": {
+    "count": 1,
+    "id": "minecraft:bowl"
+  },
+  "ingredients": [
+    {
+      "tag": "c:foods/tentacles"
+    },
+    {
+      "tag": "c:foods/tentacles"
+    },
+    {
+      "tag": "seki:doughs/plain_noodle"
+    },
+    {
+      "tag": "c:foods/onion"
+    }
+  ],
+  "requireContainer": true,
+  "requiresLearning": false,
+  "result": {
+    "count": 1,
+    "id": "minersdelight:takoyaki"
+  },
+  "type": "farm_and_charm:pot_cooking"
+}

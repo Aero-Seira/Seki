@@ -1,0 +1,16 @@
+{
+  "base": "youkaisfeasts:hosomaki",
+  "input": [
+    {
+      "item": "minecraft:beetroot"
+    },
+    {
+      "tag": "culturaldelights:cooked_chickens"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "culturaldelights:chicken_roll"
+  },
+  "type": "youkaisfeasts:cuisine_ordered"
+}

@@ -1,0 +1,22 @@
+{
+  "category": "misc",
+  "ingredients": [
+    {
+      "tag": "seki:doughs/flatbread"
+    },
+    {
+      "tag": "seki:doughs/flatbread"
+    },
+    {
+      "tag": "c:foods/vegetable"
+    },
+    {
+      "item": "minecraft:brown_mushroom"
+    }
+  ],
+  "result": {
+    "count": 4,
+    "id": "youkaisfeasts:raw_oyaki"
+  },
+  "type": "minecraft:crafting_shapeless"
+}

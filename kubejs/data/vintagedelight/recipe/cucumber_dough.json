@@ -1,0 +1,16 @@
+{
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "vintagedelight:cucumber"
+    },
+    {
+      "tag": "seki:doughs/plain_noodle"
+    }
+  ],
+  "result": {
+    "count": 2,
+    "id": "vintagedelight:cucumber_dough"
+  },
+  "type": "minecraft:crafting_shapeless"
+}

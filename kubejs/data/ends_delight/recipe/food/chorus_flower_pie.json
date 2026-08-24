@@ -1,0 +1,25 @@
+{
+  "category": "misc",
+  "ingredients": [
+    {
+      "tag": "seki:doughs/sweet"
+    },
+    {
+      "item": "ends_delight:dried_chorus_flower"
+    },
+    {
+      "item": "ends_delight:dried_chorus_flower"
+    },
+    {
+      "item": "minecraft:poppy"
+    },
+    {
+      "item": "minecraft:sugar"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "ends_delight:chorus_flower_pie"
+  },
+  "type": "minecraft:crafting_shapeless"
+}

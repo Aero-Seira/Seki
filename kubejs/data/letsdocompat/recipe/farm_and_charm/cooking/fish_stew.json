@@ -1,0 +1,18 @@
+{
+  "container": {
+    "count": 1,
+    "id": "minecraft:bowl"
+  },
+  "ingredients": [
+    { "tag": "seki:fish/raw_fish" },
+    { "item": "farmersdelight:tomato_sauce" },
+    { "tag": "c:crops/onion" }
+  ],
+  "requireContainer": true,
+  "requiresLearning": false,
+  "result": {
+    "count": 1,
+    "id": "farmersdelight:fish_stew"
+  },
+  "type": "farm_and_charm:pot_cooking"
+}

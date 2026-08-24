@@ -1,0 +1,30 @@
+{
+  "container": {
+    "count": 1,
+    "id": "youkaisfeasts:saucer"
+  },
+  "ingredients": [
+    {
+      "tag": "c:foods/pasta"
+    },
+    {
+      "item": "youkaisfeasts:butter"
+    },
+    {
+      "item": "farmersdelight:tomato_sauce"
+    },
+    {
+      "tag": "seki:meat/raw_beef"
+    },
+    {
+      "tag": "c:crops/onion"
+    }
+  ],
+  "requireContainer": true,
+  "requiresLearning": false,
+  "result": {
+    "count": 1,
+    "id": "youkaisfeasts:pastitsio"
+  },
+  "type": "farm_and_charm:pot_cooking"
+}

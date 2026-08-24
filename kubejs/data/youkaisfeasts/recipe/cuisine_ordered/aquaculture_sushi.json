@@ -1,0 +1,16 @@
+{
+  "base": "youkaisfeasts:sushi",
+  "input": [
+    {
+      "item": "aquaculture:fish_fillet_raw"
+    },
+    {
+      "item": "minecraft:seagrass"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "aquaculture:sushi"
+  },
+  "type": "youkaisfeasts:cuisine_ordered"
+}

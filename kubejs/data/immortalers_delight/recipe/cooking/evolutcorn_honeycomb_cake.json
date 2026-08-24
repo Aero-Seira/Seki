@@ -1,0 +1,25 @@
+{
+  "experience": 0.35,
+  "ingredients": [
+    {
+      "item": "immortalers_delight:evolutcorn_grains"
+    },
+    {
+      "item": "immortalers_delight:evolutcorn_grains"
+    },
+    {
+      "item": "minecraft:egg"
+    },
+    {
+      "item": "minecraft:honey_bottle"
+    },
+    {
+      "tag": "seki:doughs/sweet"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "immortalers_delight:evolutcorn_honeycomb_cake"
+  },
+  "type": "farmersdelight:cooking"
+}

@@ -1,0 +1,22 @@
+{
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "immortalers_delight:gelpitaya"
+    },
+    {
+      "tag": "seki:doughs/flatbread"
+    },
+    {
+      "item": "immortalers_delight:pitcher_pod_petal"
+    },
+    {
+      "tag": "minecraft:leaves"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "immortalers_delight:ice_pizza"
+  },
+  "type": "minecraft:crafting_shapeless"
+}

@@ -1,0 +1,14 @@
+{
+  "experience": 1.0,
+  "ingredients": [
+    { "tag": "seki:fish/raw_fish" },
+    { "item": "farmersdelight:tomato_sauce" },
+    { "tag": "c:crops/onion" }
+  ],
+  "recipe_book_tab": "meals",
+  "result": {
+    "count": 1,
+    "id": "farmersdelight:fish_stew"
+  },
+  "type": "farmersdelight:cooking"
+}

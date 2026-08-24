@@ -1,0 +1,20 @@
+{
+  "container": {
+    "count": 1,
+    "id": "youkaisfeasts:saucer"
+  },
+  "ingredients": [
+    { "tag": "seki:fish/raw_fish" },
+    { "item": "youkaisfeasts:soy_sauce_bottle" },
+    { "tag": "c:foods/vegetable" },
+    { "tag": "c:foods/vegetable" },
+    { "tag": "c:crops/onion" }
+  ],
+  "requireContainer": true,
+  "requiresLearning": false,
+  "result": {
+    "count": 1,
+    "id": "youkaisfeasts:sauce_grilled_fish"
+  },
+  "type": "farm_and_charm:pot_cooking"
+}

@@ -1,0 +1,17 @@
+{
+  "container": {
+    "count": 1,
+    "id": "minecraft:bowl"
+  },
+  "experience": 0.1,
+  "ingredients": [
+    { "tag": "seki:doughs/sweet" },
+    { "item": "youkaisfeasts:udumbara_flower" }
+  ],
+  "recipe_book_tab": "meals",
+  "result": {
+    "count": 1,
+    "id": "youkaisfeasts:udumbara_cake"
+  },
+  "type": "farmersdelight:cooking"
+}

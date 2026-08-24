@@ -1,0 +1,27 @@
+{
+  "container": {
+    "count": 1,
+    "id": "minecraft:bowl"
+  },
+  "ingredients": [
+    {
+      "tag": "seki:fish/raw_fillet"
+    },
+    {
+      "item": "farmersdelight:raw_pasta"
+    },
+    {
+      "item": "farmersdelight:tomato_sauce"
+    },
+    {
+      "item": "minecraft:brown_mushroom"
+    }
+  ],
+  "requireContainer": true,
+  "requiresLearning": false,
+  "result": {
+    "count": 1,
+    "id": "aquaculturedelight:tuna_spaghetti"
+  },
+  "type": "farm_and_charm:pot_cooking"
+}

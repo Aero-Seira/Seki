@@ -1,0 +1,30 @@
+{
+  "category": "misc",
+  "key": {
+    "D": {
+      "tag": "seki:doughs/flatbread"
+    },
+    "O": {
+      "item": "farmersdelight:pie_crust"
+    },
+    "e": {
+      "tag": "c:foods/cooked_egg"
+    },
+    "m": {
+      "tag": "c:foods/milk"
+    },
+    "s": {
+      "tag": "seki:fish/whole_raw"
+    }
+  },
+  "pattern": [
+    "sss",
+    "eDe",
+    "mOm"
+  ],
+  "result": {
+    "count": 1,
+    "id": "casualnessdelight:stargazy_pie"
+  },
+  "type": "minecraft:crafting_shaped"
+}

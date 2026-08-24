@@ -1,0 +1,25 @@
+{
+  "category": "misc",
+  "ingredients": [
+    {
+      "tag": "seki:breads/burger_bun"
+    },
+    {
+      "item": "minersdelight:vegan_patty"
+    },
+    {
+      "tag": "c:crops/cabbage"
+    },
+    {
+      "tag": "c:foods/tomato"
+    },
+    {
+      "tag": "c:foods/onion"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "minersdelight:vegan_hamburger"
+  },
+  "type": "minecraft:crafting_shapeless"
+}

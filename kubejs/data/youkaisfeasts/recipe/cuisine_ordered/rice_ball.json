@@ -1,0 +1,16 @@
+{
+  "base": "youkaisfeasts:gunkan",
+  "input": [
+    {
+      "item": "minecraft:sweet_berries"
+    },
+    {
+      "tag": "culturaldelights:raw_salmons"
+    }
+  ],
+  "result": {
+    "count": 5,
+    "id": "culturaldelights:rice_ball"
+  },
+  "type": "youkaisfeasts:cuisine_ordered"
+}

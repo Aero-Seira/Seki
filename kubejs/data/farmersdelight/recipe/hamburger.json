@@ -1,0 +1,25 @@
+{
+  "category": "misc",
+  "ingredients": [
+    {
+      "tag": "seki:breads/burger_bun"
+    },
+    {
+      "item": "farmersdelight:beef_patty"
+    },
+    {
+      "tag": "c:foods/leafy_green"
+    },
+    {
+      "tag": "c:crops/tomato"
+    },
+    {
+      "tag": "c:crops/onion"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "farmersdelight:hamburger"
+  },
+  "type": "minecraft:crafting_shapeless"
+}

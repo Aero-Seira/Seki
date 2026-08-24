@@ -1,0 +1,30 @@
+{
+  "container": {
+    "count": 1,
+    "id": "youkaisfeasts:saucer"
+  },
+  "experience": 0.1,
+  "ingredients": [
+    {
+      "tag": "c:foods/pasta"
+    },
+    {
+      "item": "youkaisfeasts:butter"
+    },
+    {
+      "item": "farmersdelight:tomato_sauce"
+    },
+    {
+      "tag": "seki:meat/raw_beef"
+    },
+    {
+      "tag": "c:crops/onion"
+    }
+  ],
+  "recipe_book_tab": "meals",
+  "result": {
+    "count": 1,
+    "id": "youkaisfeasts:pastitsio"
+  },
+  "type": "farmersdelight:cooking"
+}

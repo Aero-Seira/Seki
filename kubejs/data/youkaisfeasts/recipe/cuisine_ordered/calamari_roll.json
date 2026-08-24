@@ -1,0 +1,16 @@
+{
+  "base": "youkaisfeasts:hosomaki",
+  "input": [
+    {
+      "item": "culturaldelights:raw_calamari"
+    },
+    {
+      "item": "culturaldelights:raw_calamari"
+    }
+  ],
+  "result": {
+    "count": 2,
+    "id": "culturaldelights:calamari_roll"
+  },
+  "type": "youkaisfeasts:cuisine_ordered"
+}

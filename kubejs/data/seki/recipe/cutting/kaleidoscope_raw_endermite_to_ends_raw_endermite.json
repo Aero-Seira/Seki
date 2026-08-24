@@ -1,0 +1,8 @@
+{
+  "ingredients": [ { "item": "kaleidoscope_end:raw_endermite_meat" } ],
+  "result": [
+    { "item": { "count": 1, "id": "ends_delight:raw_ender_mite_meat" } }
+  ],
+  "tool": { "tag": "c:tools/knife" },
+  "type": "farmersdelight:cutting"
+}

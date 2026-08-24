@@ -1,0 +1,19 @@
+{
+  "container": {
+    "count": 1,
+    "id": "minecraft:bowl"
+  },
+  "experience": 1.0,
+  "ingredients": [
+    { "tag": "seki:fish/raw_fish" },
+    { "item": "minecraft:carrot" },
+    { "tag": "aquaculturedelight:fish_chorba_vegetables" },
+    { "item": "farmersdelight:tomato_sauce" }
+  ],
+  "recipe_book_tab": "meals",
+  "result": {
+    "count": 1,
+    "id": "aquaculturedelight:fish_chorba"
+  },
+  "type": "farmersdelight:cooking"
+}

@@ -83,13 +83,19 @@ knownpacks.json
 Toudai.jar
 Seki.jar
 
-# packwiz 只提交下载元数据，不提交第三方二进制源文件
+# 第三方二进制默认不提交；mrpack 分发仅保留少量无公开直链的内嵌文件
 *.jar
 mods/*.jar
 resourcepacks/*.zip
 shaderpacks/*.zip
 
-# 本地 packwiz 工具与缓存
+# mrpack 内嵌分发文件（无可靠公开下载源，随 mrpack 发布）
+!mods/kubejs_datacomponent-1.0.1.jar
+!mods/modpack-ide-exporter-0.1.0.jar
+!mods/*immortalers_delight*.jar
+!resourcepacks/Minecraft-Mod-Language-Modpack-Converted-1.21.1.zip
+
+# 本地工具与缓存
 .tools/
 .packwiz-cache/
 
@@ -99,7 +105,7 @@ _skill_staging/
 mpide-exporter/
 index/
 
-# 启动器生成的版本描述由 packwiz 版本字段替代
+# 启动器生成的版本描述由 mrpack 清单替代
 Seki.json
 
 # 构建产物目录

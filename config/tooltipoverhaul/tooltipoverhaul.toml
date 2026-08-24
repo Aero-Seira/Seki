@@ -178,7 +178,7 @@
 	# survival and creative (previously visible only in creative mode).
 	# 
 	# Default: false
-	SHOW_MOD_NAME = false
+	SHOW_MOD_NAME = true
 
 # effects §§
 [effects]

@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "someassemblyrequired:burger_bun",
+    "saraddons:potato_burger_bun",
+    "saraddons:pretzel_burger_bun"
+  ]
+}

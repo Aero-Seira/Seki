@@ -1,0 +1,23 @@
+{
+  "experience": 1.0,
+  "ingredients": [
+    {
+      "tag": "c:foods/giant_tentacles"
+    },
+    {
+      "tag": "c:foods/giant_tentacles"
+    },
+    {
+      "tag": "seki:doughs/plain_noodle"
+    },
+    {
+      "item": "farmersdelight:onion"
+    }
+  ],
+  "recipe_book_tab": "meals",
+  "result": {
+    "count": 1,
+    "id": "mynethersdelight:giant_takoyaki"
+  },
+  "type": "farmersdelight:cooking"
+}

@@ -1,0 +1,27 @@
+{
+  "container": {
+    "count": 1,
+    "id": "minecraft:bowl"
+  },
+  "ingredients": [
+    {
+      "tag": "c:foods/giant_tentacles"
+    },
+    {
+      "tag": "c:foods/giant_tentacles"
+    },
+    {
+      "tag": "seki:doughs/plain_noodle"
+    },
+    {
+      "item": "farmersdelight:onion"
+    }
+  ],
+  "requireContainer": true,
+  "requiresLearning": false,
+  "result": {
+    "count": 1,
+    "id": "mynethersdelight:giant_takoyaki"
+  },
+  "type": "farm_and_charm:pot_cooking"
+}

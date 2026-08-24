@@ -1,0 +1,19 @@
+{
+  "container": {
+    "count": 1,
+    "id": "youkaisfeasts:saucer"
+  },
+  "ingredients": [
+    { "tag": "seki:fish/raw_fish" },
+    { "tag": "seki:fish/raw_fish" },
+    { "tag": "seki:fish/raw_fish" },
+    { "tag": "c:foods/cabbage" }
+  ],
+  "requireContainer": true,
+  "requiresLearning": false,
+  "result": {
+    "count": 1,
+    "id": "youkaisfeasts:dried_fish"
+  },
+  "type": "farm_and_charm:pot_cooking"
+}

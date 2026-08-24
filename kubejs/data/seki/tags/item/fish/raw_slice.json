@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "farmersdelight:cod_slice",
+    "farmersdelight:salmon_slice",
+    "crabbersdelight:pufferfish_slice",
+    "crabbersdelight:tropical_fish_slice",
+    "alexsdelight:raw_catfish_slice",
+    "youkaisfeasts:raw_tuna_slice"
+  ]
+}

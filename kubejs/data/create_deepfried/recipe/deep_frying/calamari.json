@@ -1,0 +1,11 @@
+{
+  "heat_requirement": "heated",
+  "ingredients": [
+    { "item": "culturaldelights:raw_calamari" },
+    { "amount": 125, "components": {}, "fluids": "create_bic_bit:frying_oil", "type": "neoforge:components" }
+  ],
+  "results": [
+    { "id": "create_deepfried:calamari" }
+  ],
+  "type": "create_bic_bit:deep_frying"
+}

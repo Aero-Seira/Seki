@@ -1,0 +1,25 @@
+{
+  "category": "misc",
+  "ingredients": [
+    {
+      "tag": "c:foods/leafy_green"
+    },
+    {
+      "tag": "c:crops/tomato"
+    },
+    {
+      "item": "alexsdelight:bison_patty"
+    },
+    {
+      "tag": "c:crops/beetroot"
+    },
+    {
+      "tag": "seki:breads/burger_bun"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "alexsdelight:bison_burger"
+  },
+  "type": "minecraft:crafting_shapeless"
+}

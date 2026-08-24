@@ -1,0 +1,13 @@
+{
+  "base": "youkaisfeasts:hosomaki",
+  "input": [
+    {
+      "tag": "seki:fish/raw_tropical_fish_slice"
+    }
+  ],
+  "result": {
+    "count": 2,
+    "id": "culturaldelights:tropical_roll"
+  },
+  "type": "youkaisfeasts:cuisine_ordered"
+}

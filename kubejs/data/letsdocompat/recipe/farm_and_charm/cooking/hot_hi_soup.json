@@ -1,0 +1,24 @@
+{
+  "container": {
+    "count": 1,
+    "id": "minecraft:bowl"
+  },
+  "ingredients": [
+    {
+      "item": "immortalers_delight:torchflower_mustard"
+    },
+    {
+      "item": "minecraft:kelp"
+    },
+    {
+      "tag": "seki:meat/raw_beef"
+    }
+  ],
+  "requireContainer": true,
+  "requiresLearning": false,
+  "result": {
+    "count": 1,
+    "id": "immortalers_delight:hot_hi_soup"
+  },
+  "type": "farm_and_charm:pot_cooking"
+}

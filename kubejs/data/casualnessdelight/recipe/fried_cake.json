@@ -1,0 +1,13 @@
+{
+  "category": "food",
+  "cookingtime": 100,
+  "experience": 0.35,
+  "ingredient": {
+    "tag": "seki:doughs/sweet"
+  },
+  "result": {
+    "count": 1,
+    "id": "casualnessdelight:fried_cake"
+  },
+  "type": "casualnessdelight:deep_frying"
+}

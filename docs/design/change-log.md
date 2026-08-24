@@ -1,5 +1,20 @@
 # 设计变更记录
 
+## 2026-08-25 - 迁移分发链：移除 packwiz，改用 mrpack + CI
+
+- 删除 packwiz 管理：`pack.toml`、`index.toml`、`.packwizignore`、全部
+  `mods/*.pw.toml` 与 `shaderpacks/complementary-unbound.pw.toml`。
+- 删除配套安全提交脚本与 guard CI：`scripts/commit-pack.*`、
+  `scripts/validate-packwiz-staged.py`、`.github/workflows/guard-pack-binaries.yml`。
+- 引入 mrpack 分发源：根目录 `modrinth.index.json`（187 个远程文件，含
+  SHA-1/SHA-512 与多来源下载地址），overrides 同步自 2026-08-15 的平台导出
+  （`config/`、`kubejs/`、`defaultconfigs/`、3 个内嵌 jar、汉化资源包）。
+- 新增 `scripts/build-mrpack.py` 与 `.github/workflows/build-mrpack.yml`：
+  推送 `main` 自动构建 `Seki-1.0.0.mrpack` 并上传 artifact，推送 `v*` 标签时
+  附加到 GitHub Release。
+- 版本基线更新：NeoForge 21.1.247，整合包版本 1.0.0，模组 190（187 远程 +
+  3 内嵌）；相关设计文档与 README 同步改写。
+
 ## 2026-07-29 - 按面团谱系分流制面产物
 
 - 新 SQLite（9811 配方，导出于 `2026-07-29T12:48:00.993361400Z`）确认首版统一标签导致死面团在 FD 砧板变成鸡蛋生意面，在 F&C 绞肉机变成农家意面；机器互操作错误覆盖了产物身份。
@@ -68,7 +83,7 @@
 - 为保证 GitHub 原始文件与 `index.toml` 哈希一致，新增 `.gitattributes` 并将 77 个被 packwiz 索引的文本配置从 CRLF 规范为 LF；逻辑键值没有变化。扫描器本轮共记录 78 个修改项（含 `pack.toml` 索引哈希），属于分发字节规范化而非游戏设计改动。
 - 安全约束：禁止在真实实例执行 `packwiz curseforge detect` 或安装清理；所有检测和重建都在 `.tools/` 隔离目录完成。普通 Git 提交/推送不会删除未跟踪且已忽略的本地 JAR。
 - 验证状态：122 个模组描述符均与真实 JAR 唯一哈希匹配；官方 packwiz-installer v0.5.14 隔离重建成功；客户端文件与描述符、真实实例三方哈希一致。
-- 设计文档：[packwiz 分发与本地实例保护](components/platform/packwiz-distribution.md)、[JECharacters](components/utility/jecharacters.md)、[ModPack IDE Exporter](components/other/mpide-exporter.md)、[汉化资源包](components/resourcepacks/minecraft-mod-language-modpack-converted-1-21-1.md)、[默认光影](components/aesthetic/complementary-euphoria-shaders.md)。
+- 设计文档：[mrpack 分发与 CI 构建](components/platform/mrpack-distribution.md)、[JECharacters](components/utility/jecharacters.md)、[ModPack IDE Exporter](components/other/mpide-exporter.md)、[汉化资源包](components/resourcepacks/minecraft-mod-language-modpack-converted-1-21-1.md)、[默认光影](components/aesthetic/complementary-euphoria-shaders.md)。
 
 ## 2026-07-28 - 设计决策：取消 Chapters 阶段锁定体系；项目更名 Seki 并转向生活冒险定位
 

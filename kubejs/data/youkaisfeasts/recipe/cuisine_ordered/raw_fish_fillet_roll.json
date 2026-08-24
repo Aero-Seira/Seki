@@ -1,0 +1,16 @@
+{
+  "base": "youkaisfeasts:hosomaki",
+  "input": [
+    {
+      "item": "aquaculture:fish_fillet_raw"
+    },
+    {
+      "item": "aquaculture:fish_fillet_raw"
+    }
+  ],
+  "result": {
+    "count": 2,
+    "id": "aquaculturedelight:raw_fish_fillet_roll"
+  },
+  "type": "youkaisfeasts:cuisine_ordered"
+}

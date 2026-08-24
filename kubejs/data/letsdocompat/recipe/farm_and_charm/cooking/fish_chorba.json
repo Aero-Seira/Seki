@@ -1,0 +1,19 @@
+{
+  "container": {
+    "count": 1,
+    "id": "minecraft:bowl"
+  },
+  "ingredients": [
+    { "tag": "seki:fish/raw_fish" },
+    { "item": "minecraft:carrot" },
+    { "tag": "aquaculturedelight:fish_chorba_vegetables" },
+    { "item": "farmersdelight:tomato_sauce" }
+  ],
+  "requireContainer": true,
+  "requiresLearning": false,
+  "result": {
+    "count": 1,
+    "id": "aquaculturedelight:fish_chorba"
+  },
+  "type": "farm_and_charm:pot_cooking"
+}

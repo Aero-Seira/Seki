@@ -1,0 +1,25 @@
+{
+  "experience": 1.0,
+  "ingredients": [
+    {
+      "item": "minecraft:rotten_flesh"
+    },
+    {
+      "item": "minecraft:rotten_flesh"
+    },
+    {
+      "tag": "seki:doughs/plain_noodle"
+    },
+    {
+      "tag": "c:crops/onion"
+    },
+    {
+      "item": "casualnessdelight:capsicum_sauce"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "casualnessdelight:spicy_strips"
+  },
+  "type": "farmersdelight:cooking"
+}

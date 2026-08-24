@@ -1,0 +1,16 @@
+{
+  "category": "meals",
+  "experience": 1.0,
+  "ingredients": [
+    { "tag": "c:foods/raw_herring" },
+    { "tag": "c:foods/raw_herring" },
+    { "item": "minecraft:dried_kelp" },
+    []
+  ],
+  "result": {
+    "count": 2,
+    "id": "brewinandchewin:kippers"
+  },
+  "temperature": 4,
+  "type": "brewinandchewin:fermenting"
+}

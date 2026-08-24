@@ -1,0 +1,24 @@
+{
+  "container": {
+    "count": 1,
+    "id": "minecraft:bowl"
+  },
+  "cookingtime": 300,
+  "experience": 0.35,
+  "ingredients": [
+    {
+      "item": "immortalers_delight:torchflower_mustard"
+    },
+    {
+      "item": "minecraft:kelp"
+    },
+    {
+      "tag": "seki:meat/raw_beef"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "immortalers_delight:hot_hi_soup"
+  },
+  "type": "farmersdelight:cooking"
+}

@@ -5,15 +5,17 @@
 - 类型：resource-pack
 - 状态：active
 - 证据可信度：verified
-- 来源路径：`resourcepacks/Minecraft-Mod-Language-Modpack-Converted-1.21.1.zip`（I18nUpdateMod 运行时生成，Git/packwiz 忽略）
+- 来源路径：`resourcepacks/Minecraft-Mod-Language-Modpack-Converted-1.21.1.zip`（随 mrpack overrides 内嵌分发）
 - 标识与版本：`minecraft-mod-language-modpack-converted-1-21-1` 34
-- 加载器或包格式：NeoForge 21.1.235（Minecraft 1.21.1）
+- 加载器或包格式：NeoForge 21.1.247（Minecraft 1.21.1）
 
 ## 设计作用
 
 该资源包是 ProjectNautic 的中文本地化基线，为大量没有官方中文翻译的模组提供统一、社区维护的简体中文翻译。它支撑整合包的**可访问性**与**本土化体验**支柱，让玩家无需自行寻找汉化补丁即可理解物品、界面、提示与任务文本。
 
-本地日志验证该 ZIP 并非维护者手工固定的发行文件：I18nUpdateMod 会在启动时取得 1.21、1.20、1.19 三份源包并动态合成目标 ZIP。因此 Git 与 packwiz 都忽略最终 ZIP，干净实例由 I18nUpdateMod 重建，避免仓库托管频繁变化的派生二进制。
+该 ZIP 可由 I18nUpdateMod 在启动时取得 1.21、1.20、1.19 三份源包并动态合成，
+但当前分发以 2026-08-15 平台导出的固定版本为准，随 mrpack overrides 内嵌分发，
+避免安装后依赖 I18nUpdateMod 的在线合成端点。
 
 作为纯资源包，它不引入新机制，但直接影响玩家对整合包内容的第一认知；翻译质量与一致性会反馈到 JEI、Jade、进度、UI 等所有依赖文本的系统上。
 
@@ -39,7 +41,7 @@
 
 ## 配置意图
 
-该资源包无独立配置文件。其设计意图完全由资源包本身的内容与加载顺序体现：在默认启用状态下，为整合包内所有支持的中文 key 提供社区翻译，减少玩家在 JEI、提示、界面中的语言障碍。packwiz 不固定下载目标 ZIP，以 I18nUpdateMod 的运行时合成为唯一重建路径。
+该资源包无独立配置文件。其设计意图完全由资源包本身的内容与加载顺序体现：在默认启用状态下，为整合包内所有支持的中文 key 提供社区翻译，减少玩家在 JEI、提示、界面中的语言障碍。mrpack 以 overrides 内嵌固定版本 ZIP，作为可复现的默认汉化基线。
 
 ## 兼容性与性能
 
@@ -65,6 +67,7 @@
 
 ## 历史
 
+- 2026-08-25: 改为随 mrpack overrides 内嵌分发（来源：2026-08-15 平台导出）
 - 2026-07-29: packwiz 迁移中确认该 ZIP 为 I18nUpdateMod 动态合成物，不建立固定下载描述符
 - 2026-07-21: 语言包内容再次更新（zip 内翻译数据刷新；文件数 2157→2158，lang 文件 1096→1097）
 - 2026-07-20: 语言包内容再次更新（zip 内翻译数据刷新）

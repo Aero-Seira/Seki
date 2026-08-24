@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "aquaculture:fish_fillet_cooked",
+    "crabbersdelight:cooked_pufferfish_slice",
+    "crabbersdelight:cooked_tropical_fish_slice",
+    "farmersdelight:cooked_cod_slice",
+    "farmersdelight:cooked_salmon_slice"
+  ]
+}

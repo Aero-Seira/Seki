@@ -1,0 +1,12 @@
+{
+  "category": "misc",
+  "ingredients": [
+    { "item": "minecraft:stick" },
+    { "tag": "seki:fish/cooked_fillet_slice" }
+  ],
+  "result": {
+    "count": 1,
+    "id": "crabbersdelight:fish_stick"
+  },
+  "type": "minecraft:crafting_shapeless"
+}

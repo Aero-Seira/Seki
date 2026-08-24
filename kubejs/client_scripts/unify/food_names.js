@@ -167,7 +167,9 @@ ClientEvents.lang('zh_cn', event => {
     'youkaisfeasts:butter': '妖怪黄油',
     'brewery:sausage': '德式香肠',
     'ratatouille:sausage': '齿轮香肠',
-    'mynethersdelight:golden_egg': '金蛋',
+    'mynethersdelight:golden_egg': '疣猪金蛋',
+    'mynethersdelight:enchanted_golden_egg': '附魔疣猪金蛋',
+    'vintagedelight:golden_egg': '陈酿金蛋',
     'kaleidoscope_nether:hoglin_hide': '下界疣猪皮',
     'mynethersdelight:hoglin_hide': '疣猪兽皮',
     'kaleidoscope_nether:ghast_pasta': '恶魂汤面',
@@ -222,8 +224,43 @@ ClientEvents.lang('zh_cn', event => {
     'refurbished_furniture:meatlovers_pizza_slice': '肉食披萨切片',
     'refurbished_furniture:raw_vegetable_pizza': '生蔬菜披萨',
     'refurbished_furniture:cooked_vegetable_pizza': '熟蔬菜披萨',
-    'refurbished_furniture:vegetable_pizza_slice': '蔬菜披萨切片'
-  }
+    'refurbished_furniture:vegetable_pizza_slice': '蔬菜披萨切片',
 
+    // NAME-05: v9 D20 — 剩余 11 组同名食物现实语义区分（不加模组前缀、不隐藏物品）
+    'farmersdelight:onion_soup': '黄洋葱汤',
+    'farm_and_charm:onion_soup': '紫洋葱汤',
+    'brewinandchewin:creamy_onion_soup': '奶油洋葱浓汤',
+    'casualnessdelight:fried_mushroom': '炸蘑菇',
+    'casualnessdelight:fried_strange_mushroom': '炸奇异菌菇',
+    'someassemblyrequired:toasted_bread_slice': '三明治烤面包片',
+    'crabbersdelight:raw_squid_tentacles': '海捕生鱿须',
+    'crabbersdelight:raw_glow_squid_tentacles': '海捕荧光鱿须',
+    'culturaldelights:raw_calamari': '生鱿鱼圈',
+    'crabbersdelight:cooked_squid_tentacles': '烤鱿鱼须',
+    'crabbersdelight:cooked_glow_squid_tentacles': '烤荧光鱿须',
+    'culturaldelights:cooked_calamari': '熟鱿鱼圈',
+    'minersdelight:baked_tentacles': '洞穴烤触须',
+    'ends_delight:raw_ender_mite_meat': '风干用末影螨生肉',
+    'kaleidoscope_end:raw_endermite_meat': '鲜末影螨肉',
+    'farmersdelight:apple_pie_slice': '苹果派切片',
+    'bakery:apple_pie_slice': '肉桂苹果派切片',
+    'vinery:glowing_wine': '阳光葡萄酒',
+    'vinery:solaris_wine': '索拉里斯白葡萄酒',
+    'farmersdelight:dumplings': '肉馅饺子',
+    'brewery:dumplings': '德式面团丸子',
+    'kaleidoscope_cookery:dumpling': '中式水饺',
+    'casualnessdelight:phantom_dumplings': '幽灵饺子',
+    'ends_delight:dragon_breath_and_chorus_soup': '龙息紫颂汤',
+    'kaleidoscope_end:dragon_breath_chorus_soup': '龙息紫颂浓汤',
+    'ends_delight:liquid_dragon_egg': '破壳龙蛋液',
+    'kaleidoscope_end:dragon_egg_liquid': '龙蛋液',
+
+    // NAME-06 (v10 P1-4): 生/鲜状态纠偏——非腌制制品不得叫“火腿”
+    'kaleidoscope_nether:ham': '疣猪腿肉',
+    'kaleidoscope_nether:ham_slice': '疣猪腿肉片',
+    'kaleidoscope_nether:roasted_ham': '烤疣猪腿肉',
+    'farm_and_charm:lamb_ham': '羔羊腿肉',
+    'farm_and_charm:bacon': '生培根'
+  }
   Object.entries(names).forEach(([id, name]) => event.renameItem(id, name))
 })

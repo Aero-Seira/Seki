@@ -1,0 +1,13 @@
+{
+  "category": "food",
+  "cookingtime": 100,
+  "experience": 0.35,
+  "ingredient": {
+    "tag": "seki:fish/raw_fish"
+  },
+  "result": {
+    "count": 1,
+    "id": "casualnessdelight:fried_fish"
+  },
+  "type": "casualnessdelight:deep_frying"
+}

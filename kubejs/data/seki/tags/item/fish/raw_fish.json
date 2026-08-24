@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "#seki:fish/whole_raw",
+    "#seki:fish/raw_fillet",
+    "#seki:fish/raw_slice"
+  ]
+}

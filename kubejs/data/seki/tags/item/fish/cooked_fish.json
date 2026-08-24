@@ -1,0 +1,16 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:cooked_cod",
+    "minecraft:cooked_salmon",
+    "aquaculture:fish_fillet_cooked",
+    "alexscaves:cooked_lanternfish",
+    "alexscaves:cooked_radgill",
+    "alexscaves:cooked_tripodfish",
+    "crabbersdelight:cooked_pufferfish_slice",
+    "crabbersdelight:cooked_tropical_fish",
+    "crabbersdelight:cooked_tropical_fish_slice",
+    "farmersdelight:cooked_cod_slice",
+    "farmersdelight:cooked_salmon_slice"
+  ]
+}

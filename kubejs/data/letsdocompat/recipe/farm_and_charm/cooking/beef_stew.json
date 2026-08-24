@@ -1,0 +1,24 @@
+{
+  "container": {
+    "count": 1,
+    "id": "minecraft:bowl"
+  },
+  "ingredients": [
+    {
+      "tag": "seki:meat/raw_beef"
+    },
+    {
+      "tag": "c:crops/carrot"
+    },
+    {
+      "tag": "c:crops/potato"
+    }
+  ],
+  "requireContainer": true,
+  "requiresLearning": false,
+  "result": {
+    "count": 1,
+    "id": "farmersdelight:beef_stew"
+  },
+  "type": "farm_and_charm:pot_cooking"
+}

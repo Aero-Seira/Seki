@@ -1,0 +1,27 @@
+{
+  "category": "misc",
+  "key": {
+    "A": {
+      "tag": "c:cheese"
+    },
+    "C": {
+      "tag": "seki:doughs/flatbread"
+    },
+    "E": {
+      "item": "farmersdelight:tomato_sauce"
+    },
+    "Q": {
+      "tag": "c:foods/cooked_meat"
+    }
+  },
+  "pattern": [
+    " Q ",
+    "AAA",
+    "CEC"
+  ],
+  "result": {
+    "count": 1,
+    "id": "vintagedelight:meat_pizza"
+  },
+  "type": "minecraft:crafting_shaped"
+}

@@ -1,0 +1,27 @@
+{
+  "container": {
+    "count": 1,
+    "id": "minecraft:bowl"
+  },
+  "experience": 1.0,
+  "ingredients": [
+    {
+      "tag": "seki:fish/raw_fillet"
+    },
+    {
+      "item": "farmersdelight:raw_pasta"
+    },
+    {
+      "item": "farmersdelight:tomato_sauce"
+    },
+    {
+      "item": "minecraft:brown_mushroom"
+    }
+  ],
+  "recipe_book_tab": "meals",
+  "result": {
+    "count": 1,
+    "id": "aquaculturedelight:tuna_spaghetti"
+  },
+  "type": "farmersdelight:cooking"
+}

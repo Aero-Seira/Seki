@@ -1,0 +1,22 @@
+{
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "casualnessdelight:cooked_donkey_meat"
+    },
+    {
+      "tag": "seki:breads/burger_bun"
+    },
+    {
+      "tag": "c:crops/cabbage"
+    },
+    {
+      "tag": "c:crops/onion"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "casualnessdelight:donkey_burger"
+  },
+  "type": "minecraft:crafting_shapeless"
+}

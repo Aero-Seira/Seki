@@ -1,0 +1,23 @@
+{
+  "experience": 1.0,
+  "ingredients": [
+    {
+      "tag": "seki:doughs/plain_noodle"
+    },
+    {
+      "tag": "c:foods/cooked_egg"
+    },
+    {
+      "tag": "c:foods/cooked_egg"
+    },
+    {
+      "tag": "c:foods/milk"
+    }
+  ],
+  "recipe_book_tab": "meals",
+  "result": {
+    "count": 1,
+    "id": "casualnessdelight:yorkshire_pudding"
+  },
+  "type": "farmersdelight:cooking"
+}

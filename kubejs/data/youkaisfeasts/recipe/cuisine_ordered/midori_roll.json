@@ -1,0 +1,16 @@
+{
+  "base": "youkaisfeasts:hosomaki",
+  "input": [
+    {
+      "tag": "c:crops/cucumber"
+    },
+    {
+      "tag": "c:crops/avocado"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "culturaldelights:midori_roll"
+  },
+  "type": "youkaisfeasts:cuisine_ordered"
+}

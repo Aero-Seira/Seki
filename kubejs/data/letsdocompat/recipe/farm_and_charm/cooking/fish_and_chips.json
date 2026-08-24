@@ -1,0 +1,24 @@
+{
+  "container": {
+    "count": 1,
+    "id": "minecraft:bowl"
+  },
+  "ingredients": [
+    {
+      "item": "farmersdelight:cod_slice"
+    },
+    {
+      "tag": "c:crops/potato"
+    },
+    {
+      "tag": "seki:doughs/plain_noodle"
+    }
+  ],
+  "requireContainer": true,
+  "requiresLearning": false,
+  "result": {
+    "count": 1,
+    "id": "casualnessdelight:fish_and_chips"
+  },
+  "type": "farm_and_charm:pot_cooking"
+}

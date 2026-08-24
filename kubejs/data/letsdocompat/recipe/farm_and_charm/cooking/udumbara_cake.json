@@ -1,0 +1,17 @@
+{
+  "container": {
+    "count": 1,
+    "id": "minecraft:bowl"
+  },
+  "ingredients": [
+    { "tag": "seki:doughs/sweet" },
+    { "item": "youkaisfeasts:udumbara_flower" }
+  ],
+  "requireContainer": true,
+  "requiresLearning": false,
+  "result": {
+    "count": 1,
+    "id": "youkaisfeasts:udumbara_cake"
+  },
+  "type": "farm_and_charm:pot_cooking"
+}

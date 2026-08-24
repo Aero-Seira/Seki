@@ -1,0 +1,16 @@
+{
+  "base": "youkaisfeasts:hosomaki",
+  "input": [
+    {
+      "item": "youkaisfeasts:soy_sauce_bottle"
+    },
+    {
+      "tag": "seki:fish/raw_tuna_slice"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "youkaisfeasts:tekka_maki"
+  },
+  "type": "youkaisfeasts:cuisine_ordered"
+}

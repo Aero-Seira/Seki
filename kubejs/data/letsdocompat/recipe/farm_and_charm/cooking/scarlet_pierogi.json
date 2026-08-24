@@ -1,0 +1,30 @@
+{
+  "container": {
+    "count": 1,
+    "id": "minecraft:bowl"
+  },
+  "ingredients": [
+    {
+      "item": "brewinandchewin:scarlet_cheese_wedge"
+    },
+    {
+      "tag": "c:crops/potato"
+    },
+    {
+      "tag": "seki:doughs/egg_pasta"
+    },
+    {
+      "item": "minecraft:nether_wart"
+    },
+    {
+      "tag": "c:foods/cabbage"
+    }
+  ],
+  "requireContainer": true,
+  "requiresLearning": false,
+  "result": {
+    "count": 1,
+    "id": "brewinandchewin:scarlet_pierogi"
+  },
+  "type": "farm_and_charm:pot_cooking"
+}

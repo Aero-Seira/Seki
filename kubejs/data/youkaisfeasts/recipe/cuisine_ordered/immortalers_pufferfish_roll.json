@@ -1,0 +1,16 @@
+{
+  "base": "youkaisfeasts:hosomaki",
+  "input": [
+    {
+      "item": "immortalers_delight:himekaido_jelly"
+    },
+    {
+      "tag": "seki:fish/raw_pufferfish_slice"
+    }
+  ],
+  "result": {
+    "count": 2,
+    "id": "immortalers_delight:pufferfish_roll"
+  },
+  "type": "youkaisfeasts:cuisine_ordered"
+}

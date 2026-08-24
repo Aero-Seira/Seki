@@ -1,0 +1,12 @@
+{
+  "ingredients": [
+    { "item": "minecraft:ice" },
+    { "tag": "c:foods/milk" },
+    { "item": "bakeries:bottle_cream" },
+    { "tag": "c:matcha" }
+  ],
+  "results": [
+    { "id": "bakeries:matcha_parfait" }
+  ],
+  "type": "create:mixing"
+}

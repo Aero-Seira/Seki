@@ -1,0 +1,8 @@
+{
+  "ingredients": [ { "item": "aquaculture:tuna" } ],
+  "result": [
+    { "item": { "count": 2, "id": "youkaisfeasts:raw_tuna" } }
+  ],
+  "tool": { "tag": "c:tools/knife" },
+  "type": "farmersdelight:cutting"
+}

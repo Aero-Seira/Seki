@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "bakery:sweet_dough",
+    "bakeries:sweet_dough",
+    "bakeries:cocoa_dough",
+    "create_bic_bit:sweet_dough"
+  ]
+}

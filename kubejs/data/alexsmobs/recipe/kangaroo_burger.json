@@ -1,0 +1,25 @@
+{
+  "category": "misc",
+  "ingredients": [
+    {
+      "tag": "seki:breads/burger_bun"
+    },
+    {
+      "tag": "alexsdelight:cooked_kangaroo"
+    },
+    {
+      "tag": "alexsdelight:cooked_kangaroo"
+    },
+    {
+      "tag": "c:foods/leafy_green"
+    },
+    {
+      "tag": "c:crops/carrot"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "alexsmobs:kangaroo_burger"
+  },
+  "type": "minecraft:crafting_shapeless"
+}

@@ -1,0 +1,13 @@
+{
+  "base": "youkaisfeasts:sushi",
+  "input": [
+    {
+      "item": "immortalers_delight:fry_kwat_wheat_doufu"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "immortalers_delight:kwat_pocket_sushi"
+  },
+  "type": "youkaisfeasts:cuisine_ordered"
+}

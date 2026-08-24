@@ -1,0 +1,32 @@
+{
+  "base": "youkaisfeasts:futomaki",
+  "first": [
+    {
+      "item": "youkaisfeasts:soy_sauce_bottle"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "youkaisfeasts:salmon_futomaki"
+  },
+  "second": [
+    {
+      "tag": "c:foods/slices/cucumber"
+    },
+    [
+      {
+        "item": "minecraft:carrot"
+      },
+      {
+        "item": "minecraft:beetroot"
+      }
+    ],
+    {
+      "item": "youkaisfeasts:imitation_crab"
+    },
+    {
+      "tag": "seki:fish/raw_salmon_slice"
+    }
+  ],
+  "type": "youkaisfeasts:cuisine_mixed"
+}

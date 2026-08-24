@@ -1,0 +1,19 @@
+{
+  "base": "youkaisfeasts:hosomaki",
+  "input": [
+    {
+      "item": "alexscaves:tripodfish"
+    },
+    {
+      "item": "alexscaves:sea_pig"
+    },
+    {
+      "item": "alexscaves:lanternfish"
+    }
+  ],
+  "result": {
+    "count": 2,
+    "id": "alexscaves:deep_sea_sushi_roll"
+  },
+  "type": "youkaisfeasts:cuisine_ordered"
+}

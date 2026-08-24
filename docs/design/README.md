@@ -22,8 +22,8 @@
 
 | 组件 | 作用 | 状态 | 关键依赖 |
 | --- | --- | --- | --- |
-| [运行平台与基础配置](components/platform/platform-runtime.md) | 固定 Minecraft、NeoForge 与 Java 运行基线 | active | Minecraft 1.21.1、NeoForge 21.1.235、Java 21 |
-| [packwiz 分发与本地实例保护](components/platform/packwiz-distribution.md) | 用下载描述符替代 Git 中的第三方 JAR/ZIP，同时保留真实实例二进制 | active | `pack.toml`、`index.toml`、122 个模组描述符 |
+| [运行平台与基础配置](components/platform/platform-runtime.md) | 固定 Minecraft、NeoForge 与 Java 运行基线 | active | Minecraft 1.21.1、NeoForge 21.1.247、Java 21 |
+| [mrpack 分发与 CI 构建](components/platform/mrpack-distribution.md) | 以 `modrinth.index.json` + overrides 为源，由 CI 生成 `.mrpack` 分发 | active | `modrinth.index.json`、`config/`、`kubejs/`、`.github/workflows/build-mrpack.yml` |
 | [调研报告：长线运营方案](research-report-v1.md) | 1.21.1 NeoForge 生态调研、魔改框架选型、版本更新机制设计（注：其中 Chapters 阶段系统选型已于 2026-07-28 被维护者否决，仅作历史参考） | completed | KubeJS 7.0、FTB 生态 |
 | [配方统一阶段 0 可行性试验](research/recipe-unifier-stage0-feasibility.md) | 森罗料理配方索引能力、统计边界与后续前置条件 | completed | `modpack-recipe-unifier`、123 个 JAR、1440 条配方 |
 | [Sodium](components/performance/sodium.md) | 渲染引擎优化，提升帧率与减少卡顿 | active | CLIENT；与 Embeddium 不兼容 |
@@ -152,16 +152,16 @@
 | [Nirvana Lib](components/library/nirvana-lib.md) | Clefal 系列共享库 | active | BOTH；宿主模组待核实 |
 | [Platform](components/library/platform.md) | Architectury 跨平台 API 库 | active | BOTH |
 | [Common Networking](components/library/commonnetworking.md) | 跨平台网络层库 | active | BOTH |
-| [ModPack IDE Exporter](components/other/mpide-exporter.md) | 游戏内最终态数据导出（本地开发工具链） | active | CLIENT；本地专用，不进入 packwiz |
+| [ModPack IDE Exporter](components/other/mpide-exporter.md) | 游戏内最终态数据导出（本地开发工具链） | active | CLIENT；无公开下载源，随 mrpack 内嵌分发 |
 | ~~[Obscure Tooltips](components/_archive/obscure-tooltips.md)~~ | 风格化 tooltip（已由 Tooltip Overhaul 替代） | removed | CLIENT |
 
 ## 跨系统约束
 
 - 兼容性：新增模组应明确支持 Minecraft 1.21.1 与 NeoForge 21.1.x。
 - 客户端/服务端范围：当前目录是客户端实例；加入联机或服务端内容时需要单独核对服务端依赖与配置同步方式。所有魔改脚本（KubeJS）须兼容服务端热重载。
-- 分发边界：真实实例有 124 个 JAR；packwiz 管理其中 122 个，JECharacters 4.5.26 与 ModPack IDE Exporter 0.1.0 为本地专用例外。客户端安装得到 121 个 JAR，因为 Brutal Respawn 仅服务端。Git 只跟踪 `*.pw.toml`、配置、脚本和索引，不跟踪 JAR/ZIP；详见 [packwiz 分发与本地实例保护](components/platform/packwiz-distribution.md)。
+- 分发边界：mrpack 清单包含 187 个远程下载文件（模组与默认光影），另以 overrides 内嵌 3 个无公开下载源的 jar（Immortaler's Delight、KubeJS Data Component、ModPack IDE Exporter）与汉化资源包。Git 跟踪清单、配置、脚本和少量内嵌二进制，不跟踪可由远程清单下载的第三方 JAR/ZIP；详见 [mrpack 分发与 CI 构建](components/platform/mrpack-distribution.md)。
 - 存档兼容性：第七批起整合包已包含注册表内容模组（森罗家族、VanillaBackport、Lootr），移除任一内容模组均会产生缺失方块/物品风险，版本锁定与迁移预案成为硬要求。森罗下界/末地与 VanillaBackport 是否改动世界生成尚未核实（见各组件页开放问题）。新模组加入应尽量不影响已生成区块。
-- 性能预算：真实开发实例当前 124 个模组，处于"中量包"区间。性能优化矩阵已覆盖渲染（Sodium + Iris、Acedium mesh shader 进阶）、实体剔除（EntityCulling、Flerovium）、客户端 HUD（ImmediatelyFast；Gnetum 已于第六批移除且 `hud_batching` 暂时关闭）、逻辑（Lithium）、红石（Alternate Current）、配方匹配（FastSuite）、区块（C2ME）、世界生成噪声（Noisium）、光照（ScalableLux）、内存（Ferrite Core + ModernFix）、网络栈（Krypton FNP + PacketFixer）、树叶剔除（CullLeaves）、扩展渲染选项（Sodium Extra）、输入管线（Ixeris）、日志异步化（Async Logger）以及多项微优化（BadOptimizations、Cupboard）。后续引入大型内容模组时需重点补充启动耗时与内存影响。参考基准：轻量包 <50 模组、中量包 50-200 模组、服务端内存预算 6-8GB、客户端建议 4-6GB。
+- 性能预算：真实开发实例当前 190 个模组（187 远程 + 3 内嵌），处于"中量包"区间。性能优化矩阵已覆盖渲染（Sodium + Iris、Acedium mesh shader 进阶）、实体剔除（EntityCulling、Flerovium）、客户端 HUD（ImmediatelyFast；Gnetum 已于第六批移除且 `hud_batching` 暂时关闭）、逻辑（Lithium）、红石（Alternate Current）、配方匹配（FastSuite）、区块（C2ME）、世界生成噪声（Noisium）、光照（ScalableLux）、内存（Ferrite Core + ModernFix）、网络栈（Krypton FNP + PacketFixer）、树叶剔除（CullLeaves）、扩展渲染选项（Sodium Extra）、输入管线（Ixeris）、日志异步化（Async Logger）以及多项微优化（BadOptimizations、Cupboard）。后续引入大型内容模组时需重点补充启动耗时与内存影响。参考基准：轻量包 <50 模组、中量包 50-200 模组、服务端内存预算 6-8GB、客户端建议 4-6GB。
 - 内容投放节奏：不使用阶段锁定系统（见设计支柱 2）；新内容模组加入即生效，投放节奏由批次规划与实机验证把关。
 - tooltip 体系替换：Obscure Tooltips（+ Fragmentum 依赖）已由 Tooltip Overhaul + RarityCore + colortooltips 样式配置替代；遗留孤儿配置 `config/obscuria/obscure_tooltips-client.toml` 与 `config/legendarytooltips.toml` 待裁决清理。
 - 着色器兼容性：Iris 已加载并预置官方默认光影（Complementary Unbound r5.8.1 + EuphoriaPatches 1.9.3，经 Euphoria Patcher 游戏内补丁）。后续渲染相关模组须验证与该光影管线的兼容性，避免引入与 Embeddium 相关的冲突模组；光影设置文件随包分发，升级策略待明确。
