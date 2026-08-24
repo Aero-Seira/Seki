@@ -105,8 +105,9 @@ _skill_staging/
 mpide-exporter/
 index/
 
-# 启动器生成的版本描述由 mrpack 清单替代
+# 版本 jar 由启动器生成/下载，不提交；Seki.json 是启动器识别实例所需的版本描述
 Seki.json
+!Seki.json
 
 # 构建产物目录
 dist/
