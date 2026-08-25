@@ -12,6 +12,10 @@
 
 仓库直接保存 mrpack 的分发源，不再使用 packwiz 元数据：
 
+- `Seki.json` 是独立（standalone）的 NeoForge 21.1.247 版本描述：已将官方
+  vanilla 1.21.1 的 client 下载、资源索引、日志配置、参数与全部库合并进同一
+  文件，不再 `inheritsFrom` 1.21.1。因此把仓库克隆到 `versions/Seki` 后，
+  启动器无需预先安装 1.21.1 前置版本即可识别并补齐运行文件。
 - `modrinth.index.json` 固定远程下载清单：187 个文件（模组与默认光影），每个条目
   都带有 SHA-1、SHA-512 和多个下载源，安装器校验哈希后下载。
 - `config/`、`kubejs/`、`defaultconfigs/` 以及少量内嵌二进制作为 overrides
