@@ -16,6 +16,8 @@
   vanilla 1.21.1 的 client 下载、资源索引、日志配置、参数与全部库合并进同一
   文件，不再 `inheritsFrom` 1.21.1。因此把仓库克隆到 `versions/Seki` 后，
   启动器无需预先安装 1.21.1 前置版本即可识别并补齐运行文件。
+  JVM 参数中重复的 `--add-opens` / `--add-exports` 旗标必须逐条保留；合并或
+  去重会让 PCL 拼出“一个旗标带两个值”的命令行，导致 Java 报主类找不到。
 - `modrinth.index.json` 固定远程下载清单：187 个文件（模组与默认光影），每个条目
   都带有 SHA-1、SHA-512 和多个下载源，安装器校验哈希后下载。
 - `config/`、`kubejs/`、`defaultconfigs/` 以及少量内嵌二进制作为 overrides
