@@ -1,0 +1,11 @@
+{
+  "type": "farm_and_charm:mincer",
+  "ingredient": {
+    "item": "mynethersdelight:ghasmati"
+  },
+  "recipe_type": "STONE",
+  "result": {
+    "count": 4,
+    "id": "seki:ghasmati_flour"
+  }
+}

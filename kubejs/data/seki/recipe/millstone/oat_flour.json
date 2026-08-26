@@ -1,0 +1,9 @@
+{
+  "type": "kaleidoscope_cookery:millstone",
+  "ingredient": {
+    "item": "vintagedelight:raw_oats"
+  },
+  "result": {
+    "id": "seki:oat_flour"
+  }
+}

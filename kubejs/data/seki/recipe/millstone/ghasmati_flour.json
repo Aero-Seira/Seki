@@ -1,0 +1,9 @@
+{
+  "type": "kaleidoscope_cookery:millstone",
+  "ingredient": {
+    "item": "mynethersdelight:ghasmati"
+  },
+  "result": {
+    "id": "seki:ghasmati_flour"
+  }
+}

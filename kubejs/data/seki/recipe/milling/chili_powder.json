@@ -1,0 +1,14 @@
+{
+  "type": "create:milling",
+  "ingredients": [
+    {
+      "item": "kaleidoscope_cookery:red_chili"
+    }
+  ],
+  "processing_time": 150,
+  "results": [
+    {
+      "id": "barbequesdelight:chili_powder"
+    }
+  ]
+}

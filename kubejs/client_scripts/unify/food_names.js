@@ -323,7 +323,12 @@ ClientEvents.lang('zh_cn', event => {
     'culturaldelights:cucumber_crate': '旱黄瓜箱',
     'vintagedelight:cucumber_crate': '水果黄瓜箱',
     'youkaisfeasts:cucumber_crate': '胡瓜箱',
-    'endersdelight:chorus_crate': '紫颂果板条箱'
+    'endersdelight:chorus_crate': '紫颂果板条箱',
+
+    // NAME-08 (v13 FLOUR-CHAIN-01): 新增面粉中间体译名
+    'seki:oat_flour': '燕麦面粉',
+    'seki:kwat_flour': '瓦斯麦面粉',
+    'seki:ghasmati_flour': '恶魂米面粉'
   }
   Object.entries(names).forEach(([id, name]) => event.renameItem(id, name))
 })

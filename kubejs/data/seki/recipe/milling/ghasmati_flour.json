@@ -1,0 +1,14 @@
+{
+  "type": "create:milling",
+  "ingredients": [
+    {
+      "item": "mynethersdelight:ghasmati"
+    }
+  ],
+  "processing_time": 150,
+  "results": [
+    {
+      "id": "seki:ghasmati_flour"
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "type": "farm_and_charm:mincer",
+  "ingredient": {
+    "item": "immortalers_delight:kwat_wheat"
+  },
+  "recipe_type": "STONE",
+  "result": {
+    "count": 4,
+    "id": "seki:kwat_flour"
+  }
+}

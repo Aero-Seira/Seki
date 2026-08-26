@@ -1,0 +1,9 @@
+{
+  "type": "kaleidoscope_cookery:millstone",
+  "ingredient": {
+    "item": "immortalers_delight:kwat_wheat"
+  },
+  "result": {
+    "id": "seki:kwat_flour"
+  }
+}

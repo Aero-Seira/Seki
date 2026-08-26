@@ -1,0 +1,14 @@
+{
+  "type": "create:milling",
+  "ingredients": [
+    {
+      "item": "immortalers_delight:kwat_wheat"
+    }
+  ],
+  "processing_time": 150,
+  "results": [
+    {
+      "id": "seki:kwat_flour"
+    }
+  ]
+}

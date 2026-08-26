@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "a": {
+      "item": "seki:kwat_flour"
+    },
+    "b": {
+      "item": "minecraft:nether_wart"
+    }
+  },
+  "pattern": [
+    "aaa",
+    " b "
+  ],
+  "result": {
+    "count": 3,
+    "id": "immortalers_delight:kwat_wheat_dough"
+  }
+}

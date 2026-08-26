@@ -398,3 +398,18 @@
 - 译名收敛（`NAME-07`，42 条）：培根 NAME-06 碰撞修复（f&c→鲜培根）、甜椒/生菜种子、野生紫胡萝卜、颗粒狗粮、烤全鸡、华夫饼/煎饼、肉桂苹果派、鲜榨西瓜汁、冰茶、山葡萄家族×6、幽酿花、龙息乌龙茶、研磨可可粉、紫颂花浓茶/龙蛋卡仕达/龙蛋壳碎片、末地石炉、手摇石磨、月饼块、六色冰箱、梅森罐三件、井盐桶、粗盐块、发酵全麦面团、模具奶酪可可吐司、观赏螃蟹桶/蛋、黄瓜箱×3、紫颂果板条箱。
 - 验证状态：静态全绿——数据 JSON 全量解析通过；`node --check` 两个脚本通过；42 条译名加入后最终译名表零新增碰撞。
 - 剩余开放：运行时 `/reload` + JEI 验收（见 charter §9 清单）；blender 容器返还语义（P0-3）仍维持开放；v9–v11 批次此前未在 changelog 留痕，属文档债，本次 charter 已补 v9+ 语义登记引用，v9–v11 的正式条目待后续归档。
+
+## 2026-08-27 - 面粉前置链收敛 v13（FLOUR-CHAIN-01）
+
+- 审计：运行时库核对全部 52 个面团/13 个面粉/52 个粉末类物品的前后置链。小麦链（5 粉+石磨/绞肉机/动力磨粉/筛/切菜板）与菅米粉、可可/抹茶/咖啡粉链完整。
+- 修复 5 处前置断链：
+  - FD 鸡蛋面团直吃小麦 → 改为 `seki:flours/plain_wheat`×3 + `c:eggs`（同 ID 覆盖）。
+  - `vintagedelight:oat_dough` 直吃生燕麦米 → 新增 `seki:oat_flour`（燕麦面粉），面团改用燕麦面粉×3。
+  - `immortalers_delight:kwat_wheat_dough` 直吃瓦斯麦 → 新增 `seki:kwat_flour`，面团改用。
+  - `mynethersdelight:crafting/ghast_dough` 直吃恶魂长米 → 新增 `seki:ghasmati_flour`，面团改用。
+  - `saraddons:potato_dough` 无任何产出（土豆汉堡胚不可制作）→ 新增 2 普通粉+烤土豆+水桶 → 2 土豆面团。
+- 补全烧烤乐香料粉：`pepper_powder`（MND 热奶油/辣猪排炖实际依赖）← 爆弹椒；`chili_powder` ← 红辣椒；两粉各加石磨/动力磨粉/绞肉机三条。`cumin_powder` 因包内无孜然作物登记为已知缺口。
+- 新增磨粉路径统一套用包内机器模板：`kaleidoscope_cookery:millstone`（1:1）、`create:milling`（1:1，150t）、`farm_and_charm:mincer` STONE（面粉 4:1 / 香料 2:1）。
+- 新增 3 个 seki 中间体（startup + 模型 + 材质 + 译名）；材质沿用 KC 面粉蓝本整图色编（燕麦黄棕/瓦斯麦深暖棕/恶魂米近白）。
+- 验证状态：全部新增 JSON 解析通过；`node --check` 通过；译名零碰撞；新物品为启动脚本注册，属预期“运行时才存在”。
+- 剩余开放：运行时 `/reload` + JEI/实做验收（charter §10）；孜然粉无作物的文档缺口。

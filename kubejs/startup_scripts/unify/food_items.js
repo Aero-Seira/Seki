@@ -11,6 +11,11 @@ StartupEvents.registry('item', event => {
     'seki:raw_shengjian',
     'seki:raw_dumpling',
     'seki:raw_wonton',
-    'seki:raw_meat_pie'
+    'seki:raw_meat_pie',
+
+    // FLOUR-CHAIN-01 (v13): 新增面粉中间体（燕麦/瓦斯麦/恶魂米）
+    'seki:oat_flour',
+    'seki:kwat_flour',
+    'seki:ghasmati_flour'
   ].forEach(id => event.create(id).maxStackSize(64))
 })

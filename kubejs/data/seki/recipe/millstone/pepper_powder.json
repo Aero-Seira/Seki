@@ -1,0 +1,9 @@
+{
+  "type": "kaleidoscope_cookery:millstone",
+  "ingredient": {
+    "item": "mynethersdelight:bullet_pepper"
+  },
+  "result": {
+    "id": "barbequesdelight:pepper_powder"
+  }
+}

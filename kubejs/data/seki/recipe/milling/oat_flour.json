@@ -1,0 +1,14 @@
+{
+  "type": "create:milling",
+  "ingredients": [
+    {
+      "item": "vintagedelight:raw_oats"
+    }
+  ],
+  "processing_time": 150,
+  "results": [
+    {
+      "id": "seki:oat_flour"
+    }
+  ]
+}

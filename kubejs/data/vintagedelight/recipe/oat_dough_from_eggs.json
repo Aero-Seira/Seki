@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "seki:oat_flour"
+    },
+    {
+      "item": "seki:oat_flour"
+    },
+    {
+      "item": "seki:oat_flour"
+    },
+    {
+      "tag": "c:eggs"
+    }
+  ],
+  "result": {
+    "count": 3,
+    "id": "vintagedelight:oat_dough"
+  }
+}

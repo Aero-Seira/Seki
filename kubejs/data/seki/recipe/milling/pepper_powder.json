@@ -1,0 +1,14 @@
+{
+  "type": "create:milling",
+  "ingredients": [
+    {
+      "item": "mynethersdelight:bullet_pepper"
+    }
+  ],
+  "processing_time": 150,
+  "results": [
+    {
+      "id": "barbequesdelight:pepper_powder"
+    }
+  ]
+}

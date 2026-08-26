@@ -226,3 +226,47 @@
 5. 检查四个葡萄都进 `c:crops/grape`，红/白各进对应子标签；山葡萄译名生效。
 6. 补做 alexscaves 硫磺粉/金属屑与 supplementaries 肥皂洗壁画（side 批次）。
 7. 重新导出 SQLite 复核 c: 标签成员与配方可寻性；JEI 目测 42 条译名。
+
+
+## 10. 面粉前置链收敛 v13（2026-08-27 运行时审计驱动）
+
+> 事实源：`dl-exporter/export.sqlite`（运行时最终态，2026-08-26T08:06Z，234 模组 / 11909 配方）。
+> 原则：每个“粉/面团中间体”都必须有前置加工链（作物 → 磨粉 → 粉 → 和面 → 面团），机器沿包内既有模板（手摇石磨 KC millstone、Create 动力磨粉、F&C 石磨绞肉机 STONE 头）。
+
+### v13 审计结论（面粉链现状）
+
+| 链 | 状态 | 证据 |
+| --- | --- | --- |
+| 小麦 → 5 种小麦粉 → 各面团 | ✅ 完整 | KC 石磨、F&C 绞肉机、Create 磨粉、烘焙坊筛/磨、家具切菜板 |
+| 菅米 → 菅米粉 | ✅ 完整 | `immortalers_delight:cutting/trava_rice_flour` |
+| 可可/抹茶/咖啡 → 粉 | ✅ 完整 | 烘焙坊筛 + Create 磨粉 |
+| FD 鸡蛋面团 | ❌ 直吃小麦（3 小麦+蛋） | `farmersdelight:wheat_dough_from_egg` 输入 `c:crops/wheat` |
+| 燕麦面团 | ❌ 直吃生燕麦米 | `vintagedelight:oat_dough_from_*` 输入 `raw_oats`×3；包内无燕麦面粉 |
+| 瓦斯麦面团 | ❌ 直吃瓦斯麦 | `immortalers_delight:kwat_wheat_dough` 输入 `kwat_wheat`；无瓦斯麦面粉 |
+| 恶魂面团 | ❌ 直吃恶魂长米 | `mynethersdelight:crafting/ghast_dough` 输入 `ghasmati`；无恶魂米面粉 |
+| 土豆汉堡胚 | ❌ 土豆面团无产出 | `saraddons:potato_dough` 无任何配方 → `raw_potato_burger_bun` 不可制作 |
+| 烧烤乐辣椒粉/胡椒粉 | ❌ 无产出配方 | `barbequesdelight:chili_powder`/`pepper_powder` prod=∅；而 MND `hotcream`/`spicy_hoglin_stew` 实际消费 `barbequesdelight:pepper_powder` |
+| 烧烤乐孜然粉 | ⚠️ 无包内作物 | `cumin_powder` 无产出且包内无孜然作物，登记为已知缺口（不虚构作物） |
+
+### v13 实施登记
+
+| 类型 | 内容 |
+| --- | --- |
+| 新中间体（3 件，startup+lang+model+texture） | `seki:oat_flour` 燕麦面粉 / `seki:kwat_flour` 瓦斯麦面粉 / `seki:ghasmati_flour` 恶魂米面粉（材质由 KC 面粉整图色编：燕麦黄棕 / 瓦斯麦深暖棕 / 恶魂米近白） |
+| 磨粉配方（15 条，seki 命名空间） | 每种新粉 ×3 机（石磨 1:1、动力磨粉 1:1、绞肉机 STONE 4:1 或 2:1） |
+| 香料粉磨粉（6 条） | 红辣椒→辣椒粉、爆弹椒→胡椒粉（三机各 1） |
+| 面团前置修复（6 条同 ID 覆盖/新增） | FD 鸡蛋面团=3 普通小麦粉+蛋；燕麦面团=3 燕麦面粉+蛋/水；瓦斯麦面团=3 瓦斯麦面粉+下界疣；恶魂面团=2 恶魂米面粉+2 蛋；saraddons 土豆面团=2 普通粉+烤土豆+水（新配方） |
+| 不触碰 | 其余 `raw_oats`/`kwat_wheat`/`ghasmati` 的直接用途（燕麦粥、麦汤、米畜等）保持原样 |
+
+### v13 台账
+
+| 批次 | 日期 | 移除 | 覆盖/新增 | 状态 |
+| --- | --- | ---: | ---: | --- |
+| FLOUR-CHAIN-01 | 2026-08-27 | 0 | 3 物品 + 15 磨粉 + 6 面团覆盖 + 3 材质/模型 + 3 译名 | 静态完成；运行时待验收 |
+
+### v13 运行时验收清单
+
+1. `/reload` 后 KubeJS 日志无新增 ERROR/WARN。
+2. JEI：三条新面粉链可从作物经三机磨出；FD 鸡蛋面团不再收小麦；燕麦/瓦斯麦/恶魂面团不再收原粮；土豆汉堡胚可制作；烧烤乐胡椒粉/辣椒粉可磨制。
+3. 实做：石磨/动力磨粉/绞肉机各磨一次新粉与香料粉。
+4. 重新导出 SQLite 复核新配方在位、旧直吃路径消失。
