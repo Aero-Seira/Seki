@@ -1,0 +1,11 @@
+{
+  "type": "farm_and_charm:mincer",
+  "ingredient": {
+    "tag": "seki:grains/corn_kernels"
+  },
+  "recipe_type": "STONE",
+  "result": {
+    "count": 4,
+    "id": "seki:corn_flour"
+  }
+}

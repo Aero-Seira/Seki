@@ -1,0 +1,9 @@
+{
+  "type": "kaleidoscope_cookery:millstone",
+  "ingredient": {
+    "tag": "seki:grains/corn_kernels"
+  },
+  "result": {
+    "id": "seki:corn_flour"
+  }
+}

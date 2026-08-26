@@ -16,6 +16,7 @@ StartupEvents.registry('item', event => {
     // FLOUR-CHAIN-01 (v13): 新增面粉中间体（燕麦/瓦斯麦/恶魂米）
     'seki:oat_flour',
     'seki:kwat_flour',
-    'seki:ghasmati_flour'
+    'seki:ghasmati_flour',
+    'seki:corn_flour'
   ].forEach(id => event.create(id).maxStackSize(64))
 })

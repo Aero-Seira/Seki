@@ -1,0 +1,14 @@
+{
+  "type": "create:milling",
+  "ingredients": [
+    {
+      "tag": "seki:grains/corn_kernels"
+    }
+  ],
+  "processing_time": 150,
+  "results": [
+    {
+      "id": "seki:corn_flour"
+    }
+  ]
+}

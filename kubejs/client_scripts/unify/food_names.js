@@ -328,7 +328,8 @@ ClientEvents.lang('zh_cn', event => {
     // NAME-08 (v13 FLOUR-CHAIN-01): 新增面粉中间体译名
     'seki:oat_flour': '燕麦面粉',
     'seki:kwat_flour': '瓦斯麦面粉',
-    'seki:ghasmati_flour': '恶魂米面粉'
+    'seki:ghasmati_flour': '恶魂米面粉',
+    'seki:corn_flour': '玉米面粉'
   }
   Object.entries(names).forEach(([id, name]) => event.renameItem(id, name))
 })

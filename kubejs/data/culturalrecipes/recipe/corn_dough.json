@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "minecraft:water_bucket"
+    },
+    {
+      "item": "seki:corn_flour"
+    },
+    {
+      "item": "seki:corn_flour"
+    },
+    {
+      "item": "seki:corn_flour"
+    }
+  ],
+  "result": {
+    "count": 3,
+    "id": "culturaldelights:corn_dough"
+  }
+}
