@@ -1,4 +1,6 @@
 {
   "parent": "minecraft:item/generated",
-  "textures": { "layer0": "kaleidoscope_cookery:item/stuffed_dough_food" }
+  "textures": {
+    "layer0": "seki:item/raw_wonton"
+  }
 }

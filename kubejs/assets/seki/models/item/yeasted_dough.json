@@ -1,4 +1,6 @@
 {
   "parent": "minecraft:item/generated",
-  "textures": { "layer0": "bakeries:item/salted_dough" }
+  "textures": {
+    "layer0": "seki:item/yeasted_dough"
+  }
 }
