@@ -160,3 +160,69 @@
 静态验证：`validate.py` 对 `kubejs/data` 与 `kubejs/server_scripts` 均 NEW ERROR 0；10 条模组原生压缩/返还循环（cogwheel/andesite_alloy/flour_bag/lava_bottle/frying_oil/glass_bottle 等）经空目标对照证实与索引同存、非本批引入，已登记入 `index/validate_baseline.md`。WARN 均为既有批次已解释项；移除规则命中 25/27 与上批一致。
 
 运行时验收（2026-07-30 02:35 导出复核）：KubeJS 日志 0 错误 0 警告；`c:salt`/`c:cheese`（12 成员）/`c:jams` 三标签成员全部到位；马芬与椒盐卷饼面团新输入生效；4 条家具覆盖全部生效；配方总数 9815 不变（同 ID 覆盖无净增）；v6/v7 回归抽查 8/8 通过（盖饭 carrier、点心链、抄手汤锅、返瓶 mixing 均在，已移除项保持缺席）。实做交互项（实做马芬/椒盐卷饼链、JEI 目测译名）由玩家侧确认；P0-3（烘焙坊 blender 是否返还水桶/玻璃瓶）仍未实机证实，维持开放。
+
+
+## 9. 料理统一 v12：全面收敛（2026-08-26 运行时审计驱动）
+
+> 事实源：`dl-exporter/export.sqlite`（**运行时最终态**，exported 2026-08-26T08:06Z，234 模组 / 10079 物品 / 11909 配方 / 22866 标签；dl-exporter 快照，非 mpide）。
+> 前置核对：v6–v11 全部裁决在快照中在位（盖饭 9 条 pot carrier、点心链、抄手汤锅、面团/粉窄标签、切割桥均 PRESENT；旧越级 ID 全部 ABSENT）。
+
+### v12 语义登记（证据均来自运行时库）
+
+| 字段/资源 | 角色 | 证据与实施 |
+| --- | --- | --- |
+| `c:eggs` | ingredient tag | 运行时含 7 个 alexscaves 恐龙蛋：脚本 `event.remove` 后仍被 alexscaves 数据包重新并入，说明脚本时机不保证；改为静态 `kubejs/data/c/tags/item/eggs.json`（`replace:true`，仅保留 minecraft 三蛋 + `bakeries:whole_egg`） |
+| `c:grain/rice` | ingredient tag | 仅 `kaleidoscope_cookery:rice` 一个成员，而 KC 汤锅米饭族 10 条配方锁 `c:grain/rice` → FD 稻米煮不成米饭；静态加 `farmersdelight:rice` |
+| `c:salts` | ingredient tag | meadow 厨锅 13 条 + ratatouille 5 条配方用 `c:salts`，但 `refurbished_furniture:sea_salt` 只在 `c:salt`，海盐用不进这些锅；静态补成员 |
+| `c:crops/grape` / `c:grapes/red` / `c:grapes/white` | ingredient tag | 调查 A7 从未落地：四个葡萄全物品锁、无作物标签；新建三标签并放行未来配方 |
+| `c:crops/hops` | ingredient tag | A10 未落地：brewery 与森罗维度酒啤酒花无共同作物标签；新建（成员 2） |
+| `alexscaves:cave_paintings` / `c:gravel` / `c:dusts/sulfur` | ingredient tag（非料理 side） | 12 条死配方：supplementaries 肥皂洗壁画、alexscaves 硫磺粉/金属屑；tag 不存在→配方在游戏内不可用；建成员补全 |
+| `smc:ice_tea` | item（block） | 模组未在 mods 表登记但物品真实存在于注册表；与 immortalers 冰红茶同名，仅做译名区分 |
+
+### 命名收敛裁决（v12，42 条，零新碰撞）
+
+| 族 | 保留 | 改（现实语义/地区/工艺区分） |
+| --- | --- | --- |
+| 培根 | FD `生培根` | f&c `培根`→**鲜培根**（NAME-06 碰撞修复） |
+| 辣椒种子 | KC `辣椒种子` | casualness `甜椒种子` |
+| 生菜种子 | — | KC `油麦菜种子`；f&c `球生菜种子` |
+| 野生胡萝卜 | FD `野生胡萝卜` | f&c `野生紫胡萝卜` |
+| 狗粮 | FD `狗粮` | f&c `颗粒狗粮` |
+| 烤鸡 | f&c `烤鸡` | FD 盛宴块→`烤全鸡` |
+| 松饼 | — | bakery `华夫饼`；supplementaries `煎饼` |
+| 苹果派 | FD `苹果派` | bakery `肉桂苹果派`（对齐 NAME-05 切片名） |
+| 西瓜汁 | FD `西瓜汁` | 酒馆 `鲜榨西瓜汁` |
+| 冰红茶 | immortalers `冰红茶` | smc `冰茶` |
+| 葡萄（A7） | vinery 红/白葡萄主线 | 幻想乡：山葡萄/白山葡萄/种子×2/汁×2 |
+| 啤酒花（A10） | brewery `啤酒花` | 森罗维度酒 `幽酿花` |
+| 乌龙茶（A11） | 幻想乡 `乌龙茶` | 森罗（龙息壶泡）`龙息乌龙茶` |
+| 可可粉 | bakeries `可可粉` | ratatouille `研磨可可粉`（0 消费方，仅区分） |
+| 末地茶/龙蛋 | ends_delight 原名 | 森罗末地：`紫颂花浓茶`/`龙蛋卡仕达`/`龙蛋壳碎片`；endersdelight 灶 `末地石炉` |
+| 石磨 | create `石磨` | 森罗 `手摇石磨` |
+| 月饼 | KC `月饼` | 方块 `月饼块` |
+| 冰箱 | KC 白色 `冰箱` | 六色 `绿色/淡蓝色/浅灰色/橙色/粉色/黄色冰箱` |
+| 腌罐 | vintagedelight 原罐名 | `空梅森罐`/`梅森泡椒酱罐`/`梅森醋罐` |
+| 盐容器 | vintagedelight `盐桶`/`盐块` | KC `井盐桶`；bakeries `粗盐块` |
+| 烘焙坊 | — | `发酵全麦面团`/`模具奶酪可可吐司` |
+| 螃蟹 | crabbersdelight 食用蟹 | quark 观赏 `观赏螃蟹桶`/`观赏螃蟹刷怪蛋` |
+| 箱装作物 | — | 黄瓜箱三品种（旱/水果/胡瓜）；endersdelight `紫颂果板条箱` |
+
+### v12 实施台账
+
+| 批次 | 日期 | 移除 | 覆盖/新增 | 状态 |
+| --- | --- | ---: | ---: | --- |
+| TAG-BRIDGE-04 | 2026-08-26 | 0 | 10 个标签文件（c:eggs replace、c:grain/rice、c:salts、葡萄×3、hops、gravel、dusts/sulfur、alexscaves:cave_paintings） | 静态完成；运行时待验收 |
+| NAME-07 | 2026-08-26 | 0 | 42 个中文名覆盖（含 NAME-06 培根碰撞修复） | 静态完成；客户端改名不入 SQLite，进游戏目测 |
+| SIDE-DEADFIX-01 | 2026-08-26 | 0 | 3 个非料理死配方标签补全（12 条配方复活） | 静态完成；运行时待验收 |
+
+静态验证：全部 JSON 解析通过；`node --check` 两个脚本通过；42 条译名加入后最终译名表**零新增碰撞**（对比剔除本批的旧表）。
+
+### 运行时验收清单
+
+1. `/reload` 后检查 KubeJS 日志无新增 ERROR/WARN。
+2. JEI 确认 `c:eggs` 只剩 4 成员（恐龙蛋不再进蛋类通用配方；马芬等 `c:eggs` 配方不吃恐龙蛋）。
+3. 用 FD 稻米实做 KC 汤锅米饭；`c:grain/rice` 成员 = 2。
+4. 用海盐实做 meadow 厨锅咸味菜与 ratatouille 和面。
+5. 检查四个葡萄都进 `c:crops/grape`，红/白各进对应子标签；山葡萄译名生效。
+6. 补做 alexscaves 硫磺粉/金属屑与 supplementaries 肥皂洗壁画（side 批次）。
+7. 重新导出 SQLite 复核 c: 标签成员与配方可寻性；JEI 目测 42 条译名。

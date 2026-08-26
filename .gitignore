@@ -211,5 +211,9 @@ shaderpacks/ComplementaryUnbound_r5.8.1 + EuphoriaPatches_1.9.3.txt
 # Delightify 本地数据库
 .delightify/
 
+# Delightify-level 运行时项目库与导出快照（dl-exporter 为游戏内 /dl_export dump 产物）
+.delightify-level/
+dl-exporter/
+
 # 启动器命令历史
 command_history.txt

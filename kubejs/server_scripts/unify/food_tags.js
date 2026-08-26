@@ -48,6 +48,8 @@ ServerEvents.tags('item', event => {
   event.remove('c:foods/safe_raw_fish', 'mynethersdelight:strider_slice')
 
   // TAG-03 (v9 D07/D08): 幻想蛋与恶魂米移出普通食材链（与既有 turtle_egg 先例一致；专属菜走精确物品）
+  // v12 实测（2026-08-26 导出）：alexscaves 恐龙蛋在脚本 remove 后被其自身数据包重新并入 c:eggs，
+  // 与本脚本并存的静态覆盖在 kubejs/data/c/tags/item/eggs.json（replace:true，仅保留 4 个普通蛋）。
   ;[
     'alexscaves:atlatitan_egg',
     'alexscaves:grottoceratops_egg',

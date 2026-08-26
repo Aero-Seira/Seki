@@ -260,7 +260,70 @@ ClientEvents.lang('zh_cn', event => {
     'kaleidoscope_nether:ham_slice': '疣猪腿肉片',
     'kaleidoscope_nether:roasted_ham': '烤疣猪腿肉',
     'farm_and_charm:lamb_ham': '羔羊腿肉',
-    'farm_and_charm:bacon': '生培根'
+    // NAME-07 (v12 full-convergence, 2026-08-26): 剩余同名食物族收敛
+    // NAME-06 collision fix: FD bacon 原名即“生培根”；f&c bacon 为未腌制鲜肉片，改“鲜培根”避让
+    'farm_and_charm:bacon': '鲜培根',
+    'casualnessdelight:capsicum_seeds': '甜椒种子',
+    'farm_and_charm:lettuce_seeds': '球生菜种子',
+    'kaleidoscope_cookery:lettuce_seed': '油麦菜种子',
+    'farm_and_charm:wild_carrots': '野生紫胡萝卜',
+    'farm_and_charm:dog_food': '颗粒狗粮',
+    'farmersdelight:roast_chicken_block': '烤全鸡',
+    'bakery:waffle': '华夫饼',
+    'supplementaries:pancake': '煎饼',
+    'bakery:apple_pie': '肉桂苹果派',
+    'kaleidoscope_tavern:watermelon_juice': '鲜榨西瓜汁',
+    'smc:ice_tea': '冰茶',
+
+    // A7 葡萄三轨：幻想乡山葡萄家族（vinery 保留红/白葡萄主线）
+    'youkaisfeasts:red_grape': '山葡萄',
+    'youkaisfeasts:white_grape': '白山葡萄',
+    'youkaisfeasts:red_grape_seeds': '山葡萄种子',
+    'youkaisfeasts:white_grape_seeds': '白山葡萄种子',
+    'youkaisfeasts:red_grape_juice': '山葡萄汁',
+    'youkaisfeasts:white_grape_juice': '白山葡萄汁',
+
+    // A10 啤酒花/幽酿花区分；A11 森罗龙息乌龙茶 vs 和风乌龙茶
+    'kaleidoscope_dim_wine:hop': '幽酿花',
+    'kaleidoscope_cookery:oolong': '龙息乌龙茶',
+    'ratatouille:cocoa_powder': '研磨可可粉',
+
+    // 末地系与 Let's Do 系同名菜式（ends_delight 保留原名，kaleidoscope_end 走“浓/鲜/卡仕达”轨）
+    'kaleidoscope_end:chorus_flower_tea': '紫颂花浓茶',
+    'kaleidoscope_end:dragon_egg_custard': '龙蛋卡仕达',
+    'kaleidoscope_end:dragon_egg_shell': '龙蛋壳碎片',
+    'endersdelight:endstone_stove': '末地石炉',
+
+    // 厨具/厨房家具
+    'kaleidoscope_cookery:millstone': '手摇石磨',
+    'kaleidoscope_chinesefood:mooncake_block': '月饼块',
+    'kaleidoscope_chinesefood:freezer_green': '绿色冰箱',
+    'kaleidoscope_chinesefood:freezer_light_blue': '淡蓝色冰箱',
+    'kaleidoscope_chinesefood:freezer_light_gray': '浅灰色冰箱',
+    'kaleidoscope_chinesefood:freezer_orange': '橙色冰箱',
+    'kaleidoscope_chinesefood:freezer_pink': '粉色冰箱',
+    'kaleidoscope_chinesefood:freezer_yellow': '黄色冰箱',
+
+    // 腌罐/盐类容器（vintagedelight mason 系列）
+    'vintagedelight:empty_mason_jar': '空梅森罐',
+    'vintagedelight:pepper_jam_mason_jar': '梅森泡椒酱罐',
+    'vintagedelight:vinegar_mason_jar': '梅森醋罐',
+    'kaleidoscope_chinesefood:salt_bucket': '井盐桶',
+    'bakeries:raw_salt_block': '粗盐块',
+
+    // 烘焙坊发酵层与模具语义
+    'bakeries:whole_wheat_dough_fermentation': '发酵全麦面团',
+    'bakeries:mould_cheese_cocoa_toast': '模具奶酪可可吐司',
+
+    // 甲壳/水产
+    'quark:crab_bucket': '观赏螃蟹桶',
+    'quark:crab_spawn_egg': '观赏螃蟹刷怪蛋',
+
+    // 箱装作物（按品种区分）
+    'culturaldelights:cucumber_crate': '旱黄瓜箱',
+    'vintagedelight:cucumber_crate': '水果黄瓜箱',
+    'youkaisfeasts:cucumber_crate': '胡瓜箱',
+    'endersdelight:chorus_crate': '紫颂果板条箱'
   }
   Object.entries(names).forEach(([id, name]) => event.renameItem(id, name))
 })

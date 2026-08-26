@@ -385,3 +385,16 @@
 - 验证：KubeJS 日志 0 错误 0 警告；`c:salt`/`c:cheese`/`c:jams` 标签桥接、2 条死配方修复、4 条家具同 ID 覆盖在 02:35 导出的最终态 SQLite 中全部生效；配方总数 9815 无净增。
 - 回归：v6/v7 抽查 8/8 通过，无回退。
 - 剩余问题：blender 容器返还语义（P0-3）与实机交互项维持开放；设计文档债待单独立项。
+
+## 2026-08-26 - 料理统一 v12：全面收敛（运行时审计驱动，Delightify-level 全自动审查）
+
+- 事实源切换：今日 08:06Z 的 `dl-exporter/export.sqlite` 运行时最终态（234 模组 / 10079 物品 / 11909 配方 / 22866 标签）。先核对了 v6–v11 全部既有裁决：盖饭 9 条 pot carrier 路径、点心链、抄手汤锅、面团/面粉窄标签、seki 切割桥均 PRESENT，旧越级 ID 全部 ABSENT，无回退。
+- 新增标签桥接（`TAG-BRIDGE-04`，10 个静态 tag 文件，`kubejs/data/`）：
+  - `c:eggs`：实测 alexscaves 恐龙蛋在脚本 remove 后仍被其数据包重新并入；改静态 `replace:true` 仅保留 minecraft 三蛋 + `bakeries:whole_egg`（恐龙蛋彻底退出通用蛋链）。
+  - `c:grain/rice`：补 `farmersdelight:rice`，KC 汤锅米饭族（10 条）现可用 FD 稻米。
+  - `c:salts`：补 `refurbished_furniture:sea_salt`，meadow 厨锅 13 条 + ratatouille 5 条配方可用海盐。
+  - 新建 `c:crops/grape`、`c:grapes/red`、`c:grapes/white`、`c:crops/hops`（调查 A7/A10 落地）。
+- 非料理 side 批次（`SIDE-DEADFIX-01`）：补 `c:gravel`、`c:dusts/sulfur`、`alexscaves:cave_paintings` 三标签，复活 12 条死配方（alexscaves 硫磺粉/金属屑、supplementaries 肥皂洗壁画）。
+- 译名收敛（`NAME-07`，42 条）：培根 NAME-06 碰撞修复（f&c→鲜培根）、甜椒/生菜种子、野生紫胡萝卜、颗粒狗粮、烤全鸡、华夫饼/煎饼、肉桂苹果派、鲜榨西瓜汁、冰茶、山葡萄家族×6、幽酿花、龙息乌龙茶、研磨可可粉、紫颂花浓茶/龙蛋卡仕达/龙蛋壳碎片、末地石炉、手摇石磨、月饼块、六色冰箱、梅森罐三件、井盐桶、粗盐块、发酵全麦面团、模具奶酪可可吐司、观赏螃蟹桶/蛋、黄瓜箱×3、紫颂果板条箱。
+- 验证状态：静态全绿——数据 JSON 全量解析通过；`node --check` 两个脚本通过；42 条译名加入后最终译名表零新增碰撞。
+- 剩余开放：运行时 `/reload` + JEI 验收（见 charter §9 清单）；blender 容器返还语义（P0-3）仍维持开放；v9–v11 批次此前未在 changelog 留痕，属文档债，本次 charter 已补 v9+ 语义登记引用，v9–v11 的正式条目待后续归档。
