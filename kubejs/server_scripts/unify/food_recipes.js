@@ -30,7 +30,8 @@ const FOOD_RECIPE_REMOVALS = [
   'letsdocompat:farmersdelight/pot_cooking/khinkali',
   'letsdocompat:farmersdelight/pot_cooking/mushroom_soup',
   'letsdocompat:farmersdelight/pot_cooking/nettle_tea',
-  'letsdocompat:farmersdelight/pot_cooking/onion_soup',
+  'letsdocompat:farm_and_charm/cooking/onion_soup',
+  'letsdocompat:farm_and_charm/farm_and_charm/farmersdelight/pot_cooking/onion_soup',
   'letsdocompat:farmersdelight/pot_cooking/pasta_with_mozzarella',
   'letsdocompat:farmersdelight/pot_cooking/potato_soup',
   'letsdocompat:farmersdelight/pot_cooking/pudding',
@@ -53,16 +54,17 @@ const FOOD_RECIPE_REMOVALS = [
   'letsdocompat:farm_and_charm/food/chorus_fruit_milk_tea',
   'letsdocompat:farm_and_charm/food/chorus_fruit_wine',
   'letsdocompat:farm_and_charm/cooking/baked_pollock_with_carrots',
+  'minecraft:flour_from_1_wheat',
+  'minecraft:flour_from_2_wheat',
+  'minecraft:flour_from_3_wheat',
+  'minecraft:flour_from_4_wheat',
+  'minecraft:flour_from_5_wheat',
+  'minecraft:flour_from_6_wheat',
+  'minecraft:flour_from_7_wheat',
+  'minecraft:flour_from_8_wheat',
   'kaleidoscope_chinesefood:flex_pot/red_rice_roll',
   'kaleidoscope_chinesefood:flex_stockpot/lamb_pilaf',
   'kaleidoscope_chinesefood:flex_stockpot/maocai',
-  'bakeries:compat/create/bottle_cream',
-  'bakeries:compat/create/butter_cube',
-  'bakeries:compat/create/cheese_cream',
-  'bakeries:compat/create/foamed_cream',
-  'bakeries:compat/create/honey_butter',
-  'bakeries:compat/create/meat_floss',
-  'bakeries:compat/create/olive_oil',
   'minecraft:bread',
   'quark:tweaks/crafting/utility/bent/bread',
   'create:campfire_cooking/bread',
@@ -73,11 +75,9 @@ const FOOD_RECIPE_REMOVALS = [
   'mynethersdelight:bread_from_smelting',
   'mynethersdelight:bread_from_smoking',
   'aquaculture:turtle_soup',
-  'dungeonsdelight:poi',
   'mynethersdelight:crafting/burnt_roll',
   'mynethersdelight:crafting/hotcream_bucket',
   'mynethersdelight:crafting/hot_wings_bucket_alt',
-  'mynethersdelight:crafting/rock_soup',
   'vintagedelight:jam/apple_sauce_jar',
   'vintagedelight:jam/gearo_berry_jam_jar',
   'vintagedelight:jam/glow_berry_jam_jar',
@@ -87,18 +87,10 @@ const FOOD_RECIPE_REMOVALS = [
   'vintagedelight:jam/sweet_berry_jam_jar',
   'vintagedelight:jam/vinegar_jar',
   'farmersdelight:pie_crust',
-  'create_bic_bit:crafting/frikandel_sandwich',
-  'create_bic_bit:crafting/kroket_sandwich',
   'create_bic_bit:crafting/wrapped_chocolate_glazed_stroopwafel',
-  'create_bic_bit:crafting/wrapped_churros',
-  'create_bic_bit:crafting/wrapped_coated_churros',
-  'create_bic_bit:crafting/wrapped_fries',
-  'create_bic_bit:crafting/wrapped_stroopwafel',
   'farmersdelight:cod_roll',
   'farmersdelight:kelp_roll',
   'farmersdelight:salmon_roll',
-  'refurbished_furniture:glow_berry_jam_toast',
-  'refurbished_furniture:sweet_berry_jam_toast',
   'alexscaves:deep_sea_sushi_roll',
   'aquaculture:sushi',
   'aquaculturedelight:fried_perch_roll',
@@ -131,21 +123,26 @@ const FOOD_RECIPE_REMOVALS = [
 ServerEvents.recipes(event => {
   FOOD_RECIPE_REMOVALS.forEach(id => event.remove({ id: id }))
 
+  // 规范主轴：面粉必须先成为未处理面团；直接小麦/宽泛粉批量合成路线退役。
+  event.shapeless('kaleidoscope_cookery:raw_dough', [
+    'minecraft:water_bucket',
+    'kaleidoscope_cookery:flour'
+  ]).id('seki:dimsum/raw_dough_from_flour')
   event.shapeless('kaleidoscope_cookery:stuffed_dough_food', [
     '#c:foods/minced_beef',
-    '#c:vegetables'
+    '#seki:vegetables/common'
   ]).id('seki:dimsum/fresh_meat_filling')
 
   event.shapeless('seki:yeasted_dough', [
     'kaleidoscope_cookery:raw_dough',
-    '#c:yeast'
+    '#seki:ingredients/yeast'
   ]).id('seki:dimsum/yeasted_dough')
 
   event.shapeless('2x seki:raw_mantou', [
     'seki:fermented_dough'
   ]).id('seki:dimsum/raw_mantou')
 
-  event.shapeless('2x seki:raw_baozi', [
+  event.shapeless('3x seki:raw_baozi', [
     'seki:leavened_dough_sheet',
     'seki:leavened_dough_sheet',
     'kaleidoscope_cookery:stuffed_dough_food',
@@ -177,8 +174,8 @@ ServerEvents.recipes(event => {
   event.shapeless('4x youkaisfeasts:raw_bun', [
     'seki:leavened_dough_sheet',
     'seki:leavened_dough_sheet',
-    '#seki:meat/raw_meat',
-    '#c:foods/cabbage',
+    '#seki:meat/raw_livestock_common',
+    '#seki:vegetables/cabbage_strict',
     '#c:crops/onion',
     '#c:crops/soybean'
   ]).id('seki:dimsum/youkai_raw_bun')
@@ -258,3 +255,11 @@ ServerEvents.recipes(event => {
     result: { count: 1, id: 'kaleidoscope_cookery:samsa' }
   }).id('seki:campfire_cooking/samsa')
 })
+
+
+
+
+
+
+
+

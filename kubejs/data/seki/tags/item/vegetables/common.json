@@ -1,0 +1,29 @@
+{
+  "replace": false,
+  "values": [
+    "bakeries:tomato",
+    "farm_and_charm:tomato",
+    "farmersdelight:tomato",
+    "kaleidoscope_cookery:tomato",
+    "farm_and_charm:onion",
+    "farmersdelight:onion",
+    "culturaldelights:cucumber",
+    "culturaldelights:cut_cucumber",
+    "vintagedelight:cucumber",
+    "youkaisfeasts:cucumber",
+    "minecraft:beetroot",
+    "minecraft:carrot",
+    "minecraft:potato",
+    "minersdelight:cave_carrot",
+    "farm_and_charm:lettuce",
+    "kaleidoscope_cookery:lettuce",
+    "farmersdelight:cabbage",
+    "farmersdelight:cabbage_leaf",
+    "culturaldelights:cut_eggplant",
+    "kaleidoscope_chinesefood:eggplant",
+    "kaleidoscope_cookery:green_chili",
+    "kaleidoscope_cookery:red_chili",
+    "kaleidoscope_nether:soul_pepper",
+    "vintagedelight:ghost_pepper"
+  ]
+}

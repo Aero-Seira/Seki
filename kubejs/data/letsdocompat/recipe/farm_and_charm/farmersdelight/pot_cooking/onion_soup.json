@@ -1,0 +1,22 @@
+{
+  "container": {
+    "count": 1,
+    "id": "minecraft:bowl"
+  },
+  "cookingtime": 200,
+  "experience": 0.35,
+  "ingredients": [
+    { "tag": "c:crops/onion" },
+    { "tag": "c:crops/onion" },
+    { "tag": "seki:breads/common" },
+    { "tag": "seki:ingredients/dairy_milk" }
+  ],
+  "recipe_book_tab": "meals",
+  "result": {
+    "count": 1,
+    "id": "farmersdelight:onion_soup"
+  },
+  "type": "farmersdelight:cooking"
+}
+
+

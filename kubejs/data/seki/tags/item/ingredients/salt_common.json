@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "bakeries:salt",
+    "kaleidoscope_chinesefood:salt",
+    "meadow:alpine_salt",
+    "ratatouille:salt",
+    "refurbished_furniture:sea_salt",
+    "vintagedelight:salt_dust"
+  ]
+}

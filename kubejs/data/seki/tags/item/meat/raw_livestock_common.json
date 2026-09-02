@@ -1,0 +1,23 @@
+{
+  "replace": false,
+  "values": [
+    "farm_and_charm:bacon",
+    "farm_and_charm:chicken_parts",
+    "farm_and_charm:lamb_ham",
+    "farm_and_charm:minced_beef",
+    "farmersdelight:bacon",
+    "farmersdelight:chicken_cuts",
+    "farmersdelight:ham",
+    "farmersdelight:minced_beef",
+    "farmersdelight:mutton_chops",
+    "kaleidoscope_cookery:raw_lamb_chops",
+    "kaleidoscope_cookery:raw_pork_belly",
+    "kaleidoscope_nether:ham",
+    "kaleidoscope_nether:ham_slice",
+    "minecraft:beef",
+    "minecraft:chicken",
+    "minecraft:mutton",
+    "minecraft:porkchop",
+    "minecraft:rabbit"
+  ]
+}

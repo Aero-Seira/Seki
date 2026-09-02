@@ -185,3 +185,7 @@
 - [当前内容清单](_generated/current-inventory.md)
 - [运行环境识别结果](_generated/pack-profile.md)
 - [待整理变更](_generated/pending-changes.md)
+- [烹饪内容全量登记表](cuisine-registry.md)
+- [烹饪漏网之鱼审计](cuisine-slipthrough.md)
+- [烹饪漏网机读审计结果](cuisine-slipthrough-audit.json)- [烹饪标签白名单与观察名单](cuisine-tag-allowlist.json)
+

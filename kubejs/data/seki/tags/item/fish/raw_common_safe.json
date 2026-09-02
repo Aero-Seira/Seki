@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:cod",
+    "minecraft:salmon",
+    "minecraft:tropical_fish",
+    "aquaculture:atlantic_cod",
+    "aquaculture:pink_salmon",
+    "create_bic_bit:raw_herring",
+    "farmersdelight:cod_slice",
+    "farmersdelight:salmon_slice"
+  ]
+}

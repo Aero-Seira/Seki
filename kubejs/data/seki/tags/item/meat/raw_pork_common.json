@@ -1,0 +1,11 @@
+{
+  "values": [
+    "farm_and_charm:bacon",
+    "farmersdelight:bacon",
+    "kaleidoscope_cookery:raw_pork_belly",
+    "kaleidoscope_nether:ham",
+    "kaleidoscope_nether:ham_slice",
+    "minecraft:porkchop"
+  ],
+  "replace": false
+}

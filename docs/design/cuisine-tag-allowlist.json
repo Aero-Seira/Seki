@@ -1,0 +1,1517 @@
+{
+  "schema_version": 1,
+  "generated_utc": "2026-09-02",
+  "source_snapshot": "2026-08-28T05:55:00.748Z",
+  "scope": "烹饪语义 = 产出为食物（food_nutrition 非空或成员属烹饪标签）或配方类型属器具/饮品类；含 raw_json 里的 tag（覆盖 unparsed 配方）",
+  "purpose": "第 6 道闸白名单：被烹饪/饮品配方使用的语义标签，必须要么在收窄映射（z_cooking_tag_narrowing.js + z4_generic_slot_narrowing.js 的 51 条），要么在本文件里。classification=needs-author-decision 是待裁决项，不是已裁决项。",
+  "gate_rule": "对每条烹饪/饮品配方：其每个 tag 输入 t 必须满足 t 以 seki: 开头 或 MAP[t] 存在 或 ALLOWLIST[t] 存在；否则报警。",
+  "counts": {},
+  "entries": [
+    {
+      "tag": "c:rods/wooden",
+      "recipes": 54,
+      "members": 2,
+      "namespaces": [
+        "alexscaves",
+        "aquaculture",
+        "create",
+        "minecraft",
+        "minersdelight",
+        "mowziesmobs",
+        "quark",
+        "supplementaries"
+      ],
+      "classification": "single-concept",
+      "note": "单一作物/单一概念别名池（成员 2，消费方 alexscaves,aquaculture,create）；暂无跨概念风险，登记备查"
+    },
+    {
+      "tag": "alexscaves:rock_candies",
+      "recipes": 16,
+      "members": 16,
+      "namespaces": [
+        "alexscaves"
+      ],
+      "classification": "species-exclusive",
+      "note": "物种/模组专属池（成员 16，消费方 alexscaves），按既定原则走专属配方而非泛用槽位"
+    },
+    {
+      "tag": "mynethersdelight:hot_spice",
+      "recipes": 13,
+      "members": 3,
+      "namespaces": [
+        "letsdocompat",
+        "mynethersdelight"
+      ],
+      "classification": "species-exclusive",
+      "note": "物种/模组专属池（成员 3，消费方 letsdocompat,mynethersdelight），按既定原则走专属配方而非泛用槽位"
+    },
+    {
+      "tag": "candlelight:bowls",
+      "recipes": 12,
+      "members": 1,
+      "namespaces": [
+        "farm_and_charm",
+        "letsdocompat"
+      ],
+      "classification": "single-concept",
+      "note": "单一作物/单一概念别名池（成员 1，消费方 farm_and_charm,letsdocompat）；暂无跨概念风险，登记备查"
+    },
+    {
+      "tag": "kaleidoscope_tavern:cocktail_ingredient_white",
+      "recipes": 12,
+      "members": 6,
+      "namespaces": [
+        "kaleidoscope_tavern",
+        "kaleidoscope_world_liquor"
+      ],
+      "classification": "mod-internal-pool",
+      "note": "鸡尾酒基酒色池：按颜色而非食材语义分组（white 池含 minecraft:potion 作透明基酒），不属于 Seki 食材族体系；若饮品链要收窄需先定义 seki:spirits/*"
+    },
+    {
+      "tag": "c:crops/beetroot",
+      "recipes": 11,
+      "members": 1,
+      "namespaces": [
+        "alexsdelight",
+        "brewinandchewin",
+        "farmersdelight",
+        "letsdocompat"
+      ],
+      "classification": "alias-subset",
+      "note": "成员已完整落在 seki:vegetables/common 内（引用 11 次）；不改写不改变行为，仅在此登记，未来该标签出现跨概念成员时由闸门报警"
+    },
+    {
+      "tag": "brewinandchewin:foods/cheese_wedge",
+      "recipes": 9,
+      "members": 2,
+      "namespaces": [
+        "brewinandchewin",
+        "letsdocompat"
+      ],
+      "classification": "single-concept",
+      "note": "单一作物/单一概念别名池（成员 2，消费方 brewinandchewin,letsdocompat）；暂无跨概念风险，登记备查"
+    },
+    {
+      "tag": "candlelight:cheeses",
+      "recipes": 9,
+      "members": 8,
+      "namespaces": [
+        "farm_and_charm",
+        "letsdocompat"
+      ],
+      "classification": "species-exclusive",
+      "note": "物种/模组专属池（成员 8，消费方 farm_and_charm,letsdocompat），按既定原则走专属配方而非泛用槽位"
+    },
+    {
+      "tag": "kaleidoscope_tavern:cocktail_ingredient_red",
+      "recipes": 9,
+      "members": 5,
+      "namespaces": [
+        "kaleidoscope_tavern",
+        "kaleidoscope_world_liquor"
+      ],
+      "classification": "mod-internal-pool",
+      "note": "鸡尾酒基酒色池：按颜色而非食材语义分组（white 池含 minecraft:potion 作透明基酒），不属于 Seki 食材族体系；若饮品链要收窄需先定义 seki:spirits/*"
+    },
+    {
+      "tag": "farm_and_charm:water_bottles",
+      "recipes": 8,
+      "members": 2,
+      "namespaces": [
+        "farm_and_charm",
+        "letsdocompat"
+      ],
+      "classification": "single-concept",
+      "note": "单一作物/单一概念别名池（成员 2，消费方 farm_and_charm,letsdocompat）；暂无跨概念风险，登记备查"
+    },
+    {
+      "tag": "farm_and_charm:strawberry",
+      "recipes": 8,
+      "members": 1,
+      "namespaces": [
+        "farm_and_charm",
+        "letsdocompat"
+      ],
+      "classification": "single-concept",
+      "note": "单一作物/单一概念别名池（成员 1，消费方 farm_and_charm,letsdocompat）；暂无跨概念风险，登记备查"
+    },
+    {
+      "tag": "c:warped_fruits",
+      "recipes": 8,
+      "members": 1,
+      "namespaces": [
+        "kaleidoscope_nether"
+      ],
+      "classification": "single-concept",
+      "note": "单一作物/单一概念别名池（成员 1，消费方 kaleidoscope_nether）；暂无跨概念风险，登记备查"
+    },
+    {
+      "tag": "kaleidoscope_tavern:cocktail_ingredient_green",
+      "recipes": 8,
+      "members": 4,
+      "namespaces": [
+        "kaleidoscope_tavern",
+        "kaleidoscope_world_liquor"
+      ],
+      "classification": "mod-internal-pool",
+      "note": "鸡尾酒基酒色池：按颜色而非食材语义分组（white 池含 minecraft:potion 作透明基酒），不属于 Seki 食材族体系；若饮品链要收窄需先定义 seki:spirits/*"
+    },
+    {
+      "tag": "dungeonsdelight:fleshes",
+      "recipes": 7,
+      "members": 4,
+      "namespaces": [
+        "dungeonsdelight"
+      ],
+      "classification": "species-exclusive",
+      "note": "物种/模组专属池（成员 4，消费方 dungeonsdelight），按既定原则走专属配方而非泛用槽位"
+    },
+    {
+      "tag": "c:foods/shulker_meat",
+      "recipes": 7,
+      "members": 2,
+      "namespaces": [
+        "ends_delight",
+        "letsdocompat"
+      ],
+      "classification": "single-concept",
+      "note": "单一作物/单一概念别名池（成员 2，消费方 ends_delight,letsdocompat）；暂无跨概念风险，登记备查"
+    },
+    {
+      "tag": "candlelight:red_effect",
+      "recipes": 7,
+      "members": 3,
+      "namespaces": [
+        "farm_and_charm"
+      ],
+      "classification": "species-exclusive",
+      "note": "物种/模组专属池（成员 3，消费方 farm_and_charm），按既定原则走专属配方而非泛用槽位"
+    },
+    {
+      "tag": "c:fruits/chorus",
+      "recipes": 7,
+      "members": 1,
+      "namespaces": [
+        "kaleidoscope_end"
+      ],
+      "classification": "single-concept",
+      "note": "单一作物/单一概念别名池（成员 1，消费方 kaleidoscope_end）；暂无跨概念风险，登记备查"
+    },
+    {
+      "tag": "c:foods/raw_cod",
+      "recipes": 6,
+      "members": 3,
+      "namespaces": [
+        "barbequesdelight",
+        "farmersdelight",
+        "letsdocompat",
+        "youkaisfeasts"
+      ],
+      "classification": "alias-subset",
+      "note": "成员已完整落在 seki:fish/raw_common_safe 内（引用 6 次）；不改写不改变行为，仅在此登记，未来该标签出现跨概念成员时由闸门报警"
+    },
+    {
+      "tag": "c:ingots/copper",
+      "recipes": 6,
+      "members": 1,
+      "namespaces": [
+        "create",
+        "minecraft",
+        "minersdelight",
+        "supplementaries"
+      ],
+      "classification": "single-concept",
+      "note": "单一作物/单一概念别名池（成员 1，消费方 create,minecraft,minersdelight）；暂无跨概念风险，登记备查"
+    },
+    {
+      "tag": "dungeonsdelight:sculk_cheese",
+      "recipes": 6,
+      "members": 2,
+      "namespaces": [
+        "dungeonsdelight"
+      ],
+      "classification": "single-concept",
+      "note": "单一作物/单一概念别名池（成员 2，消费方 dungeonsdelight）；暂无跨概念风险，登记备查"
+    },
+    {
+      "tag": "c:foods/raw_strider",
+      "recipes": 6,
+      "members": 3,
+      "namespaces": [
+        "kaleidoscope_nether",
+        "letsdocompat",
+        "mynethersdelight"
+      ],
+      "classification": "species-exclusive",
+      "note": "物种/模组专属池（成员 3，消费方 kaleidoscope_nether,letsdocompat,mynethersdelight），按既定原则走专属配方而非泛用槽位"
+    },
+    {
+      "tag": "c:crimson_fruits",
+      "recipes": 6,
+      "members": 1,
+      "namespaces": [
+        "kaleidoscope_nether"
+      ],
+      "classification": "single-concept",
+      "note": "单一作物/单一概念别名池（成员 1，消费方 kaleidoscope_nether）；暂无跨概念风险，登记备查"
+    },
+    {
+      "tag": "c:hot_spices",
+      "recipes": 6,
+      "members": 2,
+      "namespaces": [
+        "kaleidoscope_nether"
+      ],
+      "classification": "single-concept",
+      "note": "单一作物/单一概念别名池（成员 2，消费方 kaleidoscope_nether）；暂无跨概念风险，登记备查"
+    },
+    {
+      "tag": "c:foods/boiled_egg",
+      "recipes": 6,
+      "members": 1,
+      "namespaces": [
+        "letsdocompat",
+        "mynethersdelight"
+      ],
+      "classification": "single-concept",
+      "note": "单一作物/单一概念别名池（成员 1，消费方 letsdocompat,mynethersdelight）；暂无跨概念风险，登记备查"
+    },
+    {
+      "tag": "alexsdelight:cooked_kangaroo",
+      "recipes": 5,
+      "members": 2,
+      "namespaces": [
+        "alexsdelight",
+        "alexsmobs",
+        "letsdocompat"
+      ],
+      "classification": "single-concept",
+      "note": "单一作物/单一概念别名池（成员 2，消费方 alexsdelight,alexsmobs,letsdocompat）；暂无跨概念风险，登记备查"
+    },
+    {
+      "tag": "c:foods/raw_herring",
+      "recipes": 5,
+      "members": 1,
+      "namespaces": [
+        "aquaculturedelight",
+        "brewinandchewin",
+        "letsdocompat"
+      ],
+      "classification": "alias-subset",
+      "note": "成员已完整落在 seki:fish/raw_fish 内（引用 5 次）；不改写不改变行为，仅在此登记，未来该标签出现跨概念成员时由闸门报警"
+    },
+    {
+      "tag": "c:crops/avocado",
+      "recipes": 5,
+      "members": 2,
+      "namespaces": [
+        "culturalrecipes",
+        "youkaisfeasts"
+      ],
+      "classification": "single-concept",
+      "note": "单一作物/单一概念别名池（成员 2，消费方 culturalrecipes,youkaisfeasts）；暂无跨概念风险，登记备查"
+    },
+    {
+      "tag": "kaleidoscope_tavern:cocktail_ingredient_gold",
+      "recipes": 5,
+      "members": 8,
+      "namespaces": [
+        "kaleidoscope_tavern",
+        "kaleidoscope_world_liquor"
+      ],
+      "classification": "mod-internal-pool",
+      "note": "鸡尾酒基酒色池：按颜色而非食材语义分组（white 池含 minecraft:potion 作透明基酒），不属于 Seki 食材族体系；若饮品链要收窄需先定义 seki:spirits/*"
+    },
+    {
+      "tag": "youkaisfeasts:dango",
+      "recipes": 5,
+      "members": 5,
+      "namespaces": [
+        "letsdocompat",
+        "youkaisfeasts"
+      ],
+      "classification": "species-exclusive",
+      "note": "物种/模组专属池（成员 5，消费方 letsdocompat,youkaisfeasts），按既定原则走专属配方而非泛用槽位"
+    },
+    {
+      "tag": "aquaculturedelight:pickles",
+      "recipes": 4,
+      "members": 5,
+      "namespaces": [
+        "aquaculturedelight",
+        "letsdocompat"
+      ],
+      "classification": "needs-author-decision",
+      "note": "腌渍槽混用 minecraft:sea_pickle 与黄瓜：「腌黄瓜」和「海泡菜」谁是正解需要一句裁决"
+    },
+    {
+      "tag": "dungeonsdelight:raw_ghast",
+      "recipes": 4,
+      "members": 2,
+      "namespaces": [
+        "dungeonsdelight"
+      ],
+      "classification": "single-concept",
+      "note": "单一作物/单一概念别名池（成员 2，消费方 dungeonsdelight）；暂无跨概念风险，登记备查"
+    },
+    {
+      "tag": "farm_and_charm:oat",
+      "recipes": 4,
+      "members": 1,
+      "namespaces": [
+        "farm_and_charm",
+        "letsdocompat"
+      ],
+      "classification": "single-concept",
+      "note": "单一作物/单一概念别名池（成员 1，消费方 farm_and_charm,letsdocompat）；暂无跨概念风险，登记备查"
+    },
+    {
+      "tag": "bakery:water_bottles",
+      "recipes": 4,
+      "members": 2,
+      "namespaces": [
+        "farm_and_charm",
+        "letsdocompat"
+      ],
+      "classification": "single-concept",
+      "note": "单一作物/单一概念别名池（成员 2，消费方 farm_and_charm,letsdocompat）；暂无跨概念风险，登记备查"
+    },
+    {
+      "tag": "candlelight:white_effect",
+      "recipes": 4,
+      "members": 3,
+      "namespaces": [
+        "farm_and_charm"
+      ],
+      "classification": "species-exclusive",
+      "note": "物种/模组专属池（成员 3，消费方 farm_and_charm），按既定原则走专属配方而非泛用槽位"
+    },
+    {
+      "tag": "c:foods/cooked_rice",
+      "recipes": 4,
+      "members": 2,
+      "namespaces": [
+        "farmersdelight",
+        "kaleidoscope_chinesefood",
+        "kaleidoscope_cookery"
+      ],
+      "classification": "single-concept",
+      "note": "单一作物/单一概念别名池（成员 2，消费方 farmersdelight,kaleidoscope_chinesefood,kaleidoscope_cookery）；暂无跨概念风险，登记备查"
+    },
+    {
+      "tag": "c:shulker_meat",
+      "recipes": 4,
+      "members": 1,
+      "namespaces": [
+        "kaleidoscope_end"
+      ],
+      "classification": "single-concept",
+      "note": "单一作物/单一概念别名池（成员 1，消费方 kaleidoscope_end）；暂无跨概念风险，登记备查"
+    },
+    {
+      "tag": "kaleidoscope_tavern:cocktail_ingredient_light_purple",
+      "recipes": 4,
+      "members": 8,
+      "namespaces": [
+        "kaleidoscope_tavern",
+        "kaleidoscope_world_liquor"
+      ],
+      "classification": "mod-internal-pool",
+      "note": "鸡尾酒基酒色池：按颜色而非食材语义分组（white 池含 minecraft:potion 作透明基酒），不属于 Seki 食材族体系；若饮品链要收窄需先定义 seki:spirits/*"
+    },
+    {
+      "tag": "kaleidoscope_tavern:cocktail_ingredient_blue",
+      "recipes": 4,
+      "members": 5,
+      "namespaces": [
+        "kaleidoscope_tavern",
+        "kaleidoscope_world_liquor"
+      ],
+      "classification": "mod-internal-pool",
+      "note": "鸡尾酒基酒色池：按颜色而非食材语义分组（white 池含 minecraft:potion 作透明基酒），不属于 Seki 食材族体系；若饮品链要收窄需先定义 seki:spirits/*"
+    },
+    {
+      "tag": "kaleidoscope_tavern:cocktail_ingredient_yellow",
+      "recipes": 4,
+      "members": 3,
+      "namespaces": [
+        "kaleidoscope_tavern",
+        "kaleidoscope_world_liquor"
+      ],
+      "classification": "mod-internal-pool",
+      "note": "鸡尾酒基酒色池：按颜色而非食材语义分组（white 池含 minecraft:potion 作透明基酒），不属于 Seki 食材族体系；若饮品链要收窄需先定义 seki:spirits/*"
+    },
+    {
+      "tag": "mynethersdelight:boiled_egg_candidate",
+      "recipes": 4,
+      "members": 1,
+      "namespaces": [
+        "mynethersdelight"
+      ],
+      "classification": "single-concept",
+      "note": "单一作物/单一概念别名池（成员 1，消费方 mynethersdelight）；暂无跨概念风险，登记备查"
+    },
+    {
+      "tag": "c:foods/raw_bass",
+      "recipes": 3,
+      "members": 2,
+      "namespaces": [
+        "aquaculturedelight",
+        "letsdocompat"
+      ],
+      "classification": "alias-subset",
+      "note": "成员已完整落在 seki:fish/raw_fish 内（引用 3 次）；不改写不改变行为，仅在此登记，未来该标签出现跨概念成员时由闸门报警"
+    },
+    {
+      "tag": "barbequesdelight:grilled_skewers",
+      "recipes": 3,
+      "members": 10,
+      "namespaces": [
+        "barbequesdelight"
+      ],
+      "classification": "species-exclusive",
+      "note": "物种/模组专属池（成员 10，消费方 barbequesdelight），按既定原则走专属配方而非泛用槽位"
+    },
+    {
+      "tag": "crabbersdelight:cooked_seafood",
+      "recipes": 3,
+      "members": 4,
+      "namespaces": [
+        "crabbersdelight",
+        "letsdocompat"
+      ],
+      "classification": "species-exclusive",
+      "note": "物种/模组专属池（成员 4，消费方 crabbersdelight,letsdocompat），按既定原则走专属配方而非泛用槽位"
+    },
+    {
+      "tag": "dungeonsdelight:extracts",
+      "recipes": 3,
+      "members": 3,
+      "namespaces": [
+        "dungeonsdelight"
+      ],
+      "classification": "species-exclusive",
+      "note": "物种/模组专属池（成员 3，消费方 dungeonsdelight），按既定原则走专属配方而非泛用槽位"
+    },
+    {
+      "tag": "endersdelight:shulker_loot",
+      "recipes": 3,
+      "members": 2,
+      "namespaces": [
+        "endersdelight",
+        "letsdocompat"
+      ],
+      "classification": "alias-subset",
+      "note": "成员已完整落在 seki:meat/raw_meat 内（引用 3 次）；不改写不改变行为，仅在此登记，未来该标签出现跨概念成员时由闸门报警"
+    },
+    {
+      "tag": "minecraft:soul_fire_base_blocks",
+      "recipes": 3,
+      "members": 5,
+      "namespaces": [
+        "immortalers_delight"
+      ],
+      "classification": "species-exclusive",
+      "note": "物种/模组专属池（成员 5，消费方 immortalers_delight），按既定原则走专属配方而非泛用槽位"
+    },
+    {
+      "tag": "c:crops/chorus",
+      "recipes": 3,
+      "members": 1,
+      "namespaces": [
+        "kaleidoscope_end"
+      ],
+      "classification": "single-concept",
+      "note": "单一作物/单一概念别名池（成员 1，消费方 kaleidoscope_end）；暂无跨概念风险，登记备查"
+    },
+    {
+      "tag": "c:raw_ender_mite_meat",
+      "recipes": 3,
+      "members": 1,
+      "namespaces": [
+        "kaleidoscope_end"
+      ],
+      "classification": "single-concept",
+      "note": "单一作物/单一概念别名池（成员 1，消费方 kaleidoscope_end）；暂无跨概念风险，登记备查"
+    },
+    {
+      "tag": "kaleidoscope_tavern:cocktail_ingredient_dark_blue",
+      "recipes": 3,
+      "members": 1,
+      "namespaces": [
+        "kaleidoscope_world_liquor"
+      ],
+      "classification": "mod-internal-pool",
+      "note": "鸡尾酒基酒色池：按颜色而非食材语义分组（white 池含 minecraft:potion 作透明基酒），不属于 Seki 食材族体系；若饮品链要收窄需先定义 seki:spirits/*"
+    },
+    {
+      "tag": "kaleidoscope_tavern:cocktail_ingredient_dark_red",
+      "recipes": 3,
+      "members": 8,
+      "namespaces": [
+        "kaleidoscope_world_liquor"
+      ],
+      "classification": "mod-internal-pool",
+      "note": "鸡尾酒基酒色池：按颜色而非食材语义分组（white 池含 minecraft:potion 作透明基酒），不属于 Seki 食材族体系；若饮品链要收窄需先定义 seki:spirits/*"
+    },
+    {
+      "tag": "c:foods/bat_wing",
+      "recipes": 3,
+      "members": 2,
+      "namespaces": [
+        "letsdocompat",
+        "minersdelight"
+      ],
+      "classification": "single-concept",
+      "note": "单一作物/单一概念别名池（成员 2，消费方 letsdocompat,minersdelight）；暂无跨概念风险，登记备查"
+    },
+    {
+      "tag": "c:foods/raw_eel",
+      "recipes": 3,
+      "members": 2,
+      "namespaces": [
+        "letsdocompat",
+        "youkaisfeasts"
+      ],
+      "classification": "single-concept",
+      "note": "单一作物/单一概念别名池（成员 2，消费方 letsdocompat,youkaisfeasts）；暂无跨概念风险，登记备查"
+    },
+    {
+      "tag": "c:tea_leaves/black",
+      "recipes": 3,
+      "members": 1,
+      "namespaces": [
+        "youkaisfeasts"
+      ],
+      "classification": "mod-internal-pool",
+      "note": "茶类分池（green/black/oolong/white/yellow/dark）必须保持互斥，不能并入通用茶族"
+    },
+    {
+      "tag": "alexscaves:sweet_berries",
+      "recipes": 2,
+      "members": 2,
+      "namespaces": [
+        "alexscaves"
+      ],
+      "classification": "single-concept",
+      "note": "单一作物/单一概念别名池（成员 2，消费方 alexscaves）；暂无跨概念风险，登记备查"
+    },
+    {
+      "tag": "aquaculturedelight:fish_chorba_vegetables",
+      "recipes": 2,
+      "members": 2,
+      "namespaces": [
+        "aquaculturedelight",
+        "letsdocompat"
+      ],
+      "classification": "alias-subset",
+      "note": "成员已完整落在 seki:vegetables/common 内（引用 2 次）；不改写不改变行为，仅在此登记，未来该标签出现跨概念成员时由闸门报警"
+    },
+    {
+      "tag": "aquaculturedelight:halaszle_fishes",
+      "recipes": 2,
+      "members": 5,
+      "namespaces": [
+        "aquaculturedelight",
+        "letsdocompat"
+      ],
+      "classification": "alias-subset",
+      "note": "成员已完整落在 seki:fish/raw_fish 内（引用 2 次）；不改写不改变行为，仅在此登记，未来该标签出现跨概念成员时由闸门报警"
+    },
+    {
+      "tag": "aquaculturedelight:halaszle_vegetables",
+      "recipes": 2,
+      "members": 5,
+      "namespaces": [
+        "aquaculturedelight",
+        "letsdocompat"
+      ],
+      "classification": "alias-subset",
+      "note": "成员已完整落在 seki:vegetables/common 内（引用 2 次）；不改写不改变行为，仅在此登记，未来该标签出现跨概念成员时由闸门报警"
+    },
+    {
+      "tag": "c:foods/raw_halibut",
+      "recipes": 2,
+      "members": 2,
+      "namespaces": [
+        "aquaculturedelight",
+        "letsdocompat"
+      ],
+      "classification": "alias-subset",
+      "note": "成员已完整落在 seki:fish/raw_fish 内（引用 2 次）；不改写不改变行为，仅在此登记，未来该标签出现跨概念成员时由闸门报警"
+    },
+    {
+      "tag": "aquaculturedelight:turtle_soup_ingredients",
+      "recipes": 2,
+      "members": 4,
+      "namespaces": [
+        "aquaculturedelight",
+        "letsdocompat"
+      ],
+      "classification": "needs-author-decision",
+      "note": "整只龟入汤是 Aquaculture Delight 的既定玩法；若要改成肉槽位需先决定龟肉族归属"
+    },
+    {
+      "tag": "c:foods/raw_piranha",
+      "recipes": 2,
+      "members": 2,
+      "namespaces": [
+        "aquaculturedelight",
+        "letsdocompat"
+      ],
+      "classification": "alias-subset",
+      "note": "成员已完整落在 seki:fish/raw_fish 内（引用 2 次）；不改写不改变行为，仅在此登记，未来该标签出现跨概念成员时由闸门报警"
+    },
+    {
+      "tag": "aquaculturedelight:fillet_four",
+      "recipes": 2,
+      "members": 2,
+      "namespaces": [
+        "aquaculturedelight"
+      ],
+      "classification": "alias-subset",
+      "note": "成员已完整落在 seki:fish/raw_fish 内（引用 2 次）；不改写不改变行为，仅在此登记，未来该标签出现跨概念成员时由闸门报警"
+    },
+    {
+      "tag": "aquaculturedelight:fillet_fourteen",
+      "recipes": 2,
+      "members": 1,
+      "namespaces": [
+        "aquaculturedelight"
+      ],
+      "classification": "alias-subset",
+      "note": "成员已完整落在 seki:fish/raw_fish 内（引用 2 次）；不改写不改变行为，仅在此登记，未来该标签出现跨概念成员时由闸门报警"
+    },
+    {
+      "tag": "aquaculturedelight:fillet_six",
+      "recipes": 2,
+      "members": 2,
+      "namespaces": [
+        "aquaculturedelight"
+      ],
+      "classification": "alias-subset",
+      "note": "成员已完整落在 seki:fish/raw_fish 内（引用 2 次）；不改写不改变行为，仅在此登记，未来该标签出现跨概念成员时由闸门报警"
+    },
+    {
+      "tag": "aquaculturedelight:fillet_ten",
+      "recipes": 2,
+      "members": 3,
+      "namespaces": [
+        "aquaculturedelight"
+      ],
+      "classification": "alias-subset",
+      "note": "成员已完整落在 seki:fish/raw_fish 内（引用 2 次）；不改写不改变行为，仅在此登记，未来该标签出现跨概念成员时由闸门报警"
+    },
+    {
+      "tag": "aquaculturedelight:fillet_twelve",
+      "recipes": 2,
+      "members": 1,
+      "namespaces": [
+        "aquaculturedelight"
+      ],
+      "classification": "alias-subset",
+      "note": "成员已完整落在 seki:fish/raw_fish 内（引用 2 次）；不改写不改变行为，仅在此登记，未来该标签出现跨概念成员时由闸门报警"
+    },
+    {
+      "tag": "bakery:jam",
+      "recipes": 2,
+      "members": 5,
+      "namespaces": [
+        "bakery",
+        "farm_and_charm"
+      ],
+      "classification": "species-exclusive",
+      "note": "物种/模组专属池（成员 5，消费方 bakery,farm_and_charm），按既定原则走专属配方而非泛用槽位"
+    },
+    {
+      "tag": "crabbersdelight:raw_seafood",
+      "recipes": 2,
+      "members": 4,
+      "namespaces": [
+        "crabbersdelight",
+        "letsdocompat"
+      ],
+      "classification": "species-exclusive",
+      "note": "物种/模组专属池（成员 4，消费方 crabbersdelight,letsdocompat），按既定原则走专属配方而非泛用槽位"
+    },
+    {
+      "tag": "dungeonsdelight:rubaboo_ingredients",
+      "recipes": 2,
+      "members": 4,
+      "namespaces": [
+        "dungeonsdelight"
+      ],
+      "classification": "species-exclusive",
+      "note": "物种/模组专属池（成员 4，消费方 dungeonsdelight），按既定原则走专属配方而非泛用槽位"
+    },
+    {
+      "tag": "c:foods/roasted_dragon_meat",
+      "recipes": 2,
+      "members": 2,
+      "namespaces": [
+        "ends_delight"
+      ],
+      "classification": "single-concept",
+      "note": "单一作物/单一概念别名池（成员 2，消费方 ends_delight）；暂无跨概念风险，登记备查"
+    },
+    {
+      "tag": "c:foods/raw_dragon_meat",
+      "recipes": 2,
+      "members": 2,
+      "namespaces": [
+        "ends_delight"
+      ],
+      "classification": "single-concept",
+      "note": "单一作物/单一概念别名池（成员 2，消费方 ends_delight）；暂无跨概念风险，登记备查"
+    },
+    {
+      "tag": "candlelight:water_bottles",
+      "recipes": 2,
+      "members": 2,
+      "namespaces": [
+        "farm_and_charm",
+        "letsdocompat"
+      ],
+      "classification": "single-concept",
+      "note": "单一作物/单一概念别名池（成员 2，消费方 farm_and_charm,letsdocompat）；暂无跨概念风险，登记备查"
+    },
+    {
+      "tag": "farm_and_charm:barley",
+      "recipes": 2,
+      "members": 1,
+      "namespaces": [
+        "farm_and_charm"
+      ],
+      "classification": "single-concept",
+      "note": "单一作物/单一概念别名池（成员 1，消费方 farm_and_charm）；暂无跨概念风险，登记备查"
+    },
+    {
+      "tag": "candlelight:mushrooms",
+      "recipes": 2,
+      "members": 2,
+      "namespaces": [
+        "farm_and_charm"
+      ],
+      "classification": "alias-subset",
+      "note": "成员已完整落在 seki:mushrooms/culinary_common 内（引用 2 次）；不改写不改变行为，仅在此登记，未来该标签出现跨概念成员时由闸门报警"
+    },
+    {
+      "tag": "candlelight:all_effects",
+      "recipes": 2,
+      "members": 3,
+      "namespaces": [
+        "farm_and_charm"
+      ],
+      "classification": "species-exclusive",
+      "note": "物种/模组专属池（成员 3，消费方 farm_and_charm），按既定原则走专属配方而非泛用槽位"
+    },
+    {
+      "tag": "c:foods/cooked_bacon",
+      "recipes": 2,
+      "members": 1,
+      "namespaces": [
+        "farmersdelight"
+      ],
+      "classification": "single-concept",
+      "note": "单一作物/单一概念别名池（成员 1，消费方 farmersdelight）；暂无跨概念风险，登记备查"
+    },
+    {
+      "tag": "forge:yogurt",
+      "recipes": 2,
+      "members": 1,
+      "namespaces": [
+        "immortalers_delight",
+        "letsdocompat"
+      ],
+      "classification": "single-concept",
+      "note": "单一作物/单一概念别名池（成员 1，消费方 immortalers_delight,letsdocompat）；暂无跨概念风险，登记备查"
+    },
+    {
+      "tag": "kaleidoscope_cookery:caterpillars",
+      "recipes": 2,
+      "members": 3,
+      "namespaces": [
+        "kaleidoscope_cookery"
+      ],
+      "classification": "species-exclusive",
+      "note": "物种/模组专属池（成员 3，消费方 kaleidoscope_cookery），按既定原则走专属配方而非泛用槽位"
+    },
+    {
+      "tag": "c:raw_dragon_meat",
+      "recipes": 2,
+      "members": 1,
+      "namespaces": [
+        "kaleidoscope_end"
+      ],
+      "classification": "single-concept",
+      "note": "单一作物/单一概念别名池（成员 1，消费方 kaleidoscope_end）；暂无跨概念风险，登记备查"
+    },
+    {
+      "tag": "c:poisonous_fruits",
+      "recipes": 2,
+      "members": 1,
+      "namespaces": [
+        "kaleidoscope_nether"
+      ],
+      "classification": "single-concept",
+      "note": "单一作物/单一概念别名池（成员 1，消费方 kaleidoscope_nether）；暂无跨概念风险，登记备查"
+    },
+    {
+      "tag": "c:soul_speed_blocks",
+      "recipes": 2,
+      "members": 2,
+      "namespaces": [
+        "kaleidoscope_nether"
+      ],
+      "classification": "single-concept",
+      "note": "单一作物/单一概念别名池（成员 2，消费方 kaleidoscope_nether）；暂无跨概念风险，登记备查"
+    },
+    {
+      "tag": "kaleidoscope_tavern:cocktail_ingredient_aqua",
+      "recipes": 2,
+      "members": 2,
+      "namespaces": [
+        "kaleidoscope_world_liquor"
+      ],
+      "classification": "mod-internal-pool",
+      "note": "鸡尾酒基酒色池：按颜色而非食材语义分组（white 池含 minecraft:potion 作透明基酒），不属于 Seki 食材族体系；若饮品链要收窄需先定义 seki:spirits/*"
+    },
+    {
+      "tag": "c:foods/raw_boar",
+      "recipes": 2,
+      "members": 2,
+      "namespaces": [
+        "letsdocompat",
+        "youkaisfeasts"
+      ],
+      "classification": "single-concept",
+      "note": "单一作物/单一概念别名池（成员 2，消费方 letsdocompat,youkaisfeasts）；暂无跨概念风险，登记备查"
+    },
+    {
+      "tag": "c:foods/giant_tentacles",
+      "recipes": 2,
+      "members": 1,
+      "namespaces": [
+        "letsdocompat",
+        "mynethersdelight"
+      ],
+      "classification": "single-concept",
+      "note": "单一作物/单一概念别名池（成员 1，消费方 letsdocompat,mynethersdelight）；暂无跨概念风险，登记备查"
+    },
+    {
+      "tag": "c:foods/raw_venison",
+      "recipes": 2,
+      "members": 2,
+      "namespaces": [
+        "letsdocompat",
+        "youkaisfeasts"
+      ],
+      "classification": "single-concept",
+      "note": "单一作物/单一概念别名池（成员 2，消费方 letsdocompat,youkaisfeasts）；暂无跨概念风险，登记备查"
+    },
+    {
+      "tag": "c:seeds",
+      "recipes": 2,
+      "members": 44,
+      "namespaces": [
+        "letsdocompat",
+        "youkaisfeasts"
+      ],
+      "classification": "needs-author-decision",
+      "note": "种子池 52 员（含 hops、花生、葱、米、udumbara 叶、flax_seeds），被 2 条烹饪配方当「任意种子」用；要收窄必须先定义「可食用种子族」与「播种种子族」两层"
+    },
+    {
+      "tag": "c:foods/raw_hoglin",
+      "recipes": 2,
+      "members": 2,
+      "namespaces": [
+        "letsdocompat",
+        "mynethersdelight"
+      ],
+      "classification": "alias-subset",
+      "note": "成员已完整落在 seki:meat/raw_meat 内（引用 2 次）；不改写不改变行为，仅在此登记，未来该标签出现跨概念成员时由闸门报警"
+    },
+    {
+      "tag": "c:foods/rice_pasta",
+      "recipes": 2,
+      "members": 1,
+      "namespaces": [
+        "letsdocompat",
+        "mynethersdelight"
+      ],
+      "classification": "single-concept",
+      "note": "单一作物/单一概念别名池（成员 1，消费方 letsdocompat,mynethersdelight）；暂无跨概念风险，登记备查"
+    },
+    {
+      "tag": "c:foods/squid",
+      "recipes": 2,
+      "members": 2,
+      "namespaces": [
+        "letsdocompat",
+        "minersdelight"
+      ],
+      "classification": "single-concept",
+      "note": "单一作物/单一概念别名池（成员 2，消费方 letsdocompat,minersdelight）；暂无跨概念风险，登记备查"
+    },
+    {
+      "tag": "c:foods/tentacles",
+      "recipes": 2,
+      "members": 2,
+      "namespaces": [
+        "letsdocompat",
+        "minersdelight"
+      ],
+      "classification": "single-concept",
+      "note": "单一作物/单一概念别名池（成员 2，消费方 letsdocompat,minersdelight）；暂无跨概念风险，登记备查"
+    },
+    {
+      "tag": "c:milks",
+      "recipes": 2,
+      "members": 2,
+      "namespaces": [
+        "meadow"
+      ],
+      "classification": "alias-subset",
+      "note": "成员已完整落在 seki:ingredients/dairy_milk 内（引用 2 次）；不改写不改变行为，仅在此登记，未来该标签出现跨概念成员时由闸门报警"
+    },
+    {
+      "tag": "c:tea_leaves/green",
+      "recipes": 2,
+      "members": 1,
+      "namespaces": [
+        "youkaisfeasts"
+      ],
+      "classification": "mod-internal-pool",
+      "note": "茶类分池（green/black/oolong/white/yellow/dark）必须保持互斥，不能并入通用茶族"
+    },
+    {
+      "tag": "alexscaves:frosting",
+      "recipes": 1,
+      "members": 3,
+      "namespaces": [
+        "alexscaves"
+      ],
+      "classification": "species-exclusive",
+      "note": "物种/模组专属池（成员 3，消费方 alexscaves），按既定原则走专属配方而非泛用槽位"
+    },
+    {
+      "tag": "alexscaves:gelatins",
+      "recipes": 1,
+      "members": 5,
+      "namespaces": [
+        "alexscaves"
+      ],
+      "classification": "species-exclusive",
+      "note": "物种/模组专属池（成员 5，消费方 alexscaves），按既定原则走专属配方而非泛用槽位"
+    },
+    {
+      "tag": "c:foods/raw_pollock",
+      "recipes": 1,
+      "members": 1,
+      "namespaces": [
+        "aquaculturedelight"
+      ],
+      "classification": "alias-subset",
+      "note": "成员已完整落在 seki:fish/raw_fish 内（引用 1 次）；不改写不改变行为，仅在此登记，未来该标签出现跨概念成员时由闸门报警"
+    },
+    {
+      "tag": "aquaculturedelight:fillet_one",
+      "recipes": 1,
+      "members": 7,
+      "namespaces": [
+        "aquaculturedelight"
+      ],
+      "classification": "species-exclusive",
+      "note": "物种/模组专属池（成员 7，消费方 aquaculturedelight），按既定原则走专属配方而非泛用槽位"
+    },
+    {
+      "tag": "aquaculturedelight:fillet_three",
+      "recipes": 1,
+      "members": 3,
+      "namespaces": [
+        "aquaculturedelight"
+      ],
+      "classification": "alias-subset",
+      "note": "成员已完整落在 seki:fish/raw_fish 内（引用 1 次）；不改写不改变行为，仅在此登记，未来该标签出现跨概念成员时由闸门报警"
+    },
+    {
+      "tag": "aquaculturedelight:fillet_two",
+      "recipes": 1,
+      "members": 7,
+      "namespaces": [
+        "aquaculturedelight"
+      ],
+      "classification": "alias-subset",
+      "note": "成员已完整落在 seki:fish/raw_fish 内（引用 1 次）；不改写不改变行为，仅在此登记，未来该标签出现跨概念成员时由闸门报警"
+    },
+    {
+      "tag": "aquaculturedelight:small_turtles",
+      "recipes": 1,
+      "members": 3,
+      "namespaces": [
+        "aquaculturedelight"
+      ],
+      "classification": "species-exclusive",
+      "note": "物种/模组专属池（成员 3，消费方 aquaculturedelight），按既定原则走专属配方而非泛用槽位"
+    },
+    {
+      "tag": "c:foods/cooked_turtle",
+      "recipes": 1,
+      "members": 1,
+      "namespaces": [
+        "aquaculturedelight"
+      ],
+      "classification": "single-concept",
+      "note": "单一作物/单一概念别名池（成员 1，消费方 aquaculturedelight）；暂无跨概念风险，登记备查"
+    },
+    {
+      "tag": "minecraft:fox_food",
+      "recipes": 1,
+      "members": 5,
+      "namespaces": [
+        "bakeries"
+      ],
+      "classification": "species-exclusive",
+      "note": "物种/模组专属池（成员 5，消费方 bakeries），按既定原则走专属配方而非泛用槽位"
+    },
+    {
+      "tag": "c:rods",
+      "recipes": 1,
+      "members": 4,
+      "namespaces": [
+        "bakeries"
+      ],
+      "classification": "species-exclusive",
+      "note": "物种/模组专属池（成员 4，消费方 bakeries），按既定原则走专属配方而非泛用槽位"
+    },
+    {
+      "tag": "crabbersdelight:cooked_squid",
+      "recipes": 1,
+      "members": 2,
+      "namespaces": [
+        "crabbersdelight"
+      ],
+      "classification": "single-concept",
+      "note": "单一作物/单一概念别名池（成员 2，消费方 crabbersdelight）；暂无跨概念风险，登记备查"
+    },
+    {
+      "tag": "c:storage_blocks/raw_copper",
+      "recipes": 1,
+      "members": 1,
+      "namespaces": [
+        "create"
+      ],
+      "classification": "single-concept",
+      "note": "单一作物/单一概念别名池（成员 1，消费方 create）；暂无跨概念风险，登记备查"
+    },
+    {
+      "tag": "c:storage_blocks/raw_gold",
+      "recipes": 1,
+      "members": 1,
+      "namespaces": [
+        "create"
+      ],
+      "classification": "single-concept",
+      "note": "单一作物/单一概念别名池（成员 1，消费方 create）；暂无跨概念风险，登记备查"
+    },
+    {
+      "tag": "c:storage_blocks/raw_iron",
+      "recipes": 1,
+      "members": 1,
+      "namespaces": [
+        "create"
+      ],
+      "classification": "single-concept",
+      "note": "单一作物/单一概念别名池（成员 1，消费方 create）；暂无跨概念风险，登记备查"
+    },
+    {
+      "tag": "c:storage_blocks/raw_zinc",
+      "recipes": 1,
+      "members": 1,
+      "namespaces": [
+        "create"
+      ],
+      "classification": "single-concept",
+      "note": "单一作物/单一概念别名池（成员 1，消费方 create）；暂无跨概念风险，登记备查"
+    },
+    {
+      "tag": "culturaldelights:smoked_regular_eggplants",
+      "recipes": 1,
+      "members": 2,
+      "namespaces": [
+        "culturalrecipes"
+      ],
+      "classification": "single-concept",
+      "note": "单一作物/单一概念别名池（成员 2，消费方 culturalrecipes）；暂无跨概念风险，登记备查"
+    },
+    {
+      "tag": "dungeonsdelight:acidics",
+      "recipes": 1,
+      "members": 1,
+      "namespaces": [
+        "dungeonsdelight"
+      ],
+      "classification": "single-concept",
+      "note": "单一作物/单一概念别名池（成员 1，消费方 dungeonsdelight）；暂无跨概念风险，登记备查"
+    },
+    {
+      "tag": "dungeonsdelight:monster_foods",
+      "recipes": 1,
+      "members": 65,
+      "namespaces": [
+        "dungeonsdelight"
+      ],
+      "classification": "species-exclusive",
+      "note": "物种/模组专属池（成员 65，消费方 dungeonsdelight），按既定原则走专属配方而非泛用槽位"
+    },
+    {
+      "tag": "dungeonsdelight:sea_plants",
+      "recipes": 1,
+      "members": 2,
+      "namespaces": [
+        "dungeonsdelight"
+      ],
+      "classification": "single-concept",
+      "note": "单一作物/单一概念别名池（成员 2，消费方 dungeonsdelight）；暂无跨概念风险，登记备查"
+    },
+    {
+      "tag": "dungeonsdelight:slime_balls",
+      "recipes": 1,
+      "members": 2,
+      "namespaces": [
+        "dungeonsdelight"
+      ],
+      "classification": "single-concept",
+      "note": "单一作物/单一概念别名池（成员 2，消费方 dungeonsdelight）；暂无跨概念风险，登记备查"
+    },
+    {
+      "tag": "c:foods/roasted_shulker_meat",
+      "recipes": 1,
+      "members": 2,
+      "namespaces": [
+        "ends_delight"
+      ],
+      "classification": "single-concept",
+      "note": "单一作物/单一概念别名池（成员 2，消费方 ends_delight）；暂无跨概念风险，登记备查"
+    },
+    {
+      "tag": "bakery:chocolate",
+      "recipes": 1,
+      "members": 2,
+      "namespaces": [
+        "farm_and_charm"
+      ],
+      "classification": "single-concept",
+      "note": "单一作物/单一概念别名池（成员 2，消费方 farm_and_charm）；暂无跨概念风险，登记备查"
+    },
+    {
+      "tag": "candlelight:tomato_soups",
+      "recipes": 1,
+      "members": 2,
+      "namespaces": [
+        "farm_and_charm"
+      ],
+      "classification": "single-concept",
+      "note": "单一作物/单一概念别名池（成员 2，消费方 farm_and_charm）；暂无跨概念风险，登记备查"
+    },
+    {
+      "tag": "farm_and_charm:raw_bacon",
+      "recipes": 1,
+      "members": 1,
+      "namespaces": [
+        "farm_and_charm"
+      ],
+      "classification": "alias-subset",
+      "note": "成员已完整落在 seki:meat/raw_livestock_common 内（引用 1 次）；不改写不改变行为，仅在此登记，未来该标签出现跨概念成员时由闸门报警"
+    },
+    {
+      "tag": "brewery:beer",
+      "recipes": 1,
+      "members": 6,
+      "namespaces": [
+        "farm_and_charm"
+      ],
+      "classification": "species-exclusive",
+      "note": "物种/模组专属池（成员 6，消费方 farm_and_charm），按既定原则走专属配方而非泛用槽位"
+    },
+    {
+      "tag": "c:foods/cooked_ham",
+      "recipes": 1,
+      "members": 1,
+      "namespaces": [
+        "farmersdelight"
+      ],
+      "classification": "single-concept",
+      "note": "单一作物/单一概念别名池（成员 1，消费方 farmersdelight）；暂无跨概念风险，登记备查"
+    },
+    {
+      "tag": "forge:rods/blaze",
+      "recipes": 1,
+      "members": 1,
+      "namespaces": [
+        "immortalers_delight"
+      ],
+      "classification": "single-concept",
+      "note": "单一作物/单一概念别名池（成员 1，消费方 immortalers_delight）；暂无跨概念风险，登记备查"
+    },
+    {
+      "tag": "c:foods/cooked_eggs",
+      "recipes": 1,
+      "members": 1,
+      "namespaces": [
+        "kaleidoscope_chinesefood"
+      ],
+      "classification": "single-concept",
+      "note": "单一作物/单一概念别名池（成员 1，消费方 kaleidoscope_chinesefood）；暂无跨概念风险，登记备查"
+    },
+    {
+      "tag": "c:crops/pumpkin",
+      "recipes": 1,
+      "members": 1,
+      "namespaces": [
+        "kaleidoscope_chinesefood"
+      ],
+      "classification": "single-concept",
+      "note": "单一作物/单一概念别名池（成员 1，消费方 kaleidoscope_chinesefood）；暂无跨概念风险，登记备查"
+    },
+    {
+      "tag": "c:cooked_rice",
+      "recipes": 1,
+      "members": 1,
+      "namespaces": [
+        "kaleidoscope_end"
+      ],
+      "classification": "single-concept",
+      "note": "单一作物/单一概念别名池（成员 1，消费方 kaleidoscope_end）；暂无跨概念风险，登记备查"
+    },
+    {
+      "tag": "c:berries",
+      "recipes": 1,
+      "members": 3,
+      "namespaces": [
+        "kaleidoscope_end"
+      ],
+      "classification": "species-exclusive",
+      "note": "物种/模组专属池（成员 3，消费方 kaleidoscope_end），按既定原则走专属配方而非泛用槽位"
+    },
+    {
+      "tag": "kaleidoscope_tavern:cocktail_ingredient_dark_purple",
+      "recipes": 1,
+      "members": 4,
+      "namespaces": [
+        "kaleidoscope_world_liquor"
+      ],
+      "classification": "mod-internal-pool",
+      "note": "鸡尾酒基酒色池：按颜色而非食材语义分组（white 池含 minecraft:potion 作透明基酒），不属于 Seki 食材族体系；若饮品链要收窄需先定义 seki:spirits/*"
+    },
+    {
+      "tag": "kaleidoscope_tavern:cocktail_ingredient_dark_aqua",
+      "recipes": 1,
+      "members": 2,
+      "namespaces": [
+        "kaleidoscope_world_liquor"
+      ],
+      "classification": "mod-internal-pool",
+      "note": "鸡尾酒基酒色池：按颜色而非食材语义分组（white 池含 minecraft:potion 作透明基酒），不属于 Seki 食材族体系；若饮品链要收窄需先定义 seki:spirits/*"
+    },
+    {
+      "tag": "minersdelight:cooked_insect_meat",
+      "recipes": 1,
+      "members": 3,
+      "namespaces": [
+        "minersdelight"
+      ],
+      "classification": "species-exclusive",
+      "note": "物种/模组专属池（成员 3，消费方 minersdelight），按既定原则走专属配方而非泛用槽位"
+    },
+    {
+      "tag": "c:foods/cooked_squid",
+      "recipes": 1,
+      "members": 1,
+      "namespaces": [
+        "minersdelight"
+      ],
+      "classification": "single-concept",
+      "note": "单一作物/单一概念别名池（成员 1，消费方 minersdelight）；暂无跨概念风险，登记备查"
+    },
+    {
+      "tag": "c:slime_balls",
+      "recipes": 1,
+      "members": 2,
+      "namespaces": [
+        "supplementaries"
+      ],
+      "classification": "single-concept",
+      "note": "单一作物/单一概念别名池（成员 2，消费方 supplementaries）；暂无跨概念风险，登记备查"
+    },
+    {
+      "tag": "c:foods/vegetable/chili_pepper",
+      "recipes": 1,
+      "members": 1,
+      "namespaces": [
+        "vintagedelight"
+      ],
+      "classification": "alias-subset",
+      "note": "成员已完整落在 seki:vegetables/common 内（引用 1 次）；不改写不改变行为，仅在此登记，未来该标签出现跨概念成员时由闸门报警"
+    },
+    {
+      "tag": "c:jam_jars",
+      "recipes": 1,
+      "members": 7,
+      "namespaces": [
+        "vintagedelight"
+      ],
+      "classification": "species-exclusive",
+      "note": "物种/模组专属池（成员 7，消费方 vintagedelight），按既定原则走专属配方而非泛用槽位"
+    },
+    {
+      "tag": "c:jam_bottles",
+      "recipes": 1,
+      "members": 7,
+      "namespaces": [
+        "vintagedelight"
+      ],
+      "classification": "species-exclusive",
+      "note": "物种/模组专属池（成员 7，消费方 vintagedelight），按既定原则走专属配方而非泛用槽位"
+    },
+    {
+      "tag": "vintagedelight:sweet_jam_bottles",
+      "recipes": 1,
+      "members": 4,
+      "namespaces": [
+        "vintagedelight"
+      ],
+      "classification": "species-exclusive",
+      "note": "物种/模组专属池（成员 4，消费方 vintagedelight），按既定原则走专属配方而非泛用槽位"
+    },
+    {
+      "tag": "culturaldelights:raw_salmons",
+      "recipes": 1,
+      "members": 2,
+      "namespaces": [
+        "youkaisfeasts"
+      ],
+      "classification": "alias-subset",
+      "note": "成员已完整落在 seki:fish/raw_common_safe 内（引用 1 次）；不改写不改变行为，仅在此登记，未来该标签出现跨概念成员时由闸门报警"
+    },
+    {
+      "tag": "c:tea_leaves/dark",
+      "recipes": 1,
+      "members": 1,
+      "namespaces": [
+        "youkaisfeasts"
+      ],
+      "classification": "mod-internal-pool",
+      "note": "茶类分池（green/black/oolong/white/yellow/dark）必须保持互斥，不能并入通用茶族"
+    },
+    {
+      "tag": "c:tea_leaves/oolong",
+      "recipes": 1,
+      "members": 1,
+      "namespaces": [
+        "youkaisfeasts"
+      ],
+      "classification": "mod-internal-pool",
+      "note": "茶类分池（green/black/oolong/white/yellow/dark）必须保持互斥，不能并入通用茶族"
+    },
+    {
+      "tag": "c:tea_leaves/white",
+      "recipes": 1,
+      "members": 1,
+      "namespaces": [
+        "youkaisfeasts"
+      ],
+      "classification": "mod-internal-pool",
+      "note": "茶类分池（green/black/oolong/white/yellow/dark）必须保持互斥，不能并入通用茶族"
+    },
+    {
+      "tag": "c:tea_leaves/yellow",
+      "recipes": 1,
+      "members": 1,
+      "namespaces": [
+        "youkaisfeasts"
+      ],
+      "classification": "mod-internal-pool",
+      "note": "茶类分池（green/black/oolong/white/yellow/dark）必须保持互斥，不能并入通用茶族"
+    },
+    {
+      "tag": "c:foods/raw_salmon",
+      "recipes": 1,
+      "members": 3,
+      "namespaces": [
+        "youkaisfeasts"
+      ],
+      "classification": "alias-subset",
+      "note": "成员已完整落在 seki:fish/raw_common_safe 内（引用 1 次）；不改写不改变行为，仅在此登记，未来该标签出现跨概念成员时由闸门报警"
+    }
+  ],
+  "watch_list": [
+    {
+      "tag": "c:dough",
+      "reason": "作者桥接的通用面团族（含恶魂/全麦/燕麦/甜面团）。当前无烹饪配方引用；若未来被引用，必须按 v13 的 bakery:dough 先例逐菜锁成品族，不得整族并入。"
+    },
+    {
+      "tag": "c:foods/dough",
+      "reason": "c:dough 的子集别名，裁决需一致。"
+    },
+    {
+      "tag": "forge:milk",
+      "reason": "含 crabbersdelight:coconut_milk（植物奶）。被引用时必须另立植物奶族，不得并入 seki:ingredients/dairy_milk（v12 乳品分离原则）。"
+    },
+    {
+      "tag": "c:cooked_meat",
+      "reason": "FD 熟肉别名族（4 员，含 alexsmobs 熟袋鼠/驼鹿/龙虾与 kangaroo_burger 成品）。当前无烹饪配方引用。"
+    },
+    {
+      "tag": "c:cooked_pork",
+      "reason": "含 kaleidoscope_nether:cooked_piglin_meat 与 roasted_ham；被引用时须走 seki:meat/cooked_pork_common。"
+    },
+    {
+      "tag": "c:cooked_chicken",
+      "reason": "7 员含 farm_and_charm:stuffed_chicken 等成品；被引用时须另立熟禽族。"
+    },
+    {
+      "tag": "c:cooked_beef",
+      "reason": "4 员含 farm_and_charm:beef_patty_with_vegetables 等成品；同上。"
+    },
+    {
+      "tag": "c:raw_fish",
+      "reason": "4 员全是 alexsmobs 奇幻鱼（blobfish/cosmic cod/flying fish/catfish）。按「未审查奇幻鱼形物」原则永不并入通用鱼槽。"
+    },
+    {
+      "tag": "c:fruits",
+      "reason": "11 员含 kaleidoscope_nether:poisonous_fruit、chorus_fruit、dream_berry 等；当前无烹饪配方引用，被引用前须先建奇幻果专属族。"
+    },
+    {
+      "tag": "c:foods/fruit",
+      "reason": "16 员含 enchanted_golden_apple/golden_apple/create:honeyed_apple 等附魔与成品；永不做泛用水果槽。"
+    },
+    {
+      "tag": "c:foods/edible_when_placed",
+      "reason": "行为标签（43 员）：中央厨房把它并入 create:upright_on_belt；不属配方输入面，见 S2。"
+    },
+    {
+      "tag": "create:upright_on_belt",
+      "reason": "行为标签（225 员）：由 Create 传送带逻辑读取；若要让 Seki 中间体参与，须显式加成员而不是依赖宽泛 c: 族。"
+    },
+    {
+      "tag": "farmersdelight:heat_sources",
+      "reason": "方块标签：快照根本不导出方块标签（导出契约只有 item_tags），只能游戏内审。"
+    },
+    {
+      "tag": "create:passive_boiler_heaters",
+      "reason": "方块标签：中央厨房把 farmersdelight:heat_sources 并进来。"
+    }
+  ],
+  "excluded_noise": {
+    "rule": "成员全为方块/装饰/染料/金属/木材的标签不算烹饪语义",
+    "examples": [
+      "refurbished_furniture:wooden_kitchen_* 与 coloured_kitchen_*",
+      "vintagedelight:salt_lamp",
+      "c:dyes/lime 与 c:dyes/orange",
+      "c:raw_materials/iron 与 /zinc",
+      "c:logs/avocado、minecraft:cherry_logs",
+      "c:crops/flax"
+    ]
+  }
+}

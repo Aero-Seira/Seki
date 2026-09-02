@@ -214,6 +214,16 @@ kubejs/
 - 静态验证：新鲜 JAR + `kubejs/data` 索引下 `NEW ERROR 0`；JSON 全量解析通过。运行时重新导出前不得宣称最终完成。
 - 验证要求：`/reload` 后检查 KubeJS 日志与 JEI 输入；实做跨模组面粉/酵母互换和甜面团拒绝路径；重新导出 SQLite 核对 recipe ID、有效类型与玻璃瓶返还。
 
+#### `CUISINE-SLOT-NARROW-04 / -FALLBACK-05 / DYNAMIC-REMOVAL-06`（v14 · static complete / runtime validation pending）
+
+- 来源：`kubejs/server_scripts/unify/z4_generic_slot_narrowing.js`、`z5_generic_slot_narrowing_fallback.js`、`z6_dynamic_recipe_conditional_removals.js`、`kubejs/data/seki/tags/item/**`（21 个新族）；差分与登记表见 `docs/design/cuisine-registry.md`、`docs/design/cuisine-slipthrough.md`、`docs/design/cuisine-tag-allowlist.json`。
+- 触发原因：v13 的收窄口径只有 32 个 `c:` 生料/基础料键，且只对「导出器能读出的配方」生效。运行时快照差分证明熟制侧、`minecraft:fishes`、`forge:` 遗留命名空间、`c:cheeses`、`c:crops` 等 135 个在用烹饪语义标签从未进过映射，其中 65 个早就有对应 Seki 家族；另有 33 条配方因自定义序列化器使 `replaceInput` 完全够不到。
+- 玩家可见变化：回锅肉不再接受熟疣猪兽腰肉、牛肉饼不再冒充熟牛肉、通用鱼锅与天妇罗不再接受河豚/熟鱼/鱿鱼/碱渍鱼/蓑鲉、素沙拉不接受金胡萝卜与花生、天然奶酪槽位排除晶石/扭曲/谷物替代奶酪、切片黄瓜不能再被当作整黄瓜反复切制、B&C 肉干不能用腐肉或猪灵肉。饮品与水果链按裁决全部纳入口径：色池与茶类保持模组原生互斥池，其余输入逐条登记。
+- 机制约束（本轮最重要的一条）：**按 id 删除对运行期生成的配方不成立**。`letsdocompat` 在 jar 内 0 个配方文件却有 248 条运行时配方，`kaleidoscope_cookery:flex_pot`(41) 与 `flex_stockpot`(42) 同样无数据包文件；v13 记为"预期待重载"的 3 条在晚于脚本改动的快照里仍然存活。因此 `z6` 改为按类型/前缀删除，并把 `config/kaleidoscope_chinesefood-common.toml: enableCustomPacks = false` 作为源头开关（`kaleidoscope_compat.jsonc` 的 `fuzzy_recipes_enabled` 自 2026-07-28 就是 false，而 flex 配方仍存活 → 真正生效的是国味附加自己的开关）。
+- 安全性校验：83 条 flex 配方的产物全部另有标准 pot/stockpot 路线（快照内 flex_only = 0）；21 个新族成员全部来自快照且逐条验证存在；`z_` 与 `z4` 的源标签零重叠，替换只收窄或等价、不放宽；`z5` 的 38 条重建体复制 raw_json 原字段，只改映射命中的 tag（含 container/carrier/流体槽），生成后断言体内映射键零残留。
+- 已知遗留：`seki:fish/raw_common_safe` 仍含 `minecraft:tropical_fish`（与"热带鱼是否算已审查普通鱼"有关，待裁决）；`aquaculturedelight:pickles`、`aquaculturedelight:turtle_soup_ingredients`、`c:seeds` 标为 needs-author-decision；`seki:` 自建 15 个中间体仍无任何标签成员关系（与"共享 `c:*` 不动"原则冲突，未动）。
+- 静态验证：8 个 server 脚本 `node --check` 通过；67 个 `kubejs/data/seki` 标签 JSON 可解析、族内无重复、成员 id 全部存在；`change-ledger.json` 追加 5 条记录与 3 个 aux_scripts。
+- 验证要求：重启或 `/reload` → `/dl_export dump` → `dl import run`，随后按 `cuisine-slipthrough.md`「复核步骤」断言 A–G 复核，并新增三条：`type=kaleidoscope_cookery:flex_pot|flex_stockpot` 计数 = 0；`c:cheeses`、`minecraft:fishes`、`c:foods/raw_meat`、`forge:*` 不再出现在任何烹饪配方输入中；`seki:fish/raw_fish` 与 `seki:fish/whole_raw` 的配方引用数 = 0。
 ## 兼容性与性能
 
 ### 客户端/服务端范围
@@ -267,6 +277,7 @@ kubejs/
 
 ## 历史
 
+- 2026-09-02: 实施 `CUISINE-SLOT-NARROW-04`（51 条映射 + 21 个新 Seki 族）、`-FALLBACK-05`（38 条同 ID 重建）与 `-DYNAMIC-REMOVAL-06`（按类型删除 83 条 flex 与双前缀兼容层）；烹饪面全量纳入收窄口径，flex 改由 config 关源头
 - 2026-07-29: 将万能咸食面团拆为无酵母火烧面团与咸味发酵面包团；死面团/鸡蛋面团不再制作肉夹馍或汉堡胚
 - 2026-07-29: 根据新 SQLite 将过宽 `seki:doughs/noodle` 拆为清水制面与鸡蛋意面两组互斥标签；四类机器按原料谱系分流产物，修复死面团在 FD 砧板变成鸡蛋意面等问题
 - 2026-07-29: 将 `FOOD-UNIFY-V6` 四条四川抄手/云吞面汤锅路径迁移为 `seki:` 静态数据配方，修复 KubeJS component 桥静默丢失 carrier、汤底、纹理、颜色和时间字段

@@ -1,5 +1,31 @@
 # 设计变更记录
 
+## 2026-08-27 - 烹饪通用输入标签收窄
+
+- 基于 `2026-08-26T18:13:38Z` 快照复核食物配方输入。不改共享 `c:*` 标签本身，改为新增 Seki 语义族，并在配方事件末段统一把高风险通用输入替换为 Seki 窄标签。
+- 乳品分离：普通烘焙/凝乳路线使用 `seki:ingredients/dairy_milk`；椰奶、坚果奶退出泛用牛奶槽位。
+- 米与面食分离：稻穗退出生煮米槽位（`seki:rice/common`）；黄瓜丝和恶魂面进入不了普通小麦意面（`seki:pasta/wheat`）。
+- 肉源分链：下界兽、猪灵肉不冒充普通猪肉；牛内脏不冒充牛肉；腌火腿不冒充生鲜羊肉。新增普通猪肉、牛肉、鲜肉羊肉窄标签。
+- 鱼类防毒：通用鱼料理只接受 curated 安全常见鱼族 `seki:fish/raw_common_safe`；河豚等需要专属明确配方。
+- 蔬菜控义：金胡萝卜与花生不再算泛用蔬菜；卷心菜标签剔除生菜误标；叶球与生菜不再互相顶替。
+- 奶酪与糖：晶石奶酪、扭曲奶酪、谷物替代酪离开天然乳酪槽位；硬糖不能回退当作白砂糖。
+- 点心生馅同步收窄：万能 `seki:meat/raw_meat` 改为常畜肉 `seki:meat/raw_livestock_common`，排除节肢、末影、水生和下界兽肉链。
+- 新增脚本 `kubejs/server_scripts/unify/z_cooking_tag_narrowing.js` 放在配方注册后执行，统一应用替换规则；共享标签仍保持原契约，非烹饪用途不受影响。
+- 静态验证：两个 KubeJS 脚本语法通过；全部 `seki:` tag JSON 可解析；所有新成员 ID 已对照运行时快照确认存在。JEI 实做、KubeJS 日志与重导出验收待下一轮进行。
+
+
+## 2026-08-27 - 第一批烹饪收编整改
+
+- 基于 `2026-08-26T17:09:28Z` Delightify-level 快照复检烹饪闸门；本轮只处理配方删除清单命中失败与点心链成本失衡，标签内聚与孤立食物留待下一批复核。
+- 修正国味三条确认缺陷：红米肠卷、羊肉抓饭、什锦冒菜的删除目标由不存在的 `flex_pot/flex_stockpot` 写法改为现存真实标准锅/汤锅配方 ID。
+- 按批阅决定保留 17 条器具化路线：Bakeries Blender、Create Bic Bit 部署器、Refurbished Furniture 砧板组合、Dungeon's Delight 怪物烹饪和 My Nether's Delight 标准烹饪。对应过期脚本清单项已清理，并记入 `docs/design/change-ledger.json`。
+- 新增 Farmers Delight 标准锅版洋葱汤（两份洋葱、面包、牛奶、碗），产物仍为 `farmersdelight:onion_soup`；同时将 Lets Do Compat 生成的 Farm & Charm 路线加入移除清单。
+- `seki:dimsum/raw_baozi` 批次由相同原料产出 2 个改为 3 个，间接降低包子和两种烤包子路径的链上成本，消除低于中位回报比一半的问题。
+- 新增机读台账覆盖原审计的 127 条目标和本批新增 Farm & Charm 路线，共 128 条审查记录；`op: keep` 仅表示器具路线保留且旧无效写法已出清。
+- 标签跨概念与 130 个无配方痕迹食物候选按计划不改盘，等待单独判读。
+- 静态验证：KubeJS 脚本语法通过，新增数据 JSON 可解析，台账校验通过。完整闸门验收必须重启游戏或 `/reload` 后 `/dl_export dump`，再重新导入运行时快照并重跑五道闸门。
+
+
 ## 2026-08-25 - 迁移分发链：移除 packwiz，改用 mrpack + CI
 
 - 删除 packwiz 管理：`pack.toml`、`index.toml`、`.packwizignore`、全部
@@ -423,3 +449,79 @@
 - 说明：`bakeries:rice_bread_dough` 为"面包面团+米粒"调味步，基底已是面粉面团，不视为绕粉；爆米花继续消费整粒玉米，符合现实。
 - 验证状态：全部 JSON 解析通过；`node --check` 通过；译名零碰撞。
 - 剩余开放：运行时 `/reload` + JEI/实做验收（charter §10）；孜然粉无作物缺口维持。
+
+
+## 2026-08-27 - 烹饪宽泛 tag 第二轮收敛 v13（CUISINE-TAG-NARROW-02）
+
+- 复核：导入 07:26Z 新快照后确认第一轮部分收敛为真，但别名族和多个自定义序列化器仍绕过全局替换；`bakery/bakeries` 的甜面团、可可面团、拿铁、抹茶饮可直接接受坚果奶，`c:crops/rice` 还会把稻穗带进烹饪链。
+- 补齐语义标签：小麦谷粒、普通面包族、家禽生鲜件、可食用蘑菇、乳制黄油、通用盐、抹茶、酵母等新增或继续使用 `seki:*` 收窄族；共享 `c:*` 标签本身不改。
+- 扩展别名映射：`c:foods/milk/c:milk/drinks/milk → dairy_milk`，`c:eggs → eggs/common`，`c:wheat/crops/wheat → grains/wheat_common`，面包、黄油、盐、抹茶、酵母、鸡肉等同步收窄。
+- 定向重建：对当前快照证实残留旧引用的精确配方，以及已知 bakery/Farm & Charm/FDelight/Vintage 发酵等绕过族的新别名命中项，按导出的 raw_json 同 ID 重建，只替换材料 tag；共覆盖 442 条，目标清单落盘为机器审计文件。
+- Bakery 专项：筛粉器面粉路线改为只吃小麦谷粒；Blender 与饮品路线的乳品输入改为不含坚果奶的 dairy_milk。
+- 验证：三份脚本 `node --check` 通过；8 个新 tag JSON 解析通过；生成脚本内递归校验确认 442 条重建体中没有命中的旧别名残留，且筛粉器已改为小麦谷粒。
+- 待验收：重启或 `/reload` 后执行 `/dl_export dump` 并重新导入；随后重跑 A1 残差、收敛 SQL、spec/removal/orphan/bypass/tag-cohesion 五道闸。剩余同概念例外（洋葱/番茄/土豆/胡萝卜等单一作物跨模组等同）暂登记不拆。
+
+
+## 2026-08-27 - 国味锅路线与洋葱汤载体勘误（v13 热修）
+
+- `red_rice_roll/lamb_pilaf/maocai` 改为删除当前运行时证实的 `kaleidoscope_chinesefood:flex_*` 可变器具旁路，恢复并保留唯一的 `pot/stockpot` canonical 器具路线。
+- 洋葱汤 FD 锅载体移动到与目标一致的完整路径：`kubejs/data/letsdocompat/recipe/farm_and_charm/farmersdelight/pot_cooking/onion_soup.json`；继续删除 Farm & Charm 泛化路线。
+- 台账 `CHINESEFOOD-RICE-DEFECT-01` 与 `ONION-SOUP-FD-CARRIER-01` 已按新证据同步，避免下一轮导出把有意改道误报成 A1。
+
+
+## 2026-08-27 - 点心面粉轴反抽闸门修复（v13 热修）
+
+- 删除 `minecraft:flour_from_1..8_wheat` 八条批量手混变体。
+- 新增唯一规范主轴：`kaleidoscope_cookery:flour` + 水桶 → `kaleidoscope_cookery:raw_dough`（`seki:dimsum/raw_dough_from_flour`），避免宽泛粉 tag 成为不可反抽的隐性驱动项。
+- 台账新增 `FLOUR-DIMSUM-AXIS-02`；此项用于修复第二轮 tag 收敛后 check-spec 报出的 8 forward unmatched / 1 reverse dead。
+
+
+## 2026-08-27 - Bakeries/Farm & Charm 沉浸式面团锁定 v13（CUISINE-BAKERIES-DOUGH-LOCK-03）
+
+- 运行时证据：Farm & Charm 炉灶五条面包配方接受 `#bakery:dough` 万能面团。该 tag 实际含 Bakeries 咸/甜/全麦面团、Create 面团、恶魂面团、燕麦面团等 11 类，导致任意面团都能烘成同一款法棍、吐司或 crusty bread。
+- 定向锁定：
+  - 法棍 → `bakeries:baguette_dough`
+  - 普通/编织面包 → `bakeries:salted_dough`
+  - crusty bread → `bakeries:ciabatta_dough`
+  - toast → `bakeries:sweet_dough`
+- Farm & Charm 自有宽泛面团改按用途锁死：常规面食/椒盐卷饼/餐包用 `farm_and_charm:dough` 本体，草莓蛋糕用 `bakery:cake_dough`。
+- 内部原料别名同步收窄：bakery/F&C 面包、乳、蛋、小麦、面粉、黄油、卷心菜、意面、生鲜鱼/猪/牛/禽改为对应 `seki:*` 族。F&C 的 `cooked_beef` 名实不符问题也处理：宠物粮用熟家畜通用族，炖牛肉固定 `minecraft:cooked_beef`。
+- 新增生成脚本 `kubejs/server_scripts/unify/z3_bakeries_dough_locks.js`，覆盖 84 条受影响配方；机器审计见 `docs/design/bakeries-dough-lock-audit.json`，台账已记 `CUISINE-BAKERIES-DOUGH-LOCK-03`。
+- 洋葱汤 FD 载体在源文件中直接使用 `seki:breads/common` 与 `seki:ingredients/dairy_milk`，避免静态数据包再绕过事件替换。
+
+
+## 2026-08-28 - KubeJS 兜底热修（FALLBACK-HOTFIX-01）
+
+- 导入 05:55Z 快照后定位到 10 条 KubeJS 自定义重建错误：
+  - `z2` 中 9 条 `kaleidoscope_cookery:pot/egg_to_fried_egg_1..9` 因 KubeJS custom 路径缺少 `carrier` 被适配器判空；已补 `minecraft:bowl`，不改产物与数量。
+  - `z3` 中 `bakery:sandwich` 的 `bakery:cooked_beef` 上下文映射漏默认分支产生 `null`；已改为 `seki:meat/cooked_livestock_common`。
+- `z2` 排除两条本应永久删除的国味 flex 旁路：`flex_pot/red_rice_roll`、`flex_stockpot/maocai`，兜底目标从 442 调整为 440。
+- 新快照确认 `farm_and_charm` 兼容层存在 `farm_and_charm/farm_and_charm/farmersdelight/pot_cooking/onion_soup` 双前缀旁路；已加入删除清单，仅保留单前缀 authored FD pot carrier。
+- 我们自己的点心酵母引用从 `c:yeast` 改为 `seki:ingredients/yeast`。新快照中所有已审计宽泛输入只剩这 1 条，修后预期归零。
+- 当前运行时静态验收：Gate 1 通过；Gate 5 通过；无 tag 越级、无成品旁路；Seki tag 已在 38 个语义族中被配方引用。Gate 3 的两条 flex C 项与 onion A1 属本批静态修复后的预期待重载项。
+
+## 2026-09-02 - 烹饪内容全量登记与漏网差分（CUISINE-INVENTORY-14）
+
+- 遍历整合包（快照登记 234 个 modid / `mods/` 189 个 jar，逐 jar 与运行时注册表比对）后，以 `2026-08-28T05:55:00Z` 运行时最终态登记全部烹饪内容：52 类烹饪器具配方类型、3789 条烹饪配方、1936 个可食物品、46 个 Seki 语义族、135 个仍在被烹饪配方使用的未收窄标签、21 个配方之外的行为标签池。产出 [cuisine-registry.md](cuisine-registry.md) 与机读 [cuisine-slipthrough-audit.json](cuisine-slipthrough-audit.json)。
+- 与既有改动面（47 条映射 / 440 条 fallback 重建 / 84 条 dough lock / 119 条删除 / 19 条重建 / 216 authored 配方文件 / 56 authored 标签文件 / 台账 128 条）差分，得到 11 条漏网，见 [cuisine-slipthrough.md](cuisine-slipthrough.md)（S1–S11）。本轮**未改任何脚本、配置或数据包**。
+- 结构性结论：`letsdocompat`（jar 内 0 个配方文件、运行时 248 条配方）与 `kaleidoscope_chinesefood:flex_*`（26 条运行期生成）证明「按 id 的删除清单」对运行期生成的配方不保证命中。`FALLBACK-HOTFIX-01` 记为预期待重载的 3 条（flex 红米肠卷、flex 冒菜、双前缀洋葱汤）在晚于脚本改动的快照里仍然存活；需改为按类型/产物的条件删除，并对齐 flex 开关（`kaleidoscope_compat.jsonc: kitchen.fuzzy_recipes_enabled=false` 与 `kaleidoscope_chinesefood-common.toml: enableCustomPacks=true` 相互冲突）。
+- 新登记的未触及面：`create_central_kitchen`（机械动力：中央厨房 2.5.0）在快照中 0 物品 / 0 方块 / 0 配方，但 5 个配方转换开关全开，并以数据包把 `#c:foods/edible_when_placed` 并入 `create:upright_on_belt`、把 `#farmersdelight:heat_sources`（方块标签，快照不导出）并入 `create:passive_boiler_heaters`；`corn_delight`、`kaleidoscope_twilight`、`smc` 三个派生命名空间有物品有配方但 `mods` 表无行，按 mod 列表遍历必然漏。
+- 语义缺口：收窄映射只有 32 个 `c:` 生料/基础料键，熟制侧（`c:foods/cooked_pork|cooked_beef|cooked_mutton|cooked_chicken|cooked_fish|cooked_egg`）、`minecraft:fishes`（46 成员，与 `seki:fish/raw_common_safe` 仅 5 个重合）、`forge:vegetables` 与 `forge:salad_ingredients`（可漏金胡萝卜、花生、浆果）、`brewinandchewin:foods/jerky_meat`（33 成员，含腐肉）以及 `culturaldelights:`、`aquaculturedelight:`、`create_deepfried:`、`immortalers_delight:` 等 mod 别名族全部未登记；反之 `seki:fish/raw_fish`(42) 含河豚与热带鱼，仍被 9 条烹饪配方当鱼槽使用。
+- 可见性债：327 条烹饪配方原料不可见、`bakery:blank_cake_interaction` 12 条 0 产物、`refurbished_furniture:workbench_constructing` 444 条全不可见、`vintagedelight` 的发酵类型 id 被导出成随启动变化的 Java `toString`。这些决定了「闸门跑绿」不等于「烹饪面审完」。
+
+## 2026-09-02 - 烹饪面全量纳入收窄口径 v14（CUISINE-SLOT-NARROW-04 / -FALLBACK-05 / DYNAMIC-REMOVAL-06）
+
+- 按 v14 的两条裁决执行：**酒饮与水果链全部纳入收窄口径**（不再记 op:keep 销账），**flex 模糊烹饪从源头关闭**。
+- 新增 21 个 Seki 语义族（`kubejs/data/seki/tags/item/**`，成员全部取自 `2026-08-28T05:55Z` 快照并逐条校验存在）：`crops/corn_cob`、`crops/soybean`、`crops/redbean`、`eggs/cooked`、`fish/raw_edible_common`(40)、`fruits/berry_culinary`、`fruits/grape`、`meat/cooked_pork_common`、`meat/cooked_beef_common`、`meat/cooked_mutton_common`、`meat/cooked_poultry_common`、`meat/raw_jerky_livestock`(14)、`vegetables/onion`、`vegetables/carrot_common`、`vegetables/carrot_cave`、`vegetables/carrot_cave_baked`、`vegetables/potato_common`、`vegetables/tomato`、`vegetables/eggplant_whole`、`vegetables/cucumber_whole`、`vegetables/cucumber_slice`。
+- 新增 `z4_generic_slot_narrowing.js`：51 条映射，把 v13 只覆盖 32 个 `c:` 生料键的口径补齐到熟制侧（`c:foods/cooked_pork|beef|mutton|chicken|fish|salmon|egg`、`culturaldelights:cooked_*`）、泛用生肉槽（`c:raw_meat`、`c:raw_meat_delight`、`c:foods/raw_meat`、`immortalers_delight:*`、`brewinandchewin:foods/jerky_meat` 含腐肉 33 员）、泛用鱼槽（`minecraft:fishes` 46 员含河豚/熟鱼/蓑鲉/鱿鱼/碱渍鱼）、Forge 遗留命名空间（`forge:vegetables`、`forge:salad_ingredients`、`c:cheeses` 含晶石/扭曲/谷物奶酪）、泛用作物（`c:crops` 含仙人掌/可可豆/稻穗）与 12 个单一作物概念的登记归口。与 `z_cooking_tag_narrowing.js` 无同名源标签，替换只收窄或等价、不放宽。
+- 自建家族自身的越宽面一并收口（S4）：`seki:fish/raw_fish`、`seki:fish/whole_raw` 不再作为配方输入，改指 `seki:fish/raw_edible_common`（剔 `minecraft:pufferfish` 与 `crabbersdelight:pufferfish_slice`）。**遗留一句裁决**：`seki:fish/raw_common_safe` 仍含 `minecraft:tropical_fish`。
+- 新增 `z5_generic_slot_narrowing_fallback.js`：38 条自定义序列化器配方（导出器与 replaceInput 都够不到）按 raw_json 同 ID 重建，只换映射命中的 tag，container/carrier/流体槽/时间经验逐字段保留（避开 v13 FALLBACK-HOTFIX-01 的补字段事故）；含 S5 那 5 条 youkaisfeasts 绕过。
+- 新增 `z6_dynamic_recipe_conditional_removals.js` + `enableCustomPacks=false`：flex 锅改为**按类型**条件删除（41 flex_pot + 42 flex_stockpot，已校验 83 条产物全部另有标准 pot/stockpot 路线，删除不断获取链），并删除 `letsdocompat:farm_and_charm/farm_and_charm/**` 双前缀二次兼容层。v13 按 id 删除没生效的三条（flex 红米肠卷、flex 冒菜、双前缀洋葱汤）由此从机制上收口，而不只是再等一次 reload。
+- 新增 `docs/design/cuisine-tag-allowlist.json`：137 条在用烹饪/饮品语义标签逐条归类（别名子集 25 / 物种与模组专属 30 / 模体内置池 18 / 单一概念 61 / 待裁决 3）+ 14 条 0 引用但有未来风险的 watch_list（`c:dough`、`forge:milk`、`c:cooked_*`、`c:fruits`、`farmersdelight:heat_sources` 等），内含第 6 道闸的断言式判据。饮品面 355 条配方已全量判定：33 个标签被映射覆盖，色池 `kaleidoscope_tavern:cocktail_ingredient_*`(11) 与茶类 `c:tea_leaves/*`(6) 明确不并族。
+- 未处理并留档：S2 中央厨房（派生配方与方块标签只能游戏内取证）、S8 Seki 自建中间体的标签登记（与「共享 c:* 不动」原则冲突，需作者裁决）、S10 无获取路径食物（采集盲区与真断链混杂）。
+- 静态验证：三个新脚本 `node --check` 通过；67 个 `seki` 标签 JSON 可解析、成员 id 全部存在于快照、族内无重复；`z_cooking_tag_narrowing.js` 与 `z4_generic_slot_narrowing.js` 的源标签零重叠；z5 重建体内映射键零残留；`change-ledger.json` 追加 5 条记录（含 config 项）与 3 个 aux_scripts。运行时验收仍需重启或 `/reload` → `/dl_export dump` → 重导入，然后按 cuisine-slipthrough.md「复核步骤」的断言 A–G 复核，其中新增断言：flex 类型计数 = 0、`c:cheeses`/`minecraft:fishes`/`c:foods/raw_meat`/`forge:*` 不再出现在烹饪配方输入中、`seki:fish/raw_fish` 与 `whole_raw` 引用数 = 0。
+
+### 本次未纳入提交的既有工作区变更（留档）
+
+- `mods/modpack-ide-exporter-0.1.0.jar` 已删除、`mods/delightify-level-exporter-0.2.0.jar` 为新增且被 `.gitignore` 第 88 行的 `mods/*.jar` 排除。这属于模组增删，按 AGENT.MD 需要确认 mrpack 内嵌分发边界（根 README 记为"3 个内嵌 jar"之一）后再单独提交；本轮只补记组件页状态，不代为提交。
+- 运行时噪音未纳入提交：`config/{asyncparticles,fml,iris,packetfixer}.properties`、`resourcepacks/Minecraft-Mod-Language-Modpack-Converted-1.21.1.zip`（I18nUpdateMod 自动更新）、`dynamic-*-cache/`、`logs/`、`kubejs/README.txt`。

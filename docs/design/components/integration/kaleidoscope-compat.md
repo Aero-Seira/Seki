@@ -16,10 +16,9 @@
 ## 配置意图
 
 - **`config/kaleidoscope_compat.jsonc`**（verified）：
-  - `datapack_mode = "UNITE"`（2026-07-28 维护者由 COMPAT 改设）：启用"统一模组重复物品"模式，收口森罗体系内重复物品，取代此前的广泛外部兼容策略；外部兼容覆盖面收窄，与配方统一工作流方向一致。
+  - `datapack_mode`：当前值 `"NONE"`（2026-08-28 15:48 改设，晚于运行时快照 13:55）——只保留汤底数据包，关闭全部兼容/统一数据包。历史：2026-07-28 曾由 COMPAT 改设 UNITE 以收口森罗体系内重复物品。实测 `kaleidoscope_dim_wine` 的 jar 内 103 个配方文件只有 50 个进入最终态；差额里有多少来自本开关、有多少来自目标模组缺失，需重导出对照确认。
   - `soup_datapack_enabled = true`：启用汤底基础材料数据包。
-  - `kitchen.fuzzy_recipes_enabled = false`（2026-07-28 维护者由 true 改设）：关闭模糊配方（FlexPot/FlexStockpot），锅具只接受精确食材——提高配方确定性，便于 KubeJS 配方统一与校验。
-
+  - `kitchen.fuzzy_recipes_enabled = false`（2026-07-28 由 true 改设）：意图关闭模糊配方（FlexPot/FlexStockpot），让锅具只接受精确食材。但**总控并不约束国味附加层**——2026-08-28 快照里仍有 83 条 `kaleidoscope_cookery:flex_pot|flex_stockpot` 配方，其中 26 条属国味命名空间。真正的源头开关是 `kaleidoscope_chinesefood-common.toml: enableCustomPacks`（v14 已一并置 false），KubeJS 侧另有 `z6` 按类型兜底删除。
 ## 集成关系
 
 - 服务整个森罗家族与外部模组（农夫乐事类食材生态等，具体覆盖面待实机盘点）。
@@ -34,6 +33,7 @@
 1. UNITE 模式下外部模组食材兼容面收窄，原先由 COMPAT 数据包承接的跨模组配方是否存在缺口，需实机盘点。
 
 ## 历史
+- 2026-09-02: 复核确认 `datapack_mode` 已被改为 `NONE`（2026-08-28）且总控 `fuzzy_recipes_enabled=false` 并不约束国味附加层；与 `enableCustomPacks=false` 一并对齐
 
 - 2026-07-28: `datapack_mode` COMPAT → UNITE、`fuzzy_recipes_enabled` true → false（维护者改设，收口重复物品并提高配方确定性）
 - 2026-07-21 后: 随料理章节加入（本批归档）

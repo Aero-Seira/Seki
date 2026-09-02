@@ -1,0 +1,10 @@
+{
+  "values": [
+    "minecraft:milk_bucket",
+    "farmersdelight:milk_bottle",
+    "minersdelight:milk_cup",
+    "bakeries:bottle_milk",
+    "meadow:wooden_milk_bucket"
+  ],
+  "replace": false
+}

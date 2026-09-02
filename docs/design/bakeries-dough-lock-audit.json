@@ -1,0 +1,146 @@
+{
+  "schema_version": 1,
+  "basis_exported_at": "2026-08-27T07:26:19.857388Z",
+  "purpose": "lock Bakeries/Bakery/Farm & Charm dough and related ingredient aliases used by immersive stove bread chains",
+  "general_aliases": {
+    "bakery:bread": {
+      "tag": "seki:breads/common"
+    },
+    "farm_and_charm:bread": {
+      "tag": "seki:breads/common"
+    },
+    "bakery:milk": {
+      "tag": "seki:ingredients/dairy_milk"
+    },
+    "farm_and_charm:milk": {
+      "tag": "seki:ingredients/dairy_milk"
+    },
+    "bakery:eggs": {
+      "tag": "seki:eggs/common"
+    },
+    "bakery:wheat": {
+      "tag": "seki:grains/wheat_common"
+    },
+    "farm_and_charm:wheat": {
+      "tag": "seki:grains/wheat_common"
+    },
+    "farm_and_charm:flour": {
+      "tag": "seki:flours/plain_wheat"
+    },
+    "farm_and_charm:butter": {
+      "tag": "seki:ingredients/butter_dairy"
+    },
+    "farm_and_charm:cabbage": {
+      "tag": "seki:vegetables/cabbage_strict"
+    },
+    "farm_and_charm:pasta": {
+      "tag": "seki:pasta/wheat"
+    },
+    "farm_and_charm:raw_fishes": {
+      "tag": "seki:fish/raw_common_safe"
+    },
+    "farm_and_charm:raw_pork": {
+      "tag": "seki:meat/raw_pork_common"
+    },
+    "farm_and_charm:raw_beef": {
+      "tag": "seki:meat/raw_beef_common"
+    },
+    "farm_and_charm:raw_chicken": {
+      "tag": "seki:meat/raw_poultry_common"
+    }
+  },
+  "context_rules": {
+    "bakery:dough": "map by intended loaf family: baguette/salted/ciabatta/sweet doughs",
+    "farm_and_charm:dough": "exact Farm & Charm wheat dough; strawberry cake uses bakery cake dough",
+    "farm_and_charm:cooked_beef": "pet food uses cooked livestock common; goulash uses exact cooked beef",
+    "bakery:cooked_beef": "sandwich protein accepts cooked common livestock only"
+  },
+  "excluded_future_removals": true,
+  "target_count": 84,
+  "targets": [
+    "bakery:bread_crate",
+    "bakery:bread_with_jam",
+    "bakery:sandwich",
+    "bakery:vegetable_sandwich",
+    "farm_and_charm:crafting_bowl/butter",
+    "farm_and_charm:crafting_bowl/cake_dough",
+    "farm_and_charm:crafting_bowl/cat_food",
+    "farm_and_charm:crafting_bowl/dog_food",
+    "farm_and_charm:crafting_bowl/farmer_salad",
+    "farm_and_charm:crafting_bowl/fresh_garden_salad",
+    "farm_and_charm:crafting_bowl/mozzarella",
+    "farm_and_charm:crafting_bowl/oatmeal_with_strawberries",
+    "farm_and_charm:crafting_bowl/potato_salad",
+    "farm_and_charm:crafting_bowl/salad",
+    "farm_and_charm:crafting_bowl/sweet_dough",
+    "farm_and_charm:farmers_breakfast",
+    "farm_and_charm:mincer/flour",
+    "farm_and_charm:pot_cooking/chicken_teriyaki",
+    "farm_and_charm:pot_cooking/chocolate",
+    "farm_and_charm:pot_cooking/chocolate_jam",
+    "farm_and_charm:pot_cooking/chocolate_mousse",
+    "farm_and_charm:pot_cooking/corn_grits",
+    "farm_and_charm:pot_cooking/dumplings",
+    "farm_and_charm:pot_cooking/goulash",
+    "farm_and_charm:pot_cooking/khinkali",
+    "farm_and_charm:pot_cooking/mushroom_soup",
+    "farm_and_charm:pot_cooking/onion_soup",
+    "farm_and_charm:pot_cooking/pasta_with_mozzarella",
+    "farm_and_charm:pot_cooking/pudding",
+    "farm_and_charm:pot_cooking/salmon_on_white_wine",
+    "farm_and_charm:pot_cooking/sausage",
+    "farm_and_charm:roaster/bacon_with_eggs",
+    "farm_and_charm:roaster/barley_patties_with_potatoes",
+    "farm_and_charm:roaster/beef_patty_with_vegetables",
+    "farm_and_charm:roaster/beef_with_mushroom_in_wine_and_potatoes",
+    "farm_and_charm:roaster/chicken_wrapped_in_bacon",
+    "farm_and_charm:roaster/cooked_cod",
+    "farm_and_charm:roaster/cooked_salmon",
+    "farm_and_charm:roaster/fillet_steak",
+    "farm_and_charm:roaster/fried_chicken",
+    "farm_and_charm:roaster/lamb_with_corn",
+    "farm_and_charm:roaster/oat_pancake",
+    "farm_and_charm:roaster/omelet",
+    "farm_and_charm:roaster/pasta_broccoli",
+    "farm_and_charm:roaster/pasta_with_bolognese",
+    "farm_and_charm:roaster/roasted_lamb_with_lettuce",
+    "farm_and_charm:roaster/sausage_with_oat_patty",
+    "farm_and_charm:stove/baguette",
+    "farm_and_charm:stove/baked_lamb_ham",
+    "farm_and_charm:stove/beef_wellington",
+    "farm_and_charm:stove/braided_bread",
+    "farm_and_charm:stove/bread",
+    "farm_and_charm:stove/bun",
+    "farm_and_charm:stove/bundt_cake",
+    "farm_and_charm:stove/chicken_alfredo",
+    "farm_and_charm:stove/crusty_bread",
+    "farm_and_charm:stove/farmers_bread",
+    "farm_and_charm:stove/gingerbread",
+    "farm_and_charm:stove/grandmothers_strawberry_cake",
+    "farm_and_charm:stove/grilled_bacon_sandwich",
+    "farm_and_charm:stove/grilled_salmon_sandwich",
+    "farm_and_charm:stove/lasagne",
+    "farm_and_charm:stove/pasta_with_onion_sauce",
+    "farm_and_charm:stove/pretzel",
+    "farm_and_charm:stove/roasted_chicken",
+    "farm_and_charm:stove/roasted_corn",
+    "farm_and_charm:stove/toast",
+    "farm_and_charm:stove/tropical_fish_supreme",
+    "farm_and_charm:stove/waffle",
+    "letsdocompat:create/crafting_bowl/butter",
+    "letsdocompat:create/crafting_bowl/cake_dough",
+    "letsdocompat:create/crafting_bowl/cat_food",
+    "letsdocompat:create/crafting_bowl/dog_food",
+    "letsdocompat:create/crafting_bowl/farmer_salad",
+    "letsdocompat:create/crafting_bowl/fresh_garden_salad",
+    "letsdocompat:create/crafting_bowl/mozzarella",
+    "letsdocompat:create/crafting_bowl/oatmeal_with_strawberries",
+    "letsdocompat:create/crafting_bowl/potato_salad",
+    "letsdocompat:create/crafting_bowl/salad",
+    "letsdocompat:create/crafting_bowl/sweet_dough",
+    "letsdocompat:farmersdelight/pot_cooking/onion_soup",
+    "minecraft:cake",
+    "minecraft:cookie",
+    "minecraft:packed_mud"
+  ]
+}

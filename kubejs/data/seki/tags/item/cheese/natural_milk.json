@@ -1,0 +1,14 @@
+{
+  "values": [
+    "bakeries:cheese_cube",
+    "create_bic_bit:aged_cheese_wedge",
+    "create_bic_bit:young_cheese_wedge",
+    "meadow:buffalo_cheese_slice",
+    "meadow:cheese_slice",
+    "meadow:goat_cheese_slice",
+    "meadow:sheep_cheese_slice",
+    "refurbished_furniture:cheese",
+    "vintagedelight:cheese_slice"
+  ],
+  "replace": false
+}

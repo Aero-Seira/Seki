@@ -1,0 +1,2484 @@
+{
+  "schema_version": 1,
+  "generated_utc": "2026-09-02",
+  "source": {
+    "snapshot_exported_at_utc": "2026-08-28T05:55:00.748Z",
+    "modlist_hash": "4b05038a5562809d…9cb03",
+    "project_db": ".delightify-level/project.db",
+    "method": "Delightify-level 运行时最终态 + kubejs 脚本/数据包/config 台账差分；id 全部来自查询结果",
+    "culinaryRecipeDefinition": "产出为食物（food_nutrition 非空或成员属于烹饪语义 tag）或配方类型属于烹饪器具；烹饪语义由 tag 名分词 + 成员含食物比例 >= 0.5 判定；纯方块/装饰/染料/金属 tag 已剔除"
+  },
+  "totals": {
+    "items": 10084,
+    "recipes": 11932,
+    "tags": 1673,
+    "mods_in_snapshot": 234,
+    "culinary_recipes": 3789,
+    "station_recipe_types": 52,
+    "edible_items": 1936,
+    "seki_families": 46,
+    "seki_family_members": 291
+  },
+  "handled_surface": {
+    "tag_narrow_map_keys": 32,
+    "remap_pairs": 47,
+    "fallback_rewrites": 440,
+    "dough_locks": 84,
+    "recipe_removals": 119,
+    "authored_recipe_files": 216,
+    "authored_tag_files": 56,
+    "script_created_ids": 19
+  },
+  "findings": {
+    "F1_removal_not_effective": [
+      {
+        "id": "kaleidoscope_chinesefood:flex_pot/red_rice_roll",
+        "type": "kaleidoscope_cookery:flex_pot",
+        "ledger": "CHINESEFOOD-RICE-DEFECT-01 / FALLBACK-HOTFIX-01",
+        "note": "运行时最终态仍存在；flex_* 在 mods/*.jar 内无对应 JSON，属运行期生成，id 删除不保证生效"
+      },
+      {
+        "id": "kaleidoscope_chinesefood:flex_stockpot/maocai",
+        "type": "kaleidoscope_cookery:flex_stockpot",
+        "ledger": "CHINESEFOOD-RICE-DEFECT-01 / FALLBACK-HOTFIX-01",
+        "note": "同上"
+      },
+      {
+        "id": "letsdocompat:farm_and_charm/farm_and_charm/farmersdelight/pot_cooking/onion_soup",
+        "type": "farm_and_charm:pot_cooking",
+        "ledger": "ONION-SOUP-FD-CARRIER-01 / FALLBACK-HOTFIX-01",
+        "note": "letsdocompat 248 条配方在 jar 内 0 文件，全部运行期生成；与单前缀 authored 载体并存，同一道洋葱汤出现两条 F&C 锅路线"
+      }
+    ],
+    "F1_config_switch_conflict": [
+      {
+        "file": "config/kaleidoscope_compat.jsonc",
+        "key": "kitchen.fuzzy_recipes_enabled",
+        "value": false,
+        "mtime_local": "2026-08-28 15:48（晚于快照 13:55）"
+      },
+      {
+        "file": "config/kaleidoscope_chinesefood-common.toml",
+        "key": "\"Compatibility Settings\".enableCustomPacks",
+        "value": true,
+        "mtime_local": "2026-08-26 03:45（快照前）",
+        "note": "“是否启用模糊烹饪配方”=flex 锅来源；两处开关不一致，需在重导出后确认哪一处真正决定 26 条 kaleidoscope_chinesefood:flex_* 与 57 条其他 flex 配方"
+      }
+    ],
+    "F2_central_kitchen_unregistered": {
+      "modid": "create_central_kitchen",
+      "version": "2.5.0",
+      "in_snapshot_items": 0,
+      "in_snapshot_blocks": 0,
+      "in_snapshot_recipes": 0,
+      "lang_keys": 342,
+      "recipe_json_files_in_own_datapack": 3,
+      "datapack_files": [
+        "data/create/tags/block/passive_boiler_heaters.json (引用 #farmersdelight:heat_sources)",
+        "data/create/tags/item/upright_on_belt.json (引用 #c:foods/edible_when_placed)",
+        "data/create/tags/item/handheld_in_deployer_use.json"
+      ],
+      "config_conversions_enabled": [
+        "addTreeBarkToSawingRecipes",
+        "convertCuttingBoardRecipesToSawingRecipes",
+        "convertCuttingBoardRecipesToDeployingRecipes",
+        "convertKegPouringRecipesToFillingRecipes",
+        "convertKegPouringRecipesToEmptyingRecipes"
+      ],
+      "mixin_configs": [
+        "create_central_kitchen.farmersdelight",
+        "create_central_kitchen.brewinandchewin",
+        "create_central_kitchen.extradelight",
+        "create_central_kitchen.minersdelight",
+        "create_central_kitchen.dungeonsdelight"
+      ],
+      "dead_refs_in_datapack": [
+        "trailsandtails_delight:pottery_bowl",
+        "trailsandtails_delight:sniffer_eggshell"
+      ],
+      "actual_namespace_in_pack": "trailandtales_delight",
+      "snapshot_evidence": {
+        "create_sawing_type_recipes": 0,
+        "create_recipes_using_farmersdelight_items": 0,
+        "create_fill_empty_from_brewinandchewin": 0
+      },
+      "conclusion": "转换后的配方在 2026-08-28 05:55Z 快照中完全不可见：五轮台账没有任何一条来自该模组；其运行时克隆/派生会绕过删除与收窄闸门，需要游戏内验收"
+    },
+    "F3_unnarrowed_tags_with_existing_family": [
+      {
+        "tag": "c:crops",
+        "recipes": 3,
+        "members": 42,
+        "namespaces": [
+          "letsdocompat",
+          "youkaisfeasts"
+        ],
+        "family": "seki:vegetables/common",
+        "familyMembers": 24,
+        "leakCount": 22,
+        "leak": [
+          "corn_delight:corn",
+          "culturaldelights:corn_cob",
+          "farm_and_charm:corn",
+          "farmersdelight:rice",
+          "farmersdelight:rice_panicle",
+          "immortalers_delight:alfalfa",
+          "immortalers_delight:evolutcorn",
+          "immortalers_delight:himekaido",
+          "immortalers_delight:kwat_wheat",
+          "immortalers_delight:pearlip",
+          "kaleidoscope_cookery:rice",
+          "minecraft:cactus",
+          "minecraft:chorus_flower",
+          "minecraft:cocoa_beans",
+          "minecraft:melon",
+          "minecraft:nether_wart",
+          "minecraft:pumpkin",
+          "minecraft:sugar_cane",
+          "minecraft:wheat",
+          "supplementaries:flax",
+          "vintagedelight:oat",
+          "vintagedelight:peanut"
+        ],
+        "samples": [
+          "letsdocompat:farm_and_charm/cooking/poor_god_soup",
+          "youkaisfeasts:cooking/poor_god_soup",
+          "youkaisfeasts:unordered_cooking/higan_soup"
+        ]
+      },
+      {
+        "tag": "minecraft:fishes",
+        "recipes": 5,
+        "members": 46,
+        "namespaces": [
+          "create_deepfried",
+          "immortalers_delight",
+          "letsdocompat"
+        ],
+        "family": "seki:fish/raw_fish",
+        "familyMembers": 42,
+        "leakCount": 12,
+        "leak": [
+          "alexscaves:cooked_lanternfish",
+          "alexscaves:cooked_radgill",
+          "alexscaves:cooked_tripodfish",
+          "cataclysm:lionfish",
+          "dungeonsdelight:lutefisk",
+          "kaleidoscope_chinesefood:yellow_croaker",
+          "minecraft:cooked_cod",
+          "minecraft:cooked_salmon",
+          "minersdelight:baked_squid",
+          "minersdelight:glow_squid",
+          "minersdelight:squid",
+          "youkaisfeasts:raw_lamprey"
+        ],
+        "samples": [
+          "create_deepfried:compat/farmersdelight/mixing/raw_tempura",
+          "create_deepfried:mixing/raw_tempura",
+          "immortalers_delight:cooking/kwat_tofu_miso_soup",
+          "immortalers_delight:cooking/pitcher_plant_shao_mai"
+        ]
+      },
+      {
+        "tag": "c:foods/cooked_pork",
+        "recipes": 5,
+        "members": 5,
+        "namespaces": [
+          "bakeries",
+          "kaleidoscope_chinesefood",
+          "mynethersdelight"
+        ],
+        "family": "seki:meat/cooked_livestock_common",
+        "familyMembers": 5,
+        "leakCount": 4,
+        "leak": [
+          "farmersdelight:cooked_bacon",
+          "kaleidoscope_cookery:cooked_pork_belly",
+          "mynethersdelight:cooked_loin",
+          "mynethersdelight:roasted_sausage"
+        ],
+        "samples": [
+          "bakeries:baguette_with_filling",
+          "kaleidoscope_chinesefood:flex_pot/twice_cooked_pork",
+          "kaleidoscope_chinesefood:pot/twice_cooked_pork",
+          "kaleidoscope_chinesefood:pot/twice_cooked_pork_rice"
+        ]
+      },
+      {
+        "tag": "c:raw_meat",
+        "recipes": 4,
+        "members": 6,
+        "namespaces": [
+          "create_bic_bit",
+          "create_deepfried"
+        ],
+        "family": "seki:meat/raw_livestock_common",
+        "familyMembers": 18,
+        "leakCount": 3,
+        "leak": [
+          "alexsmobs:kangaroo_meat",
+          "alexsmobs:lobster_tail",
+          "alexsmobs:moose_ribs"
+        ],
+        "samples": [
+          "create_bic_bit:mixing/bitterballen",
+          "create_bic_bit:mixing/raw_frikandel",
+          "create_bic_bit:mixing/raw_kroket",
+          "create_deepfried:mixing/raw_corn_dog"
+        ]
+      },
+      {
+        "tag": "c:foods/raw_strider",
+        "recipes": 6,
+        "members": 3,
+        "namespaces": [
+          "kaleidoscope_nether",
+          "letsdocompat",
+          "mynethersdelight"
+        ],
+        "family": "seki:meat/raw_meat",
+        "familyMembers": 31,
+        "leakCount": 2,
+        "leak": [
+          "kaleidoscope_nether:raw_strider_meat",
+          "mynethersdelight:strider_slice"
+        ],
+        "samples": [
+          "kaleidoscope_nether:pot/braised_strider",
+          "kaleidoscope_nether:pot/strider_nether_wart_stew",
+          "kaleidoscope_nether:pot/strider_shell_stir_fry",
+          "letsdocompat:farm_and_charm/cooking/strider_stew"
+        ]
+      },
+      {
+        "tag": "forge:salad_ingredients",
+        "recipes": 2,
+        "members": 21,
+        "namespaces": [
+          "immortalers_delight",
+          "letsdocompat"
+        ],
+        "family": "seki:vegetables/common",
+        "familyMembers": 24,
+        "leakCount": 5,
+        "leak": [
+          "minecraft:brown_mushroom",
+          "minecraft:golden_carrot",
+          "minecraft:red_mushroom",
+          "minecraft:sweet_berries",
+          "vintagedelight:peanut"
+        ],
+        "samples": [
+          "immortalers_delight:cooking/jade_and_ruby_soup",
+          "letsdocompat:farm_and_charm/cooking/jade_and_ruby_soup"
+        ]
+      },
+      {
+        "tag": "aquaculturedelight:turtle_soup_ingredients",
+        "recipes": 2,
+        "members": 4,
+        "namespaces": [
+          "aquaculturedelight",
+          "letsdocompat"
+        ],
+        "family": "seki:meat/raw_meat",
+        "familyMembers": 31,
+        "leakCount": 3,
+        "leak": [
+          "aquaculture:arrau_turtle",
+          "aquaculture:box_turtle",
+          "aquaculture:starshell_turtle"
+        ],
+        "samples": [
+          "aquaculturedelight:cooking/turtle_soup",
+          "letsdocompat:farm_and_charm/cooking/turtle_soup"
+        ]
+      },
+      {
+        "tag": "c:crops/eggplant",
+        "recipes": 3,
+        "members": 4,
+        "namespaces": [
+          "culturalrecipes",
+          "letsdocompat"
+        ],
+        "family": "seki:vegetables/common",
+        "familyMembers": 24,
+        "leakCount": 2,
+        "leak": [
+          "culturaldelights:eggplant",
+          "culturaldelights:white_eggplant"
+        ],
+        "samples": [
+          "culturalrecipes:cooking/poached_eggplants",
+          "culturalrecipes:cutting/cut_eggplant",
+          "letsdocompat:farm_and_charm/cooking/poached_eggplants"
+        ]
+      },
+      {
+        "tag": "dungeonsdelight:rubaboo_ingredients",
+        "recipes": 2,
+        "members": 4,
+        "namespaces": [
+          "dungeonsdelight"
+        ],
+        "family": "seki:ingredients/sugar_refined",
+        "familyMembers": 1,
+        "leakCount": 3,
+        "leak": [
+          "minecraft:glow_berries",
+          "minecraft:melon_slice",
+          "minecraft:sweet_berries"
+        ],
+        "samples": [
+          "dungeonsdelight:integration/minersdelight/monster_cooking/misc/rubaboo_cup",
+          "dungeonsdelight:monster_cooking/rubaboo"
+        ]
+      },
+      {
+        "tag": "c:foods/cooked_beef",
+        "recipes": 3,
+        "members": 3,
+        "namespaces": [
+          "farmersdelight",
+          "immortalers_delight"
+        ],
+        "family": "seki:meat/cooked_livestock_common",
+        "familyMembers": 5,
+        "leakCount": 2,
+        "leak": [
+          "farmersdelight:beef_patty",
+          "kaleidoscope_cookery:cooked_cow_offal"
+        ],
+        "samples": [
+          "farmersdelight:stuffed_potato",
+          "immortalers_delight:colorful_grilled_skewers",
+          "immortalers_delight:pitcher_plant_barbecue"
+        ]
+      },
+      {
+        "tag": "aquaculturedelight:pickles",
+        "recipes": 4,
+        "members": 5,
+        "namespaces": [
+          "aquaculturedelight",
+          "letsdocompat"
+        ],
+        "family": "seki:vegetables/common",
+        "familyMembers": 24,
+        "leakCount": 1,
+        "leak": [
+          "minecraft:sea_pickle"
+        ],
+        "samples": [
+          "aquaculturedelight:cooking/halibut_with_tartar_sauce",
+          "aquaculturedelight:cooking/rollmops",
+          "letsdocompat:farm_and_charm/cooking/halibut_with_tartar_sauce",
+          "letsdocompat:farm_and_charm/cooking/rollmops"
+        ]
+      },
+      {
+        "tag": "c:foods/cooked_fish",
+        "recipes": 2,
+        "members": 13,
+        "namespaces": [
+          "crabbersdelight",
+          "letsdocompat"
+        ],
+        "family": "seki:fish/cooked_fish",
+        "familyMembers": 11,
+        "leakCount": 2,
+        "leak": [
+          "alexscaves:cooked_mussel",
+          "alexscaves:cooked_trilocaris_tail"
+        ],
+        "samples": [
+          "crabbersdelight:cooking/stuffed_nautilus_shell",
+          "letsdocompat:farm_and_charm/cooking/stuffed_nautilus_shell"
+        ]
+      },
+      {
+        "tag": "c:foods/cooked_mutton",
+        "recipes": 2,
+        "members": 3,
+        "namespaces": [
+          "farmersdelight"
+        ],
+        "family": "seki:meat/cooked_livestock_common",
+        "familyMembers": 5,
+        "leakCount": 2,
+        "leak": [
+          "farmersdelight:cooked_mutton_chops",
+          "kaleidoscope_cookery:cooked_lamb_chops"
+        ],
+        "samples": [
+          "farmersdelight:mutton_wrap",
+          "farmersdelight:shepherds_pie_block"
+        ]
+      },
+      {
+        "tag": "c:foods/slices/cucumber",
+        "recipes": 4,
+        "members": 2,
+        "namespaces": [
+          "youkaisfeasts"
+        ],
+        "family": "seki:vegetables/common",
+        "familyMembers": 24,
+        "leakCount": 1,
+        "leak": [
+          "youkaisfeasts:cucumber_slice"
+        ],
+        "samples": [
+          "youkaisfeasts:cuisine_mixed/california_roll",
+          "youkaisfeasts:cuisine_mixed/rainbow_futomaki",
+          "youkaisfeasts:cuisine_mixed/salmon_futomaki",
+          "youkaisfeasts:cuisine_ordered/kappa_maki"
+        ]
+      },
+      {
+        "tag": "culturaldelights:cooked_chickens",
+        "recipes": 3,
+        "members": 2,
+        "namespaces": [
+          "culturalrecipes",
+          "letsdocompat",
+          "youkaisfeasts"
+        ],
+        "family": "seki:meat/cooked_livestock_common",
+        "familyMembers": 5,
+        "leakCount": 1,
+        "leak": [
+          "farmersdelight:chicken_cuts"
+        ],
+        "samples": [
+          "culturalrecipes:cooking/spicy_curry",
+          "letsdocompat:farm_and_charm/cooking/spicy_curry",
+          "youkaisfeasts:cuisine_ordered/chicken_roll"
+        ]
+      },
+      {
+        "tag": "forge:vegetables",
+        "recipes": 1,
+        "members": 18,
+        "namespaces": [
+          "immortalers_delight"
+        ],
+        "family": "seki:vegetables/common",
+        "familyMembers": 24,
+        "leakCount": 3,
+        "leak": [
+          "minecraft:golden_carrot",
+          "minecraft:sweet_berries",
+          "vintagedelight:peanut"
+        ],
+        "samples": [
+          "immortalers_delight:cooking/pitcher_plant_jiao_zi"
+        ]
+      },
+      {
+        "tag": "brewinandchewin:foods/jerky_meat",
+        "recipes": 1,
+        "members": 33,
+        "namespaces": [
+          "brewinandchewin"
+        ],
+        "family": "seki:meat/raw_meat",
+        "familyMembers": 31,
+        "leakCount": 2,
+        "leak": [
+          "candlelight:beef_tartare",
+          "minecraft:rotten_flesh"
+        ],
+        "samples": [
+          "brewinandchewin:fermenting/jerky"
+        ]
+      },
+      {
+        "tag": "c:foods/raw_meat",
+        "recipes": 2,
+        "members": 32,
+        "namespaces": [
+          "farmersdelight",
+          "minersdelight"
+        ],
+        "family": "seki:meat/raw_meat",
+        "familyMembers": 31,
+        "leakCount": 1,
+        "leak": [
+          "candlelight:beef_tartare"
+        ],
+        "samples": [
+          "farmersdelight:cooking/cabbage_rolls",
+          "minersdelight:cooking/bat_rolls"
+        ]
+      },
+      {
+        "tag": "aquaculturedelight:fillet_one",
+        "recipes": 1,
+        "members": 7,
+        "namespaces": [
+          "aquaculturedelight"
+        ],
+        "family": "seki:fish/raw_fish",
+        "familyMembers": 42,
+        "leakCount": 1,
+        "leak": [
+          "aquaculture:minnow"
+        ],
+        "samples": [
+          "aquaculturedelight:cutting/fillet/fillet_one"
+        ]
+      },
+      {
+        "tag": "culturaldelights:cooked_beefs",
+        "recipes": 1,
+        "members": 2,
+        "namespaces": [
+          "culturalrecipes"
+        ],
+        "family": "seki:meat/cooked_livestock_common",
+        "familyMembers": 5,
+        "leakCount": 1,
+        "leak": [
+          "farmersdelight:beef_patty"
+        ],
+        "samples": [
+          "culturalrecipes:beef_burrito"
+        ]
+      },
+      {
+        "tag": "culturaldelights:cooked_muttons",
+        "recipes": 1,
+        "members": 2,
+        "namespaces": [
+          "culturalrecipes"
+        ],
+        "family": "seki:meat/cooked_livestock_common",
+        "familyMembers": 5,
+        "leakCount": 1,
+        "leak": [
+          "farmersdelight:cooked_mutton_chops"
+        ],
+        "samples": [
+          "culturalrecipes:mutton_sandwich"
+        ]
+      },
+      {
+        "tag": "culturaldelights:cooked_porks",
+        "recipes": 1,
+        "members": 2,
+        "namespaces": [
+          "culturalrecipes"
+        ],
+        "family": "seki:meat/cooked_livestock_common",
+        "familyMembers": 5,
+        "leakCount": 1,
+        "leak": [
+          "farmersdelight:cooked_bacon"
+        ],
+        "samples": [
+          "culturalrecipes:pork_wrap"
+        ]
+      },
+      {
+        "tag": "c:foods/cooked_chicken",
+        "recipes": 1,
+        "members": 2,
+        "namespaces": [
+          "farmersdelight"
+        ],
+        "family": "seki:meat/cooked_livestock_common",
+        "familyMembers": 5,
+        "leakCount": 1,
+        "leak": [
+          "farmersdelight:cooked_chicken_cuts"
+        ],
+        "samples": [
+          "farmersdelight:chicken_sandwich"
+        ]
+      },
+      {
+        "tag": "c:crops/onion",
+        "recipes": 40,
+        "members": 2,
+        "namespaces": [
+          "alexsdelight",
+          "aquaculturedelight",
+          "culturalrecipes",
+          "ends_delight",
+          "farmersdelight",
+          "letsdocompat",
+          "mynethersdelight",
+          "someassemblyrequired",
+          "vintagedelight",
+          "youkaisfeasts"
+        ],
+        "family": "seki:vegetables/common",
+        "familyMembers": 24,
+        "leakCount": 0,
+        "leak": [],
+        "samples": [
+          "alexsdelight:cooking/acacia_blossom_soup",
+          "aquaculturedelight:cooking/halibut_with_tartar_sauce",
+          "aquaculturedelight:cooking/rollmops",
+          "culturalrecipes:cooking/elote"
+        ]
+      },
+      {
+        "tag": "c:crops/carrot",
+        "recipes": 20,
+        "members": 1,
+        "namespaces": [
+          "alexsdelight",
+          "barbequesdelight",
+          "brewinandchewin",
+          "farmersdelight",
+          "letsdocompat",
+          "mynethersdelight",
+          "youkaisfeasts"
+        ],
+        "family": "seki:vegetables/common",
+        "familyMembers": 24,
+        "leakCount": 0,
+        "leak": [],
+        "samples": [
+          "alexsdelight:cooking/kangaroo_stew",
+          "barbequesdelight:bibimbap",
+          "brewinandchewin:cooking/vegetable_omelet",
+          "farmersdelight:cooking/beef_stew"
+        ]
+      },
+      {
+        "tag": "c:crops/beetroot",
+        "recipes": 11,
+        "members": 1,
+        "namespaces": [
+          "alexsdelight",
+          "brewinandchewin",
+          "farmersdelight",
+          "letsdocompat"
+        ],
+        "family": "seki:vegetables/common",
+        "familyMembers": 24,
+        "leakCount": 0,
+        "leak": [],
+        "samples": [
+          "alexsdelight:cooking/kangaroo_stew",
+          "brewinandchewin:cooking/horror_lasagna",
+          "brewinandchewin:fermenting/strongroot_ale_from_beer",
+          "farmersdelight:cooking/beetroot_soup"
+        ]
+      },
+      {
+        "tag": "c:foods/raw_pollock",
+        "recipes": 1,
+        "members": 1,
+        "namespaces": [
+          "aquaculturedelight"
+        ],
+        "family": "seki:fish/raw_fish",
+        "familyMembers": 42,
+        "leakCount": 0,
+        "leak": [],
+        "samples": [
+          "aquaculturedelight:cooking/baked_pollock_with_carrots"
+        ]
+      },
+      {
+        "tag": "c:foods/raw_bass",
+        "recipes": 3,
+        "members": 2,
+        "namespaces": [
+          "aquaculturedelight",
+          "letsdocompat"
+        ],
+        "family": "seki:fish/raw_fish",
+        "familyMembers": 42,
+        "leakCount": 0,
+        "leak": [],
+        "samples": [
+          "aquaculturedelight:cooking/bass_stew",
+          "aquaculturedelight:cooking/crispy_fried_perch",
+          "letsdocompat:farm_and_charm/cooking/bass_stew"
+        ]
+      },
+      {
+        "tag": "c:foods/raw_herring",
+        "recipes": 5,
+        "members": 1,
+        "namespaces": [
+          "aquaculturedelight",
+          "brewinandchewin",
+          "letsdocompat"
+        ],
+        "family": "seki:fish/raw_fish",
+        "familyMembers": 42,
+        "leakCount": 0,
+        "leak": [],
+        "samples": [
+          "aquaculturedelight:cooking/buckling",
+          "aquaculturedelight:cooking/rollmops",
+          "brewinandchewin:fermenting/kippers",
+          "letsdocompat:farm_and_charm/cooking/buckling"
+        ]
+      },
+      {
+        "tag": "aquaculturedelight:fish_chorba_vegetables",
+        "recipes": 2,
+        "members": 2,
+        "namespaces": [
+          "aquaculturedelight",
+          "letsdocompat"
+        ],
+        "family": "seki:vegetables/common",
+        "familyMembers": 24,
+        "leakCount": 0,
+        "leak": [],
+        "samples": [
+          "aquaculturedelight:cooking/fish_chorba",
+          "letsdocompat:farm_and_charm/cooking/fish_chorba"
+        ]
+      },
+      {
+        "tag": "aquaculturedelight:halaszle_fishes",
+        "recipes": 2,
+        "members": 5,
+        "namespaces": [
+          "aquaculturedelight",
+          "letsdocompat"
+        ],
+        "family": "seki:fish/raw_fish",
+        "familyMembers": 42,
+        "leakCount": 0,
+        "leak": [],
+        "samples": [
+          "aquaculturedelight:cooking/halaszle",
+          "letsdocompat:farm_and_charm/cooking/halaszle"
+        ]
+      },
+      {
+        "tag": "aquaculturedelight:halaszle_vegetables",
+        "recipes": 2,
+        "members": 5,
+        "namespaces": [
+          "aquaculturedelight",
+          "letsdocompat"
+        ],
+        "family": "seki:vegetables/common",
+        "familyMembers": 24,
+        "leakCount": 0,
+        "leak": [],
+        "samples": [
+          "aquaculturedelight:cooking/halaszle",
+          "letsdocompat:farm_and_charm/cooking/halaszle"
+        ]
+      },
+      {
+        "tag": "c:foods/raw_halibut",
+        "recipes": 2,
+        "members": 2,
+        "namespaces": [
+          "aquaculturedelight",
+          "letsdocompat"
+        ],
+        "family": "seki:fish/raw_fish",
+        "familyMembers": 42,
+        "leakCount": 0,
+        "leak": [],
+        "samples": [
+          "aquaculturedelight:cooking/halibut_with_tartar_sauce",
+          "letsdocompat:farm_and_charm/cooking/halibut_with_tartar_sauce"
+        ]
+      },
+      {
+        "tag": "c:foods/raw_piranha",
+        "recipes": 2,
+        "members": 2,
+        "namespaces": [
+          "aquaculturedelight",
+          "letsdocompat"
+        ],
+        "family": "seki:fish/raw_fish",
+        "familyMembers": 42,
+        "leakCount": 0,
+        "leak": [],
+        "samples": [
+          "aquaculturedelight:cooking/unusual_fish_soup",
+          "letsdocompat:farm_and_charm/cooking/unusual_fish_soup"
+        ]
+      },
+      {
+        "tag": "aquaculturedelight:fillet_four",
+        "recipes": 2,
+        "members": 2,
+        "namespaces": [
+          "aquaculturedelight"
+        ],
+        "family": "seki:fish/raw_fish",
+        "familyMembers": 42,
+        "leakCount": 0,
+        "leak": [],
+        "samples": [
+          "aquaculturedelight:cutting/fillet/fillet_four",
+          "aquaculturedelight:cutting/fillet/neptunium_fillet_four"
+        ]
+      },
+      {
+        "tag": "aquaculturedelight:fillet_fourteen",
+        "recipes": 2,
+        "members": 1,
+        "namespaces": [
+          "aquaculturedelight"
+        ],
+        "family": "seki:fish/raw_fish",
+        "familyMembers": 42,
+        "leakCount": 0,
+        "leak": [],
+        "samples": [
+          "aquaculturedelight:cutting/fillet/fillet_fourteen",
+          "aquaculturedelight:cutting/fillet/neptunium_fillet_fourteen"
+        ]
+      },
+      {
+        "tag": "aquaculturedelight:fillet_six",
+        "recipes": 2,
+        "members": 2,
+        "namespaces": [
+          "aquaculturedelight"
+        ],
+        "family": "seki:fish/raw_fish",
+        "familyMembers": 42,
+        "leakCount": 0,
+        "leak": [],
+        "samples": [
+          "aquaculturedelight:cutting/fillet/fillet_six",
+          "aquaculturedelight:cutting/fillet/neptunium_fillet_six"
+        ]
+      },
+      {
+        "tag": "aquaculturedelight:fillet_ten",
+        "recipes": 2,
+        "members": 3,
+        "namespaces": [
+          "aquaculturedelight"
+        ],
+        "family": "seki:fish/raw_fish",
+        "familyMembers": 42,
+        "leakCount": 0,
+        "leak": [],
+        "samples": [
+          "aquaculturedelight:cutting/fillet/fillet_ten",
+          "aquaculturedelight:cutting/fillet/neptunium_fillet_ten"
+        ]
+      },
+      {
+        "tag": "aquaculturedelight:fillet_three",
+        "recipes": 1,
+        "members": 3,
+        "namespaces": [
+          "aquaculturedelight"
+        ],
+        "family": "seki:fish/raw_fish",
+        "familyMembers": 42,
+        "leakCount": 0,
+        "leak": [],
+        "samples": [
+          "aquaculturedelight:cutting/fillet/fillet_three"
+        ]
+      },
+      {
+        "tag": "aquaculturedelight:fillet_twelve",
+        "recipes": 2,
+        "members": 1,
+        "namespaces": [
+          "aquaculturedelight"
+        ],
+        "family": "seki:fish/raw_fish",
+        "familyMembers": 42,
+        "leakCount": 0,
+        "leak": [],
+        "samples": [
+          "aquaculturedelight:cutting/fillet/fillet_twelve",
+          "aquaculturedelight:cutting/fillet/neptunium_fillet_twelve"
+        ]
+      },
+      {
+        "tag": "aquaculturedelight:fillet_two",
+        "recipes": 1,
+        "members": 7,
+        "namespaces": [
+          "aquaculturedelight"
+        ],
+        "family": "seki:fish/raw_fish",
+        "familyMembers": 42,
+        "leakCount": 0,
+        "leak": [],
+        "samples": [
+          "aquaculturedelight:cutting/fillet/fillet_two"
+        ]
+      },
+      {
+        "tag": "c:foods/onion",
+        "recipes": 14,
+        "members": 1,
+        "namespaces": [
+          "barbequesdelight",
+          "brewinandchewin",
+          "letsdocompat",
+          "minersdelight",
+          "mynethersdelight"
+        ],
+        "family": "seki:vegetables/common",
+        "familyMembers": 24,
+        "leakCount": 0,
+        "leak": [],
+        "samples": [
+          "barbequesdelight:bibimbap",
+          "barbequesdelight:kebab_sandwich",
+          "brewinandchewin:cooking/creamy_onion_soup",
+          "brewinandchewin:cooking/vegetable_omelet"
+        ]
+      },
+      {
+        "tag": "c:foods/raw_cod",
+        "recipes": 6,
+        "members": 3,
+        "namespaces": [
+          "barbequesdelight",
+          "farmersdelight",
+          "letsdocompat",
+          "youkaisfeasts"
+        ],
+        "family": "seki:fish/raw_common_safe",
+        "familyMembers": 8,
+        "leakCount": 0,
+        "leak": [],
+        "samples": [
+          "barbequesdelight:recipes/skewering/raw_cod_skewer",
+          "farmersdelight:cooking/baked_cod_stew",
+          "letsdocompat:farm_and_charm/cooking/baked_cod_stew",
+          "letsdocompat:farm_and_charm/cooking/tomato_sauce_cod"
+        ]
+      },
+      {
+        "tag": "c:foods/tomato",
+        "recipes": 6,
+        "members": 4,
+        "namespaces": [
+          "brewinandchewin",
+          "immortalers_delight",
+          "letsdocompat",
+          "youkaisfeasts"
+        ],
+        "family": "seki:vegetables/common",
+        "familyMembers": 24,
+        "leakCount": 0,
+        "leak": [],
+        "samples": [
+          "brewinandchewin:cooking/cheesy_pasta",
+          "immortalers_delight:cooking/extra_spicy_pasta",
+          "letsdocompat:farm_and_charm/cooking/cheesy_pasta",
+          "letsdocompat:farm_and_charm/cooking/extra_spicy_pasta"
+        ]
+      },
+      {
+        "tag": "c:crops/potato",
+        "recipes": 25,
+        "members": 1,
+        "namespaces": [
+          "brewinandchewin",
+          "farmersdelight",
+          "letsdocompat",
+          "mynethersdelight",
+          "youkaisfeasts"
+        ],
+        "family": "seki:vegetables/common",
+        "familyMembers": 24,
+        "leakCount": 0,
+        "leak": [],
+        "samples": [
+          "brewinandchewin:cooking/fiery_fondue_pot",
+          "brewinandchewin:cooking/scarlet_pierogi",
+          "brewinandchewin:fermenting/strongroot_ale_from_beer",
+          "brewinandchewin:fermenting/vodka_from_water"
+        ]
+      },
+      {
+        "tag": "c:crops/tomato",
+        "recipes": 14,
+        "members": 4,
+        "namespaces": [
+          "brewinandchewin",
+          "ends_delight",
+          "farmersdelight",
+          "letsdocompat",
+          "someassemblyrequired"
+        ],
+        "family": "seki:vegetables/common",
+        "familyMembers": 24,
+        "leakCount": 0,
+        "leak": [],
+        "samples": [
+          "brewinandchewin:fermenting/bloody_mary_from_vodka",
+          "ends_delight:food/stir_fried_shulker_meat",
+          "farmersdelight:cooking/baked_cod_stew",
+          "farmersdelight:cooking/ratatouille"
+        ]
+      },
+      {
+        "tag": "c:raw_meat_delight",
+        "recipes": 3,
+        "members": 5,
+        "namespaces": [
+          "create_bic_bit"
+        ],
+        "family": "seki:meat/raw_livestock_common",
+        "familyMembers": 18,
+        "leakCount": 0,
+        "leak": [],
+        "samples": [
+          "create_bic_bit:compat/farmersdelight/bitterballen",
+          "create_bic_bit:compat/farmersdelight/frikandel",
+          "create_bic_bit:compat/farmersdelight/kroket"
+        ]
+      },
+      {
+        "tag": "create_deepfried:fd_vegetables",
+        "recipes": 1,
+        "members": 4,
+        "namespaces": [
+          "create_deepfried"
+        ],
+        "family": "seki:vegetables/common",
+        "familyMembers": 24,
+        "leakCount": 0,
+        "leak": [],
+        "samples": [
+          "create_deepfried:compat/farmersdelight/mixing/raw_tempura"
+        ]
+      },
+      {
+        "tag": "create_deepfried:vegetables",
+        "recipes": 1,
+        "members": 3,
+        "namespaces": [
+          "create_deepfried"
+        ],
+        "family": "seki:vegetables/common",
+        "familyMembers": 24,
+        "leakCount": 0,
+        "leak": [],
+        "samples": [
+          "create_deepfried:mixing/raw_tempura"
+        ]
+      },
+      {
+        "tag": "farm_and_charm:onion",
+        "recipes": 12,
+        "members": 2,
+        "namespaces": [
+          "farm_and_charm",
+          "letsdocompat"
+        ],
+        "family": "seki:vegetables/common",
+        "familyMembers": 24,
+        "leakCount": 0,
+        "leak": [],
+        "samples": [
+          "farm_and_charm:crafting_bowl/beef_tartare",
+          "farm_and_charm:crafting_bowl/farmer_salad",
+          "farm_and_charm:pot_cooking/goulash",
+          "farm_and_charm:pot_cooking/onion_soup"
+        ]
+      },
+      {
+        "tag": "farm_and_charm:tomato",
+        "recipes": 15,
+        "members": 4,
+        "namespaces": [
+          "farm_and_charm",
+          "letsdocompat"
+        ],
+        "family": "seki:vegetables/common",
+        "familyMembers": 24,
+        "leakCount": 0,
+        "leak": [],
+        "samples": [
+          "farm_and_charm:crafting_bowl/farmer_salad",
+          "farm_and_charm:crafting_bowl/fresh_garden_salad",
+          "farm_and_charm:crafting_bowl/harvest_plate",
+          "farm_and_charm:crafting_bowl/potato_salad"
+        ]
+      },
+      {
+        "tag": "farm_and_charm:raw_bacon",
+        "recipes": 1,
+        "members": 1,
+        "namespaces": [
+          "farm_and_charm"
+        ],
+        "family": "seki:meat/raw_livestock_common",
+        "familyMembers": 18,
+        "leakCount": 0,
+        "leak": [],
+        "samples": [
+          "farm_and_charm:stove/grilled_bacon_sandwich"
+        ]
+      },
+      {
+        "tag": "c:foods/leafy_green",
+        "recipes": 8,
+        "members": 2,
+        "namespaces": [
+          "farmersdelight",
+          "letsdocompat"
+        ],
+        "family": "seki:vegetables/cabbage_strict",
+        "familyMembers": 2,
+        "leakCount": 0,
+        "leak": [],
+        "samples": [
+          "farmersdelight:cooking/chicken_soup",
+          "farmersdelight:cooking/pumpkin_soup",
+          "farmersdelight:cooking/vegetable_noodles",
+          "farmersdelight:cooking/vegetable_soup"
+        ]
+      },
+      {
+        "tag": "c:foods/cooked_salmon",
+        "recipes": 1,
+        "members": 2,
+        "namespaces": [
+          "farmersdelight"
+        ],
+        "family": "seki:fish/cooked_fish",
+        "familyMembers": 11,
+        "leakCount": 0,
+        "leak": [],
+        "samples": [
+          "farmersdelight:grilled_salmon"
+        ]
+      },
+      {
+        "tag": "immortalers_delight:common_raw_meats",
+        "recipes": 1,
+        "members": 3,
+        "namespaces": [
+          "immortalers_delight"
+        ],
+        "family": "seki:meat/raw_livestock_common",
+        "familyMembers": 18,
+        "leakCount": 0,
+        "leak": [],
+        "samples": [
+          "immortalers_delight:cooking/red_stuffed_bun"
+        ]
+      },
+      {
+        "tag": "c:foods/mushroom",
+        "recipes": 1,
+        "members": 2,
+        "namespaces": [
+          "immortalers_delight"
+        ],
+        "family": "seki:mushrooms/culinary_common",
+        "familyMembers": 2,
+        "leakCount": 0,
+        "leak": [],
+        "samples": [
+          "immortalers_delight:cooking/sutffed_kwat_wheat_doufu"
+        ]
+      },
+      {
+        "tag": "immortalers_delight:beef_or_pork",
+        "recipes": 1,
+        "members": 2,
+        "namespaces": [
+          "immortalers_delight"
+        ],
+        "family": "seki:meat/raw_livestock_common",
+        "familyMembers": 18,
+        "leakCount": 0,
+        "leak": [],
+        "samples": [
+          "immortalers_delight:cooking/sutffed_kwat_wheat_doufu"
+        ]
+      },
+      {
+        "tag": "c:vegetables/cave_carrot",
+        "recipes": 2,
+        "members": 1,
+        "namespaces": [
+          "letsdocompat",
+          "minersdelight"
+        ],
+        "family": "seki:vegetables/common",
+        "familyMembers": 24,
+        "leakCount": 0,
+        "leak": [],
+        "samples": [
+          "letsdocompat:farm_and_charm/cooking/cave_soup",
+          "minersdelight:cooking/cave_soup"
+        ]
+      },
+      {
+        "tag": "c:crops/cucumber",
+        "recipes": 3,
+        "members": 4,
+        "namespaces": [
+          "letsdocompat",
+          "youkaisfeasts"
+        ],
+        "family": "seki:vegetables/common",
+        "familyMembers": 24,
+        "leakCount": 0,
+        "leak": [],
+        "samples": [
+          "letsdocompat:farm_and_charm/cooking/honey_glazed_cucumber",
+          "youkaisfeasts:cooking/honey_glazed_cucumber",
+          "youkaisfeasts:cuisine_ordered/midori_roll"
+        ]
+      },
+      {
+        "tag": "c:foods/raw_hoglin",
+        "recipes": 2,
+        "members": 2,
+        "namespaces": [
+          "letsdocompat",
+          "mynethersdelight"
+        ],
+        "family": "seki:meat/raw_meat",
+        "familyMembers": 31,
+        "leakCount": 0,
+        "leak": [],
+        "samples": [
+          "letsdocompat:farm_and_charm/cooking/spicy_noodle_soup",
+          "mynethersdelight:cooking/spicy_noodle_soup"
+        ]
+      },
+      {
+        "tag": "c:foods/vegetable/chili_pepper",
+        "recipes": 1,
+        "members": 1,
+        "namespaces": [
+          "vintagedelight"
+        ],
+        "family": "seki:vegetables/common",
+        "familyMembers": 24,
+        "leakCount": 0,
+        "leak": [],
+        "samples": [
+          "vintagedelight:fermenting/kimchi_from_fermenting"
+        ]
+      },
+      {
+        "tag": "c:foods/vegetable/cucumber",
+        "recipes": 1,
+        "members": 1,
+        "namespaces": [
+          "vintagedelight"
+        ],
+        "family": "seki:vegetables/common",
+        "familyMembers": 24,
+        "leakCount": 0,
+        "leak": [],
+        "samples": [
+          "vintagedelight:fermenting/pickle_from_fermenting"
+        ]
+      },
+      {
+        "tag": "vintagedelight:raw_fish",
+        "recipes": 1,
+        "members": 3,
+        "namespaces": [
+          "vintagedelight"
+        ],
+        "family": "seki:fish/raw_common_safe",
+        "familyMembers": 8,
+        "leakCount": 0,
+        "leak": [],
+        "samples": [
+          "vintagedelight:fermenting/surstromming_from_fermenting"
+        ]
+      },
+      {
+        "tag": "culturaldelights:raw_salmons",
+        "recipes": 1,
+        "members": 2,
+        "namespaces": [
+          "youkaisfeasts"
+        ],
+        "family": "seki:fish/raw_common_safe",
+        "familyMembers": 8,
+        "leakCount": 0,
+        "leak": [],
+        "samples": [
+          "youkaisfeasts:cuisine_ordered/rice_ball"
+        ]
+      },
+      {
+        "tag": "c:foods/raw_salmon",
+        "recipes": 1,
+        "members": 3,
+        "namespaces": [
+          "youkaisfeasts"
+        ],
+        "family": "seki:fish/raw_common_safe",
+        "familyMembers": 8,
+        "leakCount": 0,
+        "leak": [],
+        "samples": [
+          "youkaisfeasts:unordered_cooking/hokkaido_salmon_hotpot"
+        ]
+      }
+    ],
+    "F4_unnarrowed_tags_no_family": [
+      {
+        "tag": "mynethersdelight:hot_spice",
+        "recipes": 13,
+        "members": 3,
+        "namespaces": [
+          "letsdocompat",
+          "mynethersdelight"
+        ],
+        "samples": [
+          "letsdocompat:farm_and_charm/cooking/chilidog",
+          "letsdocompat:farm_and_charm/cooking/hot_wings",
+          "letsdocompat:farm_and_charm/cooking/hotcream",
+          "letsdocompat:farm_and_charm/cooking/roast_stuffed_hoglin"
+        ]
+      },
+      {
+        "tag": "c:foods/cooked_egg",
+        "recipes": 11,
+        "members": 2,
+        "namespaces": [
+          "culturalrecipes",
+          "dungeonsdelight",
+          "farmersdelight",
+          "letsdocompat",
+          "mynethersdelight",
+          "youkaisfeasts"
+        ],
+        "samples": [
+          "culturalrecipes:mutton_sandwich",
+          "dungeonsdelight:monster_cooking/silverfish_fried_rice",
+          "farmersdelight:bacon_and_eggs",
+          "farmersdelight:cooking/yorkshire_pudding"
+        ]
+      },
+      {
+        "tag": "c:crops/soybean",
+        "recipes": 11,
+        "members": 1,
+        "namespaces": [
+          "letsdocompat",
+          "youkaisfeasts"
+        ],
+        "samples": [
+          "letsdocompat:farm_and_charm/cooking/mitarashi_dango",
+          "letsdocompat:farm_and_charm/cooking/seven_colored_yokan",
+          "youkaisfeasts:cold_tofu",
+          "youkaisfeasts:cooking/mitarashi_dango"
+        ]
+      },
+      {
+        "tag": "brewinandchewin:foods/cheese_wedge",
+        "recipes": 9,
+        "members": 2,
+        "namespaces": [
+          "brewinandchewin",
+          "letsdocompat"
+        ],
+        "samples": [
+          "brewinandchewin:cooking/creamy_onion_soup",
+          "brewinandchewin:cooking/horror_lasagna",
+          "brewinandchewin:cooking/vegetable_omelet",
+          "brewinandchewin:pizza"
+        ]
+      },
+      {
+        "tag": "farm_and_charm:strawberry",
+        "recipes": 8,
+        "members": 1,
+        "namespaces": [
+          "farm_and_charm",
+          "letsdocompat"
+        ],
+        "samples": [
+          "farm_and_charm:crafting_bowl/farmer_salad",
+          "farm_and_charm:crafting_bowl/oatmeal_with_strawberries",
+          "farm_and_charm:pot_cooking/strawberry_tea",
+          "farm_and_charm:roaster/oat_pancake"
+        ]
+      },
+      {
+        "tag": "c:crops/redbean",
+        "recipes": 8,
+        "members": 1,
+        "namespaces": [
+          "letsdocompat",
+          "youkaisfeasts"
+        ],
+        "samples": [
+          "letsdocompat:farm_and_charm/cooking/bamboo_mizuyokan",
+          "letsdocompat:farm_and_charm/cooking/seven_colored_yokan",
+          "youkaisfeasts:cooking/bamboo_mizuyokan",
+          "youkaisfeasts:cooking/mochi"
+        ]
+      },
+      {
+        "tag": "c:foods/shulker_meat",
+        "recipes": 7,
+        "members": 2,
+        "namespaces": [
+          "ends_delight",
+          "letsdocompat"
+        ],
+        "samples": [
+          "ends_delight:food/ender_noodle",
+          "ends_delight:food/shulker_omelette_mixture",
+          "ends_delight:food/shulker_soup",
+          "ends_delight:food/stir_fried_shulker_meat"
+        ]
+      },
+      {
+        "tag": "c:fruits/chorus",
+        "recipes": 7,
+        "members": 1,
+        "namespaces": [
+          "kaleidoscope_end"
+        ],
+        "samples": [
+          "kaleidoscope_end:mint_chorus_mousse",
+          "kaleidoscope_end:pot/chorus_pasta",
+          "kaleidoscope_end:pot/dragon_head_with_sauce",
+          "kaleidoscope_end:pot/mint_sauce_shulker_meat"
+        ]
+      },
+      {
+        "tag": "minersdelight:baked_cave_carrot",
+        "recipes": 7,
+        "members": 2,
+        "namespaces": [
+          "letsdocompat",
+          "minersdelight"
+        ],
+        "samples": [
+          "letsdocompat:farm_and_charm/cooking/fake_meatloaf",
+          "letsdocompat:farm_and_charm/cooking/pasta_with_veggieballs",
+          "minersdelight:cooking/fake_meatloaf",
+          "minersdelight:cooking/pasta_with_veggieballs"
+        ]
+      },
+      {
+        "tag": "dungeonsdelight:sculk_cheese",
+        "recipes": 6,
+        "members": 2,
+        "namespaces": [
+          "dungeonsdelight"
+        ],
+        "samples": [
+          "dungeonsdelight:monster_cooking/au_rotten_potatoes",
+          "dungeonsdelight:monster_cooking/bloated_baked_potato",
+          "dungeonsdelight:monster_cooking/croak_monster",
+          "dungeonsdelight:monster_cooking/gyudon"
+        ]
+      },
+      {
+        "tag": "c:foods/berry",
+        "recipes": 6,
+        "members": 7,
+        "namespaces": [
+          "farmersdelight",
+          "letsdocompat",
+          "vintagedelight"
+        ],
+        "samples": [
+          "farmersdelight:cooking/stuffed_pumpkin_block",
+          "farmersdelight:fruit_salad",
+          "letsdocompat:farm_and_charm/cooking/stuffed_pumpkin_block",
+          "vintagedelight:deluxe_granola_bar"
+        ]
+      },
+      {
+        "tag": "c:crimson_fruits",
+        "recipes": 6,
+        "members": 1,
+        "namespaces": [
+          "kaleidoscope_nether"
+        ],
+        "samples": [
+          "kaleidoscope_nether:pot/crimson_kabob_1",
+          "kaleidoscope_nether:pot/crimson_kabob_2",
+          "kaleidoscope_nether:pot/crimson_kabob_3",
+          "kaleidoscope_nether:pot/crimson_salad"
+        ]
+      },
+      {
+        "tag": "c:hot_spices",
+        "recipes": 6,
+        "members": 2,
+        "namespaces": [
+          "kaleidoscope_nether"
+        ],
+        "samples": [
+          "kaleidoscope_nether:pot/garlic_oysters",
+          "kaleidoscope_nether:pot/golden_roast",
+          "kaleidoscope_nether:pot/lava_roasted_chicken",
+          "kaleidoscope_nether:pot/nether_fries_platter"
+        ]
+      },
+      {
+        "tag": "c:foods/boiled_egg",
+        "recipes": 6,
+        "members": 1,
+        "namespaces": [
+          "letsdocompat",
+          "mynethersdelight"
+        ],
+        "samples": [
+          "letsdocompat:farm_and_charm/cooking/egg_soup",
+          "letsdocompat:farm_and_charm/cooking/scotch_eggs",
+          "mynethersdelight:cooking/deviled_egg",
+          "mynethersdelight:cooking/egg_soup"
+        ]
+      },
+      {
+        "tag": "alexsdelight:cooked_kangaroo",
+        "recipes": 5,
+        "members": 2,
+        "namespaces": [
+          "alexsdelight",
+          "alexsmobs",
+          "letsdocompat"
+        ],
+        "samples": [
+          "alexsdelight:cooking/kangaroo_pasta",
+          "alexsdelight:cooking/kangaroo_stew",
+          "alexsmobs:kangaroo_burger",
+          "letsdocompat:farm_and_charm/cooking/kangaroo_pasta"
+        ]
+      },
+      {
+        "tag": "c:crops/avocado",
+        "recipes": 5,
+        "members": 2,
+        "namespaces": [
+          "culturalrecipes",
+          "youkaisfeasts"
+        ],
+        "samples": [
+          "culturalrecipes:avocado_toast",
+          "culturalrecipes:beef_burrito",
+          "culturalrecipes:empanada",
+          "culturalrecipes:hearty_salad"
+        ]
+      },
+      {
+        "tag": "c:crops/corn",
+        "recipes": 5,
+        "members": 3,
+        "namespaces": [
+          "culturalrecipes",
+          "letsdocompat"
+        ],
+        "samples": [
+          "culturalrecipes:cooking/creamed_corn",
+          "culturalrecipes:cooking/elote",
+          "culturalrecipes:cutting/corn_kernels",
+          "letsdocompat:farm_and_charm/cooking/creamed_corn"
+        ]
+      },
+      {
+        "tag": "dungeonsdelight:raw_ghast",
+        "recipes": 4,
+        "members": 2,
+        "namespaces": [
+          "dungeonsdelight"
+        ],
+        "samples": [
+          "dungeonsdelight:monster_cooking/ghast_roll",
+          "dungeonsdelight:monster_cooking/ghastly_spirits",
+          "dungeonsdelight:monster_cooking/shiokara",
+          "dungeonsdelight:monster_cooking/takoyaki"
+        ]
+      },
+      {
+        "tag": "farm_and_charm:oat",
+        "recipes": 4,
+        "members": 1,
+        "namespaces": [
+          "farm_and_charm",
+          "letsdocompat"
+        ],
+        "samples": [
+          "farm_and_charm:crafting_bowl/oatmeal_with_strawberries",
+          "farm_and_charm:roaster/oat_pancake",
+          "farm_and_charm:roaster/sausage_with_oat_patty",
+          "letsdocompat:create/crafting_bowl/oatmeal_with_strawberries"
+        ]
+      },
+      {
+        "tag": "farm_and_charm:corn",
+        "recipes": 4,
+        "members": 3,
+        "namespaces": [
+          "farm_and_charm"
+        ],
+        "samples": [
+          "farm_and_charm:pot_cooking/corn_grits",
+          "farm_and_charm:roaster/cooked_salmon",
+          "farm_and_charm:roaster/lamb_with_corn",
+          "farm_and_charm:stove/roasted_corn"
+        ]
+      },
+      {
+        "tag": "c:foods/cooked_rice",
+        "recipes": 4,
+        "members": 2,
+        "namespaces": [
+          "farmersdelight",
+          "kaleidoscope_chinesefood",
+          "kaleidoscope_cookery"
+        ],
+        "samples": [
+          "farmersdelight:honey_glazed_ham_block_from_kaleidoscope",
+          "kaleidoscope_chinesefood:pot/yangzhou_fried_rice",
+          "kaleidoscope_cookery:flex_pot/egg_fried_rice",
+          "kaleidoscope_cookery:pot/egg_fried_rice"
+        ]
+      },
+      {
+        "tag": "c:shulker_meat",
+        "recipes": 4,
+        "members": 1,
+        "namespaces": [
+          "kaleidoscope_end"
+        ],
+        "samples": [
+          "kaleidoscope_end:pot/mint_sauce_shulker_meat",
+          "kaleidoscope_end:pot/mint_sauce_shulker_meat_rice_bowl",
+          "kaleidoscope_end:pot/stuffed_shulker",
+          "kaleidoscope_end:stockpot/shulker_shell_stew"
+        ]
+      },
+      {
+        "tag": "mynethersdelight:boiled_egg_candidate",
+        "recipes": 4,
+        "members": 1,
+        "namespaces": [
+          "mynethersdelight"
+        ],
+        "samples": [
+          "mynethersdelight:boiled_egg_cooking",
+          "mynethersdelight:boiled_egg_from_campfire_cooking",
+          "mynethersdelight:boiled_egg_from_smoking",
+          "mynethersdelight:cooking/boiled_eggs"
+        ]
+      },
+      {
+        "tag": "crabbersdelight:cooked_seafood",
+        "recipes": 3,
+        "members": 4,
+        "namespaces": [
+          "crabbersdelight",
+          "letsdocompat"
+        ],
+        "samples": [
+          "crabbersdelight:cooking/bisque",
+          "crabbersdelight:surf_and_turf",
+          "letsdocompat:farm_and_charm/cooking/bisque"
+        ]
+      },
+      {
+        "tag": "c:crops/chorus",
+        "recipes": 3,
+        "members": 1,
+        "namespaces": [
+          "kaleidoscope_end"
+        ],
+        "samples": [
+          "kaleidoscope_end:pot/end_salad",
+          "kaleidoscope_end:stockpot/chorus_flower_soup",
+          "kaleidoscope_end:stockpot/dragon_breath_chorus_soup"
+        ]
+      },
+      {
+        "tag": "c:raw_ender_mite_meat",
+        "recipes": 3,
+        "members": 1,
+        "namespaces": [
+          "kaleidoscope_end"
+        ],
+        "samples": [
+          "kaleidoscope_end:pot/stir_fried_endermite_meat",
+          "kaleidoscope_end:pot/stir_fried_endermite_meat_rice_bowl",
+          "kaleidoscope_end:pot/stuffed_void_conch"
+        ]
+      },
+      {
+        "tag": "c:foods/bat_wing",
+        "recipes": 3,
+        "members": 2,
+        "namespaces": [
+          "letsdocompat",
+          "minersdelight"
+        ],
+        "samples": [
+          "letsdocompat:farm_and_charm/cooking/bat_soup",
+          "minersdelight:cooking/bat_rolls",
+          "minersdelight:cooking/bat_soup"
+        ]
+      },
+      {
+        "tag": "c:foods/raw_eel",
+        "recipes": 3,
+        "members": 2,
+        "namespaces": [
+          "letsdocompat",
+          "youkaisfeasts"
+        ],
+        "samples": [
+          "letsdocompat:farm_and_charm/cooking/grilled_eel_over_rice",
+          "youkaisfeasts:cooking/grilled_eel_over_rice",
+          "youkaisfeasts:raw_imitation_bear_paw"
+        ]
+      },
+      {
+        "tag": "c:foods/fruits/grape",
+        "recipes": 3,
+        "members": 3,
+        "namespaces": [
+          "letsdocompat",
+          "youkaisfeasts"
+        ],
+        "samples": [
+          "letsdocompat:farm_and_charm/cooking/seven_colored_yokan",
+          "youkaisfeasts:cooking/seven_colored_yokan",
+          "youkaisfeasts:drying/raisin_from_foods_fruits_grape"
+        ]
+      },
+      {
+        "tag": "c:tea_leaves/black",
+        "recipes": 3,
+        "members": 1,
+        "namespaces": [
+          "youkaisfeasts"
+        ],
+        "samples": [
+          "youkaisfeasts:kettle/black_tea",
+          "youkaisfeasts:kettle/saidi_tea",
+          "youkaisfeasts:kettle/tea_mocha"
+        ]
+      },
+      {
+        "tag": "alexscaves:sweet_berries",
+        "recipes": 2,
+        "members": 2,
+        "namespaces": [
+          "alexscaves"
+        ],
+        "samples": [
+          "alexscaves:cake_from_cake_layer",
+          "alexscaves:sundae"
+        ]
+      },
+      {
+        "tag": "bakery:jam",
+        "recipes": 2,
+        "members": 5,
+        "namespaces": [
+          "bakery",
+          "farm_and_charm"
+        ],
+        "samples": [
+          "bakery:bread_with_jam",
+          "farm_and_charm:stove/jam_roll"
+        ]
+      },
+      {
+        "tag": "crabbersdelight:raw_seafood",
+        "recipes": 2,
+        "members": 4,
+        "namespaces": [
+          "crabbersdelight",
+          "letsdocompat"
+        ],
+        "samples": [
+          "crabbersdelight:cooking/bisque",
+          "letsdocompat:farm_and_charm/cooking/bisque"
+        ]
+      },
+      {
+        "tag": "c:foods/roasted_dragon_meat",
+        "recipes": 2,
+        "members": 2,
+        "namespaces": [
+          "ends_delight"
+        ],
+        "samples": [
+          "ends_delight:food/end_barbecue_stick",
+          "ends_delight:food/roasted_dragon_steak"
+        ]
+      },
+      {
+        "tag": "c:foods/raw_dragon_meat",
+        "recipes": 2,
+        "members": 2,
+        "namespaces": [
+          "ends_delight"
+        ],
+        "samples": [
+          "ends_delight:food/ender_bamboo_rice",
+          "ends_delight:food/raw_ender_sausage"
+        ]
+      },
+      {
+        "tag": "farm_and_charm:barley",
+        "recipes": 2,
+        "members": 1,
+        "namespaces": [
+          "farm_and_charm"
+        ],
+        "samples": [
+          "farm_and_charm:pot_cooking/barley_soup",
+          "farm_and_charm:roaster/barley_patties_with_potatoes"
+        ]
+      },
+      {
+        "tag": "c:foods/cooked_bacon",
+        "recipes": 2,
+        "members": 1,
+        "namespaces": [
+          "farmersdelight"
+        ],
+        "samples": [
+          "farmersdelight:bacon_and_eggs",
+          "farmersdelight:bacon_sandwich"
+        ]
+      },
+      {
+        "tag": "forge:yogurt",
+        "recipes": 2,
+        "members": 1,
+        "namespaces": [
+          "immortalers_delight",
+          "letsdocompat"
+        ],
+        "samples": [
+          "immortalers_delight:cooking/crispy_yogurt_rotten_flesh",
+          "letsdocompat:farm_and_charm/cooking/crispy_yogurt_rotten_flesh"
+        ]
+      },
+      {
+        "tag": "c:raw_dragon_meat",
+        "recipes": 2,
+        "members": 1,
+        "namespaces": [
+          "kaleidoscope_end"
+        ],
+        "samples": [
+          "kaleidoscope_end:pot/dark_dragon_steak",
+          "kaleidoscope_end:stockpot/dark_dragon_egg_stew"
+        ]
+      },
+      {
+        "tag": "c:poisonous_fruits",
+        "recipes": 2,
+        "members": 1,
+        "namespaces": [
+          "kaleidoscope_nether"
+        ],
+        "samples": [
+          "kaleidoscope_nether:pot/fruit_platter",
+          "kaleidoscope_nether:stockpot/poisonous_soup"
+        ]
+      },
+      {
+        "tag": "c:foods/raw_boar",
+        "recipes": 2,
+        "members": 2,
+        "namespaces": [
+          "letsdocompat",
+          "youkaisfeasts"
+        ],
+        "samples": [
+          "letsdocompat:farm_and_charm/cooking/cumberland_loin",
+          "youkaisfeasts:cooking/cumberland_loin"
+        ]
+      },
+      {
+        "tag": "c:foods/giant_tentacles",
+        "recipes": 2,
+        "members": 1,
+        "namespaces": [
+          "letsdocompat",
+          "mynethersdelight"
+        ],
+        "samples": [
+          "letsdocompat:farm_and_charm/cooking/giant_tentacles",
+          "mynethersdelight:cooking/giant_tentacles"
+        ]
+      },
+      {
+        "tag": "c:foods/raw_venison",
+        "recipes": 2,
+        "members": 2,
+        "namespaces": [
+          "letsdocompat",
+          "youkaisfeasts"
+        ],
+        "samples": [
+          "letsdocompat:farm_and_charm/cooking/honey_glazed_cucumber",
+          "youkaisfeasts:cooking/honey_glazed_cucumber"
+        ]
+      },
+      {
+        "tag": "c:foods/rice_pasta",
+        "recipes": 2,
+        "members": 1,
+        "namespaces": [
+          "letsdocompat",
+          "mynethersdelight"
+        ],
+        "samples": [
+          "letsdocompat:farm_and_charm/cooking/spicy_noodle_soup",
+          "mynethersdelight:cooking/spicy_noodle_soup"
+        ]
+      },
+      {
+        "tag": "c:foods/squid",
+        "recipes": 2,
+        "members": 2,
+        "namespaces": [
+          "letsdocompat",
+          "minersdelight"
+        ],
+        "samples": [
+          "letsdocompat:farm_and_charm/cooking/stuffed_squid",
+          "minersdelight:cooking/stuffed_squid"
+        ]
+      },
+      {
+        "tag": "c:foods/tentacles",
+        "recipes": 2,
+        "members": 2,
+        "namespaces": [
+          "letsdocompat",
+          "minersdelight"
+        ],
+        "samples": [
+          "letsdocompat:farm_and_charm/cooking/takoyaki",
+          "minersdelight:cooking/takoyaki"
+        ]
+      },
+      {
+        "tag": "c:tea_leaves/green",
+        "recipes": 2,
+        "members": 1,
+        "namespaces": [
+          "youkaisfeasts"
+        ],
+        "samples": [
+          "youkaisfeasts:kettle/genmai_tea",
+          "youkaisfeasts:kettle/green_tea"
+        ]
+      },
+      {
+        "tag": "c:foods/cooked_turtle",
+        "recipes": 1,
+        "members": 1,
+        "namespaces": [
+          "aquaculturedelight"
+        ],
+        "samples": [
+          "aquaculturedelight:turtle_meat_dish"
+        ]
+      },
+      {
+        "tag": "crabbersdelight:cooked_squid",
+        "recipes": 1,
+        "members": 2,
+        "namespaces": [
+          "crabbersdelight"
+        ],
+        "samples": [
+          "crabbersdelight:squid_kebab"
+        ]
+      },
+      {
+        "tag": "c:logs/avocado",
+        "recipes": 1,
+        "members": 2,
+        "namespaces": [
+          "culturalrecipes"
+        ],
+        "samples": [
+          "culturalrecipes:avocado_wood"
+        ]
+      },
+      {
+        "tag": "culturaldelights:smoked_regular_eggplants",
+        "recipes": 1,
+        "members": 2,
+        "namespaces": [
+          "culturalrecipes"
+        ],
+        "samples": [
+          "culturalrecipes:eggplant_burger"
+        ]
+      },
+      {
+        "tag": "dungeonsdelight:monster_foods",
+        "recipes": 1,
+        "members": 65,
+        "namespaces": [
+          "dungeonsdelight"
+        ],
+        "samples": [
+          "dungeonsdelight:monster_cooking/rot_roast"
+        ]
+      },
+      {
+        "tag": "c:foods/roasted_shulker_meat",
+        "recipes": 1,
+        "members": 2,
+        "namespaces": [
+          "ends_delight"
+        ],
+        "samples": [
+          "ends_delight:food/end_barbecue_stick"
+        ]
+      },
+      {
+        "tag": "bakery:chocolate",
+        "recipes": 1,
+        "members": 2,
+        "namespaces": [
+          "farm_and_charm"
+        ],
+        "samples": [
+          "farm_and_charm:pot_cooking/chocolate_jam"
+        ]
+      },
+      {
+        "tag": "candlelight:tomato_soups",
+        "recipes": 1,
+        "members": 2,
+        "namespaces": [
+          "farm_and_charm"
+        ],
+        "samples": [
+          "farm_and_charm:roaster/bolognese"
+        ]
+      },
+      {
+        "tag": "brewery:beer",
+        "recipes": 1,
+        "members": 6,
+        "namespaces": [
+          "farm_and_charm"
+        ],
+        "samples": [
+          "farm_and_charm:stove/pork_knuckle"
+        ]
+      },
+      {
+        "tag": "c:foods/cooked_ham",
+        "recipes": 1,
+        "members": 1,
+        "namespaces": [
+          "farmersdelight"
+        ],
+        "samples": [
+          "farmersdelight:honey_glazed_ham_block_from_kaleidoscope"
+        ]
+      },
+      {
+        "tag": "c:foods/cooked_eggs",
+        "recipes": 1,
+        "members": 1,
+        "namespaces": [
+          "kaleidoscope_chinesefood"
+        ],
+        "samples": [
+          "kaleidoscope_chinesefood:pot/tomato_egg_noodles"
+        ]
+      },
+      {
+        "tag": "c:crops/pumpkin",
+        "recipes": 1,
+        "members": 1,
+        "namespaces": [
+          "kaleidoscope_chinesefood"
+        ],
+        "samples": [
+          "kaleidoscope_chinesefood:stockpot/pumpkin_porridge"
+        ]
+      },
+      {
+        "tag": "c:cooked_rice",
+        "recipes": 1,
+        "members": 1,
+        "namespaces": [
+          "kaleidoscope_end"
+        ],
+        "samples": [
+          "kaleidoscope_end:pot/mint_sauce_shulker_meat_rice_bowl"
+        ]
+      },
+      {
+        "tag": "c:berries",
+        "recipes": 1,
+        "members": 3,
+        "namespaces": [
+          "kaleidoscope_end"
+        ],
+        "samples": [
+          "kaleidoscope_end:shulker_ice_cream"
+        ]
+      },
+      {
+        "tag": "minersdelight:cooked_insect_meat",
+        "recipes": 1,
+        "members": 3,
+        "namespaces": [
+          "minersdelight"
+        ],
+        "samples": [
+          "minersdelight:insect_sandwich"
+        ]
+      },
+      {
+        "tag": "c:foods/cooked_squid",
+        "recipes": 1,
+        "members": 1,
+        "namespaces": [
+          "minersdelight"
+        ],
+        "samples": [
+          "minersdelight:squid_sandwich"
+        ]
+      },
+      {
+        "tag": "c:jam_jars",
+        "recipes": 1,
+        "members": 7,
+        "namespaces": [
+          "vintagedelight"
+        ],
+        "samples": [
+          "vintagedelight:fermenting/vinegar_from_jam"
+        ]
+      },
+      {
+        "tag": "c:jam_bottles",
+        "recipes": 1,
+        "members": 7,
+        "namespaces": [
+          "vintagedelight"
+        ],
+        "samples": [
+          "vintagedelight:fermenting/vinegar_from_jam_bottles"
+        ]
+      },
+      {
+        "tag": "vintagedelight:sweet_jam_bottles",
+        "recipes": 1,
+        "members": 4,
+        "namespaces": [
+          "vintagedelight"
+        ],
+        "samples": [
+          "vintagedelight:pb_j"
+        ]
+      },
+      {
+        "tag": "c:tea_leaves/dark",
+        "recipes": 1,
+        "members": 1,
+        "namespaces": [
+          "youkaisfeasts"
+        ],
+        "samples": [
+          "youkaisfeasts:kettle/dark_tea"
+        ]
+      },
+      {
+        "tag": "c:tea_leaves/oolong",
+        "recipes": 1,
+        "members": 1,
+        "namespaces": [
+          "youkaisfeasts"
+        ],
+        "samples": [
+          "youkaisfeasts:kettle/oolong_tea"
+        ]
+      },
+      {
+        "tag": "c:tea_leaves/white",
+        "recipes": 1,
+        "members": 1,
+        "namespaces": [
+          "youkaisfeasts"
+        ],
+        "samples": [
+          "youkaisfeasts:kettle/white_tea"
+        ]
+      },
+      {
+        "tag": "c:tea_leaves/yellow",
+        "recipes": 1,
+        "members": 1,
+        "namespaces": [
+          "youkaisfeasts"
+        ],
+        "samples": [
+          "youkaisfeasts:kettle/yellow_tea"
+        ]
+      }
+    ],
+    "F5_blind_recipes": {
+      "culinary_unparsed": 667,
+      "by_type": {
+        "refurbished_furniture:workbench_constructing": 147,
+        "youkaisfeasts:cuisine": 40,
+        "farmersdelight:cooking": 34,
+        "minecraft:crafting": 25,
+        "farm_and_charm:pot_cooking": 25,
+        "youkaisfeasts:kettle": 12,
+        "kaleidoscope_cookery:pot": 9,
+        "someassemblyrequired:sandwich_spouting": 6,
+        "kaleidoscope_world_liquor:freezer": 4,
+        "create:pressing": 4,
+        "create:mixing": 3,
+        "kaleidoscope_tavern:barrel": 3,
+        "youkaisfeasts:basin": 3,
+        "youkaisfeasts:pot_cooking": 3,
+        "casualnessdelight:deep_frying": 2,
+        "create:compacting": 2,
+        "create:emptying": 2,
+        "kaleidoscope_cookery:stockpot": 2,
+        "create:haunting": 1
+      },
+      "notes": [
+        "refurbished_furniture:workbench_constructing 444/444 原料不可见",
+        "youkaisfeasts:cuisine 40/40、pot_cooking 13/13、kettle 12/12、soup_base 4/4、basin 3/3 不可见",
+        "bakery:blank_cake_interaction 12 条产物不可见（0 recipe_outputs）",
+        "someassemblyrequired:sandwich_spouting 7/7、kaleidoscope_world_liquor:freezer 5/5 不可见"
+      ],
+      "strict_policy_bypass_from_raw_json": [
+        "youkaisfeasts:kettle/genmai_tea (#c:crops/rice)",
+        "youkaisfeasts:kettle/green_water (#c:foods/cabbage)",
+        "youkaisfeasts:kettle/tea_mocha (#c:drinks/milk)",
+        "youkaisfeasts:unordered_cooking/hokkaido_salmon_hotpot (#c:foods/cabbage)",
+        "youkaisfeasts:unordered_cooking/signature_mushroom_stew (#c:mushrooms)"
+      ]
+    },
+    "F6_dead_seki_families": [
+      {
+        "tag": "seki:fish/raw_cod_slice",
+        "members": [
+          "farmersdelight:cod_slice"
+        ]
+      },
+      {
+        "tag": "seki:fish/raw_pufferfish_slice",
+        "members": [
+          "crabbersdelight:pufferfish_slice"
+        ]
+      },
+      {
+        "tag": "seki:fish/raw_salmon_slice",
+        "members": [
+          "farmersdelight:salmon_slice"
+        ]
+      },
+      {
+        "tag": "seki:fish/raw_slice",
+        "members": [
+          "alexsdelight:raw_catfish_slice",
+          "crabbersdelight:pufferfish_slice",
+          "crabbersdelight:tropical_fish_slice",
+          "farmersdelight:cod_slice",
+          "farmersdelight:salmon_slice",
+          "youkaisfeasts:raw_tuna_slice"
+        ]
+      },
+      {
+        "tag": "seki:fish/raw_tropical_fish_slice",
+        "members": [
+          "crabbersdelight:tropical_fish_slice"
+        ]
+      },
+      {
+        "tag": "seki:fish/raw_trout",
+        "members": [
+          "aquaculture:brown_trout",
+          "aquaculture:rainbow_trout"
+        ]
+      },
+      {
+        "tag": "seki:fish/raw_tuna_slice",
+        "members": [
+          "youkaisfeasts:raw_tuna_slice"
+        ]
+      },
+      {
+        "tag": "seki:fish/whole_raw",
+        "members": [
+          "alexscaves:lanternfish",
+          "alexscaves:radgill",
+          "alexscaves:tripodfish",
+          "aquaculture:arapaima",
+          "aquaculture:atlantic_cod",
+          "aquaculture:atlantic_halibut",
+          "aquaculture:atlantic_herring",
+          "aquaculture:bayad",
+          "aquaculture:blackfish",
+          "aquaculture:bluegill",
+          "aquaculture:boulti",
+          "aquaculture:brown_shrooma",
+          "aquaculture:brown_trout",
+          "aquaculture:capitaine",
+          "aquaculture:carp",
+          "aquaculture:catfish",
+          "aquaculture:gar",
+          "aquaculture:muskellunge",
+          "aquaculture:pacific_halibut",
+          "aquaculture:perch",
+          "aquaculture:pink_salmon",
+          "aquaculture:piranha",
+          "aquaculture:pollock",
+          "aquaculture:rainbow_trout",
+          "aquaculture:red_grouper",
+          "aquaculture:red_shrooma",
+          "aquaculture:smallmouth_bass",
+          "aquaculture:synodontis",
+          "aquaculture:tambaqui",
+          "aquaculture:tuna",
+          "minecraft:cod",
+          "minecraft:pufferfish",
+          "minecraft:salmon",
+          "minecraft:tropical_fish"
+        ]
+      }
+    ],
+    "F7_never_touched_culinary_namespaces": [
+      {
+        "ns": "alexscaves",
+        "culinaryRecipes": 135,
+        "exposedRecipes": 6,
+        "broadTags": [
+          "alexscaves:sweet_berries"
+        ]
+      },
+      {
+        "ns": "quark",
+        "culinaryRecipes": 63,
+        "exposedRecipes": 2,
+        "broadTags": []
+      },
+      {
+        "ns": "vinery",
+        "culinaryRecipes": 47,
+        "exposedRecipes": 0,
+        "broadTags": []
+      },
+      {
+        "ns": "aquaculture",
+        "culinaryRecipes": 32,
+        "exposedRecipes": 0,
+        "broadTags": []
+      },
+      {
+        "ns": "cataclysm",
+        "culinaryRecipes": 32,
+        "exposedRecipes": 0,
+        "broadTags": []
+      },
+      {
+        "ns": "kaleidoscope_tavern",
+        "culinaryRecipes": 25,
+        "exposedRecipes": 0,
+        "broadTags": []
+      },
+      {
+        "ns": "kaleidoscope_world_liquor",
+        "culinaryRecipes": 25,
+        "exposedRecipes": 0,
+        "broadTags": []
+      },
+      {
+        "ns": "trailandtales_delight",
+        "culinaryRecipes": 24,
+        "exposedRecipes": 0,
+        "broadTags": []
+      },
+      {
+        "ns": "saraddons",
+        "culinaryRecipes": 23,
+        "exposedRecipes": 0,
+        "broadTags": []
+      },
+      {
+        "ns": "kaleidoscope_dim_wine",
+        "culinaryRecipes": 17,
+        "exposedRecipes": 0,
+        "broadTags": []
+      },
+      {
+        "ns": "brewery",
+        "culinaryRecipes": 15,
+        "exposedRecipes": 0,
+        "broadTags": []
+      },
+      {
+        "ns": "beachparty",
+        "culinaryRecipes": 10,
+        "exposedRecipes": 0,
+        "broadTags": []
+      },
+      {
+        "ns": "create_dragons_plus",
+        "culinaryRecipes": 6,
+        "exposedRecipes": 0,
+        "broadTags": []
+      }
+    ],
+    "F8_food_without_production_path": {
+      "count": 234,
+      "note": "含大量应为怪物掉落/切片产物的条目；与 F5 的产物不可见重叠，需游戏内抽查后再判定是否真断链",
+      "by_namespace": {
+        "dungeonsdelight": 53,
+        "minersdelight": 29,
+        "immortalers_delight": 21,
+        "bakery": 17,
+        "frightsdelight": 14,
+        "minecraft": 11,
+        "create": 9
+      }
+    },
+    "F9_phantom_tags": {
+      "note": "未安装模组的标签仍存在于运行时最终态，无配方消费（惰性），但会污染“有哪些 mod”的枚举口径",
+      "tags": {
+        "diet:proteins": 89,
+        "diet:vegetables": 73,
+        "diet:grains": 61,
+        "diet:fruits": 10,
+        "diet:sugars": 4,
+        "dehydration:hydrating_stew": 8,
+        "dehydration:hydrating_drinks": 7,
+        "createaddition:plant_foods": 5
+      },
+      "mods_without_registry_rows": [
+        "corn_delight",
+        "kaleidoscope_twilight",
+        "smc"
+      ],
+      "mod_without_any_content": "create_central_kitchen"
+    }
+  }
+}
